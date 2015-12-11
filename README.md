@@ -1,99 +1,99 @@
-![Atomic Guide](https://dl.dropboxusercontent.com/u/41114960/github/atomic-guide/atomic-logo.svg)
+# CPNB Theme
 
-![](https://dl.dropboxusercontent.com/u/41114960/github/atomic-guide/ag-preview.png)
+## Changelog
+- 11 DEC 2015: Initial version
 
-## Under The Hood
+## About this theme
 
- - Templates : Assemble
- - Styles : Sass (LibSass Port)
- - Task Manager : Gulp
- - Pkg Mgr: NPM & Bower
+This theme is a subtheme of Omega(4). Theme settings are stored in the cpnb.info file. To exchange settings with the site use drush:
 
-## Installation
+- drush orev: (omega revert) Write settings to database
+- drush oexp: (omega export) Write settings from your admin/appearance interface to the info file.
 
-Installation instructions assume you have gulp and node w/npm installed globally in your system. You could also use `npm start` if you desire as the `package.json` file of this project supports that command.
+## Taskrunner: Gulp
 
-```javascript
-$ npm install && bower install
+All CSS and Javascript that is used is generated with Gulp JS. This is also all you need. We do not use Ruby Gems, such as Compass or grids systems.
+
+In this folder you will find a package.json file. In this file you find all the gulp plugins you need. 
+
+First make sure you have gulp installed on your machine:
+
+```bash
+$ npm install --global gulp
+```
+
+To install the gulp plugins and gulp itself in the project you can simple run the following commands from the theme (this) folder.
+
+```bash
+$ npm install
+```
+
+## Drupal and Gulp
+
+The folder __node-modules__ in your theme contains .info files which conflict with the reset script we use.
+
+To avoid problems, you can remove the .info files in __node-modules__ with this command in CLI:
+
+```
+cd /node-modules/
+```
+
+```
+$ find . -type f -name '*.info' -exec rm -rf {} \;
 ```
 
 ## Development
 
-Start Development
+To start compiling you scss files into css, you can use the following gulp task:
 
-```javascript
+
+```bash
 $ gulp
 ```
 
-Build
+What this task does can be found in the gulpfile (default). It will automically open the styleguide in your browser, including livereload. You do not have to use this feature each time you work on the theme, it is just default behavior of the gulp tasks.
 
-```javascript
-$ gulp build
+## Javascript 
+
+As you can see in the Gulpfile javascript is being concatenated from the contrib and custom folder. The custom folder is where you store the â€˜themeâ€™ javascript. For each function you can create a new file. This way developers can find it more easily. Gulp compiles this into one theme.js file. 
+
+The contrib folder contains manipulated drupal files, which are only used for the styleguide (which has no Drupal logic of course). Whenever you need some JS function from Drupal in the styleguide, you put this in the contrib folder and change the matching taks in gulpfile. If you do not need to manipulate the function, but just call it, you can get the file directly from the sites/all/modules folder and do not store a copy in the contrib folder.
+
+## Styleguide
+
+The styleguide is generated from the theme. There is no extra task required. This is to ensure there is no difference between the site and the styleguide. 
+
+The styleguide uses the Assemble script to generate the styleguide templates. 
+
+You will see the following folder in the styleguide:
+
+- Templates/pages: Here you can create new pages for the styleguide.
+- Templates/layouts: The default page wrapper for all pages
+- Templates/includes: This is where to styleguide partials and components are stored. Whenever you include a partial in your page, you must make sure it exist here. In the partial you will use plain HTML.
+
+### Using partials
+
+``includes/atoms/radio-input.hbs``
+
+```
+<div class="form-type-radio">
+  <input class="form-radio" id="radio{{version}}" name="radio" type="radio" value="radio-value{{version}}" {{state}}>
+  <label class="option" for="radio{{version}}">radio label {{version}}</label>
+</div>
 ```
 
-Preview Build
+4. Make the call from your template file of choice like soâ€¦
 
-```javascript
-$ gulp preview
+``templates/pages/formelements.hbs``
+
+```
+{{> radio-input}}
+<pre class="language-html"><code>{{> radio-input}}</code></pre>
+
 ```
 
-Clean Environment
 
-```javascript
-$ gulp clean
-```
-
-## Naming Convention
-
-Everything is name spaced and separated by a hyphen. BEM is the style of choice. We suggest using [Sass Guidelines](http://sass-guidelin.es/) for documenting your Sass code to keep consistency across teams.
-
-```css
-ns-component
-ns-component--modifier
-ns-component__child--modifier
-```
-
-## Theming
-
-If you want to have variations on an input for example and keep things DRY then you can do the following…
-
-1. Create a ``modifier.yaml`` file and place it inside your ``data`` directory.
-2. Add data.
-
-  ``data/modifier.yaml``
-
-  ```
-  a:
-    version: a
-    modifierclass: active
-    state: checked
-  b:
-    version: b
-    modifierclass: hidden
-  ```
-
-3. Setup your partial
-
-  ``includes/atoms/radio-input.hbs``
-
-  ```
-  <label for="radio{{version}}" class="control radio {{modifierclass}}">
-    <input type="radio" id="radio{{version}}" name="radio" value="radio{{version}}" {{state}}>
-    <span class="control__indicator"></span> Radio Input
-  </label>
-  ```
-
-4. Make the call from your template file of choice like so…
-
-  ``templates/pages/index.hbs``
-
-  ```
-  {{> radio-input radio}}
-  {{> radio-input radio.a}}
-  {{> radio-input radio.b}}
-  ```
-
-## Conditions
+### Conditions
 
 Control scripts, styles or anything desired from appearing in your templates. A few examples are:
 
@@ -113,26 +113,6 @@ Control scripts, styles or anything desired from appearing in your templates. A 
 ```
 
 For further reading on conditionals see the [Handlebars](http://handlebarsjs.com/block_helpers.html) documentation.
-
-## Environment Control
-
-This project takes advantage of the environment flag used by Assemble.
-
-```
-var env_flag = false;
-assemble.option('production', env_flag);
-```
-**`gulpfile.js`**
-
-The if statement that follows will produce true if the boolean for the environment variable above is set to true. Great for keeping out things like analytics and such.
-
-```
-{{#if production}}
-{{/if}}
-```
-**`template.hbs`**
-
-## What Else?
 
 ### Code Blocks
 
@@ -158,9 +138,3 @@ button.addEventListener('click', function() {
 console.log('hello world');
 })</script>
 ```
-
-In the future we hope to remove the need to write this kind of block within the markup and use something like file reading with Node.
-
-## Credits
-
-Logo by [Cole Townsend](http://coletownsend.com). ©2015 and beyond.

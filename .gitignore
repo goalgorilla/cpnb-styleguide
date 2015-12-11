@@ -1,11 +1,10 @@
 # temp dirs
 .sass-cache
 # dotfiles
-*.log
 .publish/
 .DS_Store
 #dirs
-node_modules/
+node_modules
 site/bower_components
 lib/*
 dist/*
@@ -14,3 +13,14 @@ site/css/**/*.css
 #files
 site/*.html
 Gemfile.lock
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+>>>>>>> origin/master
