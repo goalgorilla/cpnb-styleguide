@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cpnb-styleguide by MaikelGG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Cpnb-styleguide</h1>
+      <h2 class="project-tagline">cpnb-styleguide</h2>
+      <a href="https://github.com/MaikelGG/cpnb-styleguide" class="btn">View on GitHub</a>
+      <a href="https://github.com/MaikelGG/cpnb-styleguide/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/MaikelGG/cpnb-styleguide/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="cpnb-theme" class="anchor" href="#cpnb-theme" aria-hidden="true"><span class="octicon octicon-link"></span></a>CPNB Theme</h1>
+
+<h2>
+<a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Changelog</h2>
+
+<ul>
+<li>11 DEC 2015: Initial version</li>
+</ul>
+
+<h2>
+<a id="about-this-theme" class="anchor" href="#about-this-theme" aria-hidden="true"><span class="octicon octicon-link"></span></a>About this theme</h2>
+
+<p>This theme is a subtheme of Omega(4). Theme settings are stored in the cpnb.info file. To exchange settings with the site use drush:</p>
+
+<ul>
+<li>drush orev: (omega revert) Write settings to database</li>
+<li>drush oexp: (omega export) Write settings from your admin/appearance interface to the info file.</li>
+</ul>
+
+<h2>
+<a id="taskrunner-gulp" class="anchor" href="#taskrunner-gulp" aria-hidden="true"><span class="octicon octicon-link"></span></a>Taskrunner: Gulp</h2>
+
+<p>All CSS and Javascript that is used is generated with Gulp JS. This is also all you need. We do not use Ruby Gems, such as Compass or grids systems.</p>
+
+<p>In this folder you will find a package.json file. In this file you find all the gulp plugins you need. </p>
+
+<p>First make sure you have gulp installed on your machine:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install --global gulp</pre></div>
+
+<p>To install the gulp plugins and gulp itself in the project you can simple run the following commands from the theme (this) folder.</p>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install</pre></div>
+
+<h2>
+<a id="drupal-and-gulp" class="anchor" href="#drupal-and-gulp" aria-hidden="true"><span class="octicon octicon-link"></span></a>Drupal and Gulp</h2>
+
+<p>The folder <strong>node-modules</strong> in your theme contains .info files which conflict with the reset script we use.</p>
+
+<p>To avoid problems, you can remove the .info files in <strong>node-modules</strong> with this command in CLI:</p>
+
+<pre><code>cd /node-modules/
+</code></pre>
+
+<pre><code>$ find . -type f -name '*.info' -exec rm -rf {} \;
+</code></pre>
+
+<h2>
+<a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h2>
+
+<p>To start compiling you scss files into css, you can use the following gulp task:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ gulp</pre></div>
+
+<p>What this task does can be found in the gulpfile (default). It will automically open the styleguide in your browser, including livereload. You do not have to use this feature each time you work on the theme, it is just default behavior of the gulp tasks.</p>
+
+<h2>
+<a id="javascript" class="anchor" href="#javascript" aria-hidden="true"><span class="octicon octicon-link"></span></a>Javascript</h2>
+
+<p>As you can see in the Gulpfile javascript is being concatenated from the contrib and custom folder. The custom folder is where you store the â€˜themeâ€™ javascript. For each function you can create a new file. This way developers can find it more easily. Gulp compiles this into one theme.js file. </p>
+
+<p>The contrib folder contains manipulated drupal files, which are only used for the styleguide (which has no Drupal logic of course). Whenever you need some JS function from Drupal in the styleguide, you put this in the contrib folder and change the matching taks in gulpfile. If you do not need to manipulate the function, but just call it, you can get the file directly from the sites/all/modules folder and do not store a copy in the contrib folder.</p>
+
+<h2>
+<a id="styleguide" class="anchor" href="#styleguide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Styleguide</h2>
+
+<p>The styleguide is generated from the theme. There is no extra task required. This is to ensure there is no difference between the site and the styleguide. </p>
+
+<p>The styleguide uses the Assemble script to generate the styleguide templates. </p>
+
+<p>You will see the following folder in the styleguide:</p>
+
+<ul>
+<li>Templates/pages: Here you can create new pages for the styleguide.</li>
+<li>Templates/layouts: The default page wrapper for all pages</li>
+<li>Templates/includes: This is where to styleguide partials and components are stored. Whenever you include a partial in your page, you must make sure it exist here. In the partial you will use plain HTML.</li>
+</ul>
+
+<h3>
+<a id="using-partials" class="anchor" href="#using-partials" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using partials</h3>
+
+<p><code>includes/atoms/radio-input.hbs</code></p>
+
+<pre><code>&lt;div class="form-type-radio"&gt;
+  &lt;input class="form-radio" id="radio{{version}}" name="radio" type="radio" value="radio-value{{version}}" {{state}}&gt;
+  &lt;label class="option" for="radio{{version}}"&gt;radio label {{version}}&lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+
+<ol>
+<li>Make the call from your template file of choice like soâ€¦</li>
+</ol>
+
+<p><code>templates/pages/formelements.hbs</code></p>
+
+<pre><code>{{&gt; radio-input}}
+&lt;pre class="language-html"&gt;&lt;code&gt;{{&gt; radio-input}}&lt;/code&gt;&lt;/pre&gt;
+
+</code></pre>
+
+<h3>
+<a id="conditions" class="anchor" href="#conditions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conditions</h3>
+
+<p>Control scripts, styles or anything desired from appearing in your templates. A few examples are:</p>
+
+<pre><code>{{#any 'index single case' this.basename}}
+{{/any}}
+</code></pre>
+
+<pre><code>{{#is 'index' this.basename}}
+{{/is}}
+</code></pre>
+
+<pre><code>{{#if 'single' this.basename}}
+{{/if}}
+</code></pre>
+
+<p>For further reading on conditionals see the <a href="http://handlebarsjs.com/block_helpers.html">Handlebars</a> documentation.</p>
+
+<h3>
+<a id="code-blocks" class="anchor" href="#code-blocks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Blocks</h3>
+
+<p>Here's an example from your assemble template to import a partial called headings that's also called within the associated code block. The class name on the <code>pre</code> tag tells Prism this is a block we would like <a href="http://prismjs.com">Prism</a> to style using html grammar.</p>
+
+<pre lang="markup"><code>{{&gt; headings}}
+&lt;pre class="language-html"&gt;&lt;code&gt;{{&gt; headings}}&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+
+<p>Here's an example using a JavaScript snippet.</p>
+
+<pre lang="markup"><code>{{&gt; button}}
+&lt;pre class="language-javascript"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+
+<p>The partial with the required JavaScript sets up the pre block to accept the JavaScript it will be injected with. The required JavaScript is included in your layout of choice and it's <code>script</code> tag is given a class of <code>atomic-js</code>.</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">&lt;</span>script <span class="pl-k">class</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>atomic-js<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span><span class="pl-k">var</span> button <span class="pl-k">=</span> <span class="pl-smi">document</span>.<span class="pl-en">querySelector</span>(<span class="pl-s"><span class="pl-pds">'</span>button<span class="pl-pds">'</span></span>);
+<span class="pl-smi">button</span>.<span class="pl-en">addEventListener</span>(<span class="pl-s"><span class="pl-pds">'</span>click<span class="pl-pds">'</span></span>, <span class="pl-k">function</span>() {
+<span class="pl-en">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">'</span>hello world<span class="pl-pds">'</span></span>);
+})<span class="pl-k">&lt;</span><span class="pl-k">/</span>script<span class="pl-k">&gt;</span></pre></div>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/MaikelGG/cpnb-styleguide">Cpnb-styleguide</a> is maintained by <a href="https://github.com/MaikelGG">MaikelGG</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
