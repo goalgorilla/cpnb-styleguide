@@ -13,3 +13,4 @@ site/client
 site/css/**/*.css
 #files
 site/*.html
+Gemfile.lock

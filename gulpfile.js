@@ -10,11 +10,14 @@ var gulp            = require('gulp'),
                           'gulp-minify-html' : 'minhtml',
                           'gulp-gh-pages'    : 'ghPages',
                           'gulp-foreach'     : 'foreach',
-                          'gulp-mocha'       : 'mocha',
                           'gulp-if'          : 'if'
                         }
                       }),
     assemble        = require('assemble'),
+    postcss         = require('gulp-postcss'),
+    mqpacker        = require('css-mqpacker'),
+    autoprefixer    = require('autoprefixer'),
+    concat          = require('gulp-concat'),
     del             = require('del'),
     merge           = require('merge-stream'),
     basename        = require('path').basename,
@@ -31,7 +34,7 @@ $.fs     = require('fs');
 var env_flag = false;
 
 var asset_dir = {
-  site: 'site',
+  site: 'styleguide',
   templates : 'templates',
   data: 'data',
   dist: 'dist',
@@ -98,14 +101,6 @@ gulp.task('preview', function() {
 });
 
 
-// ===================================================
-// Testin'
-// ===================================================
-
-gulp.task('mocha', function () {
-  return gulp.src('test/*.js', {read: false})
-    .pipe($.mocha({ reporter: 'nyan' }));
-});
 
 
 // ===================================================
@@ -113,12 +108,14 @@ gulp.task('mocha', function () {
 // ===================================================
 
 gulp.task('sass', function() {
+  var processors = [
+    autoprefixer({browsers: ['last 2 versions']}),
+    mqpacker({sort: true})
+  ];
+
   var stream = gulp.src(glob.sass)
     .pipe($.sass())
-    .pipe($.autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
+    .pipe(postcss(processors))
     .pipe(gulp.dest(path.css))
     .pipe($.connect.reload());
 

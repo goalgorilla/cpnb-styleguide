@@ -1,15 +1,10 @@
 {
-  "name": "AtomicGuide",
-  "description": "Creating atomic patterns using Assemble.io and Gulp",
-  "version": "1.1.0",
-  "authors": "@gryghostvisuals",
-  "contributors": [],
-  "homepage": "https://github.com/grayghostvisuals/atomic-guide",
-  "main": "https://github.com/grayghostvisuals/atomic-guide",
+  "name": "CPNB-StyleGuide",
+  "description": "Creating a styleguide using Assemble.io and Gulp",
+  "version": "1.0.0",
+  "authors": "Maikel Koopman",
+  "homepage": "https://www.cpnb.nl",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/grayghostvisuals/atomic-guide/issues"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/grayghostvisuals/atomic-guide"
@@ -36,13 +31,16 @@
     "merge-stream": "0.1.7"
   },
   "devDependencies": {
-    "gulp-connect": "2.2.0",
+    "autoprefixer": "^6.1.2",
     "cheerio": "0.18.0",
+    "css-mqpacker": "^4.0.0",
     "del": "1.1.1",
     "gulp-cheerio": "0.6.2",
+    "gulp-concat": "^2.4.3",
+    "gulp-connect": "2.2.0",
     "gulp-gh-pages": "0.5.1",
     "gulp-livereload": "3.7.0",
-    "gulp-mocha": "2.1.2",
+    "gulp-postcss": "^6.0.1",
     "gulp-svgmin": "1.1.1",
     "gulp-svgstore": "5.0.0"
   }
