@@ -4,29 +4,20 @@
 .color_radios .form-type-radio.element-hidden,.color_radios .taxonomy-term--color.element-hidden,.commerce-add-to-cart .form-type-radios.element-hidden,.element-hidden,.form-item-attributes-field-colour .form-type-radio.element-hidden,.form-item-attributes-field-colour .taxonomy-term--color.element-hidden,.page-ikben-dashboard .l-breadcrumbs,.phone-announcement .form-type-radio.element-hidden,.phone-announcement .taxonomy-term--color.element-hidden,.tmobile-selfcare-renew-subscription-form .form-type-radios.element-hidden{display:none}
 .element-invisible,.has-arrow-up span{position:absolute;clip:rect(1px,1px,1px,1px);overflow:hidden;height:1px}
 .content-top h1,.field--name-body h1{color:#00aeef;font-size:42px;margin-top:20px;margin-bottom:12px;line-height:1.5;font-weight:700}
-.page-ikben-facturen .pane-block-5 .pane-title,.page-ikben-huidig .pane-1 .pane-title,.page-ikben-replace-simkaart .pane-block-2 .pane-title,.pane-faq-blocks-panel-pane-1 .pane-title,.pane-faq-nodes-customer-service-pane .pane-title,.pane-tmobile-blocks-customer-service-descriptin .pane-title,.pane-tmobile-blocks-homepage-advantage .pane-title,.pane-tmobile-package-update-update-top-message .pane-title,.pane-tmobile-selfcare-renew-subscription .pane-title,.pane-tmobile-selfcare-renew-subscription h2,.pane-tmobile-selfcare-replace-sim .pane-title,.pane-tmobile-selfcare-self-control-menu-block .pane-title,.pane-tmobile-selfcare-simcard-block .pane-title,.pane-tmobile-selfcare-subscription-settings .pane-title,.pane-tmobile-user-invoice-overview .pane-title{color:#00aeef;font-size:22px;line-height:1.5;font-weight:700;margin-bottom:12px}
-.commerce-add-to-cart .form-item-attributes-field-colour label,.commerce-add-to-cart .form-type-radios label,.pane-tmobile-selfcare-renew-subscription h4,.tmobile-selfcare-personal-info-form legend,.tmobile-selfcare-renew-subscription-form .form-item-attributes-field-colour label,.tmobile-selfcare-renew-subscription-form .form-type-radios label,.tmobile-selfcare-subscription-settings-form .form-type-radios>label{font-size:16px;line-height:1.5;margin:15px 0;padding-right:0;font-weight:700;display:block}
-.l-header,.l-highlighted,.l-main,.navigation{position:relative}
-.content-top,.l-header>.container,.l-highlighted>.container,.l-main>.container,.navigation>.container{padding-left:10px;padding-right:10px;width:100%}
-.block--tmobile-blocks-checkout-page-cart{margin-top:30px;width:100%}
-.has-sidebar .panels-generic-content-sidebar-inside,.has-sidebar .panels-generic-content-top-sidebar-inside{margin-top:35px}
-.block--commerce-checkout-progress,.commerce-checkout-form-checkout,.commerce-checkout-form-complete,.commerce-checkout-form-number-portability,.commerce-checkout-form-proof-of-identity,.commerce-checkout-form-review,.has-sidebar .panels-generic-content-inside,.has-sidebar .panels-generic-content-top-inside{padding-bottom:40px;position:relative}
-.panels-generic-content-top-middle{border-top:1px solid #d8d8d8;width:100%}
-.panels-generic-content-top-middle:after,.panels-generic-content-top-middle:before{content:'';display:table}
-.panels-generic-content-top-middle:after{clear:both}
-.panels-generic-content,.panels-generic-content-top{padding-left:10px;padding-right:10px;width:100%;max-width:60em;margin:0 auto;padding-top:30px;position:relative}
-.panels-generic-content-top:after,.panels-generic-content-top:before,.panels-generic-content:after,.panels-generic-content:before{content:'';display:table}
-.panels-generic-content-top:after,.panels-generic-content:after{clear:both}
-.page-ikben-facturen .pane-block-5,.page-ikben-huidig .pane-1,.page-ikben-replace-simkaart .pane-block-2,.pane-faq-blocks-panel-pane-1,.pane-faq-nodes-customer-service-pane,.pane-tmobile-blocks-customer-service-descriptin,.pane-tmobile-package-update-update-top-message,.pane-tmobile-selfcare-renew-subscription,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item,.pane-tmobile-selfcare-replace-sim,.pane-tmobile-selfcare-self-control-menu-block,.pane-tmobile-selfcare-simcard-block,.pane-tmobile-selfcare-subscription-settings,.pane-tmobile-user-invoice-overview{margin-bottom:40px;font-size:14px}
+.pane-tmobile-user-invoice-overview .pane-title{color:#00aeef;font-size:22px;line-height:1.5;font-weight:700;margin-bottom:12px}
+.commerce-add-to-cart .form-item-attributes-field-colour label,.commerce-add-to-cart .form-type-radios label,.tmobile-selfcare-personal-info-form legend,.tmobile-selfcare-renew-subscription-form .form-item-attributes-field-colour label,.tmobile-selfcare-renew-subscription-form .form-type-radios label,.tmobile-selfcare-subscription-settings-form .form-type-radios>label{font-size:16px;line-height:1.5;margin:15px 0;padding-right:0;font-weight:700;display:block}
+.l-highlighted,.l-main,.l-region-header{position:relative}
+.l-highlighted>.container,.l-main>.container,.l-region-header>.container{padding-left:10px;padding-right:10px;width:100%}
+.l-main{padding-top:52px;position:relative;z-index:1}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 article,aside,footer,header,main,nav,section{display:block}
 [hidden],template{display:none}
 svg:not(:root){overflow:hidden}
 embed,img,object,video{max-width:100%;height:auto;border:0}
 fieldset{border:0;margin:0;padding:0}
-@font-face{font-family:Ben;src:url(../fonts/Ben2010-Light.otf);src:url(../fonts/Ben2010-Light.eot?#iefix) format('embedded-opentype'),url(../fonts/Ben2010-Light.woff) format('woff'),url(../fonts/Ben2010-Light.svg#Ben) format('svg');font-weight:400}
-@font-face{font-family:Ben;src:url(../fonts/Ben2010-Bold.otf);src:url(../fonts/Ben2010-Bold.eot?#iefix) format('embedded-opentype'),url(../fonts/Ben2010-Bold.woff) format('woff'),url(../fonts/Ben2010-Bold.svg#Ben) format('svg');font-weight:700}
-body{color:#333;font-size:16px;text-rendering:optimizeLegibility;font-family:Ben,sans-serif;-webkit-font-smoothing:antialiased;word-wrap:break-word;margin:0;padding:0;background-color:#fff}
+@font-face{font-family:PT-Sans;src:url(../fonts/PTS55F.otf);src:url(../fonts/PTS55F.eot?#iefix) format("embedded-opentype"),url(../fonts/PTS55F.woff) format("woff"),url(../fonts/PTS55F.svg#PT-Sans) format("svg");font-weight:400}
+@font-face{font-family:PT-Sans;src:url(../fonts/PTS75F.otf);src:url(../fonts/PTS75F.eot?#iefix) format("embedded-opentype"),url(../fonts/PTS75F.woff) format("woff"),url(../fonts/PTS75F.svg#PT-Sans) format("svg");font-weight:700}
+body{color:#333;font-size:16px;text-rendering:optimizeLegibility;font-family:PT-Sans,sans-serif;-webkit-font-smoothing:antialiased;word-wrap:break-word;margin:0;padding:0;background-color:#fff}
 h1,h2,h3,h4,h5,h6{margin:0;line-height:1.1em;font-weight:700}
 h1{font-size:1.875em;margin:0 0 10px}
 h2{font-size:1.5em}
@@ -56,14 +47,14 @@ address{font-style:normal;margin-bottom:.6em}
 .field--name-body ul{list-style-type:disc}
 .field--name-body ol,.field--name-body ul{padding-left:30px;line-height:1.5}
 .field--name-body h4.title{color:#00aeef;font-size:20px}
-.button,.buy-now-product a,.form-submit,.pager li a,.pager__item--current,.pane-tmobile-selfcare-renew-subscription a,.promotions-link a,.read_more a,.view-tmobile-shopping-cart-block .line-item-summary a{position:relative;font-weight:700;display:inline-block;max-width:100%;vertical-align:middle;padding:6px 30px 6px 12px;text-decoration:none;color:#fff;border:none;text-align:left;font-size:14px;line-height:normal;border-radius:5px;background:url(../images/arrow-white.svg) 100% 50%/24px 24px no-repeat #000}
-.button:hover,.buy-now-product a:hover,.form-submit:hover,.pager li a:hover,.pager__item--current:hover,.pane-tmobile-selfcare-renew-subscription a:hover,.promotions-link a:hover,.read_more a:hover,.view-tmobile-shopping-cart-block .line-item-summary a:hover{cursor:pointer;background-color:#333}
-.button--green,.view-phone-queues .read_more a,.view-tmobile-shopping-cart-block .line-item-summary a{background-color:#00cf3f}
+.button,.form-submit,.pager li a,.pager__item--current,.read_more a,.view-tmobile-shopping-cart-block .line-item-summary a{position:relative;font-weight:700;display:inline-block;max-width:100%;vertical-align:middle;padding:4px 6px;text-decoration:none;color:#fff;border:none;text-align:left;font-size:14px;line-height:normal;border-radius:4px;background:url(../images/arrow-white.svg) 100% 50%/24px 24px no-repeat #000}
+.button:hover,.form-submit:hover,.pager li a:hover,.pager__item--current:hover,.read_more a:hover,.view-tmobile-shopping-cart-block .line-item-summary a:hover{cursor:pointer;background-color:#333}
+.button--green,.view-phone-queues .read_more a,.view-tmobile-shopping-cart-block .line-item-summary a{background-color:#9FBD37}
 .button--green:hover,.view-phone-queues .read_more a:hover,.view-tmobile-shopping-cart-block .line-item-summary a:hover{background-color:#22DA5A}
-.button--blue,.pager__item--current,.promotions-link a{background-color:#00aeef}
-.button--blue:hover,.pager__item--current:hover,.promotions-link a:hover{background-color:#00cbef}
+.button--blue,.pager__item--current{background-color:#00aeef}
+.button--blue:hover,.pager__item--current:hover{background-color:#00cbef}
 .front .more-link a,.list-box__readmorelink,.pane-tmobile-blocks-contact-ben .customer-service,.pane-tmobile-user-invoice-overview ul a,.readmorelink,.views-field-nothing a{display:inline-block;margin-top:20px;background:url(../images/icons/arrow04.png) 100% -45px no-repeat;color:#00aeef;font-size:15px;line-height:1.35;padding-right:18px;text-decoration:underline}
-.button--large,.buy-now-product a,.read_more a,.view-tmobile-shopping-cart-block .line-item-summary a{font-size:20px;background-size:30px}
+.button--large,.read_more a,.view-tmobile-shopping-cart-block .line-item-summary a{font-size:20px;background-size:30px}
 .buttons .button{margin-bottom:15px;margin-right:15px}
 button,input,optgroup,select,textarea{font:inherit;color:inherit}
 button{overflow:visible}
@@ -76,7 +67,7 @@ textarea{overflow:auto}
 .form-text[disabled]{pointer-events:none;cursor:not-allowed}
 .form-text:hover{border-color:#666}
 .form-text:focus{outline:0;border-color:rgba(82,168,236,.8);box-shadow:0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(82,168,236,.6)}
-input[type=checkbox],input[type=radio]{margin:0;border:0;outline:0;opacity:0;position:absolute;overflow:hidden}
+input[type=radio],input[type=checkbox]{margin:0;border:0;outline:0;opacity:0;position:absolute;overflow:hidden}
 .form-checkbox,.form-radio{margin:0 .5em 0 0;cursor:pointer}
 .form-type-checkbox,.form-type-radio{position:relative}
 .form-type-checkbox .option,.form-type-radio .option{position:relative;display:inline-block;cursor:pointer;padding-top:8px;line-height:1.5em;width:auto}
@@ -117,7 +108,7 @@ html.js .form-autocomplete.throbbing{background-position:99% -13px}
 .promotion-color{position:absolute;top:-10px;left:-10px;display:table;width:40px;height:40px;color:#fff;border-radius:100%;-webkit-transform:rotate(-15deg);transform:rotate(-15deg)}
 .promotion-color span{display:table-cell;vertical-align:middle;height:100%;width:100%;padding:0 2px;text-align:center;font-size:12px;font-weight:700}
 .promotion-color.blauw{background-color:#00aeef}
-.promotion-color.groen{background-color:#00cf3f}
+.promotion-color.groen{background-color:#9FBD37}
 .promotion-color.oranje{background-color:#fab100}
 .promotion-color.zwart{background-color:#000}
 .promotion-color.wit{background-color:#fff;color:#00aeef;box-shadow:0 1px 3px rgba(0,0,0,.5)}
@@ -136,7 +127,7 @@ html.js .form-autocomplete.throbbing{background-position:99% -13px}
 .levertijd{display:inline-block;width:auto}
 .levertijd p{display:table-cell;vertical-align:middle;float:left;margin:0;font-size:14px;line-height:18px}
 .levertijd-kleur{display:block;float:left;width:18px;height:18px;border:1px solid #fff;border-radius:50%;margin-right:10px}
-.levertijd-kleur.groen{background-color:#00cf3f}
+.levertijd-kleur.groen{background-color:#9FBD37}
 .levertijd-kleur.oranje{background-color:#fab100}
 .menu{list-style:none;margin:0;padding-left:0}
 .list-check li{background:url(../images/icons/check01-blue.png) 0 4px no-repeat;line-height:24px;padding:0 0 0 22px;list-style:none}
@@ -144,9 +135,6 @@ html.js .form-autocomplete.throbbing{background-position:99% -13px}
 .list--benefit__item,.pane-phone-announcements .call_sms,.pane-phone-announcements .data_bundle,.view-phone-catalog .call_sms,.view-phone-catalog .data_bundle,.view-phone-queues .call_sms,.view-phone-queues .data_bundle{background:url(../images/plus.png) 0 2px no-repeat;padding-left:25px;margin-bottom:5px}
 .list--benefit__amount{font-weight:700;font-size:18px}
 .list--benefit__label{font-size:15px}
-.pane-tmobile-selfcare-renew-subscription ul li{position:relative;padding-left:25px;line-height:1.5}
-.pane-tmobile-selfcare-renew-subscription ul li:before{position:absolute;top:7px;left:3px;display:block;width:15px;height:3px;content:'';-webkit-transform:rotate(-45deg);transform:rotate(-45deg);background-color:#00aeef}
-.pane-tmobile-selfcare-renew-subscription ul li:after{position:absolute;top:8px;left:0;display:block;width:7px;height:3px;content:'';-webkit-transform:rotate(45deg);transform:rotate(45deg);background-color:#00aeef}
 dl{margin:20px 0;line-height:1.5}
 dt{font-weight:700}
 dt a{color:#00aeef;text-decoration:underline}
@@ -175,34 +163,10 @@ dd p{margin:0 0 20px}
 .table p+table{margin-top:20px}
 .table .total td{font-weight:700}
 .table table h3{font-size:1em}
-.mobile-nav-btn{display:block;padding-left:30px;font-size:.875em;color:#fff;font-weight:700;line-height:39px;left:10px;background-position:left center;background-repeat:no-repeat}
-.mobile-nav-btn.active,.mobile-nav-btn:focus,.mobile-nav-btn:hover{text-decoration:none;color:#fff}
-.mobile-nav-btn--open{position:absolute;transition:.5s left ease;z-index:1;background-image:url(../images/mobile-menu.png)}
-.mobile-nav-btn--close{position:relative;background-image:url(../images/mobile-menu-close.png)}
-.mobile-nav-btn--close:hover{color:#fff}
-.mobile-nav-animate .block--system-main-menu{left:0}
-.block--system-main-menu{overflow:auto;z-index:99;position:fixed;transition:.5s left ease;top:0;left:-280px;width:280px;background-color:#00aeef;height:100%;box-shadow:2px 0 3px rgba(0,0,0,.2)}
-.block--system-main-menu .menu__item{display:block;width:100%;list-style:none}
-.block--system-main-menu .menu__link{line-height:2.8em;font-weight:700;display:block;padding:0 10px;color:#fff}
-.block--system-main-menu .menu__link.active,.block--system-main-menu .menu__link:focus,.block--system-main-menu .menu__link:hover{color:#000;text-decoration:none}
-.block--system-main-menu .expanded>.menu__link{position:relative}
-.block--system-main-menu .expanded>.menu__link:before{position:absolute;top:20px;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(-45deg);transform:rotate(-45deg);background-color:#fff}
-.block--system-main-menu .expanded>.menu__link:after{position:absolute;top:20px;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(45deg);transform:rotate(45deg);background-color:#fff}
-.block--system-main-menu .expanded>.menu__link:before{right:20px;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s,-webkit-transform .3s}
-.block--system-main-menu .expanded>.menu__link:after{right:25px;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s,-webkit-transform .3s}
-.block--system-main-menu .expanded>.menu__link.open:before{-webkit-transform:rotate(45deg);transform:rotate(45deg)}
-.block--system-main-menu .expanded>.menu__link.open:after{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
-.block--system-main-menu .menu .menu{display:none}
-.block--system-main-menu .menu .menu .menu__link{padding-left:20px;border-bottom:1px solid #00aeef;background:#fff;color:#00aeef}
-.block--system-main-menu .menu .menu .expanded>.menu__link{position:relative}
-.block--system-main-menu .menu .menu .expanded>.menu__link:before{position:absolute;top:20px;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(-45deg);transform:rotate(-45deg);background-color:#00aeef}
-.block--system-main-menu .menu .menu .expanded>.menu__link:after{position:absolute;top:20px;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(45deg);transform:rotate(45deg);background-color:#00aeef}
-.block--system-main-menu .menu .menu .expanded>.menu__link:before{right:20px}
-.block--system-main-menu .menu .menu .expanded>.menu__link:after{right:25px}
-.block--system-main-menu .menu .menu .expanded>.menu__link.open:before{-webkit-transform:rotate(45deg);transform:rotate(45deg)}
-.block--system-main-menu .menu .menu .expanded>.menu__link.open:after{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
-.block--system-main-menu .menu .menu .menu .menu__link{background-color:#efefef;padding-left:40px;border-bottom-color:#d8d8d8;color:#666}
-.block--system-main-menu .menu .menu .menu .expanded>.menu__link:after,.block--system-main-menu .menu .menu .menu .expanded>.menu__link:before,.block--system-main-menu .menu .menu .menu .menu,.l-breadcrumbs,.section-klantenservice .pane-3{display:none}
+.block--system-main-menu .menu__item,.block--system-user-menu .menu__item,.block--thema-menu .menu__item{display:block;width:100%;list-style:none}
+.block--system-main-menu .menu__link,.block--system-user-menu .menu__link,.block--thema-menu .menu__link{line-height:44px;font-weight:700;display:block;padding:0 10px;color:#fff}
+.block--system-main-menu .menu__link.active,.block--system-main-menu .menu__link:focus,.block--system-main-menu .menu__link:hover,.block--system-user-menu .menu__link.active,.block--system-user-menu .menu__link:focus,.block--system-user-menu .menu__link:hover,.block--thema-menu .menu__link.active,.block--thema-menu .menu__link:focus,.block--thema-menu .menu__link:hover{color:#fff;text-decoration:none}
+.l-breadcrumbs,.section-klantenservice .pane-3{display:none}
 .faq-category-breadcrumbs,.l-breadcrumbs ul,.phone-detail-breadcrumbs{padding-left:10px;font-size:14px;margin-bottom:0}
 .faq-category-breadcrumbs li,.l-breadcrumbs ul li,.phone-detail-breadcrumbs li{display:inline-block;margin-right:5px}
 .faq-category-breadcrumbs .last,.l-breadcrumbs ul .last,.phone-detail-breadcrumbs .last{font-weight:700}
@@ -245,15 +209,15 @@ dd p{margin:0 0 20px}
 .tabs--primary li{float:left;margin-right:1em}
 .tabs--primary a{background-color:#efefef;padding:.3em .8em;display:block}
 .tabs--primary .active a{background-color:#00aeef;color:#fff;font-weight:700}
-.list-box,.pane-tmobile-selfcare-self-control-menu-block .column,.section-ikben .pane-menu-block-3{width:100%;max-width:300px}
+.list-box,.section-ikben .pane-menu-block-3{width:100%;max-width:300px}
 .list-box__title,.section-faq-category .pane-siblingterms .term-image-title,.section-ikben .pane-menu-block-3 .pane-title,.view-faq-blocks .views-field-name-1{font-size:20px;line-height:1.5;padding-bottom:12px;font-weight:700}
 .list-box__icon,.view-faq-blocks .views-field-field-picture{float:left;padding:4px 0 0}
 .list-box__icon img,.view-faq-blocks .views-field-field-picture img{margin-right:15px;height:19px;width:auto}
-.list-box__list,.pane-tmobile-selfcare-self-control-menu-block .column ul,.section-faq-category .pane-siblingterms ul{margin:0}
-.list-box__list-item a,.pane-tmobile-selfcare-self-control-menu-block .column ul a,.section-faq-category .pane-siblingterms a,.section-ikben .pane-menu-block-3 .menu__link,.view-faq-blocks .view-faq .views-row a{margin:10px 0;display:block;padding-left:15px;font-size:14px;position:relative}
-.list-box__list-item a:after,.list-box__list-item a:before,.pane-tmobile-selfcare-self-control-menu-block .column ul a:after,.pane-tmobile-selfcare-self-control-menu-block .column ul a:before,.section-faq-category .pane-siblingterms a:after,.section-faq-category .pane-siblingterms a:before,.section-ikben .pane-menu-block-3 .menu__link:after,.section-ikben .pane-menu-block-3 .menu__link:before,.view-faq-blocks .view-faq .views-row a:after,.view-faq-blocks .view-faq .views-row a:before{position:absolute;display:inline-block;left:2px;width:2px;height:8px;top:2px;content:'';background:#00aeef}
-.list-box__list-item a:before,.pane-tmobile-selfcare-self-control-menu-block .column ul a:before,.section-faq-category .pane-siblingterms a:before,.section-ikben .pane-menu-block-3 .menu__link:before,.view-faq-blocks .view-faq .views-row a:before{-webkit-transform:rotate(135deg);transform:rotate(135deg)}
-.list-box__list-item a:after,.pane-tmobile-selfcare-self-control-menu-block .column ul a:after,.section-faq-category .pane-siblingterms a:after,.section-ikben .pane-menu-block-3 .menu__link:after,.view-faq-blocks .view-faq .views-row a:after{-webkit-transform:rotate(-135deg);transform:rotate(-135deg);top:7px}
+.list-box__list,.section-faq-category .pane-siblingterms ul{margin:0}
+.list-box__list-item a,.section-faq-category .pane-siblingterms a,.section-ikben .pane-menu-block-3 .menu__link,.view-faq-blocks .view-faq .views-row a{margin:10px 0;display:block;padding-left:15px;font-size:14px;position:relative}
+.list-box__list-item a:after,.list-box__list-item a:before,.section-faq-category .pane-siblingterms a:after,.section-faq-category .pane-siblingterms a:before,.section-ikben .pane-menu-block-3 .menu__link:after,.section-ikben .pane-menu-block-3 .menu__link:before,.view-faq-blocks .view-faq .views-row a:after,.view-faq-blocks .view-faq .views-row a:before{position:absolute;display:inline-block;left:2px;width:2px;height:8px;top:2px;content:'';background:#00aeef}
+.list-box__list-item a:before,.section-faq-category .pane-siblingterms a:before,.section-ikben .pane-menu-block-3 .menu__link:before,.view-faq-blocks .view-faq .views-row a:before{-webkit-transform:rotate(135deg);transform:rotate(135deg)}
+.list-box__list-item a:after,.section-faq-category .pane-siblingterms a:after,.section-ikben .pane-menu-block-3 .menu__link:after,.view-faq-blocks .view-faq .views-row a:after{-webkit-transform:rotate(-135deg);transform:rotate(-135deg);top:7px}
 .list-box__list-item a.active,.section-faq-category .pane-siblingterms .active,.section-ikben .pane-menu-block-3 .menu__link.active{font-weight:700;color:#00aeef}
 .section-faq-category .pane-siblingterms .term-image{float:left;margin-right:15px;height:19px;width:auto}
 .block--tmobile-blocks-faults-maintenance,.panels-generic-content-sidebar-inside .panel-pane,.section-verlengen .box{border:1px solid #d8d8d8;margin-bottom:25px;padding:15px;line-height:1.35em;font-size:14px}
@@ -321,31 +285,6 @@ dd p{margin:0 0 20px}
 .panels-generic-content-inside p+table,.panels-generic-content-top-inside p+table{margin-top:20px}
 .panels-generic-content-inside .total td,.panels-generic-content-top-inside .total td{font-weight:700}
 .panels-generic-content-inside table h3,.panels-generic-content-top-inside table h3{font-size:16px}
-#one-off-payment-table-options{width:100%;margin-top:18px;text-align:right;background-color:transparent}
-#one-off-payment-table-options th{font-weight:400;padding-right:10px;text-align:right;vertical-align:bottom;background-color:transparent;color:#000;font-size:12px}
-#one-off-payment-table-options th:nth-child(2),#one-off-payment-table-options th:nth-child(3),#one-off-payment-table-options th:nth-child(4){border-right:1px solid #d8d8d8}
-#one-off-payment-table-options th:nth-child(4){display:none}
-#one-off-payment-table-options tr:nth-child(even) td{background-color:transparent}
-#one-off-payment-table-options .attribute_wrapper{border:1px solid #d8d8d8;background-color:#fff}
-#one-off-payment-table-options .attribute_wrapper td{font-size:16px;font-weight:700;position:relative;height:38px;padding:5px 10px;border-right:1px solid #d8d8d8}
-#one-off-payment-table-options .attribute_wrapper td.oneoff-option-field{border-right:none}
-#one-off-payment-table-options .attribute_wrapper.selectedrow,#one-off-payment-table-options .attribute_wrapper:hover{cursor:pointer}
-#one-off-payment-table-options .attribute_wrapper.selectedrow td,#one-off-payment-table-options .attribute_wrapper:hover td{background-color:#00aeef}
-#one-off-payment-table-options .attribute_wrapper.selectedrow td .price,#one-off-payment-table-options .attribute_wrapper:hover td .price{color:#fff}
-#one-off-payment-table-options .attribute_wrapper.selectedrow .oneoff-option-field:before{background:url(../images/box-radio-blue.png) -151px 0 no-repeat}
-#one-off-payment-table-options .attribute_wrapper.selectedrow .bundle-notification{display:block;width:100%;padding:1em;border-right:1px solid #d8d8d8;border-left:1px solid #d8d8d8;background-color:#fff}
-#one-off-payment-table-options .attribute_wrapper.selectedrow .bundle-notification p{margin:0}
-#one-off-payment-table-options .oneoff-option-field{width:5%;min-width:35px}
-#one-off-payment-table-options .oneoff-option-field:before{line-height:38px;position:relative;top:2px;display:inline-block;width:20px;height:20px;margin:0;content:'';background:url(../images/box-radio-blue.png) -109px 0 no-repeat}
-#one-off-payment-table-options .price{color:#333}
-#one-off-payment-table-options .price-oneoff{width:20%}
-#one-off-payment-table-options .price-device_price{width:25%}
-#one-off-payment-table-options .price_discount{display:none}
-#one-off-payment-table-options .price_discount .price{color:#666}
-#one-off-payment-table-options .price-per-month{width:50%}
-#one-off-payment-table-options .price-per-month .price{font-size:18px;color:#00aeef}
-#one-off-payment-table-options .is-lowestprice{font-size:12px;line-height:20px;position:absolute;right:86px;top:6px;display:none;width:auto;padding:2px 8px;text-align:center;text-transform:uppercase;color:#fff;background:#000}
-.oneoff-payment-info h3{padding-left:40px;color:#00aeef;background-image:url(../images/icons/icon-one-off.png);background-repeat:no-repeat;background-position:left center}
 #map_background{opacity:.8!important;background-color:#0b0b0b!important}
 #map{width:780px;min-width:780px;height:700px;padding:20px;background-color:#fff}
 #map ul{padding-left:0}
@@ -365,102 +304,30 @@ html.popup_visible{overflow:hidden}
 .pager__item--current{background-image:none;padding-right:12px;text-align:center;min-width:42px;height:42px;line-height:30px}
 .pager__item--current:hover{cursor:default;background-color:#00aeef}
 .pager__item--next,.pager__item--previous{display:inline-block}
-.pane-tmobile-blocks-homepage-advantage{margin:25px 0}
-.pane-tmobile-blocks-homepage-advantage .pane-title{font-size:31px}
-.pane-tmobile-blocks-homepage-advantage .pane-title span{color:#000}
-.pane-tmobile-blocks-homepage-advantage ul{margin:20px 0}
-.pane-tmobile-blocks-homepage-advantage ul li{display:table;padding-right:16px;padding-bottom:16px}
-.pane-tmobile-blocks-homepage-advantage ul li>a{display:table-cell;padding:2px 18px 2px 0}
-.pane-tmobile-blocks-homepage-advantage ul li>a img{width:35px;max-width:none}
-.pane-tmobile-blocks-homepage-advantage ul li .info{font-size:18px;font-weight:700;display:table-cell;padding:2px 0;vertical-align:top}
-.pane-tmobile-blocks-homepage-advantage ul li .info a{display:block;color:#00aeef}
-.pane-tmobile-blocks-homepage-advantage ul li .info a:hover{text-decoration:none}
-.pane-tmobile-phone-package-phonepage-advantage{padding:15px 10px}
-.pane-tmobile-phone-package-phonepage-advantage h3{font-size:21px;line-height:1.2em;margin:0;color:#000}
-.pane-tmobile-phone-package-phonepage-advantage h3 .brandname{color:#00aeef}
-.pane-tmobile-phone-package-phonepage-advantage ul{width:100%;margin:10px 0 0}
-.pane-tmobile-phone-package-phonepage-advantage li{display:block;margin-bottom:10px}
-.pane-tmobile-phone-package-phonepage-advantage a{position:relative;padding-left:25px;display:block;font-size:14px;text-decoration:underline}
-.pane-tmobile-phone-package-phonepage-advantage a:before{position:absolute;top:7px;left:3px;display:block;width:15px;height:3px;content:'';-webkit-transform:rotate(-45deg);transform:rotate(-45deg);background-color:#00aeef}
-.pane-tmobile-phone-package-phonepage-advantage a:after{position:absolute;top:8px;left:0;display:block;width:7px;height:3px;content:'';-webkit-transform:rotate(45deg);transform:rotate(45deg);background-color:#00aeef}
-.pane-tmobile-phone-package-phonepage-advantage a:hover{text-decoration:none}
-.pane-tmobile-selfcare-self-control-menu-block .column{margin-bottom:20px}
-.pane-tmobile-selfcare-self-control-menu-block .column h3{padding-left:22px;background-repeat:no-repeat;background-position:0 4px;background-size:auto 18px}
-.pane-tmobile-selfcare-self-control-menu-block .col-1 h3{background-image:url(../images/icons/currency.png);background-size:auto 16px}
-.pane-tmobile-selfcare-self-control-menu-block .col-2 h3{background-image:url(../images/icons/phone05.png)}
-.pane-tmobile-selfcare-self-control-menu-block .col-3 h3{background-image:url(../images/icons/gegevens.png)}
-.tmobile-selfcare-contact-settings-form .vertical-tabs{border:0;margin:1em 0 3em;position:relative}
-.tmobile-selfcare-contact-settings-form .vertical-tabs-list{width:100%;margin:0;border-top:0}
-.tmobile-selfcare-contact-settings-form .vertical-tabs-panes{clear:both;border:1px solid #00aeef}
-.tmobile-selfcare-contact-settings-form .vertical-tabs-panes .form-type-radios>label{font-size:1em;line-height:1.5;margin:15px 0 0;font-weight:700}
-.tmobile-selfcare-contact-settings-form .vertical-tab-button{border:0;display:inline-block;margin:0 3px 0 0;text-align:center;min-width:20%}
-.tmobile-selfcare-contact-settings-form .vertical-tab-button a{padding-left:10px;padding-right:10px}
-.tmobile-selfcare-contact-settings-form .vertical-tab-button strong{font-weight:400}
-.tmobile-selfcare-contact-settings-form .vertical-tab-button.selected{background:#00aeef}
-.tmobile-selfcare-contact-settings-form .vertical-tab-button.selected strong{color:#fff;font-weight:700}
-.pane-node-field-phone-sale-time-info .pane-title{background-image:none!important;padding:9px 15px!important}
-.pane-node-field-phone-sale-time-info .field--name-field-phone-sale-time-info{background:url(../images/icons/warning.png) 15px 20px no-repeat;padding:5px 15px 15px 43px}
-.block--search-form{display:none}
-.search-block-form{position:relative}
-.search-block-form .form-text{border:none;width:126px}
-.search-block-form .form-item label{width:0}
-.search-block-form .form-submit{display:inline-block;padding:14px 0 0;width:14px;min-width:0;height:0;overflow:hidden;position:absolute;right:8px;top:50%;margin-top:-7px;background:url(../images/icon-search.svg) 0 0/14px 14px no-repeat}
-.block--tmobile-blocks-login{background:#000;border-radius:0 0 5px 5px;padding:7px 10px;font-weight:700;display:inline-block;float:right;font-size:14px}
-.block--tmobile-blocks-login .ben-login{display:inline-block;margin-left:4px;color:#00aeef}
-.in-i-login{display:inline-block;color:#fff}
-.in-i-login:hover{color:#fff}
-.block--tmobile-blocks-login-logout{background:#000;border-radius:0 0 5px 5px;padding:7px 10px;font-weight:700;display:inline-block;float:right;font-size:14px}
-.user-greetings{display:none;margin-right:4px;color:#fff}
-.user-greetings:hover{color:#fff}
-.user-selfcare{display:none;position:relative;text-transform:capitalize;color:#00aeef}
-.ben-logout,.ben-logout:hover{color:#fff}
-.block--bean-ben-jouw-slimste-keus,.block--bean-mijn-beste-deal,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item{overflow:hidden;font-size:14px}
-.block--bean-ben-jouw-slimste-keus h2,.block--bean-mijn-beste-deal h2,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item h2{font-size:34px;color:#00aeef;margin-bottom:0}
-.block--bean-ben-jouw-slimste-keus a:hover,.block--bean-mijn-beste-deal a:hover,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item a:hover{text-decoration:none}
-.block--bean-ben-jouw-slimste-keus .custom-subtitle,.block--bean-mijn-beste-deal .custom-subtitle,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .custom-subtitle{margin-bottom:15px}
-.block--bean-ben-jouw-slimste-keus .block-image,.block--bean-mijn-beste-deal .block-image,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .block-image{float:left;margin-right:20px;position:relative}
-.block--bean-ben-jouw-slimste-keus .block-content,.block--bean-mijn-beste-deal .block-content,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .block-content{overflow:hidden}
-.block--bean-ben-jouw-slimste-keus .block-content>a,.block--bean-mijn-beste-deal .block-content>a,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .block-content>a{color:#000}
-.block--bean-ben-jouw-slimste-keus .block-content>a h3,.block--bean-mijn-beste-deal .block-content>a h3,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .block-content>a h3{font-size:22px;margin-bottom:0}
-.block--bean-ben-jouw-slimste-keus .list-plus li,.block--bean-mijn-beste-deal .list-plus li,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .list-plus li{position:relative;padding-left:20px}
-.block--bean-ben-jouw-slimste-keus .list-plus li:before,.block--bean-mijn-beste-deal .list-plus li:before,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .list-plus li:before{position:absolute;top:1px;left:5px;width:3px;height:13px;content:'';background-color:#00aeef}
-.block--bean-ben-jouw-slimste-keus .list-plus li:after,.block--bean-mijn-beste-deal .list-plus li:after,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .list-plus li:after{position:absolute;top:6px;left:0;width:13px;height:3px;content:'';background-color:#00aeef}
-.block--bean-ben-jouw-slimste-keus .list-plus .field__label,.block--bean-mijn-beste-deal .list-plus .field__label,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .list-plus .field__label{display:none}
-.block--bean-ben-jouw-slimste-keus .list-plus .amount,.block--bean-ben-jouw-slimste-keus .list-plus .validdata,.block--bean-mijn-beste-deal .list-plus .amount,.block--bean-mijn-beste-deal .list-plus .validdata,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .list-plus .amount,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .list-plus .validdata{font-weight:700}
-.block--bean-ben-jouw-slimste-keus .field--type-commerce-price,.block--bean-mijn-beste-deal .field--type-commerce-price,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .field--type-commerce-price{font-size:50px;background:0 0;width:auto;color:#00aeef;text-align:left;padding:0;height:auto}
-.block--bean-ben-jouw-slimste-keus .field--type-commerce-price a,.block--bean-mijn-beste-deal .field--type-commerce-price a,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .field--type-commerce-price a{color:#00aeef}
-.block--bean-ben-jouw-slimste-keus .field--type-commerce-price .price_decimal,.block--bean-mijn-beste-deal .field--type-commerce-price .price_decimal,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .field--type-commerce-price .price_decimal{font-size:26px}
-.block--bean-ben-jouw-slimste-keus .field--type-commerce-price .price_decimal em,.block--bean-mijn-beste-deal .field--type-commerce-price .price_decimal em,.pane-tmobile-selfcare-renew-subscription-top-deal .block-item .field--type-commerce-price .price_decimal em{top:-12px;color:#000}
-.buy-now-product{padding:20px 0}
-.block--bean-mijn-beste-deal{max-width:360px;padding:10px 20px;background-color:#fff}
-.block--bean-mijn-beste-deal .product-color{font-size:14px;color:#999}
-.pane-tmobile-selfcare-renew-subscription-top-deal .block-item{padding:15px 15px 30px;border:1px solid #efefef;background:url(../images/4G_promo.png) top right no-repeat}
-.block--bean-ben-jouw-slimste-keus{max-width:360px;background-color:#00aeef;padding:10px 20px}
-.block--bean-ben-jouw-slimste-keus .custom-subtitle a,.block--bean-ben-jouw-slimste-keus h2{color:#000}
-.block--bean-ben-jouw-slimste-keus .list-plus li:after,.block--bean-ben-jouw-slimste-keus .list-plus li:before{background-color:#000}
-.block--bean-ben-jouw-slimste-keus .field--type-commerce-price{color:#fff}
-.bean-complex-image-advertisement{background-size:cover;font-weight:700}
-.bean-complex-image-advertisement .content{position:relative;min-height:315px;width:100%}
-.bean-complex-image-advertisement .trademark{margin-left:-2px}
-.promotion-title{position:absolute;top:0;padding:15px;color:#fff;line-height:35px}
-.promotion-title p{font-size:26px;margin:0}
-.promotions-content{background-color:#fff;position:absolute;right:0;top:155px;width:160px;max-width:100%;padding:5px 15px}
-.promotions-content p{margin:0;font-size:16px}
-.promotions-link{position:absolute;bottom:20px;margin:0;right:15px}
-.promotions-link a{font-size:20px;padding:3px 12px;background-image:none}
-.pane-tmobile-blocks-call-ben ul{padding:10px 0;list-style:none;font-size:14px;line-height:1.5em}
-.pane-tmobile-blocks-call-ben li:first-child{background:url(../images/icons/phone05.png) no-repeat;font-size:18px;line-height:25px;font-weight:700;padding:5px 15px 15px 30px}
-.pane-tmobile-blocks-call-ben li{padding-left:30px}
-.l-header{width:100%;height:220px;background:url(../images/top-image-mobile.jpg) 50%/cover no-repeat}
-.front .l-header,.page-checkout .l-header,.page-thank-you .l-header{height:auto}
-.l-header:before{position:absolute;display:block;width:100%;height:39px;content:'';background:#00aeef}
-.l-header a:hover{text-decoration:none}
-body.no-header-image .l-header{background-image:none;height:78px}
-body.not-logged-in.no-header-image .l-header,body.page-telefoons.no-header-image .l-header{height:39px}
-.site-name{margin:0 auto;position:relative;width:50px;z-index:12}
-.site-name .logo{font-size:1.375em;font-weight:700;line-height:39px;display:block;text-decoration:none;color:#fff}
-.site-name .logo:hover{color:#000}
-.l-region--header{position:absolute;right:0;top:0}
+.block--search{position:relative;margin:10px 15px}
+.block--search .form-text{padding-right:50px;width:100%;height:36px;border:0}
+.block--search .form-submit{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);width:42px;height:36px;border-radius:0 3px 3px 0;right:0;background:url(../images/icon-search.svg) 50%/50% no-repeat #000;font-size:0;text-indent:-999em}
+.desktop-search-btn{display:none}
+.l-header{width:100%;height:42px;background:rgba(0,0,0,.3);color:#fff;position:fixed;z-index:99}
+.menu-is-open .l-header{background-color:#555}
+.site-name{float:left;position:relative;width:144px;z-index:1;background:url(../images/brandcolors.svg) 0 0/auto 42px no-repeat;padding-left:48px;overflow:hidden}
+.site-name .logo{font-size:0;width:110px;height:42px;background:url(../images/cpnblogo.svg) 10px/80px no-repeat #fff;display:block}
+.shoppingcart{float:left;width:90px;font-size:11px;overflow:hidden;display:block;color:#fff}
+.shoppingcart_no{float:left;position:relative;width:35px;height:42px;font-size:10px;background:url(../images/icon-cart.svg) 5px/70% no-repeat}
+.shoppingcart_no span{background-color:#9FBD37;border-radius:8px;display:inline-block;padding:1px 3px;position:absolute;top:4px;right:0;font-weight:700}
+.shoppingcart_amount{float:left;width:54px;height:42px;line-height:16px;padding:4px 0 4px 2px}
+.mobile-nav-btn{display:block;position:absolute;right:0;height:30px;line-height:30px;padding-right:10px;top:50%;bottom:auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.mobile-nav-btn .menu-text{display:inline-block;color:#fff;font-weight:700;font-size:1em;text-transform:uppercase;padding-left:22px;letter-spacing:-.03em}
+.mobile-nav-btn .menu-icon{-webkit-transform:translateX(0) translateY(-50%);transform:translateX(0) translateY(-50%);transition:background-color .3s;height:2px;display:inline-block;position:absolute;width:18px;left:0;top:50%;bottom:auto;background-color:#fff}
+.mobile-nav-btn .menu-icon:after,.mobile-nav-btn .menu-icon:before{content:'';position:absolute;background-color:#fff;width:100%;height:100%;right:0;-webkit-backface-visibility:hidden;backface-visibility:hidden;transition:top .3s,background-color 0s,-webkit-transform .3s;transition:transform .3s,top .3s,background-color 0s;transition:transform .3s,top .3s,background-color 0s,-webkit-transform .3s}
+.mobile-nav-btn .menu-icon:before{top:-5px}
+.mobile-nav-btn .menu-icon:after{top:5px}
+.mobile-nav-btn.active,.mobile-nav-btn:focus,.mobile-nav-btn:hover{text-decoration:none;color:#fff}
+.is-clicked .menu-icon{background-color:rgba(255,255,255,0)}
+.is-clicked .menu-icon:before{top:0;-webkit-transform:rotate(135deg);transform:rotate(135deg)}
+.is-clicked .menu-icon:after{top:0;-webkit-transform:rotate(225deg);transform:rotate(225deg)}
+.l-region--header{position:fixed;left:0;top:0;height:100%;width:100%;background:rgba(0,0,0,.85);z-index:2;text-align:center;padding:42px 0;-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:auto;-webkit-overflow-scrolling:touch;-webkit-transform:translateY(-100%);transform:translateY(-100%);transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;transition-duration:.4s}
+.menu-is-open .l-region--header{-webkit-transform:translateY(0);transform:translateY(0)}
 .l-footer{font-size:13px;line-height:1.5;background-color:#efefef;margin-top:39px}
 .footer-top{padding:15px}
 .footer-top .block{margin-bottom:25px}
@@ -577,7 +444,7 @@ body.not-logged-in.no-header-image .l-header,body.page-telefoons.no-header-image
 .view-tmobile-shopping-cart-block .cart-table{width:100%}
 .view-tmobile-shopping-cart-block .boldblue{font-weight:700;color:#00aeef;font-size:14px}
 .view-tmobile-shopping-cart-block .blue-bundle td{color:#00aeef;font-weight:700}
-.view-tmobile-shopping-cart-block .green{color:#00cf3f}
+.view-tmobile-shopping-cart-block .green{color:#9FBD37}
 .view-tmobile-shopping-cart-block .basket-onetime{margin-top:25px}
 .view-tmobile-shopping-cart-block .basket-onetime th{padding-top:15px;border-top:1px solid #d8d8d8}
 .view-tmobile-shopping-cart-block .list-plus.is-bluetheme{margin:5px 0 15px;padding:0!important}
@@ -597,7 +464,7 @@ body.not-logged-in.no-header-image .l-header,body.page-telefoons.no-header-image
 .view-tmobile-shopping-cart-block .line-item-summary,.view-tmobile-shopping-cart-block .line-item-summary-checkout{width:100%;margin:0;padding:0}
 .view-tmobile-shopping-cart-block .line-item-summary a,.view-tmobile-shopping-cart-block .line-item-summary-checkout a{width:100%;margin:0;color:#fff;text-decoration:none}
 .view-tmobile-shopping-cart-block .line-item-summary a.disabled,.view-tmobile-shopping-cart-block .line-item-summary-checkout a.disabled{background-image:none;background-color:#efefef;color:#d8d8d8;cursor:default}
-.view-tmobile-shopping-cart-block .line-item-summary a:hover,.view-tmobile-shopping-cart-block .line-item-summary-checkout a:hover{background-color:#00cf3f}
+.view-tmobile-shopping-cart-block .line-item-summary a:hover,.view-tmobile-shopping-cart-block .line-item-summary-checkout a:hover{background-color:#9FBD37}
 .view-tmobile-shopping-cart-block .line-item-summary a:hover.disabled,.view-tmobile-shopping-cart-block .line-item-summary-checkout a:hover.disabled{color:#d8d8d8;background-color:#efefef;background-image:none}
 .view-tmobile-shopping-cart-block .additions td{font-size:13px;padding:2px 10px}
 .checkout-cart-text,.pane-tmobile-blocks-return-policy{color:#777;font-weight:400;font-size:12px;line-height:20px;text-align:center;border:1px solid #d8d8d8;border-top:medium none!important;margin-top:-1px!important;padding:5px 10px 16px}
@@ -628,33 +495,16 @@ body.not-logged-in.no-header-image .l-header,body.page-telefoons.no-header-image
 .view-display-id-sim_only_cart_block tfoot tr .alignRight{padding-left:0;border-top-right-radius:5px;border-bottom-right-radius:5px}
 .block--tmobile-blocks-checkout-page-cart .block__title{background-color:#00aeef;background-image:url(../images/shoppingcart04.png);background-repeat:no-repeat;background-position:10px center;color:#fff;font-size:1.125em;font-weight:700;line-height:1.25em;padding:9px 15px 9px 45px}
 .block--tmobile-blocks-checkout-page-cart .cart-contents{padding:15px 0;border-right:1px solid #d8d8d8;border-left:1px solid #d8d8d8}
-@media screen and (min-width:45em){.panels-generic-content-top-middle-pane{max-width:60em;margin:0 auto}
-.panels-generic-content-top-middle-pane-inside{width:74%;float:left;margin-right:2.9%}
+@media screen and (min-width:45em){.l-main{padding-top:80px}
 .node-type-list dt{float:left;width:260px;overflow:hidden;clear:left;text-align:right;text-overflow:ellipsis;white-space:nowrap}
 .node-type-list dd{margin-left:280px;padding-top:2px}
 .table{display:table}
 .table td{padding:10px 5px}
-.logged-in .menu__link[href$="/inloggen"],.mobile-nav-btn{display:none}
-.block--system-main-menu{position:absolute;padding-left:70px;left:0;display:block;overflow:visible;width:auto;height:auto;background-color:transparent;box-shadow:none;z-index:11}
-.block--system-main-menu:after,.block--system-main-menu:before{content:'';display:table}
-.block--system-main-menu:after{clear:both}
-.block--system-main-menu .menu__item{display:inline-block;width:auto}
-.block--system-main-menu .menu__link{line-height:39px}
-.block--system-main-menu .menu .menu{display:block;position:absolute;top:100%;left:0;width:45em;padding-left:20px;background-color:#000}
-.block--system-main-menu .menu .menu .menu__item{float:left;margin-right:20px;position:relative}
-.block--system-main-menu .menu .menu .menu__link{padding-left:10px;border-bottom:0;background:0 0;color:#fff}
-.block--system-main-menu .menu .menu .menu__link.active,.block--system-main-menu .menu .menu .menu__link:focus,.block--system-main-menu .menu .menu .menu__link:hover{color:#00aeef}
-.block--system-main-menu .menu .menu .expanded>.menu__link{position:relative;padding-right:20px}
-.block--system-main-menu .menu .menu .expanded>.menu__link:before{position:absolute;top:20px;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(-45deg);transform:rotate(-45deg);background-color:#fff}
-.block--system-main-menu .menu .menu .expanded>.menu__link:after{position:absolute;top:20px;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(45deg);transform:rotate(45deg);background-color:#fff}
-.block--system-main-menu .menu .menu .expanded>.menu__link:before{right:0}
-.block--system-main-menu .menu .menu .expanded>.menu__link:after{right:5px}
-.block--system-main-menu .menu .menu .expanded:hover>.menu{display:block}
-.block--system-main-menu .menu .menu .menu{display:none;left:0;top:100%;width:12em;padding-left:0}
-.block--system-main-menu .menu .menu .menu .menu__item{display:block;float:none;margin-right:0}
-.block--system-main-menu .menu .menu .menu .menu__link{background:0;padding:0 10px;color:#fff}
-.block--system-main-menu .menu .menu .menu .menu__link.active,.block--system-main-menu .menu .menu .menu .menu__link:focus,.block--system-main-menu .menu .menu .menu .menu__link:hover{color:#00aeef}
-.block--system-main-menu .menu .menu .menu .expanded:hover .menu{display:none}
+.block--thema-menu{overflow:hidden;padding-right:180px}
+.block--thema-menu .menu{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}
+.block--thema-menu .menu__item{width:auto;display:inline-block;border-right:1px solid rgba(255,255,255,.5);-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}
+.block--thema-menu .menu__item:last-child{border-right-width:0}
+.block--thema-menu .menu__link{line-height:70px;font-size:13px;text-align:center}
 .l-breadcrumbs,.section-klantenservice .pane-3{display:block;max-width:60em;margin:0 auto}
 .l-highlighted{padding-bottom:60px;background:url(../images/top-image-home.jpg) 15%/cover no-repeat}
 .l-region--highlighted{width:675px;float:right}
@@ -673,32 +523,15 @@ body.not-logged-in.no-header-image .l-header,body.page-telefoons.no-header-image
 .form-radios{display:inline-block}
 .panels-generic-content-inside table,.panels-generic-content-top-inside table{display:table}
 .panels-generic-content-inside td,.panels-generic-content-top-inside td{padding:10px 5px}
-#one-off-payment-table-options th:nth-child(4){display:table-cell}
-#one-off-payment-table-options .price-oneoff{width:15%}
-#one-off-payment-table-options .price-device_price{width:20%}
-#one-off-payment-table-options .price_discount{display:table-cell;width:20%}
-#one-off-payment-table-options .price-per-month{width:40%}
 .pager-ellipsis,.pager__item,.pager__item--first,.pager__item--last{display:inline-block}
-.pane-tmobile-blocks-homepage-advantage ul{display:table;width:100%}
-.pane-tmobile-blocks-homepage-advantage ul li{display:table-cell;border-right:1px solid #000}
-.pane-tmobile-blocks-homepage-advantage ul li>a{padding-left:38px}
-.pane-tmobile-blocks-homepage-advantage ul li:first-child>a{padding-left:23px}
-.pane-tmobile-blocks-homepage-advantage ul li:last-child{border-right:none}
-.pane-tmobile-phone-package-phonepage-advantage ul{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
-.pane-tmobile-phone-package-phonepage-advantage li{display:inline-block;margin-right:10px}
-.pane-tmobile-selfcare-self-control-menu-block .column{display:inline-block;vertical-align:top;width:32%}
-.pane-tmobile-selfcare-self-control-menu-block .column+.column{margin-left:2%}
-.tmobile-selfcare-contact-settings-form .vertical-tab-button a{font-size:14px}
-.block--search-form{display:inline-block;margin-top:4px;margin-right:11px}
-.block--tmobile-blocks-login,.block--tmobile-blocks-login-logout{font-size:16px}
-.user-greetings,.user-selfcare{display:inline}
-.ben-logout{border-left:1px solid #fff;margin-left:7px;padding-left:6px}
-.block--bean-mijn-beste-deal{width:360px}
-.logged-in .block--bean-mijn-beste-deal{margin-top:39px}
-.block--bean-ben-jouw-slimste-keus{width:315px}
-.logged-in .block--bean-ben-jouw-slimste-keus{margin-top:39px}
-.l-header{background-image:url(../images/top-image.jpg);background-position:15% 13%}
-.site-name{float:left;width:auto}
+.l-header{height:70px}
+.site-name{width:235px;background-size:auto 70px;padding-left:80px}
+.site-name .logo{width:155px;height:70px;background-size:135px auto}
+.shoppingcart{background-color:rgba(0,0,0,.2);position:absolute;float:none;right:90px;top:0}
+.shoppingcart_no{height:70px}
+.shoppingcart_no span{top:16px}
+.shoppingcart_amount{padding-top:16px}
+.l-region--header{padding:80px 0}
 .footer-top{padding:30px 56px 0}
 .footer-top .block{float:left;width:25%;margin-bottom:0}
 .l-region--footer-bottom{margin:25px 56px 0}
@@ -721,17 +554,11 @@ body.not-logged-in.no-header-image .l-header,body.page-telefoons.no-header-image
 .flexbox .col-tab-no-title{margin-top:44px}
 .flexbox .col-tab-last{padding-right:0}
 .flexbox .col-tab-3{-webkit-flex:1 1 25%;-ms-flex:1 1 25%;flex:1 1 25%}
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.flexbox .col-tab-3{max-width:25%}}
 .flexbox .col-tab-4{-webkit-flex:1 0 33.33333%;-ms-flex:1 0 33.33333%;flex:1 0 33.33333%}
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.flexbox .col-tab-4{max-width:33.33333%}}
 .flexbox .col-tab-6{-webkit-flex:1 0 50%;-ms-flex:1 0 50%;flex:1 0 50%}
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.flexbox .col-tab-6{max-width:50%}}
 .flexbox .col-tab-8{-webkit-flex:1 0 66.66667%;-ms-flex:1 0 66.66667%;flex:1 0 66.66667%}
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.flexbox .col-tab-8{max-width:66.66667%}}
 .flexbox .col-tab-9{-webkit-flex:1 0 75%;-ms-flex:1 0 75%;flex:1 0 75%}
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.flexbox .col-tab-9{max-width:75%}}
 .flexbox .col-tab-12{-webkit-flex:1 1 100%;-ms-flex:1 1 100%;flex:1 1 100%}
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.flexbox .col-tab-12{max-width:100%}}
 .page-phone .attributes,.page-student .attributes,.pane-tmobile-selfcare-renew-phone-package li:first-child .attributes{width:78%;float:right}
 .page-phone .panels-generic-content-top-inside .product_image,.page-student .panels-generic-content-top-inside .product_image,.pane-tmobile-selfcare-renew-phone-package li:first-child .product_image{width:20%;float:left}
 .commerce-add-to-cart .form-type-radios,.tmobile-selfcare-renew-subscription-form .form-type-radios{display:block}
@@ -744,25 +571,39 @@ body.not-logged-in.no-header-image .l-header,body.page-telefoons.no-header-image
 .tmobile-selfcare-personal-info-form .form-item label{display:table-cell;margin-right:10px;width:291px}
 .tmobile-selfcare-personal-info-form .form-item{display:table}
 .pane-tmobile-user-invoice-overview .amount-graph,.pane-tmobile-user-invoice-overview .dundle-header{display:table-cell}}
-@media screen and (min-width:60em){.content-top,.l-header>.container,.l-highlighted>.container,.l-main>.container,.navigation>.container{max-width:60em;position:relative;margin:0 auto;padding-left:0;padding-right:0}
-.block--tmobile-blocks-checkout-page-cart{margin-top:-50px;width:23%;float:right}
-.has-sidebar .panels-generic-content-sidebar-inside,.has-sidebar .panels-generic-content-top-sidebar-inside{width:23%;float:right;margin-top:0}
-.block--commerce-checkout-progress,.commerce-checkout-form-checkout,.commerce-checkout-form-complete,.commerce-checkout-form-number-portability,.commerce-checkout-form-proof-of-identity,.commerce-checkout-form-review,.has-sidebar .panels-generic-content-inside,.has-sidebar .panels-generic-content-top-inside{width:74%;float:left;margin-right:2.9%}
-.panels-generic-content,.panels-generic-content-top{padding-left:0;padding-right:0}
-.block--system-main-menu .menu .menu{width:60em}
-.block--system-main-menu .menu__link{font-size:1.125em}
+@media screen and (min-width:45em) and (-ms-high-contrast:active){.flexbox .col-tab-3{max-width:25%}
+.flexbox .col-tab-4{max-width:33.33333%}
+.flexbox .col-tab-6{max-width:50%}
+.flexbox .col-tab-8{max-width:66.66667%}
+.flexbox .col-tab-9{max-width:75%}
+.flexbox .col-tab-12{max-width:100%}}
+@media screen and (min-width:60em){.l-highlighted>.container,.l-main>.container,.l-region-header>.container{max-width:60em;position:relative;margin:0 auto;padding-left:0;padding-right:0}
+.l-main{padding-top:110px}
+.block--system-main-menu,.block--system-user-menu{display:inline-block}
+.block--system-main-menu .menu__item,.block--system-user-menu .menu__item{display:inline-block;width:auto}
+.block--system-main-menu .menu__link,.block--system-user-menu .menu__link{font-size:12px;line-height:30px;font-weight:400}
+.block--system-main-menu .menu__link:hover,.block--system-user-menu .menu__link:hover{text-decoration:underline}
+.block--system-main-menu .menu__link{color:#00aeef}
+.block--system-user-menu{background-color:rgba(0,0,0,.85)}
 .faq-category-breadcrumbs,.l-breadcrumbs ul,.phone-detail-breadcrumbs{padding-left:0}
 .block--tmobile-blocks-faults-maintenance,.panels-generic-content-sidebar-inside .panel-pane,.section-verlengen .box{float:none;width:100%;margin-right:0}
 .pane-phone-announcements .views-row,.product-teaser,.view-phone-catalog .views-row,.view-phone-queues .views-row{width:33%;padding-left:7px}
 .pane-phone-announcements .views-row:nth-child(2n+2),.product-teaser:nth-child(2n+2),.view-phone-catalog .views-row:nth-child(2n+2),.view-phone-queues .views-row:nth-child(2n+2){padding-right:7px}
 .pane-phone-announcements .views-row:nth-child(3n+3),.product-teaser:nth-child(3n+3),.view-phone-catalog .views-row:nth-child(3n+3),.view-phone-queues .views-row:nth-child(3n+3){padding-right:0}
 .form-item .password-toggle{top:32px}
-#one-off-payment-table-options .is-lowestprice{display:block}
-.oneoff-payment-info h3{max-width:55%}
-.pane-tmobile-blocks-homepage-advantage ul{display:block}
-.pane-tmobile-blocks-homepage-advantage ul li{display:table;border-right:none}
-.pane-tmobile-blocks-homepage-advantage ul li:first-child>a,.pane-tmobile-blocks-homepage-advantage ul li>a{padding-left:0}
-.search-block-form .form-text{width:196px;padding-top:6px;padding-bottom:6px}
+.desktop-search-btn{display:block;position:absolute;right:90px;top:0;width:90px;height:70px;background:url(../images/icon-search.svg) 10px/14px no-repeat;line-height:70px;padding-left:30px;color:#fff;font-weight:700}
+.desktop-search-btn:hover{background-color:rgba(0,0,0,.3);color:#fff}
+.block--search{display:none;position:fixed;top:100px;z-index:99;width:960px;margin:0;background:rgba(0,0,0,.3);padding:10px}
+.block--search .block__content{position:relative}
+.block--search .form-item{margin-bottom:0}
+.l-header .container{position:relative;margin:0 auto;max-width:60em}
+.l-header{top:30px}
+.menu-is-open .l-header{background:rgba(0,0,0,.3)}
+.shoppingcart{right:0}
+.shoppingcart:hover{background-color:rgba(0,0,0,.5)}
+.mobile-nav-btn{display:none}
+.l-region--header{display:block;-webkit-transform:none;transform:none;padding:0;height:auto;text-align:right;-webkit-backface-visibility:initial;backface-visibility:initial}
+.l-region--header .container{max-width:60em;margin:auto;position:relative;background-color:#fff}
 .l-footer{max-width:960px;margin:39px auto 0}
 .col-desk-no-title{margin-top:44px}
 .col-desk-last{padding-right:0}
@@ -775,23 +616,16 @@ body.not-logged-in.no-header-image .l-header,body.page-telefoons.no-header-image
 .flexbox .col-desk-no-title{margin-top:44px}
 .flexbox .col-desk-last{padding-right:0}
 .flexbox .col-desk-3{-webkit-flex:1 1 25%;-ms-flex:1 1 25%;flex:1 1 25%}
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.flexbox .col-desk-3{max-width:25%}}
 .flexbox .col-desk-4{-webkit-flex:1 1 33.33333%;-ms-flex:1 1 33.33333%;flex:1 1 33.33333%}
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.flexbox .col-desk-4{max-width:33.33333%}}
 .flexbox .col-desk-6{-webkit-flex:1 1 50%;-ms-flex:1 1 50%;flex:1 1 50%}
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.flexbox .col-desk-6{max-width:50%}}
 .flexbox .col-desk-8{-webkit-flex:1 1 66.66667%;-ms-flex:1 1 66.66667%;flex:1 1 66.66667%}
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.flexbox .col-desk-8{max-width:66.66667%}}
 .flexbox .col-desk-9{-webkit-flex:1 1 75%;-ms-flex:1 1 75%;flex:1 1 75%;max-width:75%}
 .flexbox .col-desk-12{-webkit-flex:1 1 100%;-ms-flex:1 1 100%;flex:1 1 100%;max-width:100%}
 .cookie-message .wrapper{margin:10px auto;max-width:960px}}
-@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.flexbox .col-tab-3{max-width:25%}
-.flexbox .col-tab-4{max-width:33.33333%}
-.flexbox .col-tab-6{max-width:50%}
-.flexbox .col-tab-8{max-width:66.66667%}
-.flexbox .col-tab-9{max-width:75%}
-.flexbox .col-tab-12{max-width:100%}
-.flexbox .col-desk-3{max-width:25%}
+@media screen and (min-width:45em) and (min-width:60em){.block--thema-menu .menu__item:last-child{border-right-width:1px}
+.block--thema-menu .menu__link{font-size:1em}
+.block--thema-menu .menu__link:hover{background-color:rgba(0,0,0,.3)}}
+@media screen and (min-width:60em) and (-ms-high-contrast:active){.flexbox .col-desk-3{max-width:25%}
 .flexbox .col-desk-4{max-width:33.33333%}
 .flexbox .col-desk-6{max-width:50%}
 .flexbox .col-desk-8{max-width:66.66667%}}
