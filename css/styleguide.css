@@ -16,8 +16,7 @@ pre[class*=language-]{padding:1em;overflow:auto}
 .token.bold,.token.important{font-weight:700}
 .token.italic{font-style:italic}
 .token.entity{cursor:help}
-.sectiontitle{line-height:39px;color:#00aeef;font-size:1.5em;margin:20px 0}
-.section-blue{background-color:#00aeef}
+.sectiontitle{line-height:39px;color:#222;font-size:1.5em;margin:20px 0}
 .brandcard{padding:10px}
 .brandcard img{display:block}
 .row,.row p{overflow:hidden}

@@ -1,5 +1,5 @@
 @mixin page-title {
-  color: $blue;
+  color: $c0;
   font-size: 42px;
   margin-top: 20px;
   margin-bottom: 12px;
@@ -13,7 +13,7 @@
 
 
 @mixin section-title {
-  color: $blue;
+  color: $c0;
   font-size: 22px;
   line-height: 1.5;
   font-weight: 700;

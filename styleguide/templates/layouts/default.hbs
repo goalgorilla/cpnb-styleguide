@@ -42,6 +42,10 @@
     <script src="js/contrib.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/styleguide.js"></script>
+
+    {{#any 'colors' this.basename}}
+      <script src="js/atomic-swatch.js"></script>
+    {{/any}}
    
   </body>
 </html>

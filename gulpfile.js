@@ -338,7 +338,10 @@ gulp.task('copy', ['usemin'], function() {
 
     gulp.src(['js/*.js'])
       .pipe(gulp.dest(path.site + '/js'))
-      .pipe(gulp.dest(path.dist + '/js'))
+      .pipe(gulp.dest(path.dist + '/js')),
+
+    gulp.src(['styleguide/example/**/*'])
+      .pipe(gulp.dest(path.dist + '/example'))  
   );
 });
 
