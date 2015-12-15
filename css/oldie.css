@@ -3,8 +3,8 @@
 .clearfix:after,.password-strength:after,.tabs--primary:after{clear:both}
 .color_radios .form-type-radio.element-hidden,.color_radios .taxonomy-term--color.element-hidden,.commerce-add-to-cart .form-type-radios.element-hidden,.element-hidden,.form-item-attributes-field-colour .form-type-radio.element-hidden,.form-item-attributes-field-colour .taxonomy-term--color.element-hidden,.page-ikben-dashboard .l-breadcrumbs,.phone-announcement .form-type-radio.element-hidden,.phone-announcement .taxonomy-term--color.element-hidden,.tmobile-selfcare-renew-subscription-form .form-type-radios.element-hidden{display:none}
 .element-invisible,.has-arrow-up span{position:absolute;clip:rect(1px,1px,1px,1px);overflow:hidden;height:1px}
-.content-top h1,.field--name-body h1{color:#00aeef;font-size:42px;margin-top:20px;margin-bottom:12px;line-height:1.5;font-weight:700}
-.pane-tmobile-user-invoice-overview .pane-title{color:#00aeef;font-size:22px;line-height:1.5;font-weight:700;margin-bottom:12px}
+.content-top h1,.field--name-body h1{color:#222;font-size:42px;margin-top:20px;margin-bottom:12px;line-height:1.5;font-weight:700}
+.pane-tmobile-user-invoice-overview .pane-title{color:#222;font-size:22px;line-height:1.5;font-weight:700;margin-bottom:12px}
 .commerce-add-to-cart .form-item-attributes-field-colour label,.commerce-add-to-cart .form-type-radios label,.tmobile-selfcare-personal-info-form legend,.tmobile-selfcare-renew-subscription-form .form-item-attributes-field-colour label,.tmobile-selfcare-renew-subscription-form .form-type-radios label,.tmobile-selfcare-subscription-settings-form .form-type-radios>label{font-size:16px;line-height:1.5;margin:15px 0;padding-right:0;font-weight:700;display:block}
 .l-highlighted,.l-main,.l-region-header{position:relative}
 .l-highlighted .container,.l-main .container,.l-region-header .container{padding-left:10px;padding-right:10px;width:100%;max-width:75em;position:relative;margin:0 auto}

@@ -4,9 +4,19 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="130px" viewBox="0 0 268 255" style="enable-background:new 0 0 268 255;" xml:space="preserve">
 <style type="text/css">
 <![CDATA[
-	.st0{fill:#00aeef;}
+	.st0{fill:#529cc7;}
 	.st1{fill:none;stroke:#000000;stroke-width:11;stroke-miterlimit:10;}
 	.st3{fill:#999;stroke:#FFFFFF;stroke-width:3;}
+	.st4{fill:#461f6f;}
+	.st5{fill:#6d136f;}
+	.st6{fill:#9d0d79;}
+	.st7{fill:#a74f38;}
+	.st8{fill:#994837;}
+	.st9{fill:#b17539;}
+	.st10{fill:#a76f39;}
+	.st11{fill:#9FBD37;}
+	.st12{fill:#529cc7;}
+
 ]]>
 </style>
 <g id="Layer_5">
@@ -14,27 +24,27 @@
 		<circle class="st1" cx="40.6" cy="67.2" r="29.3"/>
 		<circle class="st0" cx="40.6" cy="67.2" r="16.9"/>
 		<circle class="st1" cx="103.5" cy="67.2" r="29.3"/>
-		<circle class="st0" cx="103.5" cy="67.2" r="16.9"/>
+		<circle class="st4" cx="103.5" cy="67.2" r="16.9"/>
 		<circle class="st1" cx="166.5" cy="67.2" r="29.3"/>
-		<circle class="st0" cx="166.5" cy="67.2" r="16.9"/>
+		<circle class="st5" cx="166.5" cy="67.2" r="16.9"/>
 		<circle class="st1" cx="230.2" cy="67.2" r="29.3"/>
-		<circle class="st0" cx="230.2" cy="67.2" r="16.9"/>
+		<circle class="st6" cx="230.2" cy="67.2" r="16.9"/>
 		<circle class="st1" cx="40.6" cy="130.2" r="29.3"/>
-		<circle class="st0" cx="40.6" cy="130.2" r="16.9"/>
+		<circle class="st7" cx="40.6" cy="130.2" r="16.9"/>
 		<circle class="st1" cx="103.5" cy="130.2" r="29.3"/>
-		<circle class="st0" cx="103.5" cy="130.2" r="16.9"/>
+		<circle class="st8" cx="103.5" cy="130.2" r="16.9"/>
 		<circle class="st1" cx="166.5" cy="130.2" r="29.3"/>
-		<circle class="st0" cx="166.5" cy="130.2" r="16.9"/>
+		<circle class="st9" cx="166.5" cy="130.2" r="16.9"/>
 		<circle class="st1" cx="230.2" cy="130.2" r="29.3"/>
-		<circle class="st0" cx="230.2" cy="130.2" r="16.9"/>
+		<circle class="st10" cx="230.2" cy="130.2" r="16.9"/>
 		<circle class="st1" cx="40.6" cy="193.1" r="29.3"/>
-		<circle class="st0" cx="40.6" cy="193.1" r="16.9"/>
+		<circle class="st11" cx="40.6" cy="193.1" r="16.9"/>
 		<circle class="st1" cx="103.5" cy="193.1" r="29.3"/>
 		<circle class="st0" cx="103.5" cy="193.1" r="16.9"/>
 		<circle class="st1" cx="166.5" cy="193.1" r="29.3"/>
-		<circle class="st0" cx="166.5" cy="193.1" r="16.9"/>
+		<circle class="st4" cx="166.5" cy="193.1" r="16.9"/>
 		<circle class="st1" cx="230.2" cy="193.1" r="29.3"/>
-		<circle class="st0" cx="230.2" cy="193.1" r="16.9"/>
+		<circle class="st5" cx="230.2" cy="193.1" r="16.9"/>
 		<circle class="st3" cx="71.7" cy="67.2" r="8.1"/>
 		<circle class="st3" cx="40.6" cy="98.8" r="8.1"/>
 		<circle class="st3" cx="105" cy="98.8" r="8.1"/>
