@@ -1,0 +1,89 @@
+.l-footer {
+  line-height: 1.5;
+  background-color: rgba(#5E4F45, 0.2);
+  width: 100%;
+
+  .container {
+  	padding: 10px;
+  }
+  
+  @include MQ($plus){
+  	.container {
+  		max-width: $wide;
+  		margin: 39px auto 0;
+  	}
+
+  }
+
+}
+
+.footer-top {
+	padding: 15px 0;
+
+	
+}
+
+.l-region--footer-bottom {
+	padding: 10px 0;
+
+
+	@include MQ($tab){
+		@include clearfix;		
+	}
+
+}
+
+
+@include MQ($tab) {	
+	
+	.block--tmobile-blocks-footer-copyright {
+		float: left;
+	}
+
+	.block--menu-menu-bottom-footer {
+		float: right;
+		text-align: right;
+	}
+
+}
+
+
+.block--tmobile-blocks-footer-facebook {
+	
+	ul {
+		margin: 0;
+	}
+
+	li {
+		display: inline-block;
+		margin-right: 10px;
+	}
+	
+	img {
+		width: 30px;
+		height: 30px;
+	}
+
+}
+
+.block--menu-menu-bottom-footer {
+	
+	.menu {
+		margin-top: 20px;
+		
+		@include MQ($tab) {
+			margin-top: 0;
+		}
+
+	}
+
+	@include MQ($tab) {
+		
+		li {
+			display: inline-block;
+			margin-right: 10px;
+		}
+
+	}
+	
+}

@@ -1,0 +1,33 @@
+.levertijd {
+	display: inline-block;
+	width: auto;
+
+	p {
+		display: table-cell;
+		vertical-align: middle;
+		float: left;
+		margin: 0;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+}
+
+.levertijd-kleur {
+	display: block;
+	float: left;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin-right: $margin;
+	
+	&.groen {
+		background-color: $green;
+	}
+
+	&.oranje {
+		background-color: $orange;
+	}
+
+}

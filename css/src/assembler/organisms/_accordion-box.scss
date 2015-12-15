@@ -1,0 +1,110 @@
+%accordion-box__title,
+.accordion-box__title {
+  display: block;
+  cursor: pointer;
+  padding: 10px .5em 10px 2.2em;
+  background: $lightestgray;
+  border: 1px solid $lightergray;
+  border-top-color: $lightestgray;
+  position: relative;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: normal;
+}
+
+%accordion-box__item--first-child__accordion-box__title,
+.accordion-box__item:first-child .accordion-box__title {
+  border-top: 1px solid $lightergray;
+}
+
+%accordion-box__content,
+.accordion-box__content {
+  display: none;
+  height: auto !important;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid $lightergray;
+  border-top: 0;
+
+  ul {
+    padding-left: 30px;
+    line-height: 1.5;
+    list-style-type: disc;
+  }
+
+}
+
+%accordion-box__toggleicon,
+.accordion-box__toggleicon {
+
+  &:before,
+  &:after {
+    position: absolute;
+    display: block;
+    left: 14px;
+    width: 3px;
+    height: 10px;
+    top: 10px;
+    content: '';
+    transition: .3s;
+    background: $blue;
+    backface-visibility: hidden;
+  }
+
+  &:before {
+    transform: rotate(135deg);
+  }
+
+  &:after {
+    transform: rotate(-135deg);
+    top: 16px;
+  }
+
+}
+
+%accordion-box__toggleicon-active_before,
+.content-visible .accordion-box__toggleicon:before {
+  transform: rotate(225deg);
+  left: 18px;
+  top: 14px;
+}
+
+%accordion-box__toggleicon-active_after,
+.content-visible .accordion-box__toggleicon:after {
+  transform: rotate(-45deg);
+  left: 12px;
+  top: 14px;
+}
+
+
+// --- Drupal selectors ---
+
+
+.ui-accordion-header {
+  @extend %accordion-box__title;
+}
+
+.ui-accordion-header:first-child {
+  @extend %accordion-box__item--first-child__accordion-box__title;
+}
+
+.ui-accordion-header-icon {
+  @extend %accordion-box__toggleicon;
+}
+
+.ui-accordion-header-active .ui-accordion-header-icon:before {
+  @extend %accordion-box__toggleicon-active_before;
+}
+
+.ui-accordion-header-active .ui-accordion-header-icon:after {
+  @extend %accordion-box__toggleicon-active_after;
+}
+
+.ui-accordion-content {
+  @extend %accordion-box__content;
+}
+
+.view-faq-nodes .views-row + .views-row {
+  position: relative;
+  margin-top: -1px;
+}

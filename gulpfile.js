@@ -8,7 +8,7 @@ var gulp            = require('gulp'),
                         rename: {
                           'gulp-minify-css'  : 'mincss',
                           'gulp-minify-html' : 'minhtml',
-                          'gulp-gh-pages'    : 'ghPages',
+                          'gulp-gh-pages'    : 'deploy',
                           'gulp-foreach'     : 'foreach',
                           'gulp-if'          : 'if'
                         }
@@ -18,6 +18,7 @@ var gulp            = require('gulp'),
     mqpacker        = require('css-mqpacker'),
     autoprefixer    = require('autoprefixer'),
     concat          = require('gulp-concat'),
+    plumber         = require('gulp-plumber'),
     del             = require('del'),
     merge           = require('merge-stream'),
     basename        = require('path').basename,
@@ -48,16 +49,16 @@ var path = {
   data: asset_dir.data,
   templates: asset_dir.site + '/' + asset_dir.templates,
   dist: asset_dir.dist,
-  js: asset_dir.site + '/' + asset_dir.js,
-  css: asset_dir.site + '/' + asset_dir.css,
-  sass: asset_dir.site + '/' + asset_dir.css + '/' + asset_dir.sass
+  js: asset_dir.js,
+  css: asset_dir.css,
+  sass: asset_dir.css + '/' + asset_dir.sass
 };
 
 var glob = {
   html: path.site + '/*.html',
   css: path.css + '/*.css',
   sass: path.sass + '/**/*.scss',
-  js: path.js + '/src/**/*.js',
+  js: path.js + '/**/*.js',
   jslibs : path.js + '/lib/**/*.js',
   layouts: path.templates + '/layouts/*.{md,hbs}',
   pages: path.templates + '/pages/**/*.{md,hbs}',
@@ -273,6 +274,27 @@ gulp.task('cssmin', ['sass'], function() {
   return stream;
 });
 
+// ===================================================
+// Concat JS
+// ===================================================
+
+// get All Drupal JS and make available for styleguide
+gulp.task('script', function() {
+  return merge(
+    gulp.src(['js/contrib/modernizr/modernizr.min.js', 'js/contrib/jquery/jquery-1.11.1.min.js', 'js/contrib/jquery.once/jquery.once.js', 'js/contrib/misc/drupal.js'])
+      .pipe(concat('contrib.js'))
+      .pipe(gulp.dest('js')),
+
+    gulp.src('js/custom/*.js')
+      .pipe(concat('theme.js'))
+      .pipe(gulp.dest('js')),
+
+    gulp.src(['js/styleguide/atomic-generator.js', 'js/styleguide/prism.js'])
+      .pipe(concat('styleguide.js'))
+      .pipe(gulp.dest('js'))
+    );
+});
+
 
 // ===================================================
 // Buildin'
@@ -290,7 +312,6 @@ gulp.task('usemin', ['assemble', 'cssmin'], function() {
         .pipe($.usemin({
           assetsDir: path.site,
           css: [ $.rev() ],
-          html: [ $.minhtml({ empty: true }) ],
           js: [ $.uglify(), $.rev() ]
         }))
         .pipe(gulp.dest(path.dist));
@@ -299,34 +320,35 @@ gulp.task('usemin', ['assemble', 'cssmin'], function() {
 
 
 // ===================================================
-// Duplicatin'
+// Duplicatin' for style guide and buildin' for deploy
 // ===================================================
-0
 gulp.task('copy', ['usemin'], function() {
   return merge(
-    gulp.src([path.site + '/{img,bower_components,js/lib}/**/*'])
-        .pipe(gulp.dest(path.dist)),
+    gulp.src(['fonts/**/*'])
+      .pipe(gulp.dest(path.site + '/fonts'))
+      .pipe(gulp.dest(path.dist + '/fonts')),
 
-    gulp.src([
-        'webhook.php',
-        path.site + '/*.{ico,png,txt}',
-        path.site + '/.htaccess',
-      ]).pipe(gulp.dest(path.dist))
+    gulp.src(['css/**/*.css'])
+      .pipe(gulp.dest(path.site + '/css'))
+      .pipe(gulp.dest(path.dist + '/css')),
+
+    gulp.src(['images/**/*'])
+      .pipe(gulp.dest(path.site + '/images'))
+      .pipe(gulp.dest(path.dist + '/images')),
+
+    gulp.src(['js/*.js'])
+      .pipe(gulp.dest(path.site + '/js'))
+      .pipe(gulp.dest(path.dist + '/js'))
   );
 });
-
 
 // ===================================================
 // Releasin'
 // ===================================================
 
 gulp.task('deploy', function() {
-  return gulp.src([path.dist + '/**/*', path.dist + '/.htaccess' ])
-             .pipe($.ghPages(
-                $.if(env_flag === false,
-                { branch: 'staging' },
-                { branch: 'production'  })
-             ));
+  return gulp.src([path.dist + '/**/*'])
+    .pipe($.deploy());
 });
 
 
@@ -351,13 +373,14 @@ gulp.task('clean', function(cb) {
 gulp.task('watch', function() {
   gulp.watch([
     glob.sass
-  ], ['sass']);
+  ], ['sass', 'copy']);
 
   gulp.watch([
     glob.includes,
     glob.pages,
+    glob.js,
     glob.layouts
-  ], ['assemble']);
+  ], ['script', 'copy', 'assemble']);
 });
 
 
@@ -365,5 +388,5 @@ gulp.task('watch', function() {
 // Taskin'
 // ===================================================
 
-gulp.task('build', [ 'copy','usemin' ]);
-gulp.task('default', [ 'sass','assemble','serve','watch' ]);
+gulp.task('build', [ 'script', 'copy','usemin' ]);
+gulp.task('default', [ 'sass', 'script', 'copy', 'assemble', 'serve', 'watch' ]);

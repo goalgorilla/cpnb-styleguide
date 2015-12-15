@@ -1,0 +1,47 @@
+.pane-tmobile-selfcare-renew-phone-package li:first-child,
+.page-phone,
+.page-student {
+
+	.node__title {
+		display: inline-block;
+		margin-right: $margin;
+	}
+
+	.attributes {
+
+		@include MQ($tab) {
+			width: 78%;
+	    float: right;
+	  }
+
+	}
+	
+	.attribute-widgets > .form-item {
+		margin: 0;
+	}
+	
+}
+
+.pane-tmobile-selfcare-renew-phone-package li:first-child .product_image,
+.page-phone .panels-generic-content-top-inside .product_image,
+.page-student .panels-generic-content-top-inside .product_image {
+
+	@include MQ($tab) {
+		width: 20%;
+		float: left;
+	}
+
+}
+
+.pane-tmobile-selfcare-renew-phone-package .container {
+	@include clearfix;
+}
+
+.pane-tmobile-selfcare-renew-phone-package li:nth-child(2) {
+	@extend %product-infobox;
+	margin-top: 30px;
+
+	.pane-title {
+		@extend %product-infobox__title;
+	}
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-tap-highlight" content="no">  
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+    <title>CPNB StyleGuide - {{title}}</title>
+    <meta name="description" content="{{description}}">
+
+    <!--[if (gte IE 9)|(gt IEMobile 7)|(!IE)]><!-->
+    <link rel="stylesheet" href="css/theme.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="css/styleguide.css">
+
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="css/oldie.css">
+      <script src="http://ben.dev/sites/all/themes/custom/tmobilenl/js/script/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  </head>
+
+  <body class="{{basename}}">
+    <div class="l-page"> 
+      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+      {{> header-styleguide}}
+
+      <main class="l-main" id="main-content">
+        <div class="container clearfix">
+          {% body %}
+        </div>
+      </main>
+    
+
+      {{> footer}}
+  
+    </div>
+    
+    <script src="js/contrib.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/styleguide.js"></script>
+   
+  </body>
+</html>

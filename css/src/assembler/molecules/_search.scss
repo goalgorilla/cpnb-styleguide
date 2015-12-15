@@ -1,0 +1,85 @@
+.block--search {
+  position: relative;
+  margin: 10px 15px;
+
+  .form-text {
+    padding-right: 50px;
+    width: 100%;
+    height: 36px;
+    border: 0;
+  }
+
+  .form-submit {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 36px;
+    border-radius: 0 3px 3px 0;
+    right: 0;
+    background: black url(../images/icon-search.svg) no-repeat 50%/50%;
+    font-size: 0;
+    text-indent: -999em;
+  }
+
+}
+
+.desktop-search-btn {
+  display: none;
+
+  @include MQ($desk){
+    display: block;
+    position: absolute;
+    right: 90px;
+    top: 0;
+    width: 90px;
+    height: 70px;
+    background: url(../images/icon-search.svg) no-repeat 10px 50%/14px;
+    line-height: 70px;
+    padding-left: 30px;
+    color: white;
+    font-weight: bold;
+    border-right: 1px solid rgba(255,255,255,.5);
+
+    &:hover {
+      background-color: rgba(0,0,0,.3);
+      color: white;
+    }
+  }
+
+  @include MQ($plus) {
+    width: 120px;
+    padding-left: 50px;
+    right: 100px;
+    background-position: 20px 50%;
+  }
+
+}
+
+
+@include MQ($desk) {
+  .block--search {
+    display: none;
+    position: fixed;
+    top: 100px;
+    z-index: 99;
+    width: $desk;
+    margin: 0;
+    background: rgba($c10,.9);
+    padding: 10px;
+
+    .block__content {
+      position: relative;
+    } 
+
+    .form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include MQ($wide) {
+  .block--search {
+    width: $wide-width;
+  }
+}

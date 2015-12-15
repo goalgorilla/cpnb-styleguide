@@ -1,0 +1,187 @@
+button, input, optgroup, select, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+// Address `overflow` set to `hidden` in IE 8/9/10/11.
+button {
+  overflow: visible;
+}
+
+// Address inconsistent `text-transform` inheritance for `button` and `select`.
+// All other form control elements do not inherit `text-transform` values.
+// Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+// Correct `select` style inheritance in Firefox.
+button,
+select {
+  text-transform: none;
+}
+
+// 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+//    and `video` controls.
+// 2. Correct inability to style clickable `input` types in iOS.
+// 3. Improve usability and consistency of cursor style between image-type
+//    `input` and others.
+
+button,
+html input[type="button"], // 1 
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; // 2 
+  cursor: pointer; // 3 
+}
+
+// Remove inner padding and border in Firefox 4+.
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+// Address Firefox 4+ setting `line-height` on `input` using `!important` in
+// the UA stylesheet.
+input {
+  line-height: normal;
+}
+
+
+// Remove default vertical scrollbar in IE 8/9/10/11.
+textarea {
+  overflow: auto;
+}
+
+.form-text {
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.4em;
+  color: $normalgray;
+  display: inline-block;
+  padding: 4px 6px;
+  vertical-align: middle;
+  border: 1px solid $lightergray;
+  -webkit-appearance: none;
+  width: 220px;
+  transition: box-shadow .3s, border-color .3s;
+
+  &[disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    border-color: $normalgray;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: rgba(82,168,236,0.8);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset,0 0 8px rgba(82,168,236,0.6);
+  }
+
+}
+
+
+// checkbox
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin:0;
+  border:0;
+  outline:0;
+  opacity:0;
+  position: absolute;
+  overflow: hidden;
+
+  @if $oldie {
+    display: inline;
+    position: relative;
+    top: 2px;
+  }
+
+}
+
+
+.form-radio,
+.form-checkbox {
+  margin: 0 .5em 0 0;
+  cursor: pointer;
+}
+
+
+.form-type-radio,
+.form-type-checkbox {
+  position: relative;
+
+  .option {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 8px;
+    line-height: 1.5em;
+    width: auto;
+
+    a {
+      text-decoration: underline;
+      color: $blue;
+    }
+
+    @if $oldie {
+      display: inline;
+      padding-left: .1em;
+    }
+
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      top: 4px;
+      margin-right: 10px;
+      position: relative;
+      background: url(../images/box-radio-blue.png) -109px 0 no-repeat;
+
+      @if $oldie {
+        display: none;
+      }
+
+    }
+
+  }
+
+}
+
+
+.form-checkbox + .option::before {
+  background-position: -22px 0;
+}
+
+.form-checkbox:checked + .option::before {
+  background-position: -44px 0;
+}
+
+input[type="radio"].extra_bundle + .option::before {
+  background: url(../images/box-radio-blue.png) -66px 0 no-repeat;
+}
+
+input[type="radio"].extra_bundle:checked + .option::before {
+  background: url(../images/box-radio-blue.png) -44px 0 no-repeat;
+}
+
+
+// Radio
+input[type="radio"] + .option::before {
+  background: url(../images/box-radio-blue.png) -109px 0 no-repeat;
+}
+
+input[type="radio"]:checked + .option::before {
+  background-position: -151px 0;
+}
+
+html.js .form-autocomplete {
+  background-position: 99% 7px;
+
+  &.throbbing {
+    background-position: 99% -13px;
+  }
+
+}

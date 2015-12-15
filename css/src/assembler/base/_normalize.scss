@@ -1,0 +1,44 @@
+html {
+  font-family: sans-serif; // Set default font family to sans-serif.
+  -ms-text-size-adjust: 100%; // Prevent iOS text size adjust after orientation change, without disabling user zoom.
+  -webkit-text-size-adjust: 100%; // Prevent iOS text size adjust after orientation change, without disabling user zoom.
+}
+
+// Correct `block` display not defined for any HTML5 element in IE 8/9.
+// Correct `block` display not defined for `main` in IE 11.
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section {
+  display: block;
+}
+
+// Address `[hidden]` styling not present in IE 8/9/10.
+// Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+[hidden],
+template {
+  display: none;
+}
+
+// Correct overflow not hidden in IE 9/10/11.
+svg:not(:root) {
+  overflow: hidden;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}

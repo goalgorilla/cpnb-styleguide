@@ -1,0 +1,84 @@
+// ---------------------
+// Pagination
+// ---------------------
+
+.pager {
+  max-width: 768px;
+  margin: 30px auto;
+  text-align: center;
+  line-height: normal;
+  
+  &:after {
+    content: "";
+    display:table;
+    clear: both;
+  }
+
+  li {
+    margin: 0 .2em;
+    
+    a {
+      @extend %button;
+      background-image: none;
+      padding-right: 12px;
+      text-align: center;
+      min-width: 42px;
+      height: 42px;
+      line-height: 30px;
+
+      &:active {
+        transform: scale(0.9);
+      }
+
+    }
+
+  }
+
+}
+
+.no-touch .pager a:hover {
+  background-color: yellow;
+}
+
+.pager__item {
+  display: none;
+
+  @include MQ($tab) {
+    display: inline-block;
+  }
+
+}
+
+.pager-ellipsis,
+.pager__item--first,
+.pager__item--last {
+  display: none;
+
+  @include MQ($tab) {
+    display: inline-block;
+  }
+
+}
+
+.pager__item--current {
+  @extend %button;
+  @extend %button--blue;
+  background-image: none;
+  padding-right: 12px;
+  text-align: center;
+  min-width: 42px;
+  height: 42px;
+  line-height: 30px;
+
+  &:hover {
+    cursor: default;
+    background-color: $blue;
+  }
+}
+
+
+.pager__item--previous,
+.pager__item--next {
+  display: inline-block;
+}
+

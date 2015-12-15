@@ -1,0 +1,107 @@
+.block--thema-menu,
+.block--system-main-menu,
+.block--system-user-menu {
+   
+  // Global list item
+  .menu__item {
+    display: block;
+    width: 100%;
+    list-style: none;
+  }
+
+  // Global list link
+  .menu__link {
+    line-height: 44px;
+    font-weight: bold;
+    display: block;
+    padding: 0 10px;
+    color: white;
+
+    &.active, &:focus, &:hover {
+      color: white;
+      text-decoration: none;
+    }
+    
+  }
+
+}
+
+.block--thema-menu {
+  @include MQ($tab) {
+    padding-right: 180px;
+
+    .menu {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .menu__item {
+      width: auto;
+      display: inline-block;
+      border-right: 1px solid rgba(255,255,255,.5);
+      flex: 1 0 auto;
+
+      &:hover {
+        background-color: rgba(0,0,0,.3);
+      }
+
+    }
+
+    .menu__link {
+      line-height: 70px;
+      font-size: 13px;
+      text-align: center;
+    }
+
+  }
+
+  @include MQ($desk) {
+    .menu__link {
+      font-size: 1em;
+    }    
+  }
+
+  @include MQ($plus) {
+    padding-right: 220px;
+  }
+
+}
+
+@include MQ($desk) {
+  .block--system-main-menu,
+  .block--system-user-menu {
+    display: inline-block;
+    
+    .menu__item {
+      display: inline-block;
+      width: auto;
+    }
+
+    .menu__link {
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: normal;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+  .block--system-main-menu {
+
+    .menu__link {
+      color: $c8;
+
+      &:hover {
+        color: $c8;
+      }
+    } 
+  }
+
+  .block--system-user-menu {
+    background-color: rgba(0,0,0,.85);
+  }
+
+}

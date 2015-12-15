@@ -1,0 +1,91 @@
+%breadcrumbs {
+  @include element-hidden;
+
+  @include MQ($tab){
+    display: block;
+    max-width: $desk;
+    margin: 0 auto;
+  }
+
+}
+
+%breadcrumbs-ul {
+  padding-left: 10px;
+  font-size: 14px;
+  margin-bottom: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .last {
+    font-weight: bold;
+  }
+
+  a {
+    color: $blue;
+  }
+
+  @include MQ($desk){
+    padding-left: 0;
+  }
+
+}
+
+// --- Drupal selectors
+
+.phone-detail-breadcrumbs {
+  @extend %breadcrumbs-ul;
+  position: absolute;
+  top: -75px;
+  padding-left: 0;
+
+  .breadcrumb-separator {
+    display: none;
+  }
+
+  .phone-title {
+    font-weight: bold;
+    width: auto;
+    padding-left: 10px;
+    @include icon-right($black);
+
+    &:before,
+    &:after {
+      left: 2px;
+      top: 5px;
+      width: 1px;
+      height: 5px;
+    }
+
+    &:after {
+      top: 7.7px;
+    }
+
+  }
+
+}
+
+// stay hidden on dashboard
+.page-ikben-dashboard .l-breadcrumbs {
+  @include MQ($tab){
+    @extend %element-hidden;
+  }
+}
+
+.section-klantenservice .pane-3 {
+  @extend %breadcrumbs;  
+}
+
+.faq-category-breadcrumbs {
+  @extend %breadcrumbs-ul;
+}
+
+.l-breadcrumbs {
+  @extend %breadcrumbs;
+
+  ul {
+    @extend %breadcrumbs-ul;
+  }
+}

@@ -1,0 +1,35 @@
+@mixin page-title {
+  color: $blue;
+  font-size: 42px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+%page-title {
+  @include page-title;
+}
+
+
+@mixin section-title {
+  color: $blue;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+%section-title {
+  @include section-title;
+}
+
+%section-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin: 15px 0;
+  padding-right: 0;
+  font-weight: bold;
+  display: block;
+}

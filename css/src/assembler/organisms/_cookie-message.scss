@@ -1,0 +1,58 @@
+.cookie-message{
+  display: block;
+  width: 100%;
+  border-top: 10px solid rgba(216, 216, 216, 0.9);
+  -webkit-background-clip: padding-box; 
+  background-clip: padding-box; 
+  background-color: white;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+
+  .wrapper {
+    margin: 10px;
+    max-width: 100%;
+    
+    @include MQ($desk) {
+      margin: 10px auto;
+      max-width: 960px;
+    }
+
+  }
+
+  .content {
+    
+    width: 90%;
+    
+    strong{
+      font-size: 14px;
+    }
+    
+    p {
+      font-size: 13px;
+    }
+    
+    a {
+      text-decoration: underline;
+      color: $blue;
+        
+      &:hover{
+       text-decoration: none;
+      }
+        
+    }
+
+  }
+
+}
+
+.cookie-messages-dismiss{
+  float: right;
+  display: block;
+  padding: 20px;
+  width: 15px;
+  height: 15px;
+  margin-top: -10px;
+  background: url(../images/cookie-close.png) center center no-repeat;
+}
+

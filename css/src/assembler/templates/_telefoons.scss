@@ -1,0 +1,86 @@
+.product-teaser__wrapper,
+.view-phone-announcements .view-content,
+.view-phone-queues .view-content,
+.view-phone-catalog .view-content {
+  
+  .no-flexbox & {
+    @extend %clearfix;
+  }
+
+  .flexbox & {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include MQ($desk){
+      justify-content: flex-start;
+    }
+  
+  }
+
+}
+
+.pane-phone-announcements .pane-title,
+.pane-phone-catalog .pane-title {
+  font-size: 24px;
+  color: $blue;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.page-telefoons {
+
+  .l-main .container {
+    padding-left: 0;
+    padding-right: 0;
+
+    @include MQ($desk) {
+      max-width: none;
+    }
+
+  }
+
+  .pane-phone-queues .pane-title {
+    border: 1px solid $blue;
+    text-transform: uppercase;
+    margin-top: 40px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1.4em;
+
+    span {
+      background: $blue;
+      color: white;
+      padding: 2px 5px;
+    }
+
+    .sub {
+      background: transparent;
+      color: $blue;
+      padding-left: 0;
+    }
+
+  }
+
+  .panels-generic-content-top-wrapper {
+    background-color: $lightestgray;
+    border-top: 1px solid $lightergray;
+    border-bottom: 1px solid $lightergray;
+  }
+
+  .panels-generic-content-inside,
+  .panels-generic-content-top {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @include MQ($desk) {
+      max-width: $desk;
+      margin: 0 auto;
+      position: relative;
+      padding: 0;
+    }
+
+  }
+
+}

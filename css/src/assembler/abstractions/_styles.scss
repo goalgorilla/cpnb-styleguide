@@ -1,0 +1,22 @@
+@mixin section-break {
+
+  &:after {
+    width: 100%;
+    height: 8px;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 100%;
+    background: linear-gradient(to right, $c1 0%, $c1 5%,
+      $c3 6%,$c3 15%,
+      $c2 15%, $c2 35%,
+      $c3 35%, $c3 45%,
+      $c4 45%, $c4 54%,
+      $c6 54%, $c6 66%,
+      $c7 66%, $c7 78%,
+      $c5 78%, $c5 88%,
+      $c8 88%, $c8 100%
+    );
+  }
+
+}

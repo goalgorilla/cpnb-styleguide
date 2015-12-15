@@ -1,0 +1,97 @@
+.form-required {
+  color: red;
+}
+
+%price-label,
+.price-label {
+  display: block;
+  border-radius: 100%;
+  background: $blue;
+  height: 85px;
+  padding-top: 24px;
+  padding-right: 6px;
+  width: 85px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+}
+
+%price-label__decimal,
+.price-label__decimal {
+  font-size: 16px;
+  position: relative;  
+  margin-left: 1px;
+}
+
+%price-label__duration,
+.price-label__duration {
+  bottom: 16px;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 11px;
+  position: absolute;
+  right: -4px;
+}
+
+.promotion-color {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  display: table;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 100%;
+  transform: rotate(-15deg);
+
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    padding: 0 2px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  &.blauw{
+    background-color: $blue;
+  }
+  
+  &.groen{
+    background-color: $green;
+  }
+  
+  &.oranje{
+    background-color: $orange;
+  }
+  
+  &.zwart{
+    background-color: black;
+  }
+
+  &.wit{
+    background-color: white;
+    color: $blue;
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+  }
+}
+
+
+// --- Drupal selectors
+
+.field--type-commerce-price {
+  @extend %price-label;
+
+  .price_decimal {
+    @extend %price-label__decimal;
+
+    em {
+      @extend %price-label__duration;
+    }
+
+  }
+
+}

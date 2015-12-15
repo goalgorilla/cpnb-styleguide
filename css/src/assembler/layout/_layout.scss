@@ -1,0 +1,45 @@
+.clearfix {
+  @extend %clearfix;
+}
+
+.element-invisible {
+  @extend %element-invisible;
+}
+
+.element-hidden {
+  @extend %element-hidden;
+}
+
+.l-region-header,
+.l-highlighted,
+.l-main {
+  position: relative;
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+
+    @include MQ($plus){
+      max-width: $wide;
+      position: relative;
+      margin: 0 auto;
+    }
+
+  }
+  
+}
+
+.l-main {
+  padding-top: 52px;
+  position: relative;
+  z-index: 1;
+
+  @include MQ($tab) {
+    padding-top: 80px;
+  }
+
+  @include MQ($desk) { 
+    padding-top: 110px;
+  }
+}

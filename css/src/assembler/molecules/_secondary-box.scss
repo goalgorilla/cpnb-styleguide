@@ -1,0 +1,160 @@
+%secondary-box {
+  border: 1px solid $lightergray;
+  margin-bottom: 25px;
+  padding: 15px;
+  line-height: 1.35em;
+  font-size: 14px;
+
+  @include MQ($tab) {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
+
+  }
+
+  @include MQ($desk) {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  a {
+    color: $blue;
+    text-decoration: underline;
+  }
+
+  ul {
+    margin: 5px 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+
+}
+
+%secondary-box__title {
+  background-color: $blue;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.25em;
+  padding: 9px 15px;
+  margin: -15px -15px 20px -15px;
+}
+
+
+// -- Drupal selectors --
+
+.panels-generic-content-sidebar-inside {
+
+  .panel-pane {
+    @extend %secondary-box;
+  }
+
+  .pane-title {
+    @extend %secondary-box__title;
+  }
+
+}
+
+.block--tmobile-blocks-faults-maintenance {
+  @extend %secondary-box;
+
+  .block__title {
+    @extend %secondary-box__title;
+  }
+
+}
+
+.pane-faq-top-5 .views-row,
+.invoice-faq-row {
+  overflow: hidden;
+  padding: .8em .6em;
+
+  .views-field-counter {
+    background: $blue;
+    border-radius: 100%;
+    color: white;
+    float: left;
+    padding: 2px;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: -3px;
+    font-weight: bold;
+  }
+
+  .views-field-title {
+    overflow: hidden;
+
+    a {
+      text-decoration: none;
+      color: $darkgray;
+    }
+
+  }
+
+}
+
+.pane-tmobile-blocks-contact-ben {
+
+  .mail-ben {
+    float: left;
+    padding-top: 2px;
+  }
+
+  &.panel-pane ul {
+    margin: 0;
+    padding-left: 25px;
+
+    li {
+      margin-bottom: 0;
+    }
+  }
+
+  .customer-service {
+    @extend %readmorelink;
+  }
+
+}
+
+.section-verlengen {
+
+  .box {
+    @extend %secondary-box;
+  }
+
+  .box-heading {
+    @extend %secondary-box__title;
+  }
+
+  .box-title {
+    display: none;
+  }
+
+}
+
+.block--boxes-verlengen-sidebar-top {
+
+  .box-content p {
+    margin: 0;
+    text-align: left;
+  }
+
+  .icon-phone {
+    padding-left: 28px;
+    margin: 10px 0;
+  }
+
+}

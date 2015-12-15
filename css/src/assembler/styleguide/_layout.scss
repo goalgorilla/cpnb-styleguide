@@ -1,0 +1,96 @@
+.sectiontitle {
+  line-height: 39px;
+  color: $blue;
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+  
+.section-blue {
+  background-color: $blue;
+}
+
+.brandcard {
+  padding: $margin;
+
+  img {
+    display: block;
+  }
+  
+}
+
+.row,
+.row p {
+  overflow: hidden;
+}
+
+.media--mobile {
+  overflow: hidden;
+  display: block;
+  display: flex;
+  align-items: center;
+  margin-bottom: $margin;
+  width: 320px;
+
+  @include MQ($tab) {
+    float: left;
+  }
+
+  @if $oldie {
+    _overflow: visible;
+    zoom:1;
+  }
+
+  .media__figure--mobile {
+    float: left;
+    margin-right: $margin;    
+  }
+
+  .media__body--mobile {
+    overflow: hidden;
+    flex: 1;
+
+    @if $oldie {
+      _overflow: visible;
+      zoom:1;
+    }
+    
+  }
+  
+}
+
+[class^='icon-'] {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.icon-plus {
+  @include icon-plus($blue);
+}
+
+.icon-next {
+  @include icon-next($blue);
+  padding-right: 20px;
+  line-height: 40px;
+}
+
+.icon-down {
+  @include icon-down($blue);
+  padding-right: 20px;
+  line-height: 40px;
+}
+
+.icon-up {
+  @include icon-up($blue);
+  padding-right: 20px;
+  line-height: 40px;
+}
+
+.icon-right {
+  @include icon-right($blue);
+  padding-right: 14px;
+}
+
+.icon-check {
+  @include icon-check($blue);
+}

@@ -1,0 +1,125 @@
+.hero {
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 470px;
+  @include section-break;
+
+  @include MQ($tab) {
+    height: 490px;
+  }
+
+  @include MQ($desk) {
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      position: relative;
+      height: 490px;
+    }
+
+  }
+  
+}
+
+.hero__content {
+
+  h1 {
+    font-size: 28px;
+    line-height: 1;
+    color: white;
+    text-align: right;
+    position: absolute;
+    bottom: 3.5em;
+    right: 0;
+
+    @include MQ($tab) {
+      font-size: 44px;
+    }
+
+    span {
+      padding: 5px 30px 5px 10px; 
+      margin-bottom: 7px;
+      display: inline-block;
+
+      @include MQ($tab) {
+        padding: 7px 50px 7px 20px; 
+      }
+    }
+
+    span:nth-of-type(1){
+      background-color: rgba($c8,.7);
+    }
+
+    span:nth-of-type(2){
+      background-color: rgba($c3,.7);
+    }
+
+    span:nth-of-type(3){
+      background-color: rgba($c2,.7);
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 15px;
+    color: white;
+    text-align: right;
+    max-width: 15em;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+
+    @include MQ($tab) {
+      right: 50px; 
+      font-size: 18px;
+      bottom: 50px;
+    }
+
+  }
+
+}
+
+.hero__readmore {
+  text-indent: -999em;
+  position: absolute;
+  bottom: 0;
+  margin-left: 2%;
+
+  @include MQ($tab) {
+    text-indent: 0;
+    padding-left: 40px;
+    color: white;
+    font-weight: normal;
+    line-height: 32px;
+    font-size: 0.875em;
+  }
+
+  span {
+    @include icon-down($c0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 3px 3px 0 0;
+
+    &:before {
+      width: 12px;
+      height: 3px;
+      left: 15px;  
+    }
+
+    &:after {
+      width: 12px;
+      height: 3px;
+      left: 5px;
+    }
+
+  }
+
+}
+
+
+

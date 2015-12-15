@@ -1,0 +1,351 @@
+
+// PDP and Sim Only page
+.commerce-add-to-cart,
+.tmobile-selfcare-renew-subscription-form {
+
+  .form-type-radios {
+    margin-bottom: 20px;
+
+    @include MQ($tab) {
+      display: block;
+    }
+    
+    &.element-hidden {
+      @extend %element-hidden;
+    }
+
+  }
+
+  .form-item-attributes-field-colour label,
+  .form-type-radios label {
+    @extend %section-subtitle;
+
+    @include MQ($tab) {
+      display: block; // override table-cell 
+      width: 100%;
+    }
+
+  }
+
+  .attribute_wrapper:hover label  {
+    background: $blue;
+    border: 1px solid $blue;
+    color: white;
+  }
+
+  .form-type-radio label {
+    border: 1px solid $lightergray;
+    padding: 5px 10px;
+    border-bottom: 0;
+    background-color: white;
+    font-weight: normal;
+    display: block;
+    margin: 0;
+    height: 41px;
+  }
+
+  .form-type-radio {
+    display: block;
+    margin-right: 0;
+
+    input[type="radio"]:checked + label {
+      background: $blue;
+      border: 1px solid $blue;
+      color: white;
+    }
+
+  }
+
+  .kaas-wrapper {
+    position: relative;
+  }
+
+  .form-type-radios .form-radios {
+    border-bottom: 1px solid $lightergray;
+
+    @include MQ($tab) {
+      display: block;
+    }
+
+  }
+
+  .promotion_text {
+    display: none;
+
+    @include MQ($tab) {
+      display: inline-block;
+      pointer-events: none;
+      position: absolute;
+      top: 13px;
+      left: 35%;
+      color: $lightgray;
+      font-size: 14px;
+    }
+
+  }
+
+  .price {
+    position: absolute;
+    top: 9px;
+    color: $blue;
+    right: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    pointer-events: none;
+  }
+
+  .is-mostchosen {
+    display: none;
+
+    @include MQ($tab){
+      display: block;
+      position: absolute;
+      top: 6px;
+      text-transform: lowercase;
+      background: $blue;
+      color: white;
+      font-weight: bold;
+      right: 84px;
+      text-transform: uppercase;
+      font-size: 13px;
+      line-height: 1.875em;
+      padding: 2px 8px;
+      pointer-events: none;
+    }
+    
+  }
+
+  .attribute_wrapper:hover .is-mostchosen,
+  .selectedrow .is-mostchosen {
+    background-color: black;
+  }
+
+
+  .attribute_wrapper:hover .promotion_text,
+  .attribute_wrapper:hover .price,
+  .selectedrow .promotion_text,
+  .selectedrow .price {
+    color: white;
+  }
+
+  .form-item-attributes-field-data-bundle .package_info,
+  .form-item-attributes-field-data-bundle .package_info_close {
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    right: 60px;
+    top: 12px;
+    cursor: pointer;
+    padding-right: 0;
+  }
+  
+  .form-item-attributes-field-data-bundle .package_info_close {
+    background-position: 2px 2px;
+  }
+
+  .package_info {
+    background: url('../images/info-blue.png') 0 0 no-repeat;
+  }
+
+  .selectedrow .package_info,
+  .package_info:hover,
+  .attribute_wrapper:hover .package_info {
+    background-image: url('../images/info-white.png');
+  }
+
+
+  .package_info_close {
+    background: url('../images/close-blue.png') 2px 2px no-repeat;
+  }
+
+  .attribute_wrapper:hover .package_info_close,
+  .selectedrow .package_info_close {
+    background: url('../images/close-white.png') 2px 2px no-repeat;
+  }
+
+
+  .package_info_node {
+    background-color: white;
+    border: 1px solid $lightergray;
+    padding: 16px;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    z-index: 99;
+    font-weight: normal;
+
+    &:before {
+      border-color: transparent $blue $blue transparent;
+      border-style: solid;
+      border-width: 6px;
+      content: "";
+      display: block;
+      height: 0;
+      position: absolute;
+      right: 59px;
+      top: -12px;
+      width: 0;
+    }
+
+    .info-wrapper:before {
+      border-color: transparent white white transparent;
+      border-style: solid;
+      border-width: 5px;
+      content: "";
+      display: block;
+      height: 0;
+      position: absolute;
+      right: 60px;
+      top: -10px;
+      width: 0;
+    }
+
+  }
+
+}
+
+.tmobile-selfcare-renew-subscription-form .form-item-choices label {
+  font-weight: bold;
+
+  span {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 15px;
+  }
+
+}
+
+.tmobile-selfcare-subscription-settings-form .form-type-radios > label {
+  @extend %section-subtitle;
+}
+
+
+// User forms
+.tmobile-user-request-account-form,
+.user-pass,
+.user-login {
+  margin: 40px 0;
+
+  .form-actions {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .form-submit {
+    width: 220px;
+  }
+}
+
+
+.pass-forgotten {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  a {
+    display: block;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+}
+
+.back-to-user-login {
+  display: block;
+  font-size: 14px;
+  text-decoration: underline;
+  margin-left: 165px;
+}
+
+// edit user form 
+.tmobile-selfcare-personal-info-form {
+  position: relative;
+
+  .form-wrapper {
+    clear: both;
+    margin-bottom: 20px;
+  }
+
+  legend {
+    @extend %section-subtitle;
+  }
+
+  .user-save-button {
+    display: inline-block;
+
+    @include MQ($tab) {
+      float: right;
+    }
+  }
+
+  .user-cancel-button {
+    display: inline-block;
+    
+    @include MQ($tab){
+      position: absolute;
+      right: 105px;
+    }
+
+    a {
+      display: inline-block;
+      font-size: 15px;
+      text-decoration: underline;
+      padding: 4px 12px;
+    }
+
+  }
+
+  .form-item label {
+    padding: 5px 15px 5px 0;
+
+    @include MQ($tab) {
+      display: table-cell;
+      margin-right: 10px;
+      width: 291px;
+    }
+
+  }
+
+  @include MQ($tab) {
+    .form-item {
+      display: table;
+    }
+
+  }
+
+
+}
+
+.node-form {
+  margin: 40px 0;
+
+  label {
+    font-weight: bold;
+
+    &.option {
+      font-weight: normal;
+    }
+  }
+
+  .form-text {
+    width: auto;
+  }
+
+  .filter-wrapper {
+    border: 1px solid $lightgray;
+    padding: 0.5em 0.6em;
+  }
+
+  .tips {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .form-submit {
+    margin-right: 1em;
+  }
+
+}

@@ -1,0 +1,46 @@
+.phone-announcement,
+.form-item-attributes-field-colour,
+.color_radios {
+  display: inline-block;
+
+  .form-radios {
+    overflow: hidden;
+  }
+
+  .taxonomy-term--color,
+  .form-type-radio {
+    float: left;
+    display: inline;
+    border: 2px solid transparent;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    width: auto;
+
+    &.element-hidden {
+      @extend %element-hidden;
+    }
+
+  }
+
+  .description {
+    display: block;
+    cursor: pointer;
+    margin: 0;
+  }
+  
+  .active,
+  .description-selected {
+    outline: 2px solid $blue;
+  }
+
+  .commerce-fancy-attributes-color {
+    border: 1px solid black;
+    height: 22px;
+    width: 22px;
+  }
+
+}
+
+.commerce-add-to-cart .form-type-radio.form-item-attributes-field-colour {
+  margin-right: 4px;
+}

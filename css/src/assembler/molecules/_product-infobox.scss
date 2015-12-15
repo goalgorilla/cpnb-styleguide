@@ -1,0 +1,102 @@
+%product-infobox,
+.product-infobox {
+  border: 1px solid $lightergray;
+  padding: 15px;
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 14px;
+
+  @include MQ($tab) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+%product-infobox__title,
+.product-infobox__title {
+  border-bottom: 1px solid $lightergray;
+  color: $blue;
+  padding: 12px 26px 20px 25px;
+  font-size: 22px;
+  line-height: 1.1;
+  margin-bottom: 20px; 
+
+  [class^="icon"] {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    height: 20px;
+    width: 20px;
+
+    @include MQ($tab) {
+      left: 30px;
+    }
+  }
+
+}
+
+%has-arrow-up,
+.has-arrow-up {
+  position: absolute;
+  right: 15px;
+  top: 27px;
+  display: block;
+  width: 26px;
+  height: 26px;
+
+  @include MQ($tab) {
+    right: 30px;
+  }
+
+  &:hover:before,
+  &:hover:after {
+    background: black;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    display: block;
+    width: 3px;
+    height: 10px;
+    top: 9px;
+    content: '';
+    transition: .3s;
+    background: $blue;
+    backface-visibility: hidden;
+  }
+
+  &:before {
+    transform: rotate(-135deg);
+    left: 8px;
+  }
+
+  &:after {
+    transform: rotate(135deg);
+    left: 14px;
+  }
+
+  span {
+    @extend %element-invisible;
+  }
+
+}
+
+
+// Drupal selectors --- see templates / product-page and sim-only
+
+
+.pane-tmobile-package-update-detailed-reasons {
+  @extend %product-infobox;
+
+  .pane-title {
+    @extend %product-infobox__title;
+  }
+
+  ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    line-height: 1.5;
+  }
+
+}

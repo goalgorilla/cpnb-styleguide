@@ -1,0 +1,99 @@
+.block--thema-menu {
+
+  .menu__item {
+    position: relative;
+  }
+
+  .menu .menu {
+    display: none;
+
+    .menu__link {
+      background: rgba($c10,.9);
+      color: $c0;
+    }
+
+  }
+
+  .expanded > .menu__link {
+    @include icon-down($white);
+    padding-right: 20px;
+  
+    &:before {
+      top: 50%;
+      bottom: auto;
+      transform: translateY(-50%) rotate(-45deg);
+      right: 20px;
+    }
+
+    &:after {
+      top: 50%;
+      bottom: auto;
+      transform: translateY(-50%) rotate(45deg);
+      right: 25px;
+    }
+
+    &.open {
+
+      &:before {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+
+    }
+      
+  }
+
+  @include MQ($tab){
+
+    .menu .menu {
+      position: absolute;
+      left: 0px;
+      top: 100%;
+      width: 12em;
+      padding-left: 0;
+
+      .menu__item {
+        display: block;
+      }
+
+      .menu__link {
+        line-height: 44px;
+        color: white;
+        background: rgba($c10,.9);
+      }  
+
+    } 
+
+    .expanded > .menu__link {
+      &:before {
+        right: 5px;
+      }
+
+      &:after {
+        right: 10px;
+      }
+    }
+
+    .expanded:hover > .menu {
+      display: block;
+    }
+
+  }
+
+  @include MQ($desk) {
+    .expanded > .menu__link {
+      &:before {
+        right: 20px;
+      }
+
+      &:after {
+        right: 25px;
+      }
+    }
+
+  }
+
+}
