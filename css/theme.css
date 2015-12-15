@@ -1,13 +1,13 @@
 *,:after,:before{box-sizing:border-box}
-.clearfix:after,.clearfix:before,.footer-top:after,.footer-top:before,.password-strength:after,.password-strength:before,.tabs--primary:after,.tabs--primary:before{content:'';display:table}
-.clearfix:after,.footer-top:after,.password-strength:after,.tabs--primary:after{clear:both}
+.clearfix:after,.clearfix:before,.password-strength:after,.password-strength:before,.tabs--primary:after,.tabs--primary:before{content:'';display:table}
+.clearfix:after,.password-strength:after,.tabs--primary:after{clear:both}
 .color_radios .form-type-radio.element-hidden,.color_radios .taxonomy-term--color.element-hidden,.commerce-add-to-cart .form-type-radios.element-hidden,.element-hidden,.form-item-attributes-field-colour .form-type-radio.element-hidden,.form-item-attributes-field-colour .taxonomy-term--color.element-hidden,.page-ikben-dashboard .l-breadcrumbs,.phone-announcement .form-type-radio.element-hidden,.phone-announcement .taxonomy-term--color.element-hidden,.tmobile-selfcare-renew-subscription-form .form-type-radios.element-hidden{display:none}
 .element-invisible,.has-arrow-up span{position:absolute;clip:rect(1px,1px,1px,1px);overflow:hidden;height:1px}
 .content-top h1,.field--name-body h1{color:#00aeef;font-size:42px;margin-top:20px;margin-bottom:12px;line-height:1.5;font-weight:700}
 .pane-tmobile-user-invoice-overview .pane-title{color:#00aeef;font-size:22px;line-height:1.5;font-weight:700;margin-bottom:12px}
 .commerce-add-to-cart .form-item-attributes-field-colour label,.commerce-add-to-cart .form-type-radios label,.tmobile-selfcare-personal-info-form legend,.tmobile-selfcare-renew-subscription-form .form-item-attributes-field-colour label,.tmobile-selfcare-renew-subscription-form .form-type-radios label,.tmobile-selfcare-subscription-settings-form .form-type-radios>label{font-size:16px;line-height:1.5;margin:15px 0;padding-right:0;font-weight:700;display:block}
 .l-highlighted,.l-main,.l-region-header{position:relative}
-.l-highlighted>.container,.l-main>.container,.l-region-header>.container{padding-left:10px;padding-right:10px;width:100%}
+.l-highlighted .container,.l-main .container,.l-region-header .container{padding-left:10px;padding-right:10px;width:100%}
 .l-main{padding-top:52px;position:relative;z-index:1}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 article,aside,footer,header,main,nav,section{display:block}
@@ -32,7 +32,6 @@ sup{top:-.5em}
 sub{bottom:-.25em}
 small{font-size:80%}
 a{color:#000;text-decoration:none}
-a:hover{color:#00aeef}
 a:active,a:focus,a:hover{outline:0}
 ul{list-style:none;padding-left:0}
 .panels-generic-content-inside ul,.panels-generic-content-top-inside ul{font-size:14px;line-height:1.35}
@@ -53,7 +52,7 @@ address{font-style:normal;margin-bottom:.6em}
 .button--green:hover,.view-phone-queues .read_more a:hover,.view-tmobile-shopping-cart-block .line-item-summary a:hover{background-color:#22DA5A}
 .button--blue,.pager__item--current{background-color:#00aeef}
 .button--blue:hover,.pager__item--current:hover{background-color:#00cbef}
-.front .more-link a,.list-box__readmorelink,.pane-tmobile-blocks-contact-ben .customer-service,.pane-tmobile-user-invoice-overview ul a,.readmorelink,.views-field-nothing a{display:inline-block;margin-top:20px;background:url(../images/icons/arrow04.png) 100% -45px no-repeat;color:#00aeef;font-size:15px;line-height:1.35;padding-right:18px;text-decoration:underline}
+.list-box__readmorelink,.pane-tmobile-blocks-contact-ben .customer-service,.pane-tmobile-user-invoice-overview ul a,.readmorelink,.views-field-nothing a{display:inline-block;margin-top:20px;background:url(../images/icons/arrow04.png) 100% -45px no-repeat;color:#00aeef;font-size:15px;line-height:1.35;padding-right:18px;text-decoration:underline}
 .button--large,.read_more a,.view-tmobile-shopping-cart-block .line-item-summary a{font-size:20px;background-size:30px}
 .buttons .button{margin-bottom:15px;margin-right:15px}
 button,input,optgroup,select,textarea{font:inherit;color:inherit}
@@ -308,7 +307,7 @@ html.popup_visible{overflow:hidden}
 .block--search .form-text{padding-right:50px;width:100%;height:36px;border:0}
 .block--search .form-submit{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);width:42px;height:36px;border-radius:0 3px 3px 0;right:0;background:url(../images/icon-search.svg) 50%/50% no-repeat #000;font-size:0;text-indent:-999em}
 .desktop-search-btn{display:none}
-.l-header{width:100%;height:42px;background:rgba(0,0,0,.3);color:#fff;position:fixed;z-index:99}
+.l-header{width:100%;height:42px;background:rgba(132,127,120,.9);color:#fff;position:fixed;z-index:99}
 .menu-is-open .l-header{background-color:#555}
 .site-name{float:left;position:relative;width:144px;z-index:1;background:url(../images/brandcolors.svg) 0 0/auto 42px no-repeat;padding-left:48px;overflow:hidden}
 .site-name .logo{font-size:0;width:110px;height:42px;background:url(../images/cpnblogo.svg) 10px/80px no-repeat #fff;display:block}
@@ -328,21 +327,31 @@ html.popup_visible{overflow:hidden}
 .is-clicked .menu-icon:after{top:0;-webkit-transform:rotate(225deg);transform:rotate(225deg)}
 .l-region--header{position:fixed;left:0;top:0;height:100%;width:100%;background:rgba(0,0,0,.85);z-index:2;text-align:center;padding:42px 0;-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:auto;-webkit-overflow-scrolling:touch;-webkit-transform:translateY(-100%);transform:translateY(-100%);transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;transition-duration:.4s}
 .menu-is-open .l-region--header{-webkit-transform:translateY(0);transform:translateY(0)}
-.l-footer{font-size:13px;line-height:1.5;background-color:#efefef;margin-top:39px}
-.footer-top{padding:15px}
-.footer-top .block{margin-bottom:25px}
-.footer-top .block__title{color:#00aeef;font-size:1em;line-height:1.5}
-.l-region--footer-bottom{padding:10px 0;border-top:1px solid #999;margin:0 15px}
+.l-footer{line-height:1.5;background-color:rgba(94,79,69,.2);width:100%}
+.l-footer .container{padding:10px}
+.footer-top{padding:15px 0}
+.l-region--footer-bottom{padding:10px 0}
 .block--tmobile-blocks-footer-facebook ul{margin:0}
 .block--tmobile-blocks-footer-facebook li{display:inline-block;margin-right:10px}
 .block--tmobile-blocks-footer-facebook img{width:30px;height:30px}
 .block--menu-menu-bottom-footer .menu{margin-top:20px}
-.front .more-link{text-align:right;margin-bottom:10px}
-.front .more-link a{font-size:1.125em;font-weight:700;background-position:100% -43px;margin-top:0}
-.front .panels-generic-content{padding-top:0}
-.front .panel-pane{margin-bottom:25px;max-width:100%}
-.front .view-phone-queues .read_more a{background-color:#000}
-.front .view-phone-queues .read_more a:hover{background-color:#333}
+.hero{position:relative;background-size:cover;background-position:50% 50%;height:470px}
+.hero:after{width:100%;height:8px;display:block;content:'';position:absolute;top:100%;background:linear-gradient(to right,#461f6f 0,#461f6f 5%,#9d0d79 6%,#9d0d79 15%,#6d136f 15%,#6d136f 35%,#9d0d79 35%,#9d0d79 45%,#a74f38 45%,#a74f38 54%,#b17539 54%,#b17539 66%,#a76f39 66%,#a76f39 78%,#994837 78%,#994837 88%,#529cc7 88%,#529cc7 100%)}
+.hero__content h1{font-size:28px;line-height:1;color:#fff;text-align:right;position:absolute;bottom:3.5em;right:0}
+.hero__content h1 span{padding:5px 30px 5px 10px;margin-bottom:7px;display:inline-block}
+.hero__content h1 span:nth-of-type(1){background-color:rgba(82,156,199,.7)}
+.hero__content h1 span:nth-of-type(2){background-color:rgba(157,13,121,.7)}
+.hero__content h1 span:nth-of-type(3){background-color:rgba(109,19,111,.7)}
+.hero__content p{margin:0;padding:10px 0;font-size:15px;color:#fff;text-align:right;max-width:15em;position:absolute;bottom:30px;right:30px}
+.hero__readmore{text-indent:-999em;position:absolute;bottom:0;margin-left:2%}
+.hero__readmore span{position:relative;position:absolute;bottom:0;left:0;background:#fff;width:32px;height:32px;border-radius:3px 3px 0 0}
+.hero__readmore span:before{position:absolute;right:0;display:block;content:'';-webkit-transform:rotate(-45deg) translateY(-50%);transform:rotate(-45deg) translateY(-50%);background-color:#222;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s,-webkit-transform .3s;top:50%}
+.hero__readmore span:after{position:absolute;right:6px;display:block;content:'';-webkit-transform:rotate(45deg) translateY(-50%);transform:rotate(45deg) translateY(-50%);transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s,-webkit-transform .3s;background-color:#222;top:50%;bottom:auto}
+.hero__readmore span:before{width:12px;height:3px;left:15px}
+.hero__readmore span:after{width:12px;height:3px;left:5px}
+.section-divider{width:100%;min-height:10px;position:relative}
+.section-divider:after{width:100%;height:8px;display:block;content:'';position:absolute;top:100%;background:linear-gradient(to right,#461f6f 0,#461f6f 5%,#9d0d79 6%,#9d0d79 15%,#6d136f 15%,#6d136f 35%,#9d0d79 35%,#9d0d79 45%,#a74f38 45%,#a74f38 54%,#b17539 54%,#b17539 66%,#a76f39 66%,#a76f39 78%,#994837 78%,#994837 88%,#529cc7 88%,#529cc7 100%)}
+.section-divider__readmore,.section-divider__tagline{display:none}
 .accordion-box__title,.ui-accordion-header{display:block;cursor:pointer;padding:10px .5em 10px 2.2em;background:#efefef;border:1px solid #d8d8d8;border-top-color:#efefef;position:relative;font-size:14px;line-height:normal;font-weight:400}
 .accordion-box__item:first-child .accordion-box__title,.ui-accordion-header:first-child{border-top:1px solid #d8d8d8}
 .accordion-box__content,.ui-accordion-content{display:none;height:auto!important;padding:10px 15px;font-size:14px;border:1px solid #d8d8d8;border-top:0}
@@ -500,10 +509,10 @@ html.popup_visible{overflow:hidden}
 .node-type-list dd{margin-left:280px;padding-top:2px}
 .table{display:table}
 .table td{padding:10px 5px}
-.block--thema-menu{overflow:hidden;padding-right:180px}
+.block--thema-menu{padding-right:180px}
 .block--thema-menu .menu{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}
 .block--thema-menu .menu__item{width:auto;display:inline-block;border-right:1px solid rgba(255,255,255,.5);-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto}
-.block--thema-menu .menu__item:last-child{border-right-width:0}
+.block--thema-menu .menu__item:hover{background-color:rgba(0,0,0,.3)}
 .block--thema-menu .menu__link{line-height:70px;font-size:13px;text-align:center}
 .l-breadcrumbs,.section-klantenservice .pane-3{display:block;max-width:60em;margin:0 auto}
 .l-highlighted{padding-bottom:60px;background:url(../images/top-image-home.jpg) 15%/cover no-repeat}
@@ -527,38 +536,28 @@ html.popup_visible{overflow:hidden}
 .l-header{height:70px}
 .site-name{width:235px;background-size:auto 70px;padding-left:80px}
 .site-name .logo{width:155px;height:70px;background-size:135px auto}
-.shoppingcart{background-color:rgba(0,0,0,.2);position:absolute;float:none;right:90px;top:0}
+.shoppingcart{border-right:1px solid rgba(255,255,255,.5);position:absolute;float:none;right:90px;top:0}
 .shoppingcart_no{height:70px}
 .shoppingcart_no span{top:16px}
 .shoppingcart_amount{padding-top:16px}
 .l-region--header{padding:80px 0}
-.footer-top{padding:30px 56px 0}
-.footer-top .block{float:left;width:25%;margin-bottom:0}
-.l-region--footer-bottom{margin:25px 56px 0}
 .l-region--footer-bottom:after,.l-region--footer-bottom:before{content:'';display:table}
 .l-region--footer-bottom:after{clear:both}
 .block--tmobile-blocks-footer-copyright{float:left}
 .block--menu-menu-bottom-footer{float:right;text-align:right}
 .block--menu-menu-bottom-footer .menu{margin-top:0}
 .block--menu-menu-bottom-footer li{display:inline-block;margin-right:10px}
-.front .panel-pane{float:left;padding-right:25px}
-.col-tab-no-title{margin-top:44px}
-.col-tab-last{padding-right:0}
-.col-tab-3{width:25%}
-.col-tab-4{width:33.33333%}
-.col-tab-6{width:50%}
-.col-tab-8{width:16.66667%}
-.col-tab-9{width:75%}
-.col-tab-12{width:100%}
-.flexbox .front .panel-panel{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
-.flexbox .col-tab-no-title{margin-top:44px}
-.flexbox .col-tab-last{padding-right:0}
-.flexbox .col-tab-3{-webkit-flex:1 1 25%;-ms-flex:1 1 25%;flex:1 1 25%}
-.flexbox .col-tab-4{-webkit-flex:1 0 33.33333%;-ms-flex:1 0 33.33333%;flex:1 0 33.33333%}
-.flexbox .col-tab-6{-webkit-flex:1 0 50%;-ms-flex:1 0 50%;flex:1 0 50%}
-.flexbox .col-tab-8{-webkit-flex:1 0 66.66667%;-ms-flex:1 0 66.66667%;flex:1 0 66.66667%}
-.flexbox .col-tab-9{-webkit-flex:1 0 75%;-ms-flex:1 0 75%;flex:1 0 75%}
-.flexbox .col-tab-12{-webkit-flex:1 1 100%;-ms-flex:1 1 100%;flex:1 1 100%}
+.hero{height:490px}
+.hero__content h1{font-size:44px}
+.hero__content h1 span{padding:7px 50px 7px 20px}
+.hero__content p{right:50px;font-size:18px;bottom:50px}
+.hero__readmore{text-indent:0;padding-left:40px;color:#fff;font-weight:400;line-height:32px;font-size:.875em}
+.section-divider__readmore{display:block;width:100%;position:relative;padding-left:40px;font-weight:400;line-height:32px;font-size:.875em}
+.section-divider__readmore span{position:relative;position:absolute;bottom:0;left:0;background:#fff;width:32px;height:32px;border-radius:3px 3px 0 0}
+.section-divider__readmore span:before{position:absolute;right:0;display:block;content:'';-webkit-transform:rotate(-45deg) translateY(-50%);transform:rotate(-45deg) translateY(-50%);background-color:#222;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s,-webkit-transform .3s;top:50%}
+.section-divider__readmore span:after{position:absolute;right:6px;display:block;content:'';-webkit-transform:rotate(45deg) translateY(-50%);transform:rotate(45deg) translateY(-50%);transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s,-webkit-transform .3s;background-color:#222;top:50%;bottom:auto}
+.section-divider__readmore span:before{width:10px;height:3px;left:13px}
+.section-divider__readmore span:after{width:10px;height:3px;left:5px}
 .page-phone .attributes,.page-student .attributes,.pane-tmobile-selfcare-renew-phone-package li:first-child .attributes{width:78%;float:right}
 .page-phone .panels-generic-content-top-inside .product_image,.page-student .panels-generic-content-top-inside .product_image,.pane-tmobile-selfcare-renew-phone-package li:first-child .product_image{width:20%;float:left}
 .commerce-add-to-cart .form-type-radios,.tmobile-selfcare-renew-subscription-form .form-type-radios{display:block}
@@ -571,19 +570,13 @@ html.popup_visible{overflow:hidden}
 .tmobile-selfcare-personal-info-form .form-item label{display:table-cell;margin-right:10px;width:291px}
 .tmobile-selfcare-personal-info-form .form-item{display:table}
 .pane-tmobile-user-invoice-overview .amount-graph,.pane-tmobile-user-invoice-overview .dundle-header{display:table-cell}}
-@media screen and (min-width:45em) and (-ms-high-contrast:active){.flexbox .col-tab-3{max-width:25%}
-.flexbox .col-tab-4{max-width:33.33333%}
-.flexbox .col-tab-6{max-width:50%}
-.flexbox .col-tab-8{max-width:66.66667%}
-.flexbox .col-tab-9{max-width:75%}
-.flexbox .col-tab-12{max-width:100%}}
-@media screen and (min-width:60em){.l-highlighted>.container,.l-main>.container,.l-region-header>.container{max-width:60em;position:relative;margin:0 auto;padding-left:0;padding-right:0}
-.l-main{padding-top:110px}
+@media screen and (min-width:60em){.l-main{padding-top:110px}
+.block--thema-menu .menu__link{font-size:1em}
 .block--system-main-menu,.block--system-user-menu{display:inline-block}
 .block--system-main-menu .menu__item,.block--system-user-menu .menu__item{display:inline-block;width:auto}
-.block--system-main-menu .menu__link,.block--system-user-menu .menu__link{font-size:12px;line-height:30px;font-weight:400}
+.block--system-main-menu .menu__link,.block--system-user-menu .menu__link{font-size:14px;line-height:30px;font-weight:400}
 .block--system-main-menu .menu__link:hover,.block--system-user-menu .menu__link:hover{text-decoration:underline}
-.block--system-main-menu .menu__link{color:#00aeef}
+.block--system-main-menu .menu__link,.block--system-main-menu .menu__link:hover{color:#529cc7}
 .block--system-user-menu{background-color:rgba(0,0,0,.85)}
 .faq-category-breadcrumbs,.l-breadcrumbs ul,.phone-detail-breadcrumbs{padding-left:0}
 .block--tmobile-blocks-faults-maintenance,.panels-generic-content-sidebar-inside .panel-pane,.section-verlengen .box{float:none;width:100%;margin-right:0}
@@ -591,41 +584,30 @@ html.popup_visible{overflow:hidden}
 .pane-phone-announcements .views-row:nth-child(2n+2),.product-teaser:nth-child(2n+2),.view-phone-catalog .views-row:nth-child(2n+2),.view-phone-queues .views-row:nth-child(2n+2){padding-right:7px}
 .pane-phone-announcements .views-row:nth-child(3n+3),.product-teaser:nth-child(3n+3),.view-phone-catalog .views-row:nth-child(3n+3),.view-phone-queues .views-row:nth-child(3n+3){padding-right:0}
 .form-item .password-toggle{top:32px}
-.desktop-search-btn{display:block;position:absolute;right:90px;top:0;width:90px;height:70px;background:url(../images/icon-search.svg) 10px/14px no-repeat;line-height:70px;padding-left:30px;color:#fff;font-weight:700}
+.desktop-search-btn{display:block;position:absolute;right:90px;top:0;width:90px;height:70px;background:url(../images/icon-search.svg) 10px/14px no-repeat;line-height:70px;padding-left:30px;color:#fff;font-weight:700;border-right:1px solid rgba(255,255,255,.5)}
 .desktop-search-btn:hover{background-color:rgba(0,0,0,.3);color:#fff}
-.block--search{display:none;position:fixed;top:100px;z-index:99;width:960px;margin:0;background:rgba(0,0,0,.3);padding:10px}
+.block--search{display:none;position:fixed;top:100px;z-index:99;width:60em;margin:0;background:rgba(132,127,120,.9);padding:10px}
 .block--search .block__content{position:relative}
 .block--search .form-item{margin-bottom:0}
-.l-header .container{position:relative;margin:0 auto;max-width:60em}
+.l-header .container{position:relative;margin:0 auto}
 .l-header{top:30px}
 .menu-is-open .l-header{background:rgba(0,0,0,.3)}
-.shoppingcart{right:0}
-.shoppingcart:hover{background-color:rgba(0,0,0,.5)}
+.shoppingcart{right:0;border-right:0}
 .mobile-nav-btn{display:none}
 .l-region--header{display:block;-webkit-transform:none;transform:none;padding:0;height:auto;text-align:right;-webkit-backface-visibility:initial;backface-visibility:initial}
-.l-region--header .container{max-width:60em;margin:auto;position:relative;background-color:#fff}
-.l-footer{max-width:960px;margin:39px auto 0}
-.col-desk-no-title{margin-top:44px}
-.col-desk-last{padding-right:0}
-.col-desk-3{width:25%}
-.col-desk-4{width:33.33333%}
-.col-desk-6{width:50%}
-.col-desk-8{width:66.66667%}
-.col-desk-9{width:75%}
-.col-desk-12{width:100%}
-.flexbox .col-desk-no-title{margin-top:44px}
-.flexbox .col-desk-last{padding-right:0}
-.flexbox .col-desk-3{-webkit-flex:1 1 25%;-ms-flex:1 1 25%;flex:1 1 25%}
-.flexbox .col-desk-4{-webkit-flex:1 1 33.33333%;-ms-flex:1 1 33.33333%;flex:1 1 33.33333%}
-.flexbox .col-desk-6{-webkit-flex:1 1 50%;-ms-flex:1 1 50%;flex:1 1 50%}
-.flexbox .col-desk-8{-webkit-flex:1 1 66.66667%;-ms-flex:1 1 66.66667%;flex:1 1 66.66667%}
-.flexbox .col-desk-9{-webkit-flex:1 1 75%;-ms-flex:1 1 75%;flex:1 1 75%;max-width:75%}
-.flexbox .col-desk-12{-webkit-flex:1 1 100%;-ms-flex:1 1 100%;flex:1 1 100%;max-width:100%}
+.l-region--header .container{margin:auto;position:relative;background-color:#fff}
+.hero .container{max-width:960px;margin:0 auto;position:relative;height:490px}
+.section-divider__tagline{display:block;font-size:16px;line-height:1;color:#fff;text-align:right;position:relative;width:100%}
+.section-divider__tagline span{padding:5px 30px 5px 10px;margin-bottom:3px;display:inline-block}
+.section-divider__tagline span:nth-of-type(1){background-color:rgba(82,156,199,.7)}
+.section-divider__tagline span:nth-of-type(2){background-color:rgba(157,13,121,.7)}
+.section-divider__tagline span:nth-of-type(3){background-color:rgba(109,19,111,.7)}
 .cookie-message .wrapper{margin:10px auto;max-width:960px}}
-@media screen and (min-width:45em) and (min-width:60em){.block--thema-menu .menu__item:last-child{border-right-width:1px}
-.block--thema-menu .menu__link{font-size:1em}
-.block--thema-menu .menu__link:hover{background-color:rgba(0,0,0,.3)}}
-@media screen and (min-width:60em) and (-ms-high-contrast:active){.flexbox .col-desk-3{max-width:25%}
-.flexbox .col-desk-4{max-width:33.33333%}
-.flexbox .col-desk-6{max-width:50%}
-.flexbox .col-desk-8{max-width:66.66667%}}
+@media screen and (min-width:64em){.l-highlighted .container,.l-main .container,.l-region-header .container{max-width:75em;position:relative;margin:0 auto}
+.block--thema-menu{padding-right:220px}
+.desktop-search-btn{width:120px;padding-left:50px;right:100px;background-position:20px 50%}
+.l-header .container{max-width:75em}
+.l-region--header .container{width:90%;max-width:75em}
+.l-footer .container{max-width:75em;margin:39px auto 0}
+.section-divider__readmore{max-width:1200px;margin:0 auto}}
+@media screen and (min-width:75em){.block--search{width:90em}}

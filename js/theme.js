@@ -8,9 +8,10 @@
 
       $('body').once('mobile-nav', function(){
 
-        var nav = $('.l-region--header'); // Define the menu
+        var nav = $('.block--thema-menu'); // Define the menu
         var site = $('body'); // Define the site
         var resizeTimer; // Set resizeTimer to empty so it resets on page load
+        var clickEventSet = true; // Variable to check while resizing if an event is already set
 
         var isMobileView = function( width ) {
           // This function checks device width
@@ -22,11 +23,34 @@
         }
 
         var initMobileMenu = function(){
+
+          if ( nav.length ) {
+
+            if( isMobileView( $(window).width() ) && clickEventSet == true ) {
+              // Add click handler when they do not exist on anchors when in mobile view 
+              nav.find('.expanded > .menu__link').click(function(e) {
+                // Toggle display of the sibling menu list 
+                $(this).next('.menu').slideToggle(400);
+                $(this).toggleClass('open');
+                e.preventDefault();
+              });
+
+              clickEventSet = false; // make sure to execute the above only once
+
+            } else if ( !isMobileView( $(window).width() ) && clickEventSet == false ) {
+              // Show the third level items of the menu for sure
+              $('.block--system-main-menu .menu .menu').removeAttr('style');
+              // Unbind the existing click eventhandlers
+              nav.find('.expanded > a').unbind( "click" );
+              clickEventSet = true; // make sure to execute the above only once
+            }
+
+          }
+
           if( isMobileView( $(window).width() ) ) {
             $('.block--thema-menu').insertBefore('.block--search');
           } else {
             if ( $('.l-region--header .block--thema-menu').length) {
-              console.log('yessir');
               $('.block--thema-menu').insertBefore('.shoppingcart');
             }
           }
