@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="100px" viewBox="0 0 268 255" style="enable-background:new 0 0 268 255;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#00aeef;}
+	.st1{fill:none;stroke:#000000;stroke-width:15;stroke-miterlimit:10;}
+	.st2{fill:#999;stroke:#FFFFFF;stroke-width:5;}
+</style>
+<g id="atom">
+	<g>
+		<g>
+			<circle class="st1" cx="134.2" cy="127.6" r="115.1"/>
+			<circle class="st0" cx="134.2" cy="127.6" r="66.3"/>
+		</g>
+		<path class="st2" d="M253,56.3c0,15.6-12.6,28.2-28.2,28.2c-15.6,0-28.2-12.6-28.2-28.2c0-15.6,12.6-28.2,28.2-28.2
+			C240.3,28.1,253,40.7,253,56.3z"/>
+	</g>
+</g>
+</svg>
