@@ -2,7 +2,7 @@ code[class*=language-],pre[class*=language-]{color:#000;text-shadow:0 1px #fff;f
 code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}
 code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}
 pre[class*=language-]{padding:1em;overflow:auto}
-:not(pre)>code[class*=language-],pre[class*=language-]{background:#efefef;font-size:14px;margin:20px 0}
+:not(pre)>code[class*=language-],pre[class*=language-]{background:#fff;font-size:14px;margin:20px 0}
 :not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em}
 .token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}
 .token.punctuation{color:#999}

@@ -2,13 +2,18 @@
 .clearfix:after,.clearfix:before,.password-strength:after,.password-strength:before,.tabs--primary:after,.tabs--primary:before{content:'';display:table}
 .clearfix:after,.password-strength:after,.tabs--primary:after{clear:both}
 .color_radios .form-type-radio.element-hidden,.color_radios .taxonomy-term--color.element-hidden,.commerce-add-to-cart .form-type-radios.element-hidden,.element-hidden,.form-item-attributes-field-colour .form-type-radio.element-hidden,.form-item-attributes-field-colour .taxonomy-term--color.element-hidden,.page-ikben-dashboard .l-breadcrumbs,.phone-announcement .form-type-radio.element-hidden,.phone-announcement .taxonomy-term--color.element-hidden,.tmobile-selfcare-renew-subscription-form .form-type-radios.element-hidden{display:none}
-.element-invisible,.has-arrow-up span{position:absolute;clip:rect(1px,1px,1px,1px);overflow:hidden;height:1px}
+.element-invisible{position:absolute;clip:rect(1px,1px,1px,1px);overflow:hidden;height:1px}
 .content-top h1,.field--name-body h1{color:#222;font-size:42px;margin-top:20px;margin-bottom:12px;line-height:1.5;font-weight:700}
 .pane-tmobile-user-invoice-overview .pane-title{color:#222;font-size:22px;line-height:1.5;font-weight:700;margin-bottom:12px}
 .commerce-add-to-cart .form-item-attributes-field-colour label,.commerce-add-to-cart .form-type-radios label,.tmobile-selfcare-personal-info-form legend,.tmobile-selfcare-renew-subscription-form .form-item-attributes-field-colour label,.tmobile-selfcare-renew-subscription-form .form-type-radios label,.tmobile-selfcare-subscription-settings-form .form-type-radios>label{font-size:16px;line-height:1.5;margin:15px 0;padding-right:0;font-weight:700;display:block}
 .l-highlighted,.l-main,.l-region-header{position:relative}
 .l-highlighted .container,.l-main .container,.l-region-header .container{padding-left:10px;padding-right:10px;width:100%;max-width:75em;position:relative;margin:0 auto}
 .l-main{position:relative;z-index:1;padding-top:110px}
+.mask-modal{position:fixed;left:0;top:0;z-index:1;display:none;width:100%;height:100%;background-color:rgba(0,0,0,.75);opacity:0}
+.search-is-open .mask-modal{display:block;opacity:1}
+.search-is-open .mask-modal .close-modal{position:absolute;top:30px;left:90%;background-color:#000;width:56px;height:56px;border:0;text-indent:-999em;font-size:0;border-radius:4px}
+.search-is-open .mask-modal .close-modal:after,.search-is-open .mask-modal .close-modal:before{position:absolute;left:50%;top:50%;bottom:auto;right:auto;-webkit-transform:translateX(-50%) translateY(-50%) rotate(-45deg);transform:translateX(-50%) translateY(-50%) rotate(-45deg);width:3px;height:20px;border-radius:100%;content:'';background-color:#fff}
+.search-is-open .mask-modal .close-modal:after{-webkit-transform:translateX(-50%) translateY(-50%) rotate(45deg);transform:translateX(-50%) translateY(-50%) rotate(45deg)}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 article,aside,footer,header,main,nav,section{display:block}
 [hidden],template{display:none}
@@ -17,7 +22,7 @@ embed,img,object,video{max-width:100%;height:auto;border:0}
 fieldset{border:0;margin:0;padding:0}
 @font-face{font-family:PT-Sans;src:url(../fonts/PTS55F.otf);src:url(../fonts/PTS55F.eot?#iefix) format("embedded-opentype"),url(../fonts/PTS55F.woff) format("woff"),url(../fonts/PTS55F.svg#PT-Sans) format("svg");font-weight:400}
 @font-face{font-family:PT-Sans;src:url(../fonts/PTS75F.otf);src:url(../fonts/PTS75F.eot?#iefix) format("embedded-opentype"),url(../fonts/PTS75F.woff) format("woff"),url(../fonts/PTS75F.svg#PT-Sans) format("svg");font-weight:700}
-body{color:#333;font-size:16px;text-rendering:optimizeLegibility;font-family:PT-Sans,sans-serif;-webkit-font-smoothing:antialiased;word-wrap:break-word;margin:0;padding:0;background-color:#fff}
+body{color:#222;font-size:16px;text-rendering:optimizeLegibility;font-family:PT-Sans,sans-serif;-webkit-font-smoothing:antialiased;word-wrap:break-word;margin:0;padding:0;background-color:#F1F0EE}
 h1,h2,h3,h4,h5,h6{margin:0;line-height:1.1em;font-weight:700}
 h1{font-size:1.875em;margin:0 0 10px}
 h2{font-size:1.5em}
@@ -131,7 +136,7 @@ html.js .form-autocomplete.throbbing{background-position:99% -13px}
 .menu{list-style:none;margin:0;padding-left:0}
 .list-check li{background:url(../images/icons/check01-blue.png) 0 4px no-repeat;line-height:24px;padding:0 0 0 22px;list-style:none}
 .list--benefit{margin:0}
-.list--benefit__item,.pane-phone-announcements .call_sms,.pane-phone-announcements .data_bundle,.view-phone-catalog .call_sms,.view-phone-catalog .data_bundle,.view-phone-queues .call_sms,.view-phone-queues .data_bundle{background:url(../images/plus.png) 0 2px no-repeat;padding-left:25px;margin-bottom:5px}
+.list--benefit__item{background:url(../images/plus.png) 0 2px no-repeat;padding-left:25px;margin-bottom:5px}
 .list--benefit__amount{font-weight:700;font-size:18px}
 .list--benefit__label{font-size:15px}
 dl{margin:20px 0;line-height:1.5}
@@ -248,29 +253,44 @@ dd p{margin:0 0 20px}
 .section-verlengen .box-title{display:none}
 .block--boxes-verlengen-sidebar-top .box-content p{margin:0;text-align:left}
 .block--boxes-verlengen-sidebar-top .icon-phone{padding-left:28px;margin:10px 0}
-.pane-phone-announcements .views-row,.product-teaser,.view-phone-catalog .views-row,.view-phone-queues .views-row{padding-right:7px;margin-bottom:20px;float:left;width:50%;width:33%;padding-left:7px}
-.no-flexbox .pane-phone-announcements .views-row,.no-flexbox .product-teaser,.no-flexbox .view-phone-catalog .views-row,.no-flexbox .view-phone-queues .views-row,.pane-phone-announcements .no-flexbox .views-row,.view-phone-catalog .no-flexbox .views-row,.view-phone-queues .no-flexbox .views-row{min-height:300px}
-.pane-phone-announcements .views-row:nth-child(2n+2),.product-teaser:nth-child(2n+2),.view-phone-catalog .views-row:nth-child(2n+2),.view-phone-queues .views-row:nth-child(2n+2){padding-left:7px;padding-right:7px}
-.pane-phone-announcements .views-row:nth-child(3n+3),.product-teaser:nth-child(3n+3),.view-phone-catalog .views-row:nth-child(3n+3),.view-phone-queues .views-row:nth-child(3n+3){padding-right:0}
-.pane-phone-announcements header h2,.product-teaser__title,.view-phone-catalog header h2,.view-phone-queues header h2{font-size:1.375em}
-.pane-phone-announcements header h2 a,.product-teaser__title a,.view-phone-catalog header h2 a,.view-phone-queues header h2 a{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.pane-phone-announcements .product_image,.product-teaser__image,.view-phone-catalog .product_image,.view-phone-queues .product_image{display:inline-block;vertical-align:top;margin:15px 15px 0 0;position:relative}
-.pane-phone-announcements .product_image img,.product-teaser__image img,.view-phone-catalog .product_image img,.view-phone-queues .product_image img{width:90px;height:auto}
-.pane-phone-announcements .product_specifications,.product-teaser__specifications,.view-phone-catalog .product_specifications,.view-phone-queues .product_specifications{display:inline-block;vertical-align:top;margin-top:15px;min-height:170px}
-.pane-phone-announcements .product_specifications .price-label,.product-teaser__specifications .price-label,.view-phone-catalog .product_specifications .price-label,.view-phone-queues .product_specifications .price-label{margin-top:15px}
-.pane-phone-announcements .product_specifications a:hover,.product-teaser__specifications a:hover,.view-phone-catalog .product_specifications a:hover,.view-phone-queues .product_specifications a:hover{text-decoration:none}
-.pickup-variant{margin-top:15px}
-.pickup-variant .color_radios{width:90px}
-.pane-phone-announcements .read_more,.product-teaser__read_more,.view-phone-catalog .read_more,.view-phone-queues .read_more{display:inline-block;vertical-align:top}
-.pane-tmobile-package-update-detailed-reasons,.pane-tmobile-selfcare-renew-phone-package li:nth-child(2),.product-infobox{border:1px solid #d8d8d8;padding:15px 30px;margin-bottom:30px;position:relative;font-size:14px}
-.pane-tmobile-package-update-detailed-reasons .pane-title,.pane-tmobile-selfcare-renew-phone-package li:nth-child(2) .pane-title,.product-infobox__title{border-bottom:1px solid #d8d8d8;color:#00aeef;padding:12px 26px 20px 25px;font-size:22px;line-height:1.1;margin-bottom:20px}
-.pane-tmobile-package-update-detailed-reasons .pane-title [class^=icon],.pane-tmobile-selfcare-renew-phone-package li:nth-child(2) .pane-title [class^=icon],.product-infobox__title [class^=icon]{position:absolute;top:30px;height:20px;width:20px;left:30px}
-.has-arrow-up{position:absolute;top:27px;display:block;width:26px;height:26px;right:30px}
-.has-arrow-up:hover:after,.has-arrow-up:hover:before{background:#000}
-.has-arrow-up:after,.has-arrow-up:before{position:absolute;display:block;width:3px;height:10px;top:9px;content:'';transition:.3s;background:#00aeef;-webkit-backface-visibility:hidden;backface-visibility:hidden}
-.has-arrow-up:before{-webkit-transform:rotate(-135deg);transform:rotate(-135deg);left:8px}
-.has-arrow-up:after{-webkit-transform:rotate(135deg);transform:rotate(135deg);left:14px}
-.pane-tmobile-package-update-detailed-reasons ul{padding-left:20px;list-style-type:disc;line-height:1.5}
+.no-flexbox .social-media-blocks-wrapper:after,.no-flexbox .social-media-blocks-wrapper:before{content:'';display:table}
+.no-flexbox .social-media-blocks-wrapper:after{clear:both}
+.flexbox .social-media-blocks-wrapper{display:-webkit-flex;display:-ms-flexbox;display:flex}
+.teaser-block--social{background-color:#fff;display:table;padding:0;margin-bottom:0;float:left;width:49%;margin-right:2%}
+.teaser-block--social:nth-child(2n+2){margin-right:0}
+.flexbox .teaser-block--social{display:-webkit-flex;display:-ms-flexbox;display:flex}
+.teaser-block--twitter{background:97% 5%/auto 25px no-repeat #fff}
+.teaser-block--twitter .teaser-block--social__profile{background:url(../images/twitter-white.svg) 50% 40%/auto 20% no-repeat #65BDEC}
+.teaser-block--facebook{background:97% 5%/auto 25px no-repeat #fff}
+.teaser-block--facebook .teaser-block--social__profile{background:url(../images/facebook-white.svg) 50% 40%/auto 20% no-repeat #4A66A3}
+.post-type{color:#d9d6d4;margin-bottom:20px}
+.post-author{font-weight:700}
+.post-username{font-style:italic}
+.post-content{color:#529cc7;font-size:13px}
+.teaser--readmore{position:relative;padding-right:20px;text-align:right;display:block;font-size:14px;margin:30px 0 20px}
+.teaser--readmore:after,.teaser--readmore:before{position:absolute;display:inline-block;right:0;width:2px;height:8px;top:3px;content:'';transition:.3s;background:#222}
+.teaser--readmore:before{-webkit-transform:rotate(135deg);transform:rotate(135deg)}
+.teaser--readmore:after{-webkit-transform:rotate(-135deg);transform:rotate(-135deg);top:8px}
+.teaser-block--social__profile{display:none;display:table-cell;position:relative;width:30%}
+.teaser-block--social__post{display:table-cell;width:75%;width:70%;padding:20px}
+.profile-username{text-align:center;bottom:0;position:absolute;width:100%;color:#fff;padding:20px 0;font-size:14px}
+.teaser--campaign{display:inline-block;position:relative;background:#fff;margin:0 auto;border-bottom:5px solid #9d0d79}
+.teaser--campaign:hover .teaser--campaign__image:after{background-color:#529cc7}
+.teaser--campaign__logo{position:absolute;top:0;right:0;background-color:#fff;border-radius:0 0 0 15px;width:70px;height:70px;line-height:70px;text-align:center;z-index:2}
+.teaser--campaign__logo img{display:inline-block;vertical-align:middle}
+.teaser--campaign__image{width:320px;height:320px;position:relative}
+.teaser--campaign__image img{width:320px;height:320px}
+.teaser--campaign__image:after{display:block;position:absolute;content:'';top:0;left:0;width:100%;height:100%;background:rgba(82,156,199,.8);z-index:1;transition:background-color .5s}
+.teaser--campaign__title{top:50%;bottom:auto;-webkit-transform:translateY(-50%);transform:translateY(-50%);position:absolute;width:100%;color:#fff;font-size:36px;padding:0 80px 0 30px;z-index:2}
+.teaser--campaign__readmore{position:relative;position:absolute;font-size:0;bottom:40px;right:30px;display:inline-block;z-index:2}
+.teaser--campaign__readmore:after,.teaser--campaign__readmore:before{position:absolute;display:inline-block;right:0;width:2px;height:8px;top:3px;content:'';transition:.3s;background:#fff}
+.teaser--campaign__readmore:before{-webkit-transform:rotate(135deg);transform:rotate(135deg)}
+.teaser--campaign__readmore:after{-webkit-transform:rotate(-135deg);transform:rotate(-135deg);top:8px}
+.teaser--campaign__readmore:before{-webkit-transform:scale(1.3) rotate(135deg);transform:scale(1.3) rotate(135deg)}
+.teaser--campaign__readmore:after{-webkit-transform:scale(1.3) rotate(-135deg);transform:scale(1.3) rotate(-135deg)}
+.teaser--campaign__content{max-width:320px;padding:10px 80px 10px 30px}
+.teaser--campaign__period{font-size:14px;color:#529cc7}
+.teaser--campaign__summary{font-weight:700;font-size:16px;margin-top:0}
 .form-item label{font-size:14px;display:block;margin-bottom:5px}
 .form-type-item,.request-account-desc{margin-top:1em;margin-bottom:.6em;line-height:1.35em;font-size:14px}
 .form-item{margin-bottom:14px}
@@ -320,13 +340,18 @@ html.popup_visible{overflow:hidden}
 .pager__item--current{background-image:none;padding-right:12px;text-align:center;min-width:42px;height:42px;line-height:30px}
 .pager__item--current:hover{cursor:default;background-color:#00aeef}
 .pager__item--next,.pager__item--previous{display:inline-block}
-.block--search .form-text{padding-right:50px;width:100%;height:36px;border:0}
-.block--search .form-submit{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);width:42px;height:36px;border-radius:0 3px 3px 0;right:0;background:url(../images/icon-search.svg) 50%/50% no-repeat #000;font-size:0;text-indent:-999em}
+.block--search .form-text{padding-right:50px;width:100%;border:0}
+.block--search .form-submit{position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);border-radius:0 3px 3px 0;right:0;background:url(../images/icon-search.svg) 50%/18px no-repeat #000;font-size:0;text-indent:-999em}
 .desktop-search-btn{display:none;display:block;position:absolute;top:0;height:70px;background:url(../images/icon-search.svg) 20px 50%/14px no-repeat;line-height:70px;color:#fff;font-weight:700;border-right:1px solid rgba(255,255,255,.5);width:120px;padding-left:50px;right:100px}
 .desktop-search-btn:hover{background-color:rgba(0,0,0,.3);color:#fff}
-.block--search{display:none;position:fixed;top:100px;z-index:99;width:60em;margin:0;background:rgba(132,127,120,.9);padding:10px}
+.block--search{display:none;position:fixed;top:30px;left:0;z-index:99;width:70%;text-align:left;margin:0 10%;opacity:0}
 .block--search .block__content{position:relative}
 .block--search .form-item{margin-bottom:0}
+.block--search .form-text{height:56px;padding-left:30px}
+.block--search .form-submit{height:56px;width:62px}
+.search-is-open .block--search{display:block;opacity:1}
+.search-is-open .block--system-main-menu,.search-is-open .block--system-user-menu,.search-is-open .l-header{display:none}
+.search-is-open .l-region--header{z-index:99}
 .l-header{width:100%;background:rgba(132,127,120,.9);color:#fff;position:fixed;z-index:99;height:70px;top:30px}
 .l-header .container{position:relative;margin:0 auto;max-width:75em}
 .menu-is-open .l-header{background-color:#555;background:rgba(0,0,0,.3)}

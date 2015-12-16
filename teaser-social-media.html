@@ -6,7 +6,7 @@
     <meta name="msapplication-tap-highlight" content="no">  
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 
-    <title>CPNB StyleGuide - List box</title>
+    <title>CPNB StyleGuide - Teaser</title>
     <meta name="description" content="">
 
     <!--[if (gte IE 9)|(gt IEMobile 7)|(!IE)]><!-->
@@ -23,7 +23,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
   </head>
 
-  <body class="">
+  <body class="teasers">
     <div class="l-page"> 
       <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
       <div class="l-region--header">
@@ -162,94 +162,63 @@
       </header>
       <main class="l-main" id="main-content">
         <div class="container clearfix">
-          <h2 class="sectiontitle">List box</h2>
-<p> Het list-box molecule wordt vaak gebruikt op de website. We zien deze terug als keuzemenu&#8217;s in de klantenservice en als navigatie in de IkBen sectie. Er zijn twee variaties van de list-box. De eerste heeft een icon, die de content manager kan instellen. De tweede variant heeft geen icoon. </p>
+          <h2 class="sectiontitle">Social media teaser</h2>
+<p> The social media teasers contain the latest post from a specific channel. In this example we see two different channels. In the code you will see a single teaser source.</p>
+<section class="social-media-blocks-wrapper">  
+  <div class="teaser-block--social teaser-block--twitter">
     
-  <div class="list-box list-box--plain">
-    <h2 class="list-box__title"> List box title</h2>
+      <div class="teaser-block--social__profile">
+        <div class="profile-username">@CPNB</div>
+      </div>
   
-    <div class="list-box__content">
-      <ul class="list-box__list">
-        <li class="list-box__list-item"><a href="#0">Algemene informatie, voorwaarden en tarieven</a></li>
-        <li class="list-box__list-item"><a href="#0" class="active">Bestellen</a></li>
-        <li class="list-box__list-item"><a href="#0">Bezorgen</a></li>
-        <li class="list-box__list-item"><a href="#0">Nummerbehoud</a></li>
-        <li class="list-box__list-item"><a href="#0">Over Ben</a></li>
-        <li class="list-box__list-item"><a href="#0">Ben Vriendenvoordeel</a></li>
-      </ul>
+      <div class="teaser-block--social__post">
+        <div class="post-type"> Laatste tweet</div>
+  
+        <div class="post-author">Stichting CPNB</div>
+        <div class="post-username">@CPNB Oct 21</div>
+  
+        <p class="post-content">Genomineerde boeken NS Publieksprijs 2015 bekend! http://web.cpnb.nl/actueelbericht.vm?ab=687 … #NSPP2015</p>
+  
+        <a class="teaser--readmore" href="#0">Ga naar CPNB Twitterpagina</a>
+      </div>
+  
+    </div>  <div class="teaser-block--social teaser-block--facebook">
+    
+      <div class="teaser-block--social__profile">
+        <div class="profile-username">Stichting CPNB</div>
+      </div>
+  
+      <div class="teaser-block--social__post">
+        <div class="post-type"> Laatste post</div>
+  
+        <div class="post-author">Stichting CPNB</div>
+        <div class="post-username">6 Oktober om 11:33</div>
+  
+        <p class="post-content">Bette Westera ontving op het Kinderboekenbal de Gouden Griffel voor haar poëziebundel 'Doodgewoon'. http://www.kinderboekenweek.nl/...</p>
+  
+        <a class="teaser--readmore" href="#0">Ga naar CPNB facebookpagina</a>
+      </div>
+  
+    </div></section>
+
+<pre class="language-html"><code><div class="teaser-block--social teaser-block--twitter">
+  
+    <div class="teaser-block--social__profile">
+      <div class="profile-username">@CPNB</div>
     </div>
-  
-    <div class="list-box__readmore">
-      <a href="#0" class="list-box__readmorelink">Bekijk ze allemaal</a>
+
+    <div class="teaser-block--social__post">
+      <div class="post-type"> Laatste tweet</div>
+
+      <div class="post-author">Stichting CPNB</div>
+      <div class="post-username">@CPNB Oct 21</div>
+
+      <p class="post-content">Genomineerde boeken NS Publieksprijs 2015 bekend! http://web.cpnb.nl/actueelbericht.vm?ab=687 … #NSPP2015</p>
+
+      <a class="teaser--readmore" href="#0">Ga naar CPNB Twitterpagina</a>
     </div>
-  
-  </div>
-<pre class="language-html"><code><div class="list-box list-box--plain">
-  <h2 class="list-box__title"> List box title</h2>
 
-  <div class="list-box__content">
-    <ul class="list-box__list">
-      <li class="list-box__list-item"><a href="#0">Algemene informatie, voorwaarden en tarieven</a></li>
-      <li class="list-box__list-item"><a href="#0" class="active">Bestellen</a></li>
-      <li class="list-box__list-item"><a href="#0">Bezorgen</a></li>
-      <li class="list-box__list-item"><a href="#0">Nummerbehoud</a></li>
-      <li class="list-box__list-item"><a href="#0">Over Ben</a></li>
-      <li class="list-box__list-item"><a href="#0">Ben Vriendenvoordeel</a></li>
-    </ul>
-  </div>
-
-  <div class="list-box__readmore">
-    <a href="#0" class="list-box__readmorelink">Bekijk ze allemaal</a>
-  </div>
-
-</div></code></pre>
-
-  <div class="list-box list-box--icon">
-    <div class="list-box__icon">
-      <img src="example/phone05.png" alt="">
-    </div>
-  
-    <h2 class="list-box__title"> List box title</h2>
-  
-    <div class="list-box__content">
-      <ul class="list-box__list">
-        <li class="list-box__list-item"><a href="#0">Algemene informatie, voorwaarden en tarieven</a></li>
-        <li class="list-box__list-item"><a href="#0">Bestellen</a></li>
-        <li class="list-box__list-item"><a href="#0">Bezorgen</a></li>
-        <li class="list-box__list-item"><a href="#0" class="active">Nummerbehoud</a></li>
-        <li class="list-box__list-item"><a href="#0">Over Ben</a></li>
-        <li class="list-box__list-item"><a href="#0">Ben Vriendenvoordeel</a></li>
-      </ul>
-    </div>
-  
-    <div class="list-box__readmore">
-      <a href="#0" class="list-box__readmorelink">Bekijk ze allemaal</a>
-    </div>
-  
-  </div>
-<pre class="language-html"><code><div class="list-box list-box--icon">
-  <div class="list-box__icon">
-    <img src="example/phone05.png" alt="">
-  </div>
-
-  <h2 class="list-box__title"> List box title</h2>
-
-  <div class="list-box__content">
-    <ul class="list-box__list">
-      <li class="list-box__list-item"><a href="#0">Algemene informatie, voorwaarden en tarieven</a></li>
-      <li class="list-box__list-item"><a href="#0">Bestellen</a></li>
-      <li class="list-box__list-item"><a href="#0">Bezorgen</a></li>
-      <li class="list-box__list-item"><a href="#0" class="active">Nummerbehoud</a></li>
-      <li class="list-box__list-item"><a href="#0">Over Ben</a></li>
-      <li class="list-box__list-item"><a href="#0">Ben Vriendenvoordeel</a></li>
-    </ul>
-  </div>
-
-  <div class="list-box__readmore">
-    <a href="#0" class="list-box__readmorelink">Bekijk ze allemaal</a>
-  </div>
-
-</div></code></pre>
+  </div></code></pre>
         </div>
       </main>
     
@@ -293,7 +262,6 @@
     <script src="js/theme.js"></script>
     <script src="js/styleguide.js"></script>
 
-      <script src="js/atomic-swatch.js"></script>
    
   </body>
 </html>
