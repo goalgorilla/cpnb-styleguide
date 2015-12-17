@@ -11,10 +11,7 @@
     @include MQ($desk) {
       position: relative;
       margin: 0 auto;
-    }
-
-    @include MQ($plus) {
-      max-width: $wide;
+      max-width: $desk;
     }
 
 	}
@@ -222,7 +219,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba($c0,0.9);
   z-index: 2;
   text-align: center;
   padding: 42px 0;
@@ -243,6 +240,8 @@
 
 	@include MQ($desk) {
 		display: block;
+    background: linear-gradient(to right, white 0%, white 50%,
+      $c0 50%, $c0);
     transform: none;
     padding: 0;
     height: auto;
@@ -253,16 +252,9 @@
       margin: auto;
       position: relative;
       background-color: white;
+      max-width: $desk;
     }
   
-  }
-
-  @include MQ($plus) {
-    .container {
-      width: 90%;
-      max-width: $wide;
-    }
-
   }
 
 }

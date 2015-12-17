@@ -349,7 +349,7 @@ gulp.task('copy', ['usemin'], function() {
 // Releasin'
 // ===================================================
 
-gulp.task('deploy', function() {
+gulp.task('deploy', ['build'], function() {
   return gulp.src([path.dist + '/**/*'])
     .pipe($.deploy());
 });
@@ -391,5 +391,5 @@ gulp.task('watch', function() {
 // Taskin'
 // ===================================================
 
-gulp.task('build', [ 'script', 'copy','usemin' ]);
+gulp.task('build', [ 'script', 'copy', 'usemin' ]);
 gulp.task('default', [ 'sass', 'script', 'copy', 'assemble', 'serve', 'watch' ]);

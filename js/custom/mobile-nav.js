@@ -64,7 +64,12 @@
         });
 
         $('.desktop-search-btn').click(function(e) {
-          $('.block--search').toggle();
+          site.addClass('search-is-open');
+          e.preventDefault();
+        });
+
+        $('.mask-modal').click(function(e) {
+          site.removeClass('search-is-open');
           e.preventDefault();
         });
 

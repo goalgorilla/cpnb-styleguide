@@ -1,0 +1,132 @@
+@include MQ($desk) {
+
+  .no-flexbox .social-media-blocks-wrapper {
+    @include clearfix;
+  }
+
+  .flexbox .social-media-blocks-wrapper {
+    display: flex;
+  }
+
+}
+
+.teaser-block--social {
+  padding: 20px 40px 20px 20px;
+  margin-bottom: 10px;
+  background-color: white;
+
+  @include MQ($tab) {
+    display: table;
+    padding: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  @include MQ($desk) {
+    margin-bottom: 0;
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
+
+    .flexbox & {
+      display: flex;
+    }
+  }
+
+}
+
+.teaser-block--twitter {
+  background: white url(../images/twitter-blue.svg) 97% 5% / auto 25px no-repeat;
+
+  @include MQ($tab) {
+    background-image: none;
+
+    .teaser-block--social__profile {
+      background: #65BDEC url(../images/twitter-white.svg) 50% 40% / auto 20% no-repeat;
+    }
+  }
+
+}
+
+.teaser-block--facebook {
+  background: white url(../images/facebook-color.svg) 97% 5% / auto 25px no-repeat;
+
+  @include MQ($tab) {
+    background-image: none;
+
+    .teaser-block--social__profile {
+      background: #4A66A3 url(../images/facebook-white.svg) 50% 40% / auto 20% no-repeat;
+    }
+  }
+  
+}
+
+.post-type {
+  color: $c12;
+  margin-bottom: 20px;
+}
+
+.post-author {
+  font-weight: bold;
+}
+
+.post-username {
+  font-style: italic;
+}
+
+.post-content {
+  color: $c8;
+  font-size: 13px;
+}
+
+.teaser--readmore {
+  @include icon-right($c0);
+  padding-right: 20px;
+  text-align: right;
+  display: block;
+  font-size: 14px;
+  margin: 30px 0 20px;
+}
+
+.teaser-block--social__profile {
+  display: none;
+
+  @include MQ($tab) {
+    display: table-cell;
+    width: 25%;
+    position: relative;
+  }
+
+  @include MQ($desk) {
+    width: 30%;
+  }
+
+}
+
+.teaser-block--social__post {
+  @include MQ($tab) {
+    display: table-cell;
+    padding: 20px 40px;
+    width: 75%;
+  }
+
+  @include MQ($desk) {
+    width: 70%;
+    padding: 20px;
+  }
+
+}
+
+.profile-username {
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  color: white;
+  padding: 20px 0;
+  font-size: 14px;
+}

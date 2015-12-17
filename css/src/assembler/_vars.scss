@@ -10,6 +10,9 @@ $c7:  #a76f39; // Dark Yellow
 $c8:  #529cc7; // Blue
 $c9:  #9FBD37; // Green
 $c10: #847f78; // Grey
+$c11: #F1F0EE; // Body
+$c12: #d7d3d0; // Light grey
+
 
 $blue: #00aeef;
 
@@ -40,10 +43,10 @@ $border-radius: 5px;
 $margin: 10px;
 $margin-big: 30px;
 
-$tab: 45em; // 767px
-$desk: 60em; // 960px
-$plus: 64em; // 1024px
-$wide: 75em; // 1200px
-$wide-width: 90em; // 1440px
+$tab: 768px; // 767px
+$desk: 960px; // 960px
+$plus: 1024px; // 1024px
+$wide: 1200px; // 1200px
+$wide-width: 1440px; // 1440px
 
-$mobile-only: 40em; // mobile only
+$mobile-only: 767px; // mobile only

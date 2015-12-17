@@ -36,13 +36,11 @@
 // App Molecules
 @import "assembler/molecules/navigation";
 @import "assembler/molecules/breadcrumbs";
-@import "assembler/molecules/highlighted";
-@import "assembler/molecules/vertical-tabs";
-@import "assembler/molecules/horizontal-tabs";
-@import "assembler/molecules/list-box";
-@import "assembler/molecules/secondary-box";
-@import "assembler/molecules/product-teaser";
-@import "assembler/molecules/product-infobox";
+@import "assembler/molecules/teaser-social-media";
+@import "assembler/molecules/teaser-campaign";
+@import "assembler/molecules/teaser-news";
+@import "assembler/molecules/teaser-event";
+@import "assembler/molecules/teaser-insight";
 @import "assembler/molecules/form-items";
 @import "assembler/molecules/tables";
 @import "assembler/molecules/map-popup";

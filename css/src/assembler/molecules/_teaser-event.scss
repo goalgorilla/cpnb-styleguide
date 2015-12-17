@@ -1,0 +1,112 @@
+@include MQ($tab) {
+
+  .no-flexbox .event-teaser-wrapper {
+    @include clearfix;
+  }
+
+  .flexbox .event-teaser-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+}
+
+@include MQ($desk) {
+  .flexbox .event-teaser-wrapper {
+    justify-content: center;
+  }
+}
+
+.teaser--event {
+  display: inline-block;
+  position: relative;
+  background: white;
+  margin: 0 auto;
+  width: 320px;
+
+  &:hover {
+    .teaser--event__readmore:before,
+    .teaser--event__readmore:after {
+      background-color: $c8;
+    }
+  }
+
+  @include MQ($tab) {
+    float: left;
+    display: block;
+    width: 220px;
+
+    .flexbox & {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+  }
+
+  @include MQ($desk) {
+    width: 320px;
+  }
+
+
+}
+
+.teaser--event__image {
+  width: 320px;
+  height: 320px;
+  position: relative;
+
+  @include MQ($tab) {
+    width: 220px;
+    height: 220px;
+  }
+
+  @include MQ($desk) {
+    width: 320px;
+    height: 320px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+.teaser--event__readmore {
+  @include icon-right(white);
+  position: absolute;
+  font-size: 0;
+  bottom: 40px;
+  right: 30px;
+  display: inline-block;
+  z-index: 2;
+
+  &:before {
+    transform: scale(1.3) rotate(135deg);
+  }
+  &:after {
+    transform: scale(1.3) rotate(-135deg);
+  }
+
+}
+
+.teaser--event__content {
+  max-width: 320px;
+  padding: 10px 30px 10px 30px; 
+}
+
+.teaser--event__date {
+  font-size: 14px;
+  color: $c0;
+  margin-bottom: 5px;
+}
+
+.teaser--event__title {
+  font-weight: bold;
+  font-family: 'PT-Serif';
+  color: $c8;
+  line-height: 1.35;
+  font-size: 18px;
+  margin-top: 0;
+}
