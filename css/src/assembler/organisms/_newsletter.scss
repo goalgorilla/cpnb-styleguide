@@ -1,0 +1,50 @@
+.newsletter {
+
+}
+
+.newsletter__infobox {
+  background-color: white;
+  padding: 20px;
+
+  h3 {
+    color: $c8;
+    font-family: 'PT-serif';
+    font-weight: normal;
+    text-align: right;
+    line-height: 1.35;
+    font-size: 28px;
+  }
+
+  p {
+    display: none;
+  
+    @include MQ($tab) {
+
+    }
+
+  }
+
+}
+
+.newsletter__form {
+  padding: 20px;
+  background-color: $c12;
+
+  .form-submit {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-color: $c14;
+    border-radius: 0;
+    font-size: 0;
+    margin-top: -42px;
+    margin-left: 192px;
+    @include icon-right($c0);
+  }
+}
+
+.newsletter__socialmedia {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}

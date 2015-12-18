@@ -70,7 +70,7 @@ button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appe
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 input{line-height:normal}
 textarea{overflow:auto}
-.form-text{border-radius:4px;font-size:14px;line-height:1.4em;color:#666;display:inline-block;padding:4px 6px;vertical-align:middle;border:1px solid #d8d8d8;-webkit-appearance:none;width:220px;transition:box-shadow .3s,border-color .3s}
+.form-text{border-radius:0;font-family:PT-serif;font-size:14px;line-height:1.4em;color:#222;display:inline-block;padding:4px 6px;vertical-align:middle;border:1px solid #d8d8d8;-webkit-appearance:none;width:220px;transition:box-shadow .3s,border-color .3s}
 .form-text[disabled]{pointer-events:none;cursor:not-allowed}
 .form-text:hover{border-color:#666}
 .form-text:focus{outline:0;border-color:rgba(82,168,236,.8);box-shadow:0 1px 1px rgba(0,0,0,.075) inset,0 0 8px rgba(82,168,236,.6)}
@@ -119,7 +119,12 @@ html.js .form-autocomplete.throbbing{background-position:99% -13px}
 .promotion-color.oranje{background-color:#fab100}
 .promotion-color.zwart{background-color:#000}
 .promotion-color.wit{background-color:#fff;color:#00aeef;box-shadow:0 1px 3px rgba(0,0,0,.5)}
-.icon-phone{background:url(../images/icons/phone05.png) 0/contain no-repeat}
+.icon-button{display:inline-block;width:45px;height:45px;background-color:#fff;background-repeat:no-repeat;background-position:50% 50%;background-size:20px 20px;text-indent:-999em;font-size:0}
+.icon-twitter{background-image:url(../images/icon-twitter-grey.svg)}
+.icon-facebook{background-image:url(../images/icon-facebook-grey.svg)}
+.icon-flickr{background-image:url(../images/icon-flickr-grey.svg)}
+.icon-youtube{background-image:url(../images/icon-youtube-grey.svg)}
+.icon-linkedin{background-image:url(../images/icon-linkedin-grey.svg)}
 .block-boxes-warning{margin-bottom:25px;padding:20px;background:#00aeef;font-weight:700;color:#fff}
 .block-boxes-warning span{text-decoration:underline}
 .overlay{top:0;left:0;right:0;bottom:0;display:none;position:fixed;z-index:99;background:rgba(0,0,0,.85);width:100%;text-align:center}
@@ -350,16 +355,15 @@ html.popup_visible{overflow:hidden}
 .section-divider{width:100%;min-height:10px;position:relative}
 .section-divider:after{width:100%;height:8px;display:block;content:'';position:absolute;top:100%;background:linear-gradient(to right,#461f6f 0,#461f6f 5%,#9d0d79 6%,#9d0d79 15%,#6d136f 15%,#6d136f 35%,#9d0d79 35%,#9d0d79 45%,#a74f38 45%,#a74f38 54%,#b17539 54%,#b17539 66%,#a76f39 66%,#a76f39 78%,#994837 78%,#994837 88%,#529cc7 88%,#529cc7 100%)}
 .section-divider__readmore,.section-divider__tagline{display:none}
-.accordion-box__title,.ui-accordion-header{display:block;cursor:pointer;padding:10px .5em 10px 2.2em;background:#efefef;border:1px solid #d8d8d8;border-top-color:#efefef;position:relative;font-size:14px;line-height:normal;font-weight:400}
-.accordion-box__item:first-child .accordion-box__title,.ui-accordion-header:first-child{border-top:1px solid #d8d8d8}
-.accordion-box__content,.ui-accordion-content{display:none;height:auto!important;padding:10px 15px;font-size:14px;border:1px solid #d8d8d8;border-top:0}
-.accordion-box__content ul,.ui-accordion-content ul{padding-left:30px;line-height:1.5;list-style-type:disc}
-.accordion-box__toggleicon:after,.accordion-box__toggleicon:before,.ui-accordion-header-icon:after,.ui-accordion-header-icon:before{position:absolute;display:block;left:14px;width:3px;height:10px;top:10px;content:'';transition:.3s;background:#00aeef;-webkit-backface-visibility:hidden;backface-visibility:hidden}
-.accordion-box__toggleicon:before,.ui-accordion-header-icon:before{-webkit-transform:rotate(135deg);transform:rotate(135deg)}
-.accordion-box__toggleicon:after,.ui-accordion-header-icon:after{-webkit-transform:rotate(-135deg);transform:rotate(-135deg);top:16px}
-.content-visible .accordion-box__toggleicon:before,.ui-accordion-header-active .ui-accordion-header-icon:before{-webkit-transform:rotate(225deg);transform:rotate(225deg);left:18px;top:14px}
-.content-visible .accordion-box__toggleicon:after,.ui-accordion-header-active .ui-accordion-header-icon:after{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);left:12px;top:14px}
-.view-faq-nodes .views-row+.views-row{position:relative;margin-top:-1px}
+.newsletter__infobox{background-color:#fff;padding:20px}
+.newsletter__infobox h3{color:#529cc7;font-family:PT-serif;font-weight:400;text-align:right;line-height:1.35;font-size:28px}
+.newsletter__infobox p{display:none}
+.newsletter__form{padding:20px;background-color:#d7d3d0}
+.newsletter__form .form-submit{width:27px;height:27px;background-color:#ccc8c1;border-radius:0;font-size:0;margin-top:-42px;margin-left:192px;position:relative}
+.newsletter__form .form-submit:after,.newsletter__form .form-submit:before{position:absolute;display:inline-block;right:0;width:2px;height:8px;top:3px;content:'';transition:.3s;background:#222}
+.newsletter__form .form-submit:before{-webkit-transform:rotate(135deg);transform:rotate(135deg)}
+.newsletter__form .form-submit:after{-webkit-transform:rotate(-135deg);transform:rotate(-135deg);top:8px}
+.newsletter__socialmedia{padding:20px 0;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
 .page-phone .node__title,.page-student .node__title,.pane-tmobile-selfcare-renew-phone-package li:first-child .node__title{display:inline-block;margin-right:10px}
 .page-phone .attribute-widgets>.form-item,.page-student .attribute-widgets>.form-item,.pane-tmobile-selfcare-renew-phone-package li:first-child .attribute-widgets>.form-item{margin:0}
 .pane-tmobile-selfcare-renew-phone-package .container:after,.pane-tmobile-selfcare-renew-phone-package .container:before{content:'';display:table}

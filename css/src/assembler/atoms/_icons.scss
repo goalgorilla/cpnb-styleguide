@@ -1,3 +1,31 @@
-.icon-phone {
-  background: url(../images/icons/phone05.png) 0 0 / contain no-repeat;
+.icon-button {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 20px 20px;
+  text-indent: -999em;
+  font-size: 0;
+}
+
+.icon-twitter {
+  background-image: url(../images/icon-twitter-grey.svg);
+}
+
+.icon-facebook {
+  background-image: url(../images/icon-facebook-grey.svg);
+}
+
+.icon-flickr {
+  background-image: url(../images/icon-flickr-grey.svg);
+}
+
+.icon-youtube {
+  background-image: url(../images/icon-youtube-grey.svg);
+}
+
+.icon-linkedin {
+  background-image: url(../images/icon-linkedin-grey.svg);
 }
