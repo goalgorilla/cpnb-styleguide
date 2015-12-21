@@ -30,21 +30,12 @@
   }
 
   h3 {
-    color: $c8;
-    font-family: 'PT-serif';
+    color: $bright-blue;
+    font-family: $serif-font;
     font-weight: normal;
     text-align: right;
     line-height: 1.35;
     font-size: 28px;
-  }
-
-  p {
-    display: none;
-  
-    @include MQ($tab) {
-
-    }
-
   }
 
 }
@@ -60,7 +51,7 @@
   }
 
   @include MQ($tab) {
-    background-color: $c11;
+    background-color: $grey1;
     display: block;
     flex: 1 1 50%;
     padding: 30px;
@@ -83,16 +74,14 @@
 
 .newsletter__form {
   padding: 20px;
-  display: flex;
-  background-color: $c11;
+  background-color: $grey1;
 
   @include MQ($tab) {
-    flex: 1 1 50%;
-    padding: 10px 30px;  
+    padding: 10px 0px;  
   }
 
   @include MQ($desk) {
-    align-items: center;
+    padding: 10px 30px;  
   }
 
   .form-item {
@@ -101,12 +90,12 @@
 
   .form-submit {
     position: absolute;
-    width: 27px;
-    height: 27px;
-    background-color: $c14;
+    width: 29px;
+    height: 29px;
+    background-color: $grey1;
     border-radius: 0;
     font-size: 0;
-    top: 1px;
+    top: 0px;
     right: 0;
   }
 
@@ -114,8 +103,7 @@
 
 .newsletter__signup {
   width: 247px;
-  margin: auto;
-  @include icon-right($c0);
+  @include icon-right($black);
 
   &:before {
     right: 11px;
@@ -131,10 +119,11 @@
     width: 3px;
     height: 10px;
   } 
+  
 }
 
 .newsletter__socialmedia {
-  background-color: $c13;
+  background-color: $grey5;
   padding: 20px 0;
   display: flex;
   justify-content: center;

@@ -1,76 +1,65 @@
 @include MQ($tab) {
 
-  .no-flexbox .news-teaser-wrapper {
+  .no-flexbox .teaser-news--wrapper {
     @include clearfix;
-  }
-
-  .flexbox .news-teaser-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
   }
 
 }
 
-@include MQ($desk) {
-  .flexbox .news-teaser-wrapper {
-    justify-content: center;
+.flexbox .teaser-news--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include MQ($desk) {
+    justify-content: flex-start;
   }
+
 }
 
 .teaser--news {
   display: inline-block;
   position: relative;
   background: white;
-  margin: 0 auto;
-  width: 320px;
+  margin-bottom: 20px;
+  width: 300px;
+  flex: 1 1 300px;
 
   &:hover {
     .teaser--news__readmore:before,
     .teaser--news__readmore:after {
-      background-color: $c8;
+      background-color: $bright-blue;
     }
   }
 
-  @include MQ($tab) {
-    float: left;
-    display: block;
-    width: 220px;
+}
 
-    .flexbox & {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0;
+
+.teaser-news--wrapper {
+  
+  .teaser--news {
+    flex-grow: 0;
+
+    @include MQ($tab) {
+      margin: 0 10px 20px 10px;
     }
-  }
 
-  @include MQ($desk) {
-    width: 320px;
+    @include MQ($desk) {
+      margin: 0 20px 20px 0;
+    }
+  
   }
-
 
 }
 
 .teaser--news__image {
-  width: 320px;
-  height: 320px;
+  width: 100%;
+  height: 300px;
   position: relative;
-
-  @include MQ($tab) {
-    width: 220px;
-    height: 220px;
-  }
-
-  @include MQ($desk) {
-    width: 320px;
-    height: 320px;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
-
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-color: $pink;
 }
 
 .teaser--news__readmore {
@@ -98,7 +87,7 @@
 
 .teaser--news__date {
   font-size: 14px;
-  color: $c8;
+  color: $bright-blue;
   margin-bottom: 5px;
 }
 

@@ -1,0 +1,89 @@
+---
+basename: home-lu with-hero
+template: true
+title: Homepage Logged-in user
+description:
+---
+
+{{> hero}}
+
+<section class="section-default">  
+  <h3 class="section--title">Onze campagnes</h3>
+  
+  <div class="teaser-home--wrapper">
+    <div class="teaser-intro teaser-intro--campaign">
+      <h2 class="teaser-intro__title">Doe ook mee met onze <span>succesvolle campagnes</span></h2>
+    </div>
+    {{> teaser-campaign}}
+    {{> teaser-campaign}}
+  </div>
+
+  <a href="#0" class="section-readmore">Bekijk alle campagnes</a>
+
+</section>
+
+{{> section-divider divider.divider-b}}
+
+<section class="section-default">  
+ <div class="teaser-social--wrapper"> 
+    {{> teaser-social--twitter}}
+    {{> teaser-social--facebook}}
+  </div>
+</section>
+
+{{> section-divider divider.divider-c}}
+
+<section class="section-default">  
+  <h3 class="section--title">Ons nieuws</h3>
+  
+  <div class="teaser-home--wrapper">
+    <div class="teaser-intro teaser-intro--news">
+      <h2 class="teaser-intro__title">We houden u graag op de hoogte met het <span>laatste nieuws</span></h2>
+    </div>
+    {{> teaser-news}}
+    {{> teaser-news}}
+  </div>
+
+  <a href="#0" class="section-readmore">Bekijk al het nieuws</a>
+
+</section>
+
+{{> section-divider divider.divider-d}}
+
+
+<section class="section-default">  
+  <h3 class="section--title">Onze evenementen</h3>
+  
+  <div class="teaser-home--wrapper">
+    <div class="teaser-intro teaser-intro--event">
+      <h2 class="teaser-intro__title">Bezoek een van deze <span>bijzondere evenementen</span></h2>
+    </div>
+    {{> teaser-event}}
+    {{> teaser-event}}
+  </div>
+
+  <a href="#0" class="section-readmore">Bekijk alle evenementen</a>
+
+</section>
+
+{{> section-divider divider.divider-e}}
+
+<section class="section-default">  
+  <h3 class="section--title">Praktische inzichten</h3>
+  
+  <div class="teaser-home--wrapper">
+    <div class="teaser-intro teaser-intro--insight">
+      <h2 class="teaser-intro__title">We helpen u verder met <span>praktische inzichten</span></h2>
+    </div>
+    {{> teaser-insight}}
+    {{> teaser-insight}}
+    <div class="teaser-intro--insight__image" style="background-image: url(example/insight-intro.jpg)"></div>
+    {{> teaser-insight}}
+    {{> teaser-insight}}
+  </div>
+
+  <a href="#0" class="section-readmore">Bekijk ze allemaal</a>
+
+</section>
+
+{{> section-divider divider.divider-a}}

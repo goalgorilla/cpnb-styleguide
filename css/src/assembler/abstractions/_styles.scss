@@ -7,15 +7,14 @@
     content: '';
     position: absolute;
     top: 100%;
-    background: linear-gradient(to right, $c1 0%, $c1 5%,
-      $c3 6%,$c3 15%,
-      $c2 15%, $c2 35%,
-      $c3 35%, $c3 45%,
-      $c4 45%, $c4 54%,
-      $c6 54%, $c6 66%,
-      $c7 66%, $c7 78%,
-      $c5 78%, $c5 88%,
-      $c8 88%, $c8 100%
+    background: linear-gradient(to right, $deep-purple 0%, $deep-purple 5%,
+      $pink 6%,$pink 15%,
+      $bright-purple 15%, $bright-purple 35%,
+      $pink 35%, $pink 45%,
+      $orange1 45%, $orange1 54%,
+      $orange2 54%, $orange2 78%,
+      $orange1 78%, $orange1 88%,
+      $bright-blue 88%, $bright-blue 100%
     );
   }
 

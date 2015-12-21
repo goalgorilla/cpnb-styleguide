@@ -92,16 +92,16 @@
   .block--system-main-menu {
 
     .menu__link {
-      color: $c8;
+      color: $bright-blue;
 
       &:hover {
-        color: $c8;
+        color: $bright-blue;
       }
     } 
   }
 
   .block--system-user-menu {
-    background-color: $c0;
+    background-color: rgba($black,.9);
   }
 
 }

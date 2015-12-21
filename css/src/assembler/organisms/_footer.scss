@@ -1,5 +1,5 @@
 .l-footer {
-  background-color: $c12;
+  background-color: $grey2;
   width: 100%;
 
   .container {
@@ -12,6 +12,16 @@
       padding-bottom: 30px;
     }
   }
+  
+}
+
+.l-region--footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+
+  @include MQ($tab) { 
+    text-align: left;
+  }
 
   p {
     display: inline-block;
@@ -22,16 +32,6 @@
     @include MQ($tab) { 
       float: right;
     }
-  }
-  
-}
-
-.l-region--footer-bottom {
-  text-align: center;
-  padding-top: 20px;
-
-  @include MQ($tab) { 
-    text-align: left;
   }
 
 }

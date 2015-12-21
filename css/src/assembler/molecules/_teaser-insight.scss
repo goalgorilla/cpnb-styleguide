@@ -1,27 +1,28 @@
 @include MQ($tab) {
 
-  .no-flexbox .insight-teaser-wrapper {
+  .no-flexbox .teaser-insight--wrapper {
     @include clearfix;
   }
 
-  .flexbox .insight-teaser-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+}
+
+.flexbox .teaser-insight--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include MQ($desk) {
     justify-content: flex-start;
   }
 
 }
 
-@include MQ($desk) {
-  .flexbox .insight-teaser-wrapper {
-    justify-content: center;
-  }
-}
-
 .teaser--insight {
   display: inline-block;
-  margin: 0 auto;
-  background: $c12;
+  position: relative;
+  background: $grey3;
+  width: 300px;
+  flex: 1 1 300px;
 
   &:hover {
     .teaser--insight__readmore:before,
@@ -41,12 +42,45 @@
     }
   }
 
+  &:nth-of-type(4n+1) {
+    background: $grey3;
+  }
+
+  &:nth-of-type(4n+2) {
+    background-color: darken($grey3,4%);
+  }
+
+  &:nth-of-type(4n-1) {
+    background-color: darken($grey3,8%);
+  }
+
+  &:nth-of-type(4n+4) {
+    background-color: white;
+  }
 
 }
 
 
+
+.teaser-insight--wrapper {
+  
+  .teaser--insight {
+    flex-grow: 0;
+
+    @include MQ($tab) {
+      margin: 0 10px 20px 10px;
+    }
+
+    @include MQ($desk) {
+      margin: 0 20px 20px 0;
+    }
+  
+  }
+
+}
+
 .teaser--insight__readmore {
-  @include icon-right($c0);
+  @include icon-right($black);
   position: absolute;
   font-size: 0;
   bottom: 40px;
@@ -64,7 +98,7 @@
 }
 
 .teaser--insight__content {
-  width: 300px;
+  width: 100%;
   height: 300px;
   padding: 20px; 
   position: relative;
@@ -78,7 +112,7 @@
 .teaser--insight__title {
   text-align: center;
   font-weight: normal;
-  font-family: 'PT-Serif';
+  font-family: $serif-font;
   line-height: 1.35;
   font-size: 26px;
   margin-top: 0;

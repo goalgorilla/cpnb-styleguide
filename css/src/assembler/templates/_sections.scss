@@ -2,28 +2,36 @@
 
 .section-default {
   padding: 25px 10px;
-  max-width: 960px;
+  max-width: $desk;
   margin: 0 auto;
   position: relative;
+  @include clearfix;
 
   @include MQ($tab) {
     padding-top: 90px;
+    padding-bottom: 60px;
   }
 
-  @include MQ($tab) {
+  @include MQ($desk) {
     padding-top: 115px;
+  }
+
+  @include MQ($plus){
+    max-width: $desk;
+    padding-left: 0;
+    padding-right: 0;
   }
 
 }
 
 .section--title {
-  background-color: $c12;
+  background-color: $grey2;
   line-height: 2;
   padding: 0 20px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; 
-  font-family: 'PT-serif';
+  font-family: $serif-font;
   font-weight: normal;
   font-size: 1em;
 }
@@ -31,11 +39,11 @@
 .section-readmore {
   display: block;
   background-color: white;
-  color: $c8;
-  text-align: right;
+  color: $bright-blue;
+  text-align: center;
   margin: 25px 0;
   padding: 10px 30px;
-  @include icon-right($c8);
+  @include icon-right($bright-blue);
 
   &:before {
     top: 14px;
@@ -52,15 +60,15 @@
   }
 
   @include MQ($tab) {
-    @include icon-right($c0);
+    @include icon-right($black);
     position: absolute;
     background-color: transparent;
-    color: $c0;
+    color: $black;
     margin: 0;
     right: 30px;
     padding: 0 14px 0 0;
     top: 90px;
-    font-family: 'PT-serif';   
+    font-family: $serif-font;   
     line-height: 2;
 
     &:hover {
@@ -86,23 +94,13 @@
 
 }
 
-
-// Campaigns
-
-.flexbox .teaser-campaign--wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.teaser-campaign--intro {
+.teaser-intro {
   display: none;
 
   @include MQ($desk) {
     display: block;
     flex: 1 1 300px;
     background: white;
-    padding: 20px;
     position: relative;
     max-height: 300px;
   }
@@ -110,18 +108,54 @@
 }
 
 
-.teaser-campaign--intro__title {
+.teaser-intro__title {
   text-align: right;
   font-weight: normal;
-  font-family: 'PT-Serif';
+  font-family: $serif-font;
   line-height: 1.1;
   font-size: 36px;
   margin-top: 0;
   @include center(xy);
   position: absolute;
-  width: 70%;
+  width: 80%;
 
   span {
-    color: $c8;
+    display: block;
+    color: $pink;
   }
+}
+
+.flexbox .teaser-home--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teaser-intro--event .teaser-intro__title span,
+.teaser-intro--campaign .teaser-intro__title span {
+  color: $bright-blue;
+}
+
+.teaser-intro--news .teaser-intro__title span {
+  color: $pink;
+}
+
+.teaser-intro--insight .teaser-intro__title span {
+  color: $bright-purple;
+}
+
+// Insights has extra image in intro 
+.teaser-intro--insight__image {
+  display: none;
+
+  @include MQ($desk) {
+    display: block;
+    flex: 1 1 300px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    background-size: cover;
+    background-position: 50%;
+  }
+
 }

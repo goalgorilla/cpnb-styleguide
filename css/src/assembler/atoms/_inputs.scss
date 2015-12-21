@@ -52,10 +52,10 @@ textarea {
 
 .form-text {
   border-radius: 0; // override ios default
-  font-family: 'PT-serif';
+  font-family: $serif-font;
   font-size: 14px;
   line-height: 1.4em;
-  color: $c0;
+  color: $black;
   display: inline-block;
   padding: 4px 6px;
   vertical-align: middle;

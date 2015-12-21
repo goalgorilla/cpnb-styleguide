@@ -1,24 +1,23 @@
 // Colors
-$c0:  #222222;
-$c1:  #461f6f; // Dark purple
-$c2:  #6d136f; // Light purple
-$c3:  #9d0d79; // Pink
-$c4:  #a74f38; // Orange
-$c5:  #994837; // Dark orange
-$c6:  #b17539; // Yellow
-$c7:  #a76f39; // Dark Yellow
-$c8:  #529cc7; // Blue
-$c9:  #9FBD37; // Green
-$c10: #847f78; // Grey
-$c11: #F1F0EE; // Body
-$c12: #d7d3d0; // Light grey
-$c13: #e4e2de; // Lighter grey
-$c14: #f1f0ee; // lightest grey
-$c14: #ccc8c1; // Medium grey
+$deep-purple:   #623588;
+$pink:          rgba(#af0086,0.9);
+$bright-purple: rgba(#802688,0.9);
+$orange1:       rgba(#ba5a41,0.9);
+$orange2:       #c88c57;
+$bright-blue:   rgba(#5daadc,0.9);
+$deep-blue:     #639cbf;
+$green:         #9fbd37; 
+
+$black:         #222222;
+$white:         #ffffff;
+$grey1:         #f2f1ef; //body
+$grey2:         #d8d5d0;
+$grey3:         #e6e6e6;
+$grey4:         #e6e5e3;
+$grey5:         #cac5c1;
+$grey6:         #e3dedb;
 
 $blue: #00aeef;
-
-$green: #9FBD37;
 
 $lightblue: #00cbef;
 $white: #fff;
@@ -33,6 +32,7 @@ $lightergray: #d8d8d8;
 $lightestgray: #efefef;
 
 $base-font: 'PT-Sans', sans-serif;
+$serif-font: 'PT-Serif', sans-serif;
 
 $h1: 1.875em;
 $h2: 1.5em;

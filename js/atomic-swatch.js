@@ -58,7 +58,7 @@ $atomic_swatch.addEventListener('click', function(e) {
     // https://twitter.com/gryghostvisuals/status/578524169719123969
     if(atomic_rgbchannel.length === 3) {
 
-      atomic_hex_div.style.background = 'rgba('+ atomic_rgbchannel[0] + ',' + atomic_rgbchannel[1] + ',' + atomic_rgbchannel[2] + ', 0.95)';
+      atomic_hex_div.style.background = 'rgba('+ atomic_rgbchannel[0] + ',' + atomic_rgbchannel[1] + ',' + atomic_rgbchannel[2] + ', 1)';
       atomic_hex_div.innerHTML = '<p>' + atomic_hexvalue + '</p><b>Klik op de HEX-code om deze te kopi&euml;ren</b>';
 
       var atomic_contrast = atomic_rgbchannel[0] * 0.299 + atomic_rgbchannel[1] * 0.587 + atomic_rgbchannel[2] * 0.114 > 186 ? atomic_hex_div.style.color = 'black' : atomic_hex_div.style.color = 'white';
@@ -68,7 +68,7 @@ $atomic_swatch.addEventListener('click', function(e) {
       var atomic_hex = window.getComputedStyle(atomic_target).getPropertyValue('fill'),
           atomic_rgb = hexToRgb(atomic_hex);
 
-      atomic_hex_div.style.background = 'rgba('+ atomic_rgb.r + ',' + atomic_rgb.g + ',' + atomic_rgb.b +', 0.95)';
+      atomic_hex_div.style.background = 'rgba('+ atomic_rgb.r + ',' + atomic_rgb.g + ',' + atomic_rgb.b +', 0.1)';
 
       var atomic_contrast = atomic_rgb.r * 0.299 + atomic_rgb.g * 0.587 + atomic_rgb.b * 0.114 > 186 ? atomic_hex_div.style.color = 'black' : atomic_hex_div.style.color = 'white';
 

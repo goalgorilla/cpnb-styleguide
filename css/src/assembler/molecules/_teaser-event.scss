@@ -1,75 +1,64 @@
 @include MQ($tab) {
 
-  .no-flexbox .event-teaser-wrapper {
+  .no-flexbox .teaser-event--wrapper {
     @include clearfix;
-  }
-
-  .flexbox .event-teaser-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
   }
 
 }
 
-@include MQ($desk) {
-  .flexbox .event-teaser-wrapper {
-    justify-content: center;
+.flexbox .teaser-event--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include MQ($desk) {
+    justify-content: flex-start;
   }
+
 }
 
 .teaser--event {
   display: inline-block;
   position: relative;
   background: white;
-  margin: 0 auto;
-  width: 320px;
+  margin-bottom: 20px;
+  width: 300px;
+  flex: 1 1 300px;
 
   &:hover {
     .teaser--event__readmore:before,
     .teaser--event__readmore:after {
-      background-color: $c8;
+      background-color: $bright-blue;
     }
   }
 
-  @include MQ($tab) {
-    float: left;
-    display: block;
-    width: 220px;
+}
 
-    .flexbox & {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0;
+.teaser-event--wrapper {
+  
+  .teaser--event {
+    flex-grow: 0;
+
+    @include MQ($tab) {
+      margin: 0 10px 20px 10px;
     }
-  }
 
-  @include MQ($desk) {
-    width: 320px;
+    @include MQ($desk) {
+      margin: 0 20px 20px 0;
+    }
+  
   }
-
 
 }
 
 .teaser--event__image {
-  width: 320px;
-  height: 320px;
+  width: 100%;
+  height: 300px;
   position: relative;
-
-  @include MQ($tab) {
-    width: 220px;
-    height: 220px;
-  }
-
-  @include MQ($desk) {
-    width: 320px;
-    height: 320px;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-color: $bright-blue;
 
 }
 
@@ -97,16 +86,17 @@
 }
 
 .teaser--event__date {
-  font-size: 14px;
-  color: $c0;
-  margin-bottom: 5px;
+  font-size: 13px;
+  line-height: 1.35;
+  color: $black;
+  margin-bottom: 8px;
 }
 
 .teaser--event__title {
-  font-weight: bold;
-  font-family: 'PT-Serif';
-  color: $c8;
+  font-weight: normal;
+  font-family: $serif-font;
+  color: $bright-blue;
   line-height: 1.35;
-  font-size: 18px;
+  font-size: 22px;
   margin-top: 0;
 }

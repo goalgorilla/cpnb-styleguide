@@ -55,7 +55,7 @@ var path = {
 };
 
 var glob = {
-  html: path.site + '/*.html',
+  html: path.site + '/**/*.html',
   css: path.css + '/*.css',
   sass: path.sass + '/**/*.scss',
   js: path.js + '/**/*.js',
@@ -86,22 +86,6 @@ gulp.task('serve', ['assemble'], function() {
 
   $.exec('open http://localhost:5000');
 });
-
-
-// ===================================================
-// Previewin'
-// ===================================================
-
-gulp.task('preview', function() {
-  $.connect.server({
-    root: [path.dist],
-    port: 5001
-  });
-
-  $.exec('open http://localhost:5001');
-});
-
-
 
 
 // ===================================================
@@ -391,5 +375,5 @@ gulp.task('watch', function() {
 // Taskin'
 // ===================================================
 
-gulp.task('build', [ 'script', 'copy', 'usemin' ]);
+gulp.task('build', [ 'script', 'copy' ]);
 gulp.task('default', [ 'sass', 'script', 'copy', 'assemble', 'serve', 'watch' ]);

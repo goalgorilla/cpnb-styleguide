@@ -1,11 +1,13 @@
 @include MQ($desk) {
 
-  .no-flexbox .social-media-blocks-wrapper {
+  .no-flexbox .teaser-social--wrapper {
     @include clearfix;
+    margin-bottom: 100px;
   }
 
-  .flexbox .social-media-blocks-wrapper {
+  .flexbox .teaser-social--wrapper {
     display: flex;
+    margin-bottom: 100px;
   }
 
 }
@@ -66,7 +68,7 @@
 }
 
 .post-type {
-  color: $c12;
+  color: $grey2;
   margin-bottom: 20px;
 }
 
@@ -79,12 +81,12 @@
 }
 
 .post-content {
-  color: $c8;
+  color: $bright-blue;
   font-size: 13px;
 }
 
 .teaser--readmore {
-  @include icon-right($c0);
+  @include icon-right($black);
   padding-right: 20px;
   text-align: right;
   display: block;
