@@ -24,22 +24,38 @@
   </head>
 
   <body class="{{basename}}">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    
+    {{> header-styleguide}}
+    
     <div class="l-page"> 
-      <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
-      {{> header-styleguide}}
-
       <main class="l-main" id="main-content">
-        <div class="container clearfix">
-          {% body %}
-        </div>
+        
+        {{#unless template}}
+        
+          <div class="container clearfix"> 
+        
+        {{/unless}}  
+                    
+        {% body %}
+        
+        {{#unless template}}
+        
+          </div> 
+        
+        {{/unless}}   
+
       </main>
     
+     {{#if template}}
+        {{> footer-with-newsletter}}
+      {{else}}
+        {{> footer}}
+      {{/if}}
 
-      {{> footer}}
-
+    </div>
 
     <div class="mask-modal"><button class="close-modal"> Sluiten </button></div>
-    </div>
     
     <script src="/js/contrib.js"></script>
     <script src="/js/theme.js"></script>

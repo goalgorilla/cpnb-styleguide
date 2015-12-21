@@ -10,18 +10,19 @@
 
   @include MQ($tab) {
     display: block;
-    width: 100%;
+    max-width: 960px;
     position: relative;
-    padding-left: 40px;
+    padding-left: 60px;
     font-weight: normal;
     line-height: 32px;
     font-size: 0.875em;
+    margin: auto;
 
     span {
       @include icon-down($c0);
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: 10px;
       background: white;
       width: 32px;
       height: 32px;
@@ -43,9 +44,11 @@
 
   }
 
-  @include MQ($plus) {
-    max-width: 1200px;
-    margin: 0 auto;
+  @include MQ($desk) {
+    
+    span {
+      left: 0;
+    }
   }
 
 }

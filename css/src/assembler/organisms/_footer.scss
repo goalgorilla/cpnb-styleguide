@@ -1,89 +1,58 @@
 .l-footer {
-  line-height: 1.5;
-  background-color: rgba(#5E4F45, 0.2);
+  background-color: $c12;
   width: 100%;
 
   .container {
-  	padding: 10px;
+  	padding-top: 20px;
+    padding-bottom: 20px;
+    @include clearfix;
+
+    @include MQ($tab) {
+      padding-top: 80px;
+      padding-bottom: 30px;
+    }
+  }
+
+  p {
+    display: inline-block;
+    font-size: 14px;   
+    margin: 0;
+    line-height: 1.5;
+
+    @include MQ($tab) { 
+      float: right;
+    }
   }
   
-  @include MQ($plus){
-  	.container {
-  		max-width: $wide;
-  		margin: 39px auto 0;
-  	}
-
-  }
-
-}
-
-.footer-top {
-	padding: 15px 0;
-
-	
 }
 
 .l-region--footer-bottom {
-	padding: 10px 0;
+  text-align: center;
+  padding-top: 20px;
 
-
-	@include MQ($tab){
-		@include clearfix;		
-	}
+  @include MQ($tab) { 
+    text-align: left;
+  }
 
 }
-
 
 @include MQ($tab) {	
 	
-	.block--tmobile-blocks-footer-copyright {
-		float: left;
-	}
-
-	.block--menu-menu-bottom-footer {
-		float: right;
-		text-align: right;
-	}
-
-}
-
-
-.block--tmobile-blocks-footer-facebook {
+  .footer__menu {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5;
 	
-	ul {
-		margin: 0;
+  	ul {
+  		margin: 0;
+  	}
+
+  	li {
+  		display: inline-block;
+  		margin-right: 10px;
+  	}
 	}
 
-	li {
-		display: inline-block;
-		margin-right: 10px;
-	}
-	
-	img {
-		width: 30px;
-		height: 30px;
-	}
-
-}
-
-.block--menu-menu-bottom-footer {
-	
-	.menu {
-		margin-top: 20px;
-		
-		@include MQ($tab) {
-			margin-top: 0;
-		}
-
-	}
-
-	@include MQ($tab) {
-		
-		li {
-			display: inline-block;
-			margin-right: 10px;
-		}
-
-	}
-	
 }

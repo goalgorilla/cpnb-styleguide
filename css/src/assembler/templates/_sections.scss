@@ -1,0 +1,127 @@
+// Default
+
+.section-default {
+  padding: 25px 10px;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+
+  @include MQ($tab) {
+    padding-top: 90px;
+  }
+
+  @include MQ($tab) {
+    padding-top: 115px;
+  }
+
+}
+
+.section--title {
+  background-color: $c12;
+  line-height: 2;
+  padding: 0 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+  font-family: 'PT-serif';
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.section-readmore {
+  display: block;
+  background-color: white;
+  color: $c8;
+  text-align: right;
+  margin: 25px 0;
+  padding: 10px 30px;
+  @include icon-right($c8);
+
+  &:before {
+    top: 14px;
+    right: 12px;
+    height: 9px;
+    width: 3px;
+  }
+
+  &:after {
+    top: 19px;
+    right: 12px;
+    height: 9px;
+    width: 3px;
+  }
+
+  @include MQ($tab) {
+    @include icon-right($c0);
+    position: absolute;
+    background-color: transparent;
+    color: $c0;
+    margin: 0;
+    right: 30px;
+    padding: 0 14px 0 0;
+    top: 90px;
+    font-family: 'PT-serif';   
+    line-height: 2;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:before {
+      height: 6px;
+      top: 12px;
+      right: 4px;
+    }
+
+    &:after {
+      height: 6px;
+      top: 16px;
+      right: 4px;
+    }
+  }
+
+  @include MQ($desk) {
+    top: 115px;
+  }
+
+}
+
+
+// Campaigns
+
+.flexbox .teaser-campaign--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.teaser-campaign--intro {
+  display: none;
+
+  @include MQ($desk) {
+    display: block;
+    flex: 1 1 300px;
+    background: white;
+    padding: 20px;
+    position: relative;
+    max-height: 300px;
+  }
+
+}
+
+
+.teaser-campaign--intro__title {
+  text-align: right;
+  font-weight: normal;
+  font-family: 'PT-Serif';
+  line-height: 1.1;
+  font-size: 36px;
+  margin-top: 0;
+  @include center(xy);
+  position: absolute;
+  width: 70%;
+
+  span {
+    color: $c8;
+  }
+}
