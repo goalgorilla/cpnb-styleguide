@@ -5,6 +5,14 @@
   @include section-break;
 }
 
+.section-divider-plain {
+  .section-divider__tagline {
+    @include MQ($desk) {
+      padding-bottom: 30px;
+    }
+  }
+}
+
 .section-divider__readmore {
   display: none;
 

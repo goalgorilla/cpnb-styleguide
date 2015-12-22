@@ -75,9 +75,12 @@
 .newsletter__form {
   padding: 20px;
   background-color: $grey1;
+  display: flex;
+  justify-content: center;
 
   @include MQ($tab) {
     padding: 10px 0px;  
+    justify-content: flex-start;
   }
 
   @include MQ($desk) {
@@ -88,10 +91,15 @@
     margin: 0;
   }
 
+  .form-text {
+    border: 0;
+    width: 100%;
+  }
+
   .form-submit {
     position: absolute;
-    width: 29px;
-    height: 29px;
+    width: 27px;
+    height: 27px;
     background-color: $grey1;
     border-radius: 0;
     font-size: 0;
@@ -102,7 +110,6 @@
 }
 
 .newsletter__signup {
-  width: 247px;
   @include icon-right($black);
 
   &:before {

@@ -1,8 +1,7 @@
 .sectiontitle {
-  line-height: 39px;
-  color: $black;
+  @extend %section-title;
+  margin-top: 40px;
   font-size: 1.5em;
-  margin: 20px 0;
 }
   
 .brandcard {
@@ -52,41 +51,4 @@
     
   }
   
-}
-
-[class^='icon-'] {
-  display: inline-block;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.icon-plus {
-  @include icon-plus($blue);
-}
-
-.icon-next {
-  @include icon-next($blue);
-  padding-right: 20px;
-  line-height: 40px;
-}
-
-.icon-down {
-  @include icon-down($blue);
-  padding-right: 20px;
-  line-height: 40px;
-}
-
-.icon-up {
-  @include icon-up($blue);
-  padding-right: 20px;
-  line-height: 40px;
-}
-
-.icon-right {
-  @include icon-right($blue);
-  padding-right: 14px;
-}
-
-.icon-check {
-  @include icon-check($blue);
 }

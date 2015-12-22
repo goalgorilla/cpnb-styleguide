@@ -1,0 +1,187 @@
+.teaser-ideas--wrapper {
+  background-color: white;
+  padding: 20px;
+
+  @include MQ($desk) {
+    padding: 30px;
+  }
+
+}
+
+.idea {
+  background-color: white;
+  
+  @include MQ($tab) {  
+    margin-bottom: 40px;
+  }
+
+}
+
+.idea__comment {
+  display: none;
+
+  @include MQ($tab){
+    display: block;
+    padding-left: 100px;
+
+    .media__body {
+      padding-right: 120px;
+    }
+
+  }
+
+   @include MQ($desk){
+
+    .media__body {
+      padding-right: 160px;
+    }
+
+   }
+
+}
+
+.idea__avatar {
+  display: none;
+
+  @include MQ($tab) {
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+.idea__like {
+  float: right;
+  width: 100px;
+  text-align: center;
+  margin: 0 0 20px 20px;
+
+  @include MQ($desk) {
+    width: 140px;
+  }
+}
+
+.idea__like-counter {
+  font-size: 24px;
+  letter-spacing: -2px;
+  font-weight: bold;
+  font-family: $serif-font;
+  
+  @include MQ($tab) {
+    font-size: 30px;
+    line-height: 46px;
+    margin-bottom: 5px;
+  }
+
+  @include MQ($desk) {
+    font-size: 50px;
+    line-height: 56px;
+    margin-bottom: 20px;
+  }
+
+
+}
+
+.idea__like-button {
+  border: 0;
+  background-color: $grey3;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px;
+
+  @include MQ($desk){
+    font-size: 1.2em;
+  }
+
+}
+
+.idea__author {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: block;
+  
+  @include MQ($tab) {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+
+.idea__published {
+  color: darken($grey2, 25%);
+  margin-bottom: 5px;
+}
+
+.idea__body {
+  clear: both;
+
+  @include MQ($tab) {
+    clear: none;
+  }
+}
+
+.idea-submit__block {
+  background-color: white;
+  padding: 20px;
+}
+
+.idea-submit__form {
+  position: relative;
+
+  .form-item {
+    margin-bottom: 0
+  }
+
+}
+
+.idea-submit__input {
+  border: 0;
+  background-color: $grey1;
+  font-size: 14px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  font-family: $serif-font;
+
+  @include MQ($tab) {
+    padding-right: 120px;
+  }
+}
+
+.idea-submit__button {
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: $grey5;
+  font-family: $serif-font;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s;
+
+  @include MQ($tab) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    min-width: 100px;
+    width: auto;
+  }
+
+  &:hover {
+    background-color: $grey2;
+  }
+}
+
+.ideas__load-more {
+  background: white;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+
+  .load-more {
+    border: 0;
+    background-color: white;
+    padding: 5px 20px;
+    @include icon-down($black);
+  }
+}

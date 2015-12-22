@@ -87,3 +87,34 @@ description:
 </section>
 
 {{> section-divider divider.divider-a}}
+
+<section class="section-default">  
+  <h3 class="section--title">CPNB Idee&euml;n</h3>
+  
+  <div class="teaser-ideas--wrapper">
+    {{> teaser-idea}}
+
+    {{> teaser-idea--comment}}
+
+  </div>
+
+  <div class="idea-submit__block">
+    <form class="idea-submit__form">
+      <div class="form-item">
+        <textarea class="idea-submit__input autogrow" cols="50" placeholder="Schrijf hier je reactie" rows='1'></textarea>
+      </div>
+      <div class="form-actions">
+        <input class="idea-submit__button" type="submit" value="Verzenden">
+      </div>
+    </form>
+  </div>
+
+  <div class="ideas__load-more">
+    <button class="load-more">Bekijk alle 25 reacties</button>
+  </div>
+
+  <a href="#0" class="section-readmore">Bekijk alle idee&euml;n</a>
+
+</section>
+
+{{> section-divider-plain}}

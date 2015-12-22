@@ -13,11 +13,15 @@
 
 
 @mixin section-title {
-  color: $black;
-  font-size: 22px;
-  line-height: 1.5;
-  font-weight: 700;
-  margin-bottom: 12px;
+  background-color: $grey2;
+  line-height: 2;
+  padding: 0 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+  font-family: $serif-font;
+  font-weight: normal;
+  font-size: 1em;
 }
 
 %section-title {
