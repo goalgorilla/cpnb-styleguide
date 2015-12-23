@@ -27,9 +27,6 @@
 @import "assembler/atoms/labels";
 @import "assembler/atoms/icons";
 @import "assembler/atoms/notices";
-@import "assembler/atoms/delivery";
-@import "assembler/atoms/lists";
-@import "assembler/atoms/color-radios";
 @import "assembler/atoms/table";
 
 // ===============================================
@@ -46,7 +43,6 @@
 @import "assembler/molecules/teaser-document";
 @import "assembler/molecules/form-items";
 @import "assembler/molecules/tables";
-@import "assembler/molecules/map-popup";
 @import "assembler/molecules/pager";
 @import "assembler/molecules/search";
 
@@ -61,10 +57,10 @@
 @import "assembler/organisms/phone";
 @import "assembler/organisms/cookie-message";
 @import "assembler/organisms/forms";
-@import "assembler/organisms/facturen-table";
 @import "assembler/organisms/cart";
 
 // ===============================================
 // App Templates
 @import "assembler/templates/sections";
 @import "assembler/templates/campaigns";
+@import "assembler/templates/contact";

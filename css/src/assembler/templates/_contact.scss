@@ -1,0 +1,62 @@
+.flexbox .section-contact {
+  
+  @include MQ($tab) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .block-contact {
+    flex-basis:48%;
+  }
+
+  .gmaps {
+    flex-basis: 100%;
+  }
+
+  @include MQ($desk) {
+    
+    .block-contact {
+      flex-basis:23%;
+    }
+
+  }
+
+}
+
+.block-contact {
+  background-color: white;
+  padding: 20px;
+  font-size: 17px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  label {
+    color: $bright-blue;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  address {
+    margin: 10px 0;
+ 
+    label {
+      color: $black;
+      margin: 0;
+    }
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+}
+
+.gmaps {
+  width: 100%;
+  height: 400px;
+}

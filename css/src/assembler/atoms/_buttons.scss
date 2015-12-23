@@ -65,6 +65,18 @@
 
 }
 
+%button--orange,
+.button--orange {
+  background-color: $orange1;
+  color: $white;
+
+  &:hover {
+    background-color: $orange2;
+
+  }
+
+}
+
 %button--grey,
 .button--grey {
   background-color: $grey2;

@@ -6,4 +6,157 @@ description:
 ---
 {{> breadcrumbs}}
 
-{{> hero-campaign}}
+<section class="hero" style="background-image: url(/example/contact-hero.png);">
+
+  <div class="container">
+
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span>Stichting CPNB</span>
+      </h1>
+
+      <p>KvK: 41200029293<br />
+      BTW-nr: NL 002957802 B01</p>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+<section class="section-default section-contact">
+
+  <div class="block-contact">
+    <label>Algemeen</label>
+    <address>
+      <label>Postadres</label>
+      <p>Postbus 10576 <br />
+      1001 En Amsterdam</p>
+    </address>
+
+    <address>
+      <label>Bezoekadres</label>
+      <p>Herengracht 176 <br />
+      1001 En Amsterdam</p>
+    </address>
+
+    <address>
+      <label>E-mail</label>
+      <p>info@cpnb.nl</p>
+    </address>
+
+    <address>
+     <label>Telefoon</label>
+      <p>06 33 44 55 66</p>
+    </address>
+
+    <address>
+      <label>Fax</label>
+      <p>020 33 33 44 55</p>
+    </address>
+
+  </div>
+
+  <div class="block-contact">
+    <label>Media</label>
+    
+    <address>
+      <label>Telefoon</label>
+      <p>020 78 78 88 99</p>
+    </address>
+
+    <address>
+      <label>Marie Klaassen</label>
+      <p>marie.klaassen@cpnb.nl</p>
+    </address>
+
+    <address>
+      <label>Peter Rosendaal</label>
+      <p>p.rosendaal@cpnb.nl</p>
+    </address>
+
+    <a href="#0" class="button button--orange">Media Center</a>
+
+  </div>
+
+  <div class="block-contact">
+    <label>Klantenservice</label>
+    <address>
+      <p><em>Voor boekhandel en bibliotheek</em></p>
+    </address>
+
+    <address>
+      <label>Postadres</label>
+      <p>Postbus 10576 <br />
+      1001 En Amsterdam</p>
+    </address>
+
+    <address>
+      <label>Postadres</label>
+      <p>Postbus 10576 <br />
+      1001 En Amsterdam</p>
+    </address>
+
+  </div>
+
+  <div class="block-contact">
+    <label>CPNB Sponsoren</label>
+    <address>
+      <label>Gijs Schunselaar</label>
+      <p>g.schunselaar@hetnet.nl</p>
+      <label>Telefoon</label>
+      <p>06 33 44 55 66</p>
+      <label>Fax</label>
+      <p>020 33 33 44 55</p>
+    </address>
+
+  </div>
+
+  <div id="map" class="gmaps">&nbsp;</div>
+
+</section>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+<script>
+
+  var style = [
+    {
+      stylers: [
+        {hue: '#c88c57'},
+        {gamma: 1.5}
+      ]
+    }
+
+  ]; 
+
+  var image = 'images/mapicon.svg';
+
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(52.374230, 4.887076);
+    var mapOptions = {
+      scrollwheel: false,
+      mapTypeControl: false,
+      scaleControl: false,
+      zoom: 14,
+      center: myLatlng,
+      styles: style
+    }
+
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Herengracht 166',
+      icon: image
+    });
+
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+
+{{> section-divider-plain}}

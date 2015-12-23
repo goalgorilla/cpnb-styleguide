@@ -5,7 +5,6 @@
   max-width: $desk;
   margin: 0 auto;
   position: relative;
-  @include clearfix;
 
   @include MQ($tab) {
     padding-top: 90px;
@@ -22,6 +21,10 @@
     padding-right: 0;
   }
 
+}
+
+.no-flexbox .section-default {
+  @include clearfix;
 }
 
 .section--title {
