@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-tap-highlight" content="no">  
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+
+    <title>CPNB StyleGuide - Campaign Logged-in user</title>
+    <meta name="description" content="">
+
+    <!--[if (gte IE 9)|(gt IEMobile 7)|(!IE)]><!-->
+    <link rel="stylesheet" href="/css/theme.css">
+    <!--<![endif]-->
+
+    <link rel="stylesheet" href="/css/styleguide.css">
+
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="css/oldie.css">
+      <script src="http://ben.dev/sites/all/themes/custom/tmobilenl/js/script/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/cpnblogo.png">
+  </head>
+
+  <body class="campaign-lu with-hero">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    
+    <div class="l-region--header">
+    
+      <div class="container">
+    
+        <div role="search" class="block block--search block--search-form">
+          <div class="block__content">
+            <form class="search-block-form" action="/" method="post" accept-charset="UTF-8">
+              <h2 class="element-invisible">Search form</h2>
+              <div class="form-item form-type-textfield form-item-search-block-form">
+                <label class="element-invisible" for="edit-search-block-form--2">Zoeken </label>
+                <input title="Vul hier je zoekterm(en) in en klik rechts op de loep om te zoeken. " placeholder="Wat zoek je?" type="text" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+              </div>
+              <div class="form-actions form-wrapper">
+                <input type="submit" name="op" value="Zoeken" class="form-submit" />
+              </div>
+            </form>
+          </div>
+    
+        </div>
+    
+        <nav role="navigation" class="block--system-main-menu">
+       
+          <h2 class="element-invisible">Main menu</h2>
+    
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#0">Over ons</a></li>
+            <li class="menu__item"><a class="menu__link" href="#0">Nieuws</a></li>
+            <li class="menu__item"><a class="menu__link" href="#0">Activiteiten</a></li>
+            <li class="menu__item"><a class="menu__link" href="#0">Media</a></li>
+            <li class="menu__item"><a class="menu__link" href="#0">Vacatures</a></li>
+            <li class="menu__item"><a class="menu__link" href="#0">Contact</a></li>
+          </ul>
+    
+        </nav>
+    
+        <nav role="navigation" class="block--system-user-menu">
+       
+          <h2 class="element-invisible">User menu</h2>
+    
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#0">Mijn CPNB (3)</a></li>
+            <li class="menu__item"><a class="menu__link" href="#0">Campagnes (2)</a></li>
+            <li class="menu__item"><a class="menu__link" href="#0">Uitloggen</a></li>
+          </ul>
+    
+        </nav>
+    
+       </div>
+    
+    </div>
+    
+    <header class="l-header" role="banner">
+      
+      <div class="container clearfix">
+        
+        <div class="site-name">
+          <a href="/" class="logo" title="Home" rel="home">CPNB</a>
+        </div>
+    
+        <nav role="navigation" class="block--thema-menu">
+          <h2 class="element-invisible">Thema menu</h2>
+    
+          <ul class="menu">
+            <li class="menu__item expanded">
+              <a class="menu__link" href="/#0">Atoms</a>
+              <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="/colors.html">Colors</a></li>
+                <!--<li class="menu__item"><a class="menu__link" href="/typografie.html">Typografie</a></li>
+                <li class="menu__item"><a class="menu__link" href="/iconen.html">Iconen</a></li>
+                <li class="menu__item"><a class="menu__link" href="/buttons.html">Buttons</a></li>
+                <li class="menu__item"><a class="menu__link" href="/formelements.html">Form elementen</a></li>
+                <li class="menu__item"><a class="menu__link" href="/labels.html">Labels</a></li>
+                <li class="menu__item"><a class="menu__link" href="/meldingen.html">Meldingen</a></li>
+                <li class="menu__item"><a class="menu__link" href="/tabellen.html">Tabellen</a></li>-->
+              </ul>
+            </li>
+            <li class="menu__item expanded">
+              <a class="menu__link" href="/#0">Molecules</a>
+              <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="/teaser-campaign.html">Teaser campaign</a></li>
+                <li class="menu__item"><a class="menu__link" href="/teaser-news.html">Teaser news</a></li>
+                <li class="menu__item"><a class="menu__link" href="/teaser-event.html">Teaser event</a></li>
+                <li class="menu__item"><a class="menu__link" href="/teaser-insight.html">Teaser insight</a></li>
+                  <li class="menu__item"><a class="menu__link" href="/teaser-social-media.html">Teaser social media</a></li>
+                <li class="menu__item"><a class="menu__link" href="/teaser-idea.html">Teaser idea</a></li>
+                <li class="menu__item"><a class="menu__link" href="/breadcrumbs.html">Breadcrumbs</a></li>
+                  <!--
+                <li class="menu__item"><a class="menu__link" href="/formitems.html">Form items</a></li>
+                <li class="menu__item"><a class="menu__link" href="/product-infobox.html">Product infobox</a></li>
+                
+                <li class="menu__item"><a class="menu__link" href="/secondary-box.html">Secondary box</a></li>
+                <li class="menu__item"><a class="menu__link" href="/list-box.html">List box</a></li>
+                <li class="menu__item"><a class="menu__link" href="/verticale-tabs.html">Verticale tabs</a></li>-->
+              </ul>
+            </li>
+            <li class="menu__item expanded">
+              <a class="menu__link" href="#0">Organisms</a>
+              <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="/header.html">Header</a></li>
+                <li class="menu__item"><a class="menu__link" href="/footer.html">Footer</a></li>
+                <!--<li class="menu__item"><a class="menu__link" href="/forms.html">Forms</a></li>-->
+                <li class="menu__item"><a class="menu__link" href="/newsletter.html">Newsletter</a></li>
+                <li class="menu__item"><a class="menu__link" href="/hero.html">Hero</a></li>
+                <li class="menu__item"><a class="menu__link" href="/section-divider.html">Section divider</a></li>
+              </ul>
+            </li>
+            <li class="menu__item expanded">
+              <a class="menu__link" href="/#0">Templates</a>
+              <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="/template-home-lu.html">Home LU</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-campaign.html">Campaign</a></li>
+              </ul>
+            </li>
+          </ul>    </nav>
+        <a href="#0" class="desktop-search-btn desktop-search-btn--open">Zoeken</a>
+    
+        <a href="#0" class="shoppingcart">
+          <div class="shoppingcart_no">
+            <span>12</span>
+          </div>
+          <div class="shoppingcart_amount">
+            <div>items</div>
+            <div>&euro; 147,50</div>
+          </div>
+        </a>
+    
+        <a href="#0" class="mobile-nav-btn">
+          <span class="menu-icon" aria-hidden="true"></span>
+          <span class="menu-text">Menu</span>
+        </a>
+        
+      </div>
+    
+    </header>    
+    <div class="l-page"> 
+      <main class="l-main" id="main-content">
+        
+                    
+        <div class="l-breadcrumbs">
+          <div class="container">
+            <ul>
+              <li class="first"><a href="/telefoons">Home</a></li>
+              <li><a href="#0">Campagnes</a></li>
+              <li class="last">Lorem ipsum dolor sit amet</li>
+            </ul>
+          </div>
+        </div>
+<section class="hero hero--campaign" style="background-image: url(/example/hero-example.jpg);">
+
+  <div class="container">
+
+    <div class="hero--campaign__content">
+      <div class="hero--campaign__logo">
+        <img src="/example/campaign-teaser-logo1.png" alt="campaign title" /> 
+      </div>
+      <p>Periode 1 t/m 30 november 2016</p>
+      <h1 class="hero__title--campaign">
+      De Kinder boekenweek 2016
+      </h1>
+      <b>Live</b>
+    </div>
+
+    <div class="hero--campaign__buttons">
+      <a href="#0" class="button button--purple">View materials</a>
+      <button class="button button--pink">Follow campaign</button>
+    </div>
+
+  </div>
+
+  <div class="section-divider section-divider-plain"> 
+  
+    <div class="section-divider__tagline">
+      <span>Er zit een</span><br />
+      <span>lezer in</span><br />
+      <span>iedereen</span>
+    </div>
+  
+  </div>
+</section>
+
+<section class="section-default">
+  <div class="container">
+    <div class="block-campaigndata">
+      <div class="campaigndata__item">
+        <label>Thema</label>
+        <div>Kinderen, Onderwijs</div>
+      </div> 
+
+      <div class="campaigndata__item">
+        <label>Website campagne</label>
+        <a href="#0">kinderboekenweek.nl</a>
+      </div> 
+
+      <div class="campaigndata__item">
+        <label class="element-invisible">Social media</label>
+        <a href="#0" class="icon-button icon-black icon-twitter">Twitter</a>
+        <a href="#0" class="icon-button icon-black icon-facebook">Facebook</a>
+        <a href="#0" class="icon-button icon-black icon-flickr">Flickr</a>
+        <a href="#0" class="icon-button icon-black icon-youtube">Youtube</a>
+        <a href="#0" class="icon-button icon-black icon-linkedin">Linkedin</a>
+      </div> 
+
+    </div>
+
+    <div class="block-campaigndata">
+      <div class="campaigndata__item">
+        <label>Campagne resultaten 2014</label>
+        <h4>255.321</h4>
+        <small>boekenverkoop resultaat 2014</small>
+      </div> 
+
+      <div class="campaigndata__item">
+        <h4>550.755</h4>
+        <small>Bezoekers in 2014</small>
+      </div> 
+
+      <div class="campaigndata__item">
+        <h4>3.755</h4>
+        <small>Lokale evenementen in 2014</small>
+      </div> 
+
+    </div>
+
+    <div class="block-campaigndata">
+      <div class="campaigndata__item">
+        <label>3 redenen om mee te doen</label>
+        <div><span>1.</span>Al 61 jaar een groot succes in heel Nederland.</div>
+      </div> 
+
+      <div class="campaigndata__item">
+        <div><span>2.</span>Veel interactief POS materiaal beschikbaar.</div>
+      </div> 
+
+      <div class="campaigndata__item">
+        <div><span>3.</span>Vluchten. Een thema waar je wel wat mee moet doen.</div>
+      </div> 
+
+    </div>
+
+    <div class="block-campaigndata">
+      <div class="campaigndata__item campaigndata__item--full">
+        <label>Testimonial</label>
+        <div><q>Als er een campagne is waar ik en deel van uit wil maken dan is het deze wel. Mooi om te zien hoe we zoveel kinderen met enthousiasme aan het lezen krijgen!</q></div>
+        <small>Peter Boerichter | Basisschool Beatrix Linde | Amsterdam</small>
+      </div> 
+
+  </div>
+
+</section>
+
+<div class="section-divider section-divider-plain"> 
+
+  <div class="section-divider__tagline">
+    <span>Er zit een</span><br />
+    <span>lezer in</span><br />
+    <span>iedereen</span>
+  </div>
+
+</div>
+<section class="section-default">
+
+  <div class="block-campaignmaterial">
+    <label>Campagne materialen</label>
+    <div class="campaignmaterial__buttons">
+      <a href="#0" class="button button--purple">View materials</a>
+      <a href="#0" class="button button--pink">Order package | &euro; 1200,-</a>
+    </div>
+  </div>
+
+  <div class="block-campaigntopics">
+    <label>Vakinformatie</label>
+    <ul class="campaigntopics__list">
+      <li><a href="#0" class="campaigntopics__item">Topic title</a></li>
+      <li><a href="#0" class="campaigntopics__item">Topic title</a></li>
+      <li><a href="#0" class="campaigntopics__item">Topic title</a></li>
+      <li><a href="#0" class="campaigntopics__item">Topic title</a></li>
+      <li><a href="#0" class="campaigntopics__item">Topic title</a></li>
+      <li><a href="#0" class="campaigntopics__item">Topic title</a></li>
+    </ul>
+  </div>
+
+  <div class="block-campaigninfo">
+    
+    <label>Over de campagne</label>
+  
+    <p class="introtext">De Kinderboekenweek wordt elk jaar in oktober gehouden. Tijdens het tien dagen durende evenement zijn er in het hele land allerlei activiteiten rond het kinderboek. Op grote schaal haken bibliotheken, het onderwijs, boekhandels en culturele centra hierop in. Het jaarlijks wisselende thema van de Kinderboekenweek dient als leidraad bij de organisatie van de vele activiteiten.</p>
+
+    <p>In 1954 organiseerde de CPNB de eerste Kinderboekenweek.</p>
+ 
+    <p>Sed tempus turpis nec rhoncus consectetur. In ac erat quis sem placerat dapibus. Donec eget ullamcorper leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu mi vulputate, dapibus velit sed, mollis lacus. Curabitur vel ex eu arcu molestie vulputate gravida ut nisi. Nam orci ligula, lobortis vitae augue ut, ultrices rhoncus lorem. Cras id ultrices arcu, fringilla tristique odio. Curabitur et diam cursus ante luctus imperdiet. Sed eget magna dictum, condimentum nulla ut, fringilla eros. Morbi in ante metus. Etiam molestie ante sit amet diam bibendum commodo. Sed vitae erat iaculis, auctor nisl eu, vestibulum erat. Phasellus nec orci felis. Mauris mi erat, pretium in metus vel, tincidunt pharetra mi.</p>
+ 
+    <p>In sit amet risus ornare, semper libero eget, lobortis dolor. Ut ut sapien et sapien mattis iaculis consectetur vitae ligula. Aliquam erat volutpat. Nunc mollis magna nisl, ac commodo urna elementum et. Phasellus in elit justo. Suspendisse ultricies ipsum metus, sit amet commodo tortor auctor tincidunt. Phasellus ornare nulla mi, eu molestie nunc auctor id.</p>
+ 
+    <p>Cras dignissim nisl eget dignissim egestas. Morbi elementum vehicula erat, sit amet blandit sapien tristique semper. Curabitur semper, risus vitae facilisis sagittis, arcu neque interdum urna, nec venenatis odio risus in quam. Nullam aliquet iaculis nunc et scelerisque. Proin dapibus mi lacinia dictum faucibus. Fusce malesuada elit quis sem congue, quis tempus velit viverra.</p>
+
+  </div>
+
+  <div class="block-campaign-publications">
+    
+    <label>Uitgaven</label>
+
+    <div class="campaign-publications">
+      <div class="campaign-publications__text">
+        <p>In sit amet risus ornare, semper libero eget, lobortis dolor. Ut ut sapien et sapien mattis iaculis consectetur vitae ligula. Aliquam erat volutpat.</p>
+      </div>
+
+      <div class="campaign-publications__button">
+        <a href="#0">Bekijk de uitgaven voor deze campagne</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<div class="section-divider section-divider-plain"> 
+
+  <div class="section-divider__tagline">
+    <span>Er zit een</span><br />
+    <span>lezer in</span><br />
+    <span>iedereen</span>
+  </div>
+
+</div>
+<section class="section-default">  
+  <h3 class="section--title">Wie deden er mee?</h3>
+  
+  <div class="teaser-home--wrapper">
+    <div class="teaser-intro teaser-intro--participant">
+      <h2 class="teaser-intro__title">Bekijk hier een overzicht van de vorige <span>deelnemers</span></h2>
+    </div>
+    <a href="#0" class="teaser--participant">
+    
+      <div class="teaser--participant__image" style="background-image: url(example/participant-logo.svg)">
+        <b class="teaser--participant__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--participant__content">
+         <h2 class="teaser--participant__name">Openbare Bibliotheek Enschede</h2>
+        <div class="teaser--participant__type">Bibliotheek
+          <div class="teaser--participant__address">P.C. Hoofdplein 12, 7512 GG, Enschede</div>
+        </div>
+     
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--participant">
+    
+      <div class="teaser--participant__image" style="background-image: url(example/participant-logo.svg)">
+        <b class="teaser--participant__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--participant__content">
+         <h2 class="teaser--participant__name">Openbare Bibliotheek Enschede</h2>
+        <div class="teaser--participant__type">Bibliotheek
+          <div class="teaser--participant__address">P.C. Hoofdplein 12, 7512 GG, Enschede</div>
+        </div>
+     
+    
+      </div>
+    
+    </a>  </div>
+
+  <a href="#0" class="section-readmore">Bekijk alle deelnemers</a>
+
+</section>
+
+<div class="section-divider section-divider-plain"> 
+
+  <div class="section-divider__tagline">
+    <span>Er zit een</span><br />
+    <span>lezer in</span><br />
+    <span>iedereen</span>
+  </div>
+
+</div>
+<section class="section-default">  
+  <h3 class="section--title">Documenten</h3>
+  
+  <div class="teaser-home--wrapper">
+    <div class="teaser-intro teaser-intro--document">
+      <h2 class="teaser-intro__title">Download pdf versies van alle <span>documenten</span></h2>
+    </div>
+    <a href="#0" class="teaser--document">
+    
+      <div class="teaser--document__image" style="background-image: url(example/document-icon.svg)">
+        <b class="teaser--document__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--document__content">
+         <h2 class="teaser--document__name">Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</h2>
+        <div class="teaser--document__type">PDF (5.15MB)
+        </div>
+     
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--document">
+    
+      <div class="teaser--document__image" style="background-image: url(example/document-icon.svg)">
+        <b class="teaser--document__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--document__content">
+         <h2 class="teaser--document__name">Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</h2>
+        <div class="teaser--document__type">PDF (5.15MB)
+        </div>
+     
+    
+      </div>
+    
+    </a>  </div>
+
+  <a href="#0" class="section-readmore">Bekijk alle documenten</a>
+
+</section>
+
+<div class="section-divider section-divider-plain"> 
+
+  <div class="section-divider__tagline">
+    <span>Er zit een</span><br />
+    <span>lezer in</span><br />
+    <span>iedereen</span>
+  </div>
+
+</div>
+<section class="section-default">
+
+  <div class="block-campaign-publications">
+    
+    <label>Media</label>
+
+    <div class="campaign-publications">
+      <div class="campaign-publications__text">
+        <p>Contactpersoon</p>
+        <h4>Tony Adams</h4>
+        <p>t.adams@provider.com<br />
+        tel. 06 22 33 44 55</p>
+      </div>
+
+      <div class="campaign-publications__button">
+        <a href="#0">Persinformatie voor deze campagne</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<div class="section-divider section-divider-plain"> 
+
+  <div class="section-divider__tagline">
+    <span>Er zit een</span><br />
+    <span>lezer in</span><br />
+    <span>iedereen</span>
+  </div>
+
+</div>
+<section class="section-default">
+
+<h3 class="section--title">Campagne nieuws</h3>
+  
+  <div class="teaser-news--wrapper">
+    <a href="#0" class="teaser--news">
+    
+      <div class="teaser--news__image" style="background-image: url(example/news-teaser1.jpg)">
+        <b class="teaser--news__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--news__content">
+        <div class="teaser--news__date">10 jan 2016</div>
+        <h2 class="teaser--news__title">Lloyd Koopman (13) en Romy van Dongen (17) winnen schrijfwedstrijd Talent voor Taal 2015</h2>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--news">
+    
+      <div class="teaser--news__image" style="background-image: url(example/news-teaser1.jpg)">
+        <b class="teaser--news__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--news__content">
+        <div class="teaser--news__date">10 jan 2016</div>
+        <h2 class="teaser--news__title">Lloyd Koopman (13) en Romy van Dongen (17) winnen schrijfwedstrijd Talent voor Taal 2015</h2>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--news">
+    
+      <div class="teaser--news__image" style="background-image: url(example/news-teaser1.jpg)">
+        <b class="teaser--news__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--news__content">
+        <div class="teaser--news__date">10 jan 2016</div>
+        <h2 class="teaser--news__title">Lloyd Koopman (13) en Romy van Dongen (17) winnen schrijfwedstrijd Talent voor Taal 2015</h2>
+    
+      </div>
+    
+    </a>  </div>
+
+  <a href="#0" class="section-readmore">Bekijk al het nieuws</a>
+
+</section>
+
+<div class="section-divider section-divider-plain"> 
+
+  <div class="section-divider__tagline">
+    <span>Er zit een</span><br />
+    <span>lezer in</span><br />
+    <span>iedereen</span>
+  </div>
+
+</div>
+<section class="section-default">
+
+<h3 class="section--title">Campagne evenementen</h3>
+  
+  <div class="teaser-news--wrapper">
+    <a href="#0" class="teaser--event">
+    
+      <div class="teaser--event__image" style="background-image: url(example/event-teaser1.jpg)">
+        <b class="teaser--event__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--event__content">
+        <div class="teaser--event__date">28 Januari 2016  |  18:00 - 21:00 <br />
+    Herengracht 166, 1016 BP Amsterdam</div>
+        <h2 class="teaser--event__title">Vers voor de pers: Dé ontmoetingplek voor pers en professionals</h2>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--event">
+    
+      <div class="teaser--event__image" style="background-image: url(example/event-teaser1.jpg)">
+        <b class="teaser--event__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--event__content">
+        <div class="teaser--event__date">28 Januari 2016  |  18:00 - 21:00 <br />
+    Herengracht 166, 1016 BP Amsterdam</div>
+        <h2 class="teaser--event__title">Vers voor de pers: Dé ontmoetingplek voor pers en professionals</h2>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--event">
+    
+      <div class="teaser--event__image" style="background-image: url(example/event-teaser1.jpg)">
+        <b class="teaser--event__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--event__content">
+        <div class="teaser--event__date">28 Januari 2016  |  18:00 - 21:00 <br />
+    Herengracht 166, 1016 BP Amsterdam</div>
+        <h2 class="teaser--event__title">Vers voor de pers: Dé ontmoetingplek voor pers en professionals</h2>
+    
+      </div>
+    
+    </a>  </div>
+  <div class="align-right"><a href="#0" class="button button--grey button--add">Register your event<b></b></a></div>
+  <a href="#0" class="section-readmore">Bekijk al het nieuws</a>
+
+</section>
+
+<div class="section-divider section-divider-plain"> 
+
+  <div class="section-divider__tagline">
+    <span>Er zit een</span><br />
+    <span>lezer in</span><br />
+    <span>iedereen</span>
+  </div>
+
+</div>
+<section class="section-default">  
+  <h3 class="section--title">Onze campagnes</h3>
+  
+  <div class="teaser-home--wrapper">
+    <div class="teaser-intro teaser-intro--campaign">
+      <h2 class="teaser-intro__title">Doe ook mee met onze <span>succesvolle campagnes</span></h2>
+    </div>
+    <a href="#0" class="teaser--campaign">
+    
+      <div class="teaser--campaign__logo">
+        <img src="/example/campaign-teaser-logo1.png" alt="campaign title" /> 
+      </div>
+    
+      <div class="teaser--campaign__image" style="background-image: url(example/campaign-teaser1.jpg)">
+        <h2 class="teaser--campaign__title">De kinderboekenweek</h2>
+        <b class="teaser--campaign__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--campaign__content">
+        <div class="teaser--campaign__period">30 oktober t/m 1 december</div>
+    
+        <p class="teaser--campaign__summary">De Kinderboekenweek was nog nooit zo spannend. Ook klaar voor het avontuur?</p>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--campaign">
+    
+      <div class="teaser--campaign__logo">
+        <img src="/example/campaign-teaser-logo1.png" alt="campaign title" /> 
+      </div>
+    
+      <div class="teaser--campaign__image" style="background-image: url(example/campaign-teaser1.jpg)">
+        <h2 class="teaser--campaign__title">De kinderboekenweek</h2>
+        <b class="teaser--campaign__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--campaign__content">
+        <div class="teaser--campaign__period">30 oktober t/m 1 december</div>
+    
+        <p class="teaser--campaign__summary">De Kinderboekenweek was nog nooit zo spannend. Ook klaar voor het avontuur?</p>
+    
+      </div>
+    
+    </a>  </div>
+
+ 
+
+</section>
+
+<section class="section-default">  
+  <h3 class="section--title">Relevante campagnes</h3>
+  
+  <div class="teaser-home--wrapper teaser-relevant-campaign--wrapper">
+    <div class="teaser-intro teaser-intro--relevant-campaign">
+      <h2 class="teaser-intro__title">Doe ook mee met onze <span>succesvolle campagnes</span></h2>
+    </div>
+    <a href="#0" class="teaser--campaign">
+    
+      <div class="teaser--campaign__logo">
+        <img src="/example/campaign-teaser-logo1.png" alt="campaign title" /> 
+      </div>
+    
+      <div class="teaser--campaign__image" style="background-image: url(example/campaign-teaser1.jpg)">
+        <h2 class="teaser--campaign__title">De kinderboekenweek</h2>
+        <b class="teaser--campaign__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--campaign__content">
+        <div class="teaser--campaign__period">30 oktober t/m 1 december</div>
+    
+        <p class="teaser--campaign__summary">De Kinderboekenweek was nog nooit zo spannend. Ook klaar voor het avontuur?</p>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--campaign">
+    
+      <div class="teaser--campaign__logo">
+        <img src="/example/campaign-teaser-logo1.png" alt="campaign title" /> 
+      </div>
+    
+      <div class="teaser--campaign__image" style="background-image: url(example/campaign-teaser1.jpg)">
+        <h2 class="teaser--campaign__title">De kinderboekenweek</h2>
+        <b class="teaser--campaign__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--campaign__content">
+        <div class="teaser--campaign__period">30 oktober t/m 1 december</div>
+    
+        <p class="teaser--campaign__summary">De Kinderboekenweek was nog nooit zo spannend. Ook klaar voor het avontuur?</p>
+    
+      </div>
+    
+    </a>  </div>
+
+ 
+
+</section>
+
+<div class="section-divider section-divider-plain"> 
+
+  <div class="section-divider__tagline">
+    <span>Er zit een</span><br />
+    <span>lezer in</span><br />
+    <span>iedereen</span>
+  </div>
+
+</div>        
+
+      </main>
+    
+        <footer class="l-footer" role="contentinfo">
+        
+          <div class="container">
+        
+            <div class="newsletter">
+              <div class="newsletter__titlebox">
+                <h3>Ontvang die fantastische CPNB Nieuwsbrief</h3>
+              </div>
+            
+              <div class="newsletter__infobox">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+              
+                <div class="newsletter__form">
+                  <form class="newsletter__signup">
+                    <div class="form-item form-type-textfield form-item-email">
+                      <input type="text" placeholder="E-mail" id="edit-email" name="name" value="" size="60" maxlength="60" class="form-text required">
+                    </div>
+                     <div class="form-actions form-wrapper" id="edit-actions">
+                      <input type="submit" id="edit-submit" name="op" value="Sign up" class="form-submit">
+                    </div>
+                  </form>
+            
+                </div>
+            
+              </div>
+            
+              <div class="newsletter__socialmedia">
+                <a href="#0" class="icon-button icon-twitter">Twitter</a>
+                <a href="#0" class="icon-button icon-facebook">Facebook</a>
+                <a href="#0" class="icon-button icon-flickr">Flickr</a>
+                <a href="#0" class="icon-button icon-youtube">Youtube</a>
+                <a href="#0" class="icon-button icon-linkedin">Linkedin</a>
+              </div>
+            
+            </div>  
+            <div class="l-region l-region--footer-bottom">
+              <nav role="navigation" class="block footer__menu">
+                
+                <h2 class="block__title element-invisible">Bottom Footer Menu</h2>
+              
+                <ul class="menu">
+                  <li class="menu__item"><a class="menu__link" href="#0">tel.: +31 (0) 20 - 626 49 71</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#0">Contact</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#0">Privacyverklaring</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#0">Cookiebeleid</a></li>
+                </ul>
+        
+              </nav>
+              
+              <p>&copy; CPNB 2015 All rights reserved</p>
+          
+            </div>
+              
+          </div>
+        
+        </footer>
+    </div>
+
+    <div class="mask-modal"><button class="close-modal"> Sluiten </button></div>
+    
+    <script src="/js/contrib.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/styleguide.js"></script>
+
+   
+  </body>
+</html>
