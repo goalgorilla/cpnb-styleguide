@@ -21,7 +21,6 @@
   display: inline-block;
   position: relative;
   background: white;
-  margin-bottom: 20px;
   width: 300px;
   flex: 1 1 300px;
 
@@ -81,8 +80,7 @@
 }
 
 .teaser--event__content {
-  max-width: 320px;
-  padding: 10px 30px 10px 30px; 
+  padding: 10px 30px 30px 30px; 
 }
 
 .teaser--event__date {

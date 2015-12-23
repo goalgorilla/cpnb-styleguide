@@ -1,0 +1,111 @@
+@include MQ($tab) {
+
+  .no-flexbox .teaser-participant--wrapper {
+    @include clearfix;
+  }
+
+}
+
+.flexbox .teaser-participant--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include MQ($desk) {
+    justify-content: flex-start;
+  }
+
+}
+
+.teaser--participant {
+  display: inline-block;
+  position: relative;
+  background: white;
+  margin-bottom: 20px;
+  width: 300px;
+  flex: 1 1 300px;
+}
+
+.teaser-participant--wrapper {
+  
+  .teaser--participant {
+    flex-grow: 0;
+
+    @include MQ($tab) {
+      margin: 0 10px 20px 10px;
+    }
+
+    @include MQ($desk) {
+      margin: 0 20px 20px 0;
+    }
+  
+  }
+
+}
+
+.teaser--participant__image {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-size: 50% 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: $orange1;
+}
+
+.teaser--participant:nth-of-type(4n+1) .teaser--participant__image {
+  background-color: $orange1;
+}
+
+.teaser--participant:nth-of-type(4n+2) .teaser--participant__image {
+  background-color: $orange2;  
+}
+
+.teaser--participant:nth-of-type(4n-1) .teaser--participant__image {
+  background-color: darken($orange1, 10%);
+}
+
+.teaser--participant:nth-of-type(4n+4) .teaser--participant__image {
+  background: darken($orange2,10%);  
+}
+
+
+.teaser--participant__readmore {
+  @include icon-right(white);
+  position: absolute;
+  font-size: 0;
+  bottom: 40px;
+  right: 30px;
+  display: inline-block;
+  z-index: 2;
+
+  &:before {
+    transform: scale(1.3) rotate(135deg);
+  }
+  &:after {
+    transform: scale(1.3) rotate(-135deg);
+  }
+
+}
+
+.teaser--participant__content {
+  max-width: 320px;
+  padding: 10px 30px 10px 30px; 
+}
+
+.teaser--participant__type {
+  font-size: 13px;
+  line-height: 1.35;
+  color: $black;
+}
+
+.teaser--participant__address {
+  margin-top: 15px;
+}
+
+.teaser--participant__name {
+  line-height: 1.35;
+  font-size: 18px;
+  margin-top: 0;
+}

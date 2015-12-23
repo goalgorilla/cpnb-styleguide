@@ -18,12 +18,22 @@
     }
 
   }
+
+  .section-divider {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+
+    &:after {
+      display: none;
+    }
+  }
   
 }
 
 .hero__content {
 
-  h1 {
+  .hero__title {
     font-size: 28px;
     line-height: 1;
     color: white;
@@ -129,4 +139,132 @@
 }
 
 
+.hero--campaign {
+  padding-top: 60px;
 
+  @include MQ($tab) {
+    padding-top: 140px;  
+  }
+
+  @include MQ($desk) {
+    padding-top: 170px;  
+  }
+
+}
+
+.flexbox .hero--campaign {
+  .container {
+    z-index: 3;
+
+    @include MQ($tab) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      height: 100%;
+    }
+    
+    @include MQ($desk) {
+      justify-content: center;
+    }
+
+    @include MQ($wide) {
+      justify-content: space-between;
+    }
+
+  }
+
+}
+
+.hero--campaign__logo {
+  position: absolute;
+  margin-top: -80px;
+  margin-left: -20px;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  background-color: white;
+  line-height: 50px;
+  border-radius: 0 10px 0 0;
+
+  @include MQ($tab) {
+    margin: -20px 0 0 -100px;
+    border-radius:  0 0 0 10px;
+  }
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.hero--campaign__content {
+  background-color: $bright-blue;
+  color: white;
+  padding: 20px;
+  margin: 60px 0;
+  position: relative;
+  border-radius: 0 20px 20px 0;
+
+  @include MQ($tab) {
+    width: 320px;
+    display: inline-block;
+    margin: 0 0 0 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    order: 2;
+    flex: 0 1 320px;
+    border-radius: 0 0 20px 0;
+  }
+
+  b {
+    position: absolute;
+    bottom: -38px;
+    background-color: $bright-blue;
+    padding: 10px 30px;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+}
+
+.hero__title--campaign {
+  margin-bottom: 0;
+  font-family: $serif-font;
+  font-weight: normal;
+  font-size: 32px;
+
+  @include MQ($tab) {
+    font-size: 42px;
+  }
+
+}
+
+.hero--campaign__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+
+  @include MQ($tab) {
+    display: block;
+    display: flex;
+    text-align: center;
+    flex: 0 1 320px;
+    align-self: flex-end;
+
+    .button {
+      flex: 0 1 auto;
+      min-width: 180px;
+      margin: 10px 0 0 20px;
+    }
+  }
+
+  @include MQ($desk) {
+    flex: 0 1 400px;
+  }
+
+  .button {
+    flex: 0 1 45%;
+    min-width: auto;
+  }
+}

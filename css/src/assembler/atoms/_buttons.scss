@@ -1,31 +1,43 @@
 %button,
 .button {
   position: relative;
-  font-weight: bold;
   display: inline-block;
-  max-width: 100%;
   vertical-align: middle;
+  font-size: 14px;
+  line-height: 42px;
+  font-weight: bold;
+  max-width: 100%;
   padding: 4px 6px;
+  min-width: 180px;
+  min-height: 42px;
   text-decoration: none;
   color: white;
   border: none;
-  text-align: left;
-  font-size: 14px;
-  line-height: normal;
+  text-align: center;
+  background-color: $black;
 
   &:hover {
     cursor: pointer;
-    background-color: $darkgray;
   }
 
 }
 
-%button--green,
-.button--green {
-  background-color: $green;
+%button--purple,
+.button--purple {
+  background-color: $bright-purple;
 
   &:hover {
-    background-color: $lightgreen;
+    background-color: $deep-purple;
+  }
+
+}
+
+%button--pink,
+.button--pink {
+  background-color: $pink;
+
+  &:hover {
+    background-color: darken($pink,5%);
   }
 
 }
@@ -33,55 +45,88 @@
 
 %button--blue,
 .button--blue {
-  background-color: $blue;
+  background-color: $bright-blue;
 
   &:hover {
-    background-color: $lightblue;
+    background-color: $deep-blue;
   }
 
 }
 
-%readmorelink,
-.readmorelink {
-  display: inline-block;
-  margin-top: 20px;
-  background: url(../images/icons/arrow04.png) no-repeat 100% -45px;
-  color: $blue;
-  font-size: 15px;
-  line-height: 1.35;
-  padding-right: 18px;
-  text-decoration: underline;
+%button--grey,
+.button--grey {
+  background-color: $grey2;
+  color: $black;
+
+  &:hover {
+    background-color: $grey5;
+
+  }
+
 }
 
-.button--large,
-%button--large {
-  font-size: 20px;
-  background-size: 30px;
+%button--grey,
+.button--grey {
+  background-color: $grey2;
+  color: $black;
+
+  &:hover {
+    background-color: $grey5;
+    color: $black;
+  }
+
 }
 
-.buttons .button {
-  margin-bottom: 15px;
-  margin-right: 15px;
+%button--add,
+.button--add {
+  padding: 10px 70px 10px 40px;
+  line-height: 1.5em;
+  min-height: 0;
+  background-color: $grey2;
+  width: 100%;
+
+  @include MQ($tab) {
+    width: auto;
+  }
+  
+  b {
+    display: inline;
+    @include icon-plus($black);
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid rgba(0,0,0,.2);
+  }
+
+  b:before{
+    left: auto;
+    right: 17px;
+    top: 14px;
+    transition: transform .5s;
+  }
+
+  b:after {
+    left: auto;
+    right: 12px;
+    top: 19px;
+    transition: transform .5s;
+  }
+
+  &:hover {
+    background-color: $grey2;
+    
+    b:after,
+    b:before {
+      transform: rotate(90deg);
+    }
+
+  }
+
 }
 
 
 // --- Drupal Selectors ---
 
-.form-submit {
-  @extend %button;
-}
-
-.view-tmobile-shopping-cart-block .line-item-summary a,
-.read_more a {
-  @extend %button;
-  @extend %button--large;
-}
-
-.view-phone-queues .read_more a,
-.view-tmobile-shopping-cart-block .line-item-summary a {
-  @extend %button--green;
-}
-
-.views-field-nothing a {
-  @extend %readmorelink;
-}

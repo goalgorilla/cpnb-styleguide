@@ -109,7 +109,7 @@
   margin-top: 0;
   @include center(xy);
   position: absolute;
-  width: 80%;
+  width: 72%;
 
   span {
     display: block;
@@ -124,7 +124,8 @@
 }
 
 .teaser-intro--event .teaser-intro__title span,
-.teaser-intro--campaign .teaser-intro__title span {
+.teaser-intro--campaign .teaser-intro__title span,
+.teaser-intro--document .teaser-intro__title span {
   color: $bright-blue;
 }
 
@@ -134,6 +135,11 @@
 
 .teaser-intro--insight .teaser-intro__title span {
   color: $bright-purple;
+}
+
+.teaser-intro--relevant-campaign .teaser-intro__title span,
+.teaser-intro--participant .teaser-intro__title span {
+  color: $orange1;
 }
 
 // Insights has extra image in intro 

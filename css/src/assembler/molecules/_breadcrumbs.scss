@@ -3,20 +3,28 @@
 
   @include MQ($tab){
     display: block;
-    max-width: $desk;
-    margin: 0 auto;
+    width: 100%;
+    margin: 70px auto 0;
+    position: absolute;
+    z-index: 2;
+    background-color: $grey4;
+  }
+
+  @include MQ($desk) {
+    margin-top: 100px;
   }
 
 }
 
 %breadcrumbs-ul {
-  padding-left: 10px;
+  padding: 10px;
   font-size: 14px;
-  margin-bottom: 0;
+  margin: 0;
 
   li {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 4px;
+    line-height: 1.5;
   }
 
   .last {
@@ -24,7 +32,24 @@
   }
 
   a {
-    color: $blue;
+    color: $black;
+    @include icon-right($black);
+    padding-right: 8px;
+
+    &:before,
+    &:after {
+      width: 1px;
+      height: 6px;
+    }
+
+    &:before {
+      top: 5px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
   }
 
   @include MQ($desk){
@@ -34,53 +59,6 @@
 }
 
 // --- Drupal selectors
-
-.phone-detail-breadcrumbs {
-  @extend %breadcrumbs-ul;
-  position: absolute;
-  top: -75px;
-  padding-left: 0;
-
-  .breadcrumb-separator {
-    display: none;
-  }
-
-  .phone-title {
-    font-weight: bold;
-    width: auto;
-    padding-left: 10px;
-    @include icon-right($black);
-
-    &:before,
-    &:after {
-      left: 2px;
-      top: 5px;
-      width: 1px;
-      height: 5px;
-    }
-
-    &:after {
-      top: 7.7px;
-    }
-
-  }
-
-}
-
-// stay hidden on dashboard
-.page-ikben-dashboard .l-breadcrumbs {
-  @include MQ($tab){
-    @extend %element-hidden;
-  }
-}
-
-.section-klantenservice .pane-3 {
-  @extend %breadcrumbs;  
-}
-
-.faq-category-breadcrumbs {
-  @extend %breadcrumbs-ul;
-}
 
 .l-breadcrumbs {
   @extend %breadcrumbs;

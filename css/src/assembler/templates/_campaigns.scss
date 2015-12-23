@@ -1,0 +1,207 @@
+.block-campaigndata {
+  background-color: white;
+  padding: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 30px;
+
+  label {
+    color: $bright-blue;
+    font-size: 14px;
+    display: block;
+  }
+
+  h4 {
+    font-size: 26px;
+    line-height: 1.35;
+    margin: 0;
+  }
+
+  small {
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  span {
+    color: $bright-blue;
+    margin-right: 5px;
+  }
+
+}
+
+.no-flexbox .block-campaigndata {
+  @include MQ($tab) {
+    @include clearfix;
+  }
+}
+
+.flexbox .block-campaigndata {
+  @include MQ($tab) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.campaigndata__item {
+  margin-bottom: 20px;
+  text-align: center;
+
+  .icon-button {
+    vertical-align: top;
+    width: 35px;
+    height: 35px;
+    background-size: 15px 15px;
+  }
+
+  @include MQ($tab) {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  @include MQ($desk) {
+    .icon-button {
+      width: 45px;
+      height: 45px;
+      background-size: 20px 20px;
+      margin-right: 4px;
+    }
+  }
+
+}
+
+.no-flexbox .campaigndata__item {
+  @include MQ($tab) {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &.campaigndata__item--full {
+      width: 66%;
+    }
+  }
+}
+
+
+.flexbox .campaigndata__item {
+  @include MQ($tab) {
+    flex: 0 1 31%;
+
+    &.campaigndata__item--full {
+      flex-basis: 66%;
+    }
+  }
+}
+
+.block-campaigninfo,
+.block-campaigntopics,
+.block-campaignmaterial,
+.block-campaign-publications {
+  background-color: white;
+  padding: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  max-width: 660px;
+
+  @include MQ($tab) {
+    padding-left: 25px;
+  }
+
+  label {
+    color: $bright-blue;
+    font-size: 14px;
+    display: block;
+  }
+
+}
+
+.campaignmaterial__buttons {
+  margin-top: 30px;
+
+  .button {
+    font-size: 1em;
+    padding: 0.5em 2em;
+    margin-right: 20px;
+  }
+
+}
+
+.campaigntopics__list {
+  column-count: 3;
+}
+
+.campaigntopics__item {
+  margin-bottom: 5px;
+  line-height: 1.5;
+  display: block;
+}
+
+.block-campaigninfo {
+  font-weight: normal;
+
+  @include MQ($tab) {
+    padding: 50px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.campaign-publications {
+  margin-top: 20px;
+
+  @include MQ($tab) {
+    display: flex;
+    align-content: center;
+  }
+}
+
+.campaign-publications__text {
+  background-color: $grey3;
+  font-weight: normal;
+  flex: 0 1 50%;
+  padding: 20px 30px;
+  font-size: 14px;
+}
+
+.campaign-publications__button {
+  background-color: $grey1;
+  flex: 0 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+
+  a {
+    display: inline-block;
+    @include icon-right($black);
+    padding-right: 70px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 1.1;
+
+    &:before {
+      width: 3px;
+      right: 5px;
+
+      @include MQ($tab) {
+        top: 12px;
+      }
+    }
+
+    &:after {
+      width: 3px;
+      right: 5px;
+
+      @include MQ($tab) {
+        top: 17px;
+      }
+    }
+  }
+}

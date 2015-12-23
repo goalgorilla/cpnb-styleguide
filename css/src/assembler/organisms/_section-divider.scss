@@ -66,6 +66,7 @@
 
   @include MQ($desk){
     display: block;
+    font-family: $serif-font;
     font-size: 16px;
     line-height: 1;
     color: white;

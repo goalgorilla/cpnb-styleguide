@@ -12,20 +12,49 @@
 
 .icon-twitter {
   background-image: url(../images/icon-twitter-grey.svg);
+
+  &.icon-black {
+    background-image: url(../images/icon-twitter-white.svg);
+  }
+
 }
 
 .icon-facebook {
   background-image: url(../images/icon-facebook-grey.svg);
+
+  &.icon-black {
+    background-image: url(../images/icon-facebook-white.svg);
+  }
+
 }
 
 .icon-flickr {
   background-image: url(../images/icon-flickr-grey.svg);
+
+  &.icon-black {
+    background-image: url(../images/icon-flickr-white.svg);
+  }
+
 }
 
 .icon-youtube {
   background-image: url(../images/icon-youtube-grey.svg);
+
+  &.icon-black {
+    background-image: url(../images/icon-youtube-white.svg);
+  }
+
 }
 
 .icon-linkedin {
   background-image: url(../images/icon-linkedin-grey.svg);
+
+  &.icon-black {
+    background-image: url(../images/icon-linkedin-white.svg);
+  }
+
+}
+
+.icon-black {
+  background-color: $black;
 }

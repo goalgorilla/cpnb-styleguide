@@ -376,4 +376,4 @@ gulp.task('watch', function() {
 // ===================================================
 
 gulp.task('build', [ 'script', 'copy' ]);
-gulp.task('default', [ 'sass', 'script', 'copy', 'assemble', 'serve', 'watch' ]);
+gulp.task('default', [ 'usemin', 'script', 'copy', 'serve', 'watch' ]);

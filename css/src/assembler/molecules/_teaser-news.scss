@@ -21,7 +21,6 @@
   display: inline-block;
   position: relative;
   background: white;
-  margin-bottom: 20px;
   width: 300px;
   flex: 1 1 300px;
 
@@ -34,20 +33,12 @@
 
 }
 
-
 .teaser-news--wrapper {
   
   .teaser--news {
-    flex-grow: 0;
-
     @include MQ($tab) {
-      margin: 0 10px 20px 10px;
-    }
-
-    @include MQ($desk) {
-      margin: 0 20px 20px 0;
-    }
-  
+      flex: 1 1 33%
+    } 
   }
 
 }
@@ -59,7 +50,7 @@
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  background-color: $pink;
+  background-color: $bright-blue;
 }
 
 .teaser--news__readmore {
@@ -81,8 +72,7 @@
 }
 
 .teaser--news__content {
-  max-width: 320px;
-  padding: 10px 30px 10px 30px; 
+  padding: 10px 30px 30px 30px; 
 }
 
 .teaser--news__date {

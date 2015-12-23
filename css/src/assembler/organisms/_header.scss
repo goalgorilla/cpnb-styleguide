@@ -74,7 +74,7 @@
   color: white;
 
   @include MQ($tab) {
-    border-right: 1px solid rgba(255,255,255,.5);
+    border-right: 1px solid rgba(255,255,255,.2);
     position: absolute;
     float: none;
     right: 90px;
@@ -253,6 +253,7 @@
       position: relative;
       background-color: white;
       max-width: $desk;
+      padding: 0;
     }
   
   }

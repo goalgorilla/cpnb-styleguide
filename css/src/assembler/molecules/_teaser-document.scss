@@ -1,0 +1,106 @@
+@include MQ($tab) {
+
+  .no-flexbox .teaser-document--wrapper {
+    @include clearfix;
+  }
+
+}
+
+.flexbox .teaser-document--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include MQ($desk) {
+    justify-content: flex-start;
+  }
+
+}
+
+.teaser--document {
+  display: inline-block;
+  position: relative;
+  background: white;
+  margin-bottom: 20px;
+  width: 300px;
+  flex: 1 1 300px;
+}
+
+.teaser-document--wrapper {
+  
+  .teaser--document {
+    flex-grow: 0;
+
+    @include MQ($tab) {
+      margin: 0 10px 20px 10px;
+    }
+
+    @include MQ($desk) {
+      margin: 0 20px 20px 0;
+    }
+  
+  }
+
+}
+
+.teaser--document__image {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-size: 40% 40%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: $bright-blue;
+}
+
+.teaser--document:nth-of-type(4n+1) .teaser--document__image {
+  background-color: $bright-blue;
+}
+
+.teaser--document:nth-of-type(4n+2) .teaser--document__image {
+  background-color: $deep-blue;  
+}
+
+.teaser--document:nth-of-type(4n-1) .teaser--document__image {
+  background-color: darken($bright-blue, 10%);
+}
+
+.teaser--document:nth-of-type(4n+4) .teaser--document__image {
+  background: darken($deep-blue,10%);  
+}
+
+
+.teaser--document__readmore {
+  @include icon-down(white);
+  position: absolute;
+  font-size: 0;
+  bottom: 40px;
+  right: 30px;
+  display: inline-block;
+  z-index: 2;
+
+  &:before {
+    transform: scale(1.3) rotate(135deg);
+  }
+  &:after {
+    transform: scale(1.3) rotate(-135deg);
+  }
+
+}
+
+.teaser--document__content {
+  padding: 10px 30px 30px; 
+}
+
+.teaser--document__type {
+  font-size: 13px;
+  line-height: 1.35;
+  color: $black;
+  margin-top: 15px;
+}
+
+.teaser--document__name {
+  line-height: 1.35;
+  font-size: 18px;
+}
