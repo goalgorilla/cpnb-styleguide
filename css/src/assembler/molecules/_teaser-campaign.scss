@@ -21,7 +21,6 @@
   display: block;
   position: relative;
   background: white;
-  margin-bottom: 20px;
   width: 300px;
   flex: 1 1 300px;
   border-bottom: 7px solid $bright-purple;
@@ -105,19 +104,13 @@
 
 }
 
+
 .teaser-campaign--wrapper {
   
   .teaser--campaign {
-    flex-grow: 0;
-
     @include MQ($tab) {
-      margin: 0 10px 20px 10px;
-    }
-
-    @include MQ($desk) {
-      margin: 0 20px 20px 0;
-    }
-  
+      flex: 1 1 33%
+    } 
   }
 
 }

@@ -11,54 +11,73 @@
   @include MQ($tab){
     display: table;
   }
+
+  thead {
+    display: none;
+
+    @include MQ($tab){
+      display: table-header-group;
+    }
+
+  }
+
+  tr:nth-child(2n){
+    background: $grey1;
+
+    @include MQ($tab) {
+      background-color: white;
+    }
+  }
   
   th {
     text-align: left;
-    background: $blue;
-    color: white;
     font-weight: bold;
-    padding: 5px;
+    padding: 20px 10px;
     font-size: 16px;
     vertical-align: bottom;
+
+    @include MQ($desk) {
+      padding: 20px;
+    }
+
   }
 
   // default styling for tables
   td {
     padding: 2px 10px 2px 0;
-    
-    @include MQ($tab) {
-      padding: 10px 5px;
-    }
-
-    a {
-      color: $blue;
-      text-decoration: underline;
-    }
+    position: relative;
+    line-height: 35px;
+    display: block;
+    width: 100%;
+    position: relative;
+    vertical-align: middle;
+    padding-left: 50%;
 
     &:before {
-      content: attr(data-label);
-      display: inline-block;
-      font-weight: bold;
-      font-size: 16px;
-      margin-right: 4px;
+     position: absolute;
+     width: 45%;
+     font-weight: bold;
+     padding: 2px 10px 2px 0;
+     left: 10px;
+     white-space: nowrap;
+     content: attr(data-title);
+    }
+    
+    @include MQ($tab) {
+      padding: 5px 10px;
+      width: auto;
+      display: table-cell;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    @include MQ($desk) {
+      padding: 5px 20px;
     }
 
   }
 
-  tr:nth-child(even) td {
-    background-color: $lightestgray; 
-  }
-
-  p + table {
-    margin-top: 20px;
-  }
-
-  .total td {
-    font-weight: bold;
-  }
-
-  table h3 {
-    font-size: 1em;
-  }
 
 }

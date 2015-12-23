@@ -17,6 +17,10 @@
     background-image: url(../images/icon-twitter-white.svg);
   }
 
+  &.icon-blue {
+    background-image: url(../images/icon-twitter-blue.svg);
+  }
+
 }
 
 .icon-facebook {
@@ -24,6 +28,10 @@
 
   &.icon-black {
     background-image: url(../images/icon-facebook-white.svg);
+  }
+
+  &.icon-blue {
+    background-image: url(../images/icon-facebook-blue.svg);
   }
 
 }
@@ -35,6 +43,10 @@
     background-image: url(../images/icon-flickr-white.svg);
   }
 
+  &.icon-blue {
+    background-image: url(../images/icon-flickr-blue.svg);
+  }
+
 }
 
 .icon-youtube {
@@ -42,6 +54,10 @@
 
   &.icon-black {
     background-image: url(../images/icon-youtube-white.svg);
+  }
+
+  &.icon-blue {
+    background-image: url(../images/icon-youtube-blue.svg);
   }
 
 }
@@ -53,8 +69,16 @@
     background-image: url(../images/icon-linkedin-white.svg);
   }
 
+  &.icon-blue {
+    background-image: url(../images/icon-linkedin-blue.svg);
+  }
+
 }
 
 .icon-black {
   background-color: $black;
+}
+
+.icon-blue {
+  background-color: $white;
 }

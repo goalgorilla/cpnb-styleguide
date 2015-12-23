@@ -6,7 +6,7 @@
     <meta name="msapplication-tap-highlight" content="no">  
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 
-    <title>CPNB StyleGuide - Contact page</title>
+    <title>CPNB StyleGuide - Mijn CPNB</title>
     <meta name="description" content="">
 
     <!--[if (gte IE 9)|(gt IEMobile 7)|(!IE)]><!-->
@@ -23,7 +23,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/cpnblogo.png">
   </head>
 
-  <body class="contact-lu with-hero">
+  <body class="mycpnb">
     <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
     
     <div class="l-region--header">
@@ -175,158 +175,65 @@
             </ul>
           </div>
         </div>
-<section class="hero" style="background-image: url(/example/contact-hero.png);">
+<section class="section-default">
 
-  <div class="container">
+  <h3 class="section--title">Mijn CPNB</h3>
 
-    <div class="hero__content">
-      <h1 class="hero__title">
-        <span>Stichting CPNB</span>
-      </h1>
+   <div class="mycpnb--wrapper">
+    
+    <div class="mycpnb-intro">
+      <h2 class="mycpnb-intro__title">Dit is jouw persoonlijke account op <span>Mijn CPNB </span></h2>
+    </div>
 
-      <p>KvK: 41200029293<br />
-      BTW-nr: NL 002957802 B01</p>
+    <div class="mycpnb-profile">
+      <div class="mycpnb-profile__avatar" style="background-image: url(/example/smurf-man.jpg);"></div>
+      <div class="mycpnb-profile__content">
+        
+        <h2 class="mycpnb-profile__name">John Travolta</h2>
+        <div class="mycpnb-profile__type">
+          <label>Organisatie:</label>
+          <div class="mycpnb-profile__address">
+            <strong>Uitgeverij Unieboek | Het Spectrum</strong><br />
+            P.C. Hoofdplein 12, 7512 GG, Enschede
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="mycpnb-contact">
+
+      <div class="mycpnb-contact__address">
+        <h4>Contactgegevens</h4>
+
+        <address>
+          <label>E-mail</label>
+          <p>John@hetspectrum.nl</p>
+          <label>Telefoon</label>
+          <p>06 - 12 34 56 78</p>
+        </address>
+
+        <div class="mycpnb-contact__socialmedia">
+          <a href="#0" class="icon-button icon-blue icon-twitter">Twitter</a>
+          <a href="#0" class="icon-button icon-blue icon-facebook">Facebook</a>
+          <a href="#0" class="icon-button icon-blue icon-flickr">Flickr</a>
+          <a href="#0" class="icon-button icon-blue icon-youtube">Youtube</a>
+          <a href="#0" class="icon-button icon-blue icon-linkedin">Linkedin</a>
+        </div>
+
+      </div>
+
+      <div class="mycpnb-contact__content">
+        <a href="#0" class="button button--blue">Profiel bewerken</a>
+      </div>
 
     </div>
 
   </div>
 
-
 </section>
-
-<section class="section-default section-contact">
-
-  <div class="block-contact">
-    <label>Algemeen</label>
-    <address>
-      <label>Postadres</label>
-      <p>Postbus 10576 <br />
-      1001 En Amsterdam</p>
-    </address>
-
-    <address>
-      <label>Bezoekadres</label>
-      <p>Herengracht 176 <br />
-      1001 En Amsterdam</p>
-    </address>
-
-    <address>
-      <label>E-mail</label>
-      <p>info@cpnb.nl</p>
-    </address>
-
-    <address>
-     <label>Telefoon</label>
-      <p>06 33 44 55 66</p>
-    </address>
-
-    <address>
-      <label>Fax</label>
-      <p>020 33 33 44 55</p>
-    </address>
-
-  </div>
-
-  <div class="block-contact">
-    <label>Media</label>
-    
-    <address>
-      <label>Telefoon</label>
-      <p>020 78 78 88 99</p>
-    </address>
-
-    <address>
-      <label>Marie Klaassen</label>
-      <p>marie.klaassen@cpnb.nl</p>
-    </address>
-
-    <address>
-      <label>Peter Rosendaal</label>
-      <p>p.rosendaal@cpnb.nl</p>
-    </address>
-
-    <a href="#0" class="button button--orange">Media Center</a>
-
-  </div>
-
-  <div class="block-contact">
-    <label>Klantenservice</label>
-    <address>
-      <p><em>Voor boekhandel en bibliotheek</em></p>
-    </address>
-
-    <address>
-      <label>Postadres</label>
-      <p>Postbus 10576 <br />
-      1001 En Amsterdam</p>
-    </address>
-
-    <address>
-      <label>Postadres</label>
-      <p>Postbus 10576 <br />
-      1001 En Amsterdam</p>
-    </address>
-
-  </div>
-
-  <div class="block-contact">
-    <label>CPNB Sponsoren</label>
-    <address>
-      <label>Gijs Schunselaar</label>
-      <p>g.schunselaar@hetnet.nl</p>
-      <label>Telefoon</label>
-      <p>06 33 44 55 66</p>
-      <label>Fax</label>
-      <p>020 33 33 44 55</p>
-    </address>
-
-  </div>
-
-  <div id="map" class="gmaps">&nbsp;</div>
-
-</section>
-
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-
-<script>
-
-  var style = [
-    {
-      stylers: [
-        {hue: '#c88c57'},
-        {gamma: 1.5}
-      ]
-    }
-
-  ]; 
-
-  var image = 'images/mapicon.svg';
-
-  function initialize() {
-    var myLatlng = new google.maps.LatLng(52.374230, 4.887076);
-    var mapOptions = {
-      scrollwheel: false,
-      mapTypeControl: false,
-      scaleControl: false,
-      zoom: 14,
-      center: myLatlng,
-      styles: style
-    }
-
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'Herengracht 166',
-      icon: image
-    });
-
-  }
-
-  google.maps.event.addDomListener(window, 'load', initialize);
-
-</script>
 
 <div class="section-divider section-divider-plain"> 
 
@@ -336,7 +243,297 @@
     <span>iedereen</span>
   </div>
 
-</div>        
+</div>
+<section class="section-default">
+
+  <div class="notification--wrapper">
+
+    <h3 class="section--title">Notificaties</h3>
+    <div class="notification">
+      <h4>Tony Hawk heeft gereageerd op een idee van jou</h4>
+      <p>29 juni 2015</p>
+    </div>    <div class="notification">
+      <h4>Albert Jansen vindt jouw idee leuk</h4>
+      <p>29 juni 2015</p>
+    </div>    <div class="notification">
+      <h4>Tony Hawk heeft gereageerd op een idee van jou</h4>
+      <p>29 juni 2015</p>
+    </div>    <div class="notification">
+      <h4>Albert Jansen vindt jouw idee leuk</h4>
+      <p>29 juni 2015</p>
+    </div>    <div class="notification">
+      <h4>Tony Hawk heeft gereageerd op een idee van jou</h4>
+      <p>29 juni 2015</p>
+    </div>    <div class="notification">
+      <h4>Albert Jansen vindt jouw idee leuk</h4>
+      <p>29 juni 2015</p>
+    </div>    <div class="notification">
+      <h4>Tony Hawk heeft gereageerd op een idee van jou</h4>
+      <p>29 juni 2015</p>
+    </div>    <div class="notification">
+      <h4>Albert Jansen vindt jouw idee leuk</h4>
+      <p>29 juni 2015</p>
+    </div>  </div>
+
+  <a href="#0" class="button button--blue">Alle notificaties bekijken</a>
+
+</section>
+
+<div class="section-divider section-divider-plain"> 
+
+  <div class="section-divider__tagline">
+    <span>Er zit een</span><br />
+    <span>lezer in</span><br />
+    <span>iedereen</span>
+  </div>
+
+</div>
+<section class="section-default">
+
+  <h3 class="section--title">Campagnes die ik volg</h3>
+  
+  <div class="teaser-campaign--wrapper teaser-relevant-campaign--wrapper">
+    <a href="#0" class="teaser--campaign">
+    
+      <div class="teaser--campaign__logo">
+        <img src="/example/campaign-teaser-logo1.png" alt="campaign title" /> 
+      </div>
+    
+      <div class="teaser--campaign__image" style="background-image: url(example/campaign-teaser1.jpg)">
+        <h2 class="teaser--campaign__title">De kinderboekenweek</h2>
+        <b class="teaser--campaign__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--campaign__content">
+        <div class="teaser--campaign__period">30 oktober t/m 1 december</div>
+    
+        <p class="teaser--campaign__summary">De Kinderboekenweek was nog nooit zo spannend. Ook klaar voor het avontuur?</p>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--campaign">
+    
+      <div class="teaser--campaign__logo">
+        <img src="/example/campaign-teaser-logo1.png" alt="campaign title" /> 
+      </div>
+    
+      <div class="teaser--campaign__image" style="background-image: url(example/campaign-teaser1.jpg)">
+        <h2 class="teaser--campaign__title">De kinderboekenweek</h2>
+        <b class="teaser--campaign__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--campaign__content">
+        <div class="teaser--campaign__period">30 oktober t/m 1 december</div>
+    
+        <p class="teaser--campaign__summary">De Kinderboekenweek was nog nooit zo spannend. Ook klaar voor het avontuur?</p>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--campaign">
+    
+      <div class="teaser--campaign__logo">
+        <img src="/example/campaign-teaser-logo1.png" alt="campaign title" /> 
+      </div>
+    
+      <div class="teaser--campaign__image" style="background-image: url(example/campaign-teaser1.jpg)">
+        <h2 class="teaser--campaign__title">De kinderboekenweek</h2>
+        <b class="teaser--campaign__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--campaign__content">
+        <div class="teaser--campaign__period">30 oktober t/m 1 december</div>
+    
+        <p class="teaser--campaign__summary">De Kinderboekenweek was nog nooit zo spannend. Ook klaar voor het avontuur?</p>
+    
+      </div>
+    
+    </a>  </div>
+
+  <a href="#0" class="section-readmore">Bekijk alle campagnes die ik volg (6)</a>
+
+</section>
+
+<div class="section-divider section-divider-plain"> 
+
+  <div class="section-divider__tagline">
+    <span>Er zit een</span><br />
+    <span>lezer in</span><br />
+    <span>iedereen</span>
+  </div>
+
+</div>
+<section class="section-default">
+
+  <h3 class="section--title">Mijn evenementen</h3>
+  
+  <div class="teaser-news--wrapper">
+    <a href="#0" class="teaser--event">
+    
+      <div class="teaser--event__image" style="background-image: url(example/event-teaser1.jpg)">
+        <b class="teaser--event__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--event__content">
+        <div class="teaser--event__date">28 Januari 2016  |  18:00 - 21:00 <br />
+    Herengracht 166, 1016 BP Amsterdam</div>
+        <h2 class="teaser--event__title">Vers voor de pers: Dé ontmoetingplek voor pers en professionals</h2>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--event">
+    
+      <div class="teaser--event__image" style="background-image: url(example/event-teaser1.jpg)">
+        <b class="teaser--event__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--event__content">
+        <div class="teaser--event__date">28 Januari 2016  |  18:00 - 21:00 <br />
+    Herengracht 166, 1016 BP Amsterdam</div>
+        <h2 class="teaser--event__title">Vers voor de pers: Dé ontmoetingplek voor pers en professionals</h2>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--event">
+    
+      <div class="teaser--event__image" style="background-image: url(example/event-teaser1.jpg)">
+        <b class="teaser--event__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--event__content">
+        <div class="teaser--event__date">28 Januari 2016  |  18:00 - 21:00 <br />
+    Herengracht 166, 1016 BP Amsterdam</div>
+        <h2 class="teaser--event__title">Vers voor de pers: Dé ontmoetingplek voor pers en professionals</h2>
+    
+      </div>
+    
+    </a>  </div>
+  <a href="#0" class="section-readmore">Bekijk al mijn evenementen (8)</a>
+
+</section>
+
+<div class="section-divider section-divider-plain"> 
+
+  <div class="section-divider__tagline">
+    <span>Er zit een</span><br />
+    <span>lezer in</span><br />
+    <span>iedereen</span>
+  </div>
+
+</div>
+<section class="section-default">
+
+  <h3 class="section--title">Mijn CPNB</h3>
+
+  <table class="table">
+
+    <thead>
+      <tr>
+        <th>Bestelnummer</th>
+        <th>Aangemaakt op (oplopend)</th>
+        <th>Totaal excl. btw</th>
+        <th>Totaal incl btw</th>
+        <th>Bestelstatus</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>11</td>
+        <td>08 december 2015</td>
+        <td>800</td>
+        <td>960</td>
+        <td>Op reservelijst</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>02 januari 2015</td>
+        <td>955</td>
+        <td>1100</td>
+        <td>In behandeling</td>
+      </tr>
+
+    </tbody>
+    
+  </table>
+
+  <a href="#0" class="section-readmore">Bekijk bestelgeschiedenis (12)</a>
+
+</section>
+
+<div class="section-divider section-divider-plain"> 
+
+  <div class="section-divider__tagline">
+    <span>Er zit een</span><br />
+    <span>lezer in</span><br />
+    <span>iedereen</span>
+  </div>
+
+</div>
+<section class="section-default">
+
+  <h3 class="section--title">Campagne geschiedenis</h3>
+  
+  <div class="teaser-campaign--wrapper">
+    <a href="#0" class="teaser--campaign">
+    
+      <div class="teaser--campaign__logo">
+        <img src="/example/campaign-teaser-logo1.png" alt="campaign title" /> 
+      </div>
+    
+      <div class="teaser--campaign__image" style="background-image: url(example/campaign-teaser1.jpg)">
+        <h2 class="teaser--campaign__title">De kinderboekenweek</h2>
+        <b class="teaser--campaign__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--campaign__content">
+        <div class="teaser--campaign__period">30 oktober t/m 1 december</div>
+    
+        <p class="teaser--campaign__summary">De Kinderboekenweek was nog nooit zo spannend. Ook klaar voor het avontuur?</p>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--campaign">
+    
+      <div class="teaser--campaign__logo">
+        <img src="/example/campaign-teaser-logo1.png" alt="campaign title" /> 
+      </div>
+    
+      <div class="teaser--campaign__image" style="background-image: url(example/campaign-teaser1.jpg)">
+        <h2 class="teaser--campaign__title">De kinderboekenweek</h2>
+        <b class="teaser--campaign__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--campaign__content">
+        <div class="teaser--campaign__period">30 oktober t/m 1 december</div>
+    
+        <p class="teaser--campaign__summary">De Kinderboekenweek was nog nooit zo spannend. Ook klaar voor het avontuur?</p>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--campaign">
+    
+      <div class="teaser--campaign__logo">
+        <img src="/example/campaign-teaser-logo1.png" alt="campaign title" /> 
+      </div>
+    
+      <div class="teaser--campaign__image" style="background-image: url(example/campaign-teaser1.jpg)">
+        <h2 class="teaser--campaign__title">De kinderboekenweek</h2>
+        <b class="teaser--campaign__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--campaign__content">
+        <div class="teaser--campaign__period">30 oktober t/m 1 december</div>
+    
+        <p class="teaser--campaign__summary">De Kinderboekenweek was nog nooit zo spannend. Ook klaar voor het avontuur?</p>
+    
+      </div>
+    
+    </a>  </div>
+
+  <a href="#0" class="section-readmore">Bekijk volledige campagne historie (8)</a>
+
+</section>
+        
 
       </main>
     

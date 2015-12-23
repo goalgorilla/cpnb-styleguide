@@ -1,0 +1,30 @@
+.notification--wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+
+  @include MQ($tab) {
+    max-width: $tab;
+  }
+
+}
+
+.notification {
+  padding: 20px;
+  background-color: white;
+  margin-top: 5px;
+
+  h4 {
+    font-size: 1em;
+  }
+
+  p {
+    margin: 0;
+    color: darken($grey2, 20%);
+  }
+
+  @include MQ($desk) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}

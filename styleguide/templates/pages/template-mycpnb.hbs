@@ -1,0 +1,177 @@
+---
+basename: mycpnb 
+template: true
+title: Mijn CPNB
+description:
+---
+{{> breadcrumbs}}
+
+<section class="section-default">
+
+  <h3 class="section--title">Mijn CPNB</h3>
+
+   <div class="mycpnb--wrapper">
+    
+    <div class="mycpnb-intro">
+      <h2 class="mycpnb-intro__title">Dit is jouw persoonlijke account op <span>Mijn CPNB </span></h2>
+    </div>
+
+    <div class="mycpnb-profile">
+      <div class="mycpnb-profile__avatar" style="background-image: url(/example/smurf-man.jpg);"></div>
+      <div class="mycpnb-profile__content">
+        
+        <h2 class="mycpnb-profile__name">John Travolta</h2>
+        <div class="mycpnb-profile__type">
+          <label>Organisatie:</label>
+          <div class="mycpnb-profile__address">
+            <strong>Uitgeverij Unieboek | Het Spectrum</strong><br />
+            P.C. Hoofdplein 12, 7512 GG, Enschede
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="mycpnb-contact">
+
+      <div class="mycpnb-contact__address">
+        <h4>Contactgegevens</h4>
+
+        <address>
+          <label>E-mail</label>
+          <p>John@hetspectrum.nl</p>
+          <label>Telefoon</label>
+          <p>06 - 12 34 56 78</p>
+        </address>
+
+        <div class="mycpnb-contact__socialmedia">
+          <a href="#0" class="icon-button icon-blue icon-twitter">Twitter</a>
+          <a href="#0" class="icon-button icon-blue icon-facebook">Facebook</a>
+          <a href="#0" class="icon-button icon-blue icon-flickr">Flickr</a>
+          <a href="#0" class="icon-button icon-blue icon-youtube">Youtube</a>
+          <a href="#0" class="icon-button icon-blue icon-linkedin">Linkedin</a>
+        </div>
+
+      </div>
+
+      <div class="mycpnb-contact__content">
+        <a href="#0" class="button button--blue">Profiel bewerken</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+{{> section-divider-plain}}
+
+<section class="section-default">
+
+  <div class="notification--wrapper">
+
+    <h3 class="section--title">Notificaties</h3>
+    {{> notification-1}}
+    {{> notification-2}}
+    {{> notification-1}}
+    {{> notification-2}}
+    {{> notification-1}}
+    {{> notification-2}}
+    {{> notification-1}}
+    {{> notification-2}}
+  </div>
+
+  <a href="#0" class="button button--blue">Alle notificaties bekijken</a>
+
+</section>
+
+{{> section-divider-plain}}
+
+<section class="section-default">
+
+  <h3 class="section--title">Campagnes die ik volg</h3>
+  
+  <div class="teaser-campaign--wrapper teaser-relevant-campaign--wrapper">
+    {{> teaser-campaign}}
+    {{> teaser-campaign}}
+    {{> teaser-campaign}}
+  </div>
+
+  <a href="#0" class="section-readmore">Bekijk alle campagnes die ik volg (6)</a>
+
+</section>
+
+{{> section-divider-plain}}
+
+<section class="section-default">
+
+  <h3 class="section--title">Mijn evenementen</h3>
+  
+  <div class="teaser-news--wrapper">
+    {{> teaser-event}}
+    {{> teaser-event}}
+    {{> teaser-event}}
+  </div>
+  <a href="#0" class="section-readmore">Bekijk al mijn evenementen (8)</a>
+
+</section>
+
+{{> section-divider-plain}}
+
+<section class="section-default">
+
+  <h3 class="section--title">Mijn CPNB</h3>
+
+  <table class="table">
+
+    <thead>
+      <tr>
+        <th>Bestelnummer</th>
+        <th>Aangemaakt op (oplopend)</th>
+        <th>Totaal excl. btw</th>
+        <th>Totaal incl btw</th>
+        <th>Bestelstatus</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>11</td>
+        <td>08 december 2015</td>
+        <td>800</td>
+        <td>960</td>
+        <td>Op reservelijst</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>02 januari 2015</td>
+        <td>955</td>
+        <td>1100</td>
+        <td>In behandeling</td>
+      </tr>
+
+    </tbody>
+    
+  </table>
+
+  <a href="#0" class="section-readmore">Bekijk bestelgeschiedenis (12)</a>
+
+</section>
+
+{{> section-divider-plain}}
+
+<section class="section-default">
+
+  <h3 class="section--title">Campagne geschiedenis</h3>
+  
+  <div class="teaser-campaign--wrapper">
+    {{> teaser-campaign}}
+    {{> teaser-campaign}}
+    {{> teaser-campaign}}
+  </div>
+
+  <a href="#0" class="section-readmore">Bekijk volledige campagne historie (8)</a>
+
+</section>

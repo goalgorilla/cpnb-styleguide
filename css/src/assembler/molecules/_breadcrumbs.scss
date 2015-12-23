@@ -4,14 +4,21 @@
   @include MQ($tab){
     display: block;
     width: 100%;
-    margin: 70px auto 0;
+    margin: 0 auto;
     position: absolute;
     z-index: 2;
     background-color: $grey4;
   }
 
-  @include MQ($desk) {
-    margin-top: 100px;
+  .with-hero & {
+    @include MQ($tab){
+      margin-top: 70px;
+    }
+
+    @include MQ($desk) {
+      margin-top: 100px;
+    }
+
   }
 
 }

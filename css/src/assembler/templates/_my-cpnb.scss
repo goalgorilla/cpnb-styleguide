@@ -1,0 +1,109 @@
+@include MQ($tab) {
+
+  .no-flexbox .mycpnb--wrapper {
+    @include clearfix;
+  }
+
+}
+
+.flexbox .mycpnb--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include MQ($desk) {
+    justify-content: flex-start;
+  }
+
+}
+
+.mycpnb-intro {
+  display: none;
+
+  @include MQ($desk) {
+    display: block;
+    flex: 1 1 300px;
+    background: $bright-blue;
+    position: relative;
+    height: 300px;
+  }
+
+}
+
+.mycpnb-intro__title {
+  text-align: right;
+  font-weight: normal;
+  font-family: $serif-font;
+  line-height: 1.1;
+  font-size: 36px;
+  margin-top: 0;
+  @include center(xy);
+  position: absolute;
+  width: 72%;
+
+  span {
+    display: block;
+    color: $white;
+  }
+
+}
+
+.mycpnb-profile,
+.mycpnb-contact {
+  display: block;
+  position: relative;
+  background: white;
+  width: 300px;
+  flex: 1 1 300px;
+  border-bottom: 7px solid $bright-blue;
+}
+
+.mycpnb-contact__address,
+.mycpnb-profile__avatar {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-color: $bright-blue;
+  color: white;
+}
+
+.mycpnb-profile__content {
+  padding: 10px 30px 30px 30px; 
+}
+
+.mycpnb-contact__address {
+  padding: 40px 30px 20px;
+
+  address {
+
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+  }  
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.mycpnb-contact__content {
+  padding: 30px;
+}
+
+.mycpnb-profile__type {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.mycpnb-profile__name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.35;
+  margin-top: 0;
+}
