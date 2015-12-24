@@ -1,6 +1,30 @@
 (function ($) {
 
   /*
+   * Wrap selects into a themable div
+   */
+
+  Drupal.behaviors.enhanceForms = {
+    attach: function (context, settings) {
+
+      // Pass focused state to visible parent element.
+      $('.form-item .form-select')
+        .wrap('<div class="selector"></div>')
+        .focus(function(){
+          $(this).parent('.selector').addClass('focused');
+        })
+        .blur(function(){
+          $(this).parent('.selector').removeClass('focused');
+        });
+
+    }
+
+  };
+
+})(jQuery);
+(function ($) {
+
+  /*
    * Mobile menu behavior
    */
   Drupal.behaviors.mobileNav = {
@@ -81,6 +105,37 @@
           resizeTimer = setTimeout(initMobileMenu, 250);
         });
         
+      });
+
+    }
+  };
+
+})(jQuery);
+
+(function ($) {
+
+  /*
+   * Responsive tables behavior
+   */
+  Drupal.behaviors.responsiveTables = {
+    attach: function (context, settings) {
+
+      $('body').once('tables', function(){
+
+        //Счиаем наши загаловки
+        var head_col_count =  $('.table thead th').size();
+        //Считаем наши th элементы в таблице
+        for ( j=0; j <= head_col_count; j++ )  {
+          // Работа с текстом
+          var head_col_label = $('.table thead th:nth-child('+ j +')').text();
+          //Каждому td присваиваем data-title, который потом выводим через css
+          $('.table tr td:nth-child('+ j +')').replaceWith(
+            function(){
+            return $('<td data-title="'+ head_col_label +'">').append($(this).contents());
+            }
+          );
+        }
+
       });
 
     }
