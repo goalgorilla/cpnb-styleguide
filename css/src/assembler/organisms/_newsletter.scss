@@ -94,18 +94,23 @@
   .form-text {
     border: 0;
     width: 100%;
+    background-color: $white;
   }
 
   .form-submit {
     position: absolute;
-    width: 27px;
-    height: 27px;
+    width: 29px;
+    height: 29px;
     border: 0;
-    background-color: $grey1;
+    background-color: $grey2;
     border-radius: 0;
     font-size: 0;
     top: 0px;
     right: 0;
+    min-width: 0;
+    line-height: 29px;
+    padding: 0;
+    min-height: 27px; 
   }
 
 }

@@ -107,3 +107,29 @@
   line-height: 1.35;
   margin-top: 0;
 }
+
+
+.teaser-feedback--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+
+  @include MQ($desk) {
+    justify-content: flex-start;
+  }
+}
+
+.form-campaign-feedback {
+  padding: 20px;
+  width: 100%;
+
+  @include MQ($tab) {
+    padding: 30px;
+  }
+
+  .form-text {
+    padding: 20px 24px;
+  }
+
+}

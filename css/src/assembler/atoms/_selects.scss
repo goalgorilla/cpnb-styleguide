@@ -1,152 +1,88 @@
-/* Dropdown control */
-.selectBox-dropdown {
-  width: 220px !important;
+// SELECT
+
+select {
+  max-width: 100%;
+}
+
+//create a width to where chosen can stretch to
+.form-type-select {
+  max-width: 400px;
+}
+
+// remove the internal dotted lines in firefox
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+.selector {
+  width: 100%;
+  max-width: 560px;
+  cursor: pointer;
   position: relative;
-  border: solid 1px $lightergray;
-  line-height: 1.2em;
-  font-size: 13px;
-  padding: 5px 6px 3px;
-  text-decoration: none;
-  text-align: left;
-  outline: none;
-  vertical-align: middle;
-  background: white;
-  border-radius: 4px;
-  display: inline-block;
-  cursor: pointer;
+  line-height: 30px;
+  background-clip: padding-box;
+  background-color: $grey4;
+  display:inline-block;
+  height: 40px;
+  border-radius: 0;
+
+  @include icon-down($black);
+
+  &:before {
+    right: 16px;
+  }
+
+  &:after {
+    right: 22px;
+  } 
+
+  &:hover {
+    background-color: $grey6;
+  }
+
+  &:active {
+
+    &:before {
+      background-position: -75px -193px;
+    }
+  }
+
+// removes the default arrow in ie10 +11
+  select::-ms-expand {
+    display: none;
+  }
+
+  select {
+    width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    z-index: 4;
+    font-family: $serif-font;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    border-radius: 3px;
+    padding: 5px 40px 5px 30px;
+    background: transparent;
+    line-height: inherit;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -moz-appearance: window;
+    -moz-padding-end: 19px;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+  }
 }
 
-.selectBox-dropdown:focus,
-.selectBox-dropdown:focus .selectBox-arrow {
-  outline: 0;
-}
+.lt-ie10 {
+  .selector:before {
+      display:none;
+  }
 
-.selectBox-menuShowing-bottom {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.selectBox-menuShowing-top {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.selectBox-dropdown .selectBox-label {
-  padding: 0;
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.selectBox-dropdown .selectBox-arrow {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  width: 23px;
-  height: 100%;
-  width: 0;
-  height: 0;
-  top: 50%;
-  margin-top: -3px;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 7px solid $blue;
-}
-
-/* Dropdown menu */
-.selectBox-dropdown-menu {
-  position: absolute;
-  z-index: 99999;
-  max-height: 200px;
-  min-height: 1em;
-  border: solid 1px $lightergray; /* should be the same border width as .selectBox-dropdown */
-  background: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* Inline control */
-.selectBox-inline {
-  min-width: 150px;
-  outline: none;
-  border: solid 1px #BBB;
-  background: white;
-  display: inline-block;
-  border-radius: 4px;
-  overflow: auto;
-}
-
-
-/* Options */
-.selectBox-options,
-.selectBox-options li {
-  list-style: none;
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
-.selectBox-options-top{
-  border-bottom: 1px solid $lightergray;
-  border-radius: 4px;
-  margin-top: -1px;
-}
-
-.selectBox-options-bottom{
-  border-radius: 4px;
-  border-top: 1px solid $lightergray;
-  margin-top: 1px;
-}
-
-.selectBox-options a {
-  line-height: 1.5;
-  display: block;
-  padding: 5px 10px;
-  white-space: normal;
-  overflow: hidden;
-  background: 6px center no-repeat;
-  cursor: pointer;
-  font-size: 13px;
-}
-
-.selectBox-hover a {
-  background-color: $blue;
-  color: white;
-}
-
-.selectBox-disabled a {
-  color: $lightgray;
-  background-color: transparent;
-}
-
-.selectBox-selected a {
-  background-color: $blue;
-  color: white;
-}
-
-.selectBox-optgroup {
-  background: $lightestgray;
-  font-weight: bold;
-  line-height: 1.5;
-  padding: 0 .3em;
-  white-space: nowrap;
-}
-
-/* Disabled state */
-.selectBox-disabled {
-  color: $lightgray;
-}
-
-.selectBox-disabled .selectBox-arrow {
-  opacity: .5;
-  border-color: $lightergray;
-}
-
-.selectBox-inline.selectBox-disabled {
-  color: $lightgray;
-}
-
-.selectBox-inline.selectBox-disabled .selectBox-options a {
-  background-color: transparent ;
+  select {
+    padding: .4em;
+  }
 }

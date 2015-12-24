@@ -54,14 +54,16 @@ textarea {
   border-radius: 0; // override ios default
   font-family: $serif-font;
   font-size: 14px;
-  line-height: 1.4em;
+  line-height: 1.5;
   color: $black;
+  background-color: $grey1;
   display: inline-block;
   padding: 4px 6px;
   vertical-align: middle;
-  border: 1px solid $lightergray;
+  border: 0;
   -webkit-appearance: none;
-  width: 220px;
+  width: 100%;
+  max-width: 560px;
   transition: box-shadow .3s, border-color .3s;
 
   &[disabled] {
@@ -69,16 +71,36 @@ textarea {
     cursor: not-allowed;
   }
 
-  &:hover {
-    border-color: $normalgray;
-  }
-
   &:focus {
     outline: 0;
-    border-color: rgba(82,168,236,0.8);
-    box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset,0 0 8px rgba(82,168,236,0.6);
+    background-color: $grey6;
   }
 
+}
+
+// submit
+
+.form-submit {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 42px;
+  font-weight: bold;
+  max-width: 100%;
+  padding: 4px 6px;
+  min-width: 245px;
+  min-height: 42px;
+  text-decoration: none;
+  color: $black;
+  font-family: $serif-font;
+  border: none;
+  text-align: center;
+  background-color: $grey3;
+
+  &:hover {
+    background-color: $grey6;
+  }
 }
 
 
