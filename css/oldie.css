@@ -151,6 +151,7 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .overlay__text{margin:0 auto;line-height:1.2em}
 .messages--error{background-image:none;font-size:14px;margin-bottom:20px;padding:5px 5px 5px 30px;line-height:1.5}
 .messages--error:before{background-color:#ed541d;border-radius:5px;color:#fff;content:"x";display:inline-block;font-weight:700;font-size:13px;height:18px;line-height:18px;margin:0 6px 0 -25px;float:left;text-align:center;width:18px}
+.table-spacer{padding:10px 10px 20px;background-color:#fff}
 .table{border-collapse:collapse;border-spacing:0;margin-bottom:20px;max-width:100%;background-color:#fff;overflow-x:auto;width:100%;font-size:14px;display:table}
 .table thead{display:none;display:table-header-group}
 .table tr:nth-child(2n){background:#fff}
@@ -576,20 +577,20 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .block-filter .form-item:last-of-type{margin-right:0}
 .block-filter .form-label{color:#fff;margin-bottom:5px;font-weight:400}
 .block-filter .selector{background-color:#fff}
-.block-filter .form-submit{min-width:auto;padding:4px 20px;-webkit-flex:0 1 49%;-ms-flex:0 1 49%;flex:0 1 49%}
+.block-filter .form-submit{min-width:auto;-webkit-flex:0 1 49%;-ms-flex:0 1 49%;flex:0 1 49%;background-color:#fff;margin-top:26px;line-height:30px;min-height:0;padding:5px 30px;width:100%}
 .block-filter .form-wrapper{display:inline-block;width:69%;vertical-align:top}
 .block-filter .form-actions{-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;display:inline-block;width:30%;margin-top:0}
-.block-filter .form-reset{text-decoration:underline}
+.block-filter .form-reset{background-color:transparent;color:#fff;text-decoration:underline;line-height:1;margin-top:5px;padding-right:0;text-align:right;font-weight:400}
 .block-filter--news{background-color:rgba(93,170,220,.9)}
 .block-filter--news .block-title{color:rgba(93,170,220,.9)}
-.block-filter--news .form-submit{background-color:#fff;margin-top:26px;line-height:30px;min-height:0;padding:5px 30px;width:100%}
-.block-filter--news .form-reset{background-color:transparent;color:#fff;line-height:1;margin-top:5px;padding-right:0;text-align:right;font-weight:400}
+.block-filter--campaigns{background-color:rgba(128,38,136,.9)}
+.block-filter--campaigns .block-title{color:rgba(128,38,136,.9)}
 .block-action{margin-top:50px}
 .block-action .block-title{background-color:#fff;font-size:20px;padding:20px 30px;line-height:42px;text-align:center}
-.block-action .content .button{width:100%;position:relative}
+.block-action .content .button{width:100%;position:relative;padding-top:30px;padding-bottom:30px}
 .block-action .content .button:after,.block-action .content .button:before{position:absolute;display:inline-block;width:2px;height:8px;content:'';transition:.3s;background:#fff}
-.block-action .content .button:before{-webkit-transform:rotate(135deg) scale(1.5);transform:rotate(135deg) scale(1.5);top:34px;right:20px}
-.block-action .content .button:after{-webkit-transform:rotate(-135deg) scale(1.5);transform:rotate(-135deg) scale(1.5);top:40px;right:20px}
+.block-action .content .button:before{-webkit-transform:rotate(135deg) scale(1.5);transform:rotate(135deg) scale(1.5);top:44px;right:20px}
+.block-action .content .button:after{-webkit-transform:rotate(-135deg) scale(1.5);transform:rotate(-135deg) scale(1.5);top:50px;right:20px}
 .no-flexbox .block-action{width:100%}
 .no-flexbox .block-action:after,.no-flexbox .block-action:before{content:'';display:table}
 .no-flexbox .block-action:after{clear:both}
@@ -598,6 +599,8 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .flexbox .block-action .block-title,.flexbox .block-action .content{-webkit-flex:0 1 50%;-ms-flex:0 1 50%;flex:0 1 50%;text-align:left;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
 .block-action--news .button{background-color:rgba(93,170,220,.9)}
 .block-action--news .button:hover{background-color:#639cbf}
+.block-action--campaign .button{background-color:rgba(128,38,136,.9)}
+.block-action--campaign .button:hover{background-color:#623588}
 .section-default{padding:115px 10px 60px;max-width:960px;margin:0 auto;position:relative}
 .no-flexbox .section-default:after,.no-flexbox .section-default:before{content:'';display:table}
 .no-flexbox .section-default:after{clear:both}
@@ -620,6 +623,9 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .section-news{padding:25px 10px;max-width:960px;margin:0 auto;position:relative}
 .section-news .button--loadmore{background-color:rgba(93,170,220,.9)}
 .section-news .button--loadmore:hover{background-color:#639cbf}
+.section-campaigns{padding:25px 10px;max-width:960px;margin:0 auto;position:relative}
+.section-campaigns .button--loadmore{background-color:rgba(128,38,136,.9)}
+.section-campaigns .button--loadmore:hover{background-color:#623588}
 .block-campaigndata{background-color:#fff;padding:20px;font-size:17px;font-weight:700;margin-bottom:30px}
 .block-campaigndata label{color:rgba(93,170,220,.9);font-size:14px;display:block}
 .block-campaigndata h4{font-size:26px;line-height:1.35;margin:0}
@@ -684,6 +690,7 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .mycpnb-intro__title span{display:block;color:#fff}
 .mycpnb-contact,.mycpnb-profile{display:block;position:relative;background:#fff;width:300px;-webkit-flex:1 1 300px;-ms-flex:1 1 300px;flex:1 1 300px;border-bottom:7px solid rgba(93,170,220,.9)}
 .mycpnb-contact__address,.mycpnb-profile__avatar{width:100%;height:300px;position:relative;overflow:hidden;background-size:cover;background-position:center center;background-color:rgba(93,170,220,.9);color:#fff}
+.mycpnb-profile__avatar{filter:url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");filter:gray;-webkit-filter:grayscale(100%)}
 .mycpnb-profile__content{padding:10px 30px 30px}
 .mycpnb-contact__address{padding:40px 30px 20px}
 .mycpnb-contact__address label{display:block;font-weight:700;margin-top:20px}
