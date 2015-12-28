@@ -109,13 +109,14 @@
   max-width: 660px;
 
   @include MQ($tab) {
-    padding-left: 25px;
+    padding: 30px 30px 40px;
   }
 
   label {
     color: $bright-blue;
     font-size: 14px;
     display: block;
+    font-weight: bold;
   }
 
 }

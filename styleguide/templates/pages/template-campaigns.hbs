@@ -1,0 +1,98 @@
+---
+basename: campaigns 
+template: true
+title: Nieuws
+description:
+---
+{{> breadcrumbs}}
+
+<div class="block-filter block-filter--campaigns">
+  <h3 class="block-title">CPNB Campagnes</h3>
+  
+  <div class="content">
+
+    <form class="form-filter-campaigns">
+
+      <div class="form-wrapper">
+
+        <div class="form-item">
+          <label class="form-label">Status</label>
+          <select class="form-select" name="select">
+            <option value="value1" selected>Alle</option> 
+            <option value="value2">Live</option>
+            <option value="value3">Materiaal gereed</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label class="form-label">Start time</label>
+          <select class="form-select" name="select">
+            <option value="value1" selected>Alle</option> 
+            <option value="value2">2015 December</option>
+            <option value="value3">2015 November</option>
+            <option value="value3">2015 Oktober</option>
+            <option value="value3">2015 September</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label class="form-label">Thema</label>
+          <select class="form-select" name="select">
+            <option value="value1" selected>Alle</option> 
+            <option value="value2">Theme name</option>
+            <option value="value3">Theme name</option>
+            <option value="value3">Theme name</option>
+            <option value="value3">Theme name</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="form-wrapper form-actions">
+        <input class="form-submit" type="submit" value="Filter">
+        <input class="form-submit form-reset" type="submit" value="reset filters"> 
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+<section class="section-campaigns">  
+  <h3 class="section--title">Gesorteerd op campagne startdatum - aflopend</h3>
+  
+  <div class="teaser-campaign--wrapper">
+    {{> teaser-campaign}}
+    {{> teaser-campaign}}
+    {{> teaser-campaign}}
+
+    {{> teaser-campaign}}
+    {{> teaser-campaign}}
+    {{> teaser-campaign}}
+    
+    {{> teaser-campaign}}
+    {{> teaser-campaign}}
+    {{> teaser-campaign}}
+    
+    {{> teaser-campaign}}
+    {{> teaser-campaign}}
+    {{> teaser-campaign}}
+  </div>
+
+  <div class="pager pager-load-more">
+    <a href="#0" class="button button--loadmore">Toon meer nieuws</a>
+  </div>
+
+  <div class="block-action block-action--campaign">
+  
+    <h3 class="block-title">Wil jij ook iets doen?</h3>
+    
+    <div class="content">
+      <a href="#0" class="button button--large">Check onze campagnes!</a>
+    </div>
+    
+  </div>
+
+</section>

@@ -181,3 +181,24 @@
   }
 
 }
+
+.section-campaigns {
+  padding: 25px 10px;
+  max-width: $desk;
+  margin: 0 auto;
+  position: relative;
+
+  @include MQ($plus){
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .button--loadmore {
+    background-color: $bright-purple;
+
+    &:hover {
+      background-color: $deep-purple;
+    }
+  }
+
+}

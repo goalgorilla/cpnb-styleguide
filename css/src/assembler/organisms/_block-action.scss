@@ -13,18 +13,19 @@
 
     .button {
       width: 100%;
-
       @include icon-right($white);
+      padding-top: 30px;
+      padding-bottom: 30px;
 
       &:before {
         transform: rotate(135deg) scale(1.5);
-        top: 34px;
+        top: 44px;
         right: 20px;
       }
 
       &:after {
         transform: rotate(-135deg) scale(1.5);
-        top: 40px;
+        top: 50px;
         right: 20px;
       }
     }
@@ -80,5 +81,14 @@
 
   &:hover {
     background-color: $deep-blue;
+  }
+}
+
+
+.block-action--campaign .button {
+  background-color: $bright-purple;
+
+  &:hover {
+    background-color: $deep-purple;
   }
 }
