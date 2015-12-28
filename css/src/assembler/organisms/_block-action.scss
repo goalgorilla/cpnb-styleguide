@@ -1,0 +1,84 @@
+.block-action {
+  margin-top: 50px;
+
+  .block-title {
+    background-color: white;
+    font-size: 20px;
+    padding: 20px 30px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  .content {
+
+    .button {
+      width: 100%;
+
+      @include icon-right($white);
+
+      &:before {
+        transform: rotate(135deg) scale(1.5);
+        top: 34px;
+        right: 20px;
+      }
+
+      &:after {
+        transform: rotate(-135deg) scale(1.5);
+        top: 40px;
+        right: 20px;
+      }
+    }
+
+  }
+
+}
+
+
+.no-flexbox .block-action {
+  width: 100%;
+  @include clearfix;
+
+  .block-title,
+  .content {
+
+    @include MQ($tab) {
+      float: left;
+      width: 50%;
+      text-align: left;
+    }
+
+  }
+
+}
+
+.flexbox .block-action {
+
+  @include MQ($tab){
+    display: flex;
+  }
+
+  .block-title,
+  .content {
+
+    @include MQ($tab){
+      flex: 0 1 50%;
+      text-align: left;
+
+      display: flex;
+      align-items: center;
+    }
+   
+  }
+
+}
+
+
+// Styles
+
+.block-action--news .button {
+  background-color: $bright-blue;
+
+  &:hover {
+    background-color: $deep-blue;
+  }
+}

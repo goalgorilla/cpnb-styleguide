@@ -1,0 +1,159 @@
+.block-filter {
+  max-width: $desk;
+  margin: 25px auto 0;
+  position: relative;
+
+  @include MQ($tab) {
+
+    .no-flexbox & {
+      @include clearfix;
+    }
+
+    .flexbox & {
+      display: flex;
+    }
+
+  }
+
+  @include MQ($plus){
+    max-width: $desk;
+  }
+
+
+  .block-title {
+    background: white;
+    font-size: 2em;
+    padding: 20px;
+
+    @include MQ($tab){
+
+      .no-flexbox & {
+        float:left;
+        width: 20%;
+      }
+
+      .flexbox & {
+        flex: 0 1 25%;
+
+        display: flex; //center title vertically
+        align-items: center;
+      }
+
+    }
+
+  }
+
+  .content {
+    padding: 10px;
+
+    @include MQ($tab){
+
+      .no-flexbox & {
+        float: right;
+        width: 80%;
+        padding: 20px;
+      }
+
+      .flexbox & {
+        flex: 1 1 75%;
+        padding: 20px;
+      }
+    }
+
+  }
+
+  .form-item {
+    margin-bottom: 10px;
+
+    @include MQ($tab){
+      margin-bottom: 0;
+      display: inline-block;
+      width: 31%;
+      margin-right: 2%;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+    }
+  }
+
+  .form-label {
+    color: white;
+    margin-bottom: 5px;
+    font-weight: normal;
+  }
+
+  .selector {
+    background-color: white;
+  }
+
+  .form-submit {
+    min-width: auto;
+    padding: 4px 20px;
+    flex: 0 1 49%;
+  }
+
+  .form-wrapper {
+    @include MQ($tab){
+      display: inline-block;
+      width: 69%;
+      vertical-align: top;
+    }
+  }
+
+  .form-actions {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+
+    @include MQ($tab){
+      display: inline-block;
+      width: 30%;
+      margin-top: 0;
+    }
+
+  }
+
+  .form-reset {
+    text-decoration: underline;
+  }
+
+}
+
+
+
+// styles
+.block-filter--news {
+  background-color: $bright-blue;
+  
+  .block-title {
+    color: $bright-blue;
+  }
+
+  .form-submit {
+    background-color: white;
+
+    @include MQ($tab){
+      margin-top: 26px;
+      line-height: 30px;
+      min-height: 0;
+      padding: 5px 30px;
+      width: 100%;
+    }
+  }
+
+  .form-reset {
+    background-color: transparent;
+    color: white;
+
+    @include MQ($tab){
+      line-height: 1;
+      margin-top: 5px;
+      padding-right: 0;
+      text-align: right;
+      font-weight: normal;
+    }
+  }
+
+}
