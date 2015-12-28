@@ -25,7 +25,6 @@
 @import "assembler/atoms/inputs";
 @import "assembler/atoms/selects";
 @import "assembler/atoms/icons";
-@import "assembler/atoms/notices";
 @import "assembler/atoms/table";
 
 // ===============================================
@@ -40,6 +39,7 @@
 @import "assembler/molecules/teaser-idea";
 @import "assembler/molecules/teaser-participant";
 @import "assembler/molecules/teaser-document";
+@import "assembler/molecules/teaser-vacancy";
 @import "assembler/molecules/notification";
 @import "assembler/molecules/form-items";
 @import "assembler/molecules/pager";
@@ -57,6 +57,7 @@
 @import "assembler/organisms/forms";
 @import "assembler/organisms/filter";
 @import "assembler/organisms/block-action";
+@import "assembler/organisms/article";
 
 // ===============================================
 // App Templates

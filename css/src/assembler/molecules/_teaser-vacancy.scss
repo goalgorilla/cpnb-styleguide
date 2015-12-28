@@ -1,0 +1,135 @@
+@include MQ($tab) {
+
+  .no-flexbox .teaser-vacancy--wrapper {
+    @include clearfix;
+  }
+
+}
+
+.flexbox .teaser-vacancy--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include MQ($desk) {
+    justify-content: flex-start;
+  }
+
+}
+
+.teaser--vacancy {
+  display: inline-block;
+  position: relative;
+  background: white;
+  margin-bottom: 20px;
+  width: 300px;
+  flex: 1 1 300px;
+}
+
+
+.teaser-vacancy--wrapper {
+  
+  .teaser--vacancy {
+    flex-grow: 0;
+
+    &:nth-of-type(4n+1):hover .teaser--vacancy__image:after {
+      background-color: $orange2;
+    }
+
+    &:nth-of-type(4n+2):hover .teaser--vacancy__image:after {
+      background-color: $orange1;
+    }
+
+    &:nth-of-type(4n-1):hover .teaser--vacancy__image:after {
+      background-color: $bright-purple;
+    }
+
+    &:nth-of-type(4n+4):hover .teaser--vacancy__image:after {
+      background-color: $bright-blue;
+    }
+
+    @include MQ($tab) {
+      flex: 1 1 33%;
+    }
+
+  }
+
+}
+
+.teaser--vacancy__image {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: $orange2;
+
+   &:after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($orange2, 0.7);
+    z-index: 1;
+    transition: background-color 0.5s;
+  }
+
+}
+
+.teaser--vacancy:nth-of-type(4n+1) .teaser--vacancy__image:after {
+  background-color: rgba($orange2, 0.7);
+}
+
+.teaser--vacancy:nth-of-type(4n+2) .teaser--vacancy__image:after {
+  background-color: rgba($orange1, 0.7);  
+}
+
+.teaser--vacancy:nth-of-type(4n-1) .teaser--vacancy__image:after {
+  background-color: rgba($bright-purple, 0.7);
+}
+
+.teaser--vacancy:nth-of-type(4n+4) .teaser--vacancy__image:after {
+  background-color: rgba($bright-blue, 0.7);  
+}
+
+
+.teaser--vacancy__readmore {
+  @include icon-right(white);
+  position: absolute;
+  font-size: 0;
+  bottom: 40px;
+  right: 30px;
+  display: inline-block;
+  z-index: 2;
+
+  &:before {
+    transform: scale(1.3) rotate(135deg);
+  }
+  &:after {
+    transform: scale(1.3) rotate(-135deg);
+  }
+
+}
+
+.teaser--vacancy__content {
+  padding: 10px 30px 30px; 
+}
+
+.teaser--vacancy__type {
+  font-size: 13px;
+  line-height: 1.35;
+  color: $black;
+  margin-top: 15px;
+}
+
+
+.teaser--vacancy__name {
+  line-height: 1.35;
+  font-size: 18px;
+  margin-top: 0;
+}

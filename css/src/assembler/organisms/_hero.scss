@@ -268,3 +268,45 @@
     min-width: auto;
   }
 }
+
+.hero--plain {
+
+  height: 240px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba($black, 0.8);
+  }
+
+  .hero__content {
+    display: flex;
+    align-items: center;
+    height: 240px;
+
+    @include MQ($tab) {
+      height: 470px;
+    }
+    
+  }
+
+  .hero__title {
+    margin: 0 0 0 30px;
+    text-align: left;
+    position: static;
+    z-index: 4;
+    
+    @include MQ($desk) {
+      font-size: 60px;
+    }
+
+  }
+
+}

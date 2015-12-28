@@ -168,35 +168,3 @@ address {
 .element-hidden {
   @extend %element-hidden;
 }
-
-.introtext {
-  font-weight: bold;
-  font-style: italic;
-}
-
-.field--name-body {
-  font-size: 14px;
-
-  h1 {
-    @extend %page-title;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
-  ul {
-    list-style-type: disc;
-  }
-
-  ol, ul {
-    padding-left: 30px;
-    line-height: 1.5;
-  }
-
-  h4.title {
-    color: $blue;
-    font-size: 20px;
-  }
-
-}
