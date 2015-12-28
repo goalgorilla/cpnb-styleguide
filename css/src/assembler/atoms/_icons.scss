@@ -13,7 +13,8 @@
 .icon-twitter {
   background-image: url(../images/icon-twitter-grey.svg);
 
-  &.icon-black {
+  &.icon-black,
+  &.icon-share {
     background-image: url(../images/icon-twitter-white.svg);
   }
 
@@ -26,7 +27,8 @@
 .icon-facebook {
   background-image: url(../images/icon-facebook-grey.svg);
 
-  &.icon-black {
+  &.icon-black,
+  &.icon-share {
     background-image: url(../images/icon-facebook-white.svg);
   }
 
@@ -39,7 +41,8 @@
 .icon-flickr {
   background-image: url(../images/icon-flickr-grey.svg);
 
-  &.icon-black {
+  &.icon-black,
+  &.icon-share {
     background-image: url(../images/icon-flickr-white.svg);
   }
 
@@ -52,7 +55,8 @@
 .icon-youtube {
   background-image: url(../images/icon-youtube-grey.svg);
 
-  &.icon-black {
+  &.icon-black,
+  &.icon-share {
     background-image: url(../images/icon-youtube-white.svg);
   }
 
@@ -65,7 +69,8 @@
 .icon-linkedin {
   background-image: url(../images/icon-linkedin-grey.svg);
 
-  &.icon-black {
+  &.icon-black,
+  &.icon-share {
     background-image: url(../images/icon-linkedin-white.svg);
   }
 
@@ -75,8 +80,24 @@
 
 }
 
+.icon-mail {
+  background-image: url(../images/icon-mail-white.svg);
+}
+
+.icon-whatsapp {
+  background-image: url(../images/icon-whatsapp-white.svg);
+}
+ 
+.icon-print {
+  background-image: url(../images/icon-print-white.svg);   
+}
+
 .icon-black {
   background-color: $black;
+}
+
+.icon-share {
+  background-color: $bright-blue;
 }
 
 .icon-blue {

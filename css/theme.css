@@ -53,7 +53,7 @@ address{font-style:normal;margin-bottom:.6em}
 .field--name-body ul{list-style-type:disc}
 .field--name-body ol,.field--name-body ul{padding-left:30px;line-height:1.5}
 .field--name-body h4.title{color:#00aeef;font-size:20px}
-.button,.pager li a,.pager__item--current{position:relative;display:inline-block;vertical-align:middle;font-size:14px;line-height:42px;font-weight:700;max-width:100%;padding:4px 6px;min-width:180px;min-height:42px;text-decoration:none;color:#fff;border:none;text-align:center;background-color:#000}
+.button,.pager li a,.pager__item--current{position:relative;display:inline-block;vertical-align:middle;font-size:14px;line-height:42px;font-weight:700;max-width:100%;padding:4px 20px;min-width:180px;min-height:42px;text-decoration:none;color:#fff;border:none;text-align:center;background-color:#000;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
 .button:hover,.pager li a:hover,.pager__item--current:hover{cursor:pointer}
 .button--purple{background-color:rgba(128,38,136,.9)}
 .button--purple:hover{background-color:#623588}
@@ -61,10 +61,11 @@ address{font-style:normal;margin-bottom:.6em}
 .button--pink:hover{background-color:rgba(150,0,114,.9)}
 .button--blue,.pager__item--current{background-color:rgba(93,170,220,.9)}
 .button--blue:hover,.pager__item--current:hover{background-color:#639cbf}
+.button--grey{background-color:#d8d5d0;color:#000}
+.button--grey:hover{background-color:#cac5c1}
 .button--orange{background-color:rgba(186,90,65,.9);color:#fff}
 .button--orange:hover{background-color:#c88c57}
-.button--grey{background-color:#d8d5d0;color:#000}
-.button--grey:hover{background-color:#cac5c1;color:#000}
+.button--white,.button--white:hover{background-color:#fff;color:#000}
 .button--add{padding:10px 70px 10px 40px;line-height:1.5em;min-height:0;background-color:#d8d5d0;width:100%}
 .button--add b{display:inline;position:absolute;padding:0;top:0;right:0;width:40px;height:40px;border-left:1px solid rgba(0,0,0,.2)}
 .button--add b:before{position:absolute;width:3px;height:13px;content:'';background-color:#000}
@@ -115,21 +116,25 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .lt-ie10 select{padding:.4em}
 .icon-button{display:inline-block;width:45px;height:45px;background-color:#fff;background-repeat:no-repeat;background-position:50% 50%;background-size:20px 20px;text-indent:-999em;font-size:0}
 .icon-twitter{background-image:url(../images/icon-twitter-grey.svg)}
-.icon-twitter.icon-black{background-image:url(../images/icon-twitter-white.svg)}
+.icon-twitter.icon-black,.icon-twitter.icon-share{background-image:url(../images/icon-twitter-white.svg)}
 .icon-twitter.icon-blue{background-image:url(../images/icon-twitter-blue.svg)}
 .icon-facebook{background-image:url(../images/icon-facebook-grey.svg)}
-.icon-facebook.icon-black{background-image:url(../images/icon-facebook-white.svg)}
+.icon-facebook.icon-black,.icon-facebook.icon-share{background-image:url(../images/icon-facebook-white.svg)}
 .icon-facebook.icon-blue{background-image:url(../images/icon-facebook-blue.svg)}
 .icon-flickr{background-image:url(../images/icon-flickr-grey.svg)}
-.icon-flickr.icon-black{background-image:url(../images/icon-flickr-white.svg)}
+.icon-flickr.icon-black,.icon-flickr.icon-share{background-image:url(../images/icon-flickr-white.svg)}
 .icon-flickr.icon-blue{background-image:url(../images/icon-flickr-blue.svg)}
 .icon-youtube{background-image:url(../images/icon-youtube-grey.svg)}
-.icon-youtube.icon-black{background-image:url(../images/icon-youtube-white.svg)}
+.icon-youtube.icon-black,.icon-youtube.icon-share{background-image:url(../images/icon-youtube-white.svg)}
 .icon-youtube.icon-blue{background-image:url(../images/icon-youtube-blue.svg)}
 .icon-linkedin{background-image:url(../images/icon-linkedin-grey.svg)}
-.icon-linkedin.icon-black{background-image:url(../images/icon-linkedin-white.svg)}
+.icon-linkedin.icon-black,.icon-linkedin.icon-share{background-image:url(../images/icon-linkedin-white.svg)}
 .icon-linkedin.icon-blue{background-image:url(../images/icon-linkedin-blue.svg)}
+.icon-mail{background-image:url(../images/icon-mail-white.svg)}
+.icon-whatsapp{background-image:url(../images/icon-whatsapp-white.svg)}
+.icon-print{background-image:url(../images/icon-print-white.svg)}
 .icon-black{background-color:#000}
+.icon-share{background-color:rgba(93,170,220,.9)}
 .icon-blue{background-color:#fff}
 .block-boxes-warning{margin-bottom:25px;padding:20px;background:#00aeef;font-weight:700;color:#fff}
 .block-boxes-warning span{text-decoration:underline}
@@ -377,7 +382,7 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .is-clicked .menu-icon:after{top:0;-webkit-transform:rotate(225deg);transform:rotate(225deg)}
 .l-region--header{position:fixed;left:0;top:0;height:100%;width:100%;background:rgba(0,0,0,.9);z-index:2;text-align:center;padding:42px 0;-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:auto;-webkit-overflow-scrolling:touch;-webkit-transform:translateY(-100%);transform:translateY(-100%);transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;transition-duration:.4s}
 .menu-is-open .l-region--header{-webkit-transform:translateY(0);transform:translateY(0)}
-.l-footer{background-color:#d8d5d0;width:100%}
+.l-footer{background-color:#d8d5d0;width:100%;z-index:0}
 .l-footer .container{padding-top:20px;padding-bottom:20px}
 .l-footer .container:after,.l-footer .container:before{content:'';display:table}
 .l-footer .container:after{clear:both}
@@ -426,19 +431,13 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .newsletter__signup:after{right:11px;top:12px;width:3px;height:10px}
 .newsletter__socialmedia{background-color:#cac5c1;padding:20px 0;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
 .newsletter__socialmedia .icon-button{margin:0 5px}
-.page-phone .node__title,.page-student .node__title,.pane-tmobile-selfcare-renew-phone-package li:first-child .node__title{display:inline-block;margin-right:10px}
-.page-phone .attribute-widgets>.form-item,.page-student .attribute-widgets>.form-item,.pane-tmobile-selfcare-renew-phone-package li:first-child .attribute-widgets>.form-item{margin:0}
-.pane-tmobile-selfcare-renew-phone-package .container:after,.pane-tmobile-selfcare-renew-phone-package .container:before{content:'';display:table}
-.pane-tmobile-selfcare-renew-phone-package .container:after{clear:both}
-.pane-tmobile-selfcare-renew-phone-package li:nth-child(2){margin-top:30px}
-.cookie-message{display:block;width:100%;border-top:10px solid rgba(216,216,216,.9);background-clip:padding-box;background-color:#fff;position:fixed;z-index:999;bottom:0}
-.cookie-message .wrapper{margin:10px;max-width:100%}
-.cookie-message .content{width:90%}
-.cookie-message .content strong{font-size:14px}
-.cookie-message .content p{font-size:13px}
-.cookie-message .content a{text-decoration:underline;color:#00aeef}
-.cookie-message .content a:hover{text-decoration:none}
-.cookie-messages-dismiss{float:right;display:block;padding:20px;width:15px;height:15px;margin-top:-10px;background:url(../images/cookie-close.png) center center no-repeat}
+.action-bar{position:fixed;width:100%;bottom:0;left:0;z-index:10;background-color:#fff}
+.action-bar:before{width:100%;height:8px;display:block;content:'';background:linear-gradient(to right,#623588 0,#623588 5%,rgba(175,0,134,.9) 6%,rgba(175,0,134,.9) 15%,rgba(128,38,136,.9) 15%,rgba(128,38,136,.9) 35%,rgba(175,0,134,.9) 35%,rgba(175,0,134,.9) 45%,rgba(186,90,65,.9) 45%,rgba(186,90,65,.9) 54%,#c88c57 54%,#c88c57 78%,rgba(186,90,65,.9) 78%,rgba(186,90,65,.9) 88%,rgba(93,170,220,.9) 88%,rgba(93,170,220,.9) 100%)}
+.action-bar .container{padding:0}
+.action-bar--content{overflow:auto;-webkit-backface-visibility:hidden;backface-visibility:hidden;background-color:#fff;-webkit-overflow-scrolling:touch;height:100%;width:100%;position:fixed;padding:80px 0;opacity:.1;z-index:11;left:0;top:0;bottom:0;-webkit-transform:translateY(100%);transform:translateY(100%);transition:opacity .2s ease,-webkit-transform .5s ease;transition:transform .5s ease,opacity .2s ease;transition:transform .5s ease,opacity .2s ease,-webkit-transform .5s ease}
+.action-bar--content.open{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}
+.share-page__label{display:none}
+.share-page{padding:10px;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .commerce-add-to-cart .form-type-radios,.tmobile-selfcare-renew-subscription-form .form-type-radios{margin-bottom:20px}
 .commerce-add-to-cart .attribute_wrapper:hover label,.tmobile-selfcare-renew-subscription-form .attribute_wrapper:hover label{background:#00aeef;border:1px solid #00aeef;color:#fff}
 .commerce-add-to-cart .form-type-radio label,.tmobile-selfcare-renew-subscription-form .form-type-radio label{border:1px solid #d8d8d8;padding:5px 10px;border-bottom:0;background-color:#fff;font-weight:400;display:block;margin:0;height:41px}
@@ -481,74 +480,6 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .node-form .filter-wrapper{border:1px solid #999;padding:.5em .6em}
 .node-form .tips{list-style-type:disc;padding-left:20px}
 .node-form .form-submit{margin-right:1em}
-.shoppingCartWrapper .cart-table__border-top{border-top:1px solid #d8d8d8}
-.shoppingCartWrapper .toggle-highlight{transition:.3s background-color ease-out}
-.shoppingCartWrapper .panel-pane{border:1px solid #d8d8d8;margin-bottom:25px;padding:5px;background-color:#fff}
-.shoppingCartWrapper .pane-title{background-color:#00aeef;background-image:url(../images/shoppingcart04.png);background-repeat:no-repeat;background-position:10px center;color:#fff;font-size:1.125em;font-weight:700;line-height:1.25em;padding:9px 15px 9px 45px;margin:-5px -5px 15px}
-.shoppingCartWrapper .pane-tmobile-cart-tmobile-cart{margin-bottom:0;border-bottom:1px solid #d8d8d8}
-.view-tmobile-shopping-cart-block{padding:0 7px 16px}
-.view-tmobile-shopping-cart-block table{width:100%;border-collapse:collapse}
-.view-tmobile-shopping-cart-block th{font-size:15px;font-weight:700;padding-right:5px;padding-bottom:9px;padding-left:5px;color:#00aeef;background:0 0;text-align:left}
-.view-tmobile-shopping-cart-block td{font-size:14px;line-height:15px;padding:5px 0}
-.view-tmobile-shopping-cart-block .alignRight,.view-tmobile-shopping-cart-block tbody tr td:last-child{padding-right:5px;text-align:right}
-.view-tmobile-shopping-cart-block tbody tr td:first-child{padding-right:5px;padding-left:5px;text-align:left}
-.view-tmobile-shopping-cart-block .phone_title{color:#000}
-.view-tmobile-shopping-cart-block .is-small{font-size:12px}
-.view-tmobile-shopping-cart-block span.is-small{display:block}
-.view-tmobile-shopping-cart-block .cart-table{width:100%}
-.view-tmobile-shopping-cart-block .boldblue{font-weight:700;color:#00aeef;font-size:14px}
-.view-tmobile-shopping-cart-block .blue-bundle td{color:#00aeef;font-weight:700}
-.view-tmobile-shopping-cart-block .green{color:#9fbd37}
-.view-tmobile-shopping-cart-block .basket-onetime{margin-top:25px}
-.view-tmobile-shopping-cart-block .basket-onetime th{padding-top:15px;border-top:1px solid #d8d8d8}
-.view-tmobile-shopping-cart-block .list-plus.is-bluetheme{margin:5px 0 15px;padding:0!important}
-.view-tmobile-shopping-cart-block .list-plus.is-bluetheme li{font-size:14px;margin:5px 0;list-style:none;line-height:20px;position:relative;padding-left:20px}
-.view-tmobile-shopping-cart-block .list-plus.is-bluetheme li:before{position:absolute;top:1px;left:5px;width:3px;height:13px;content:'';background-color:#00aeef}
-.view-tmobile-shopping-cart-block .list-plus.is-bluetheme li:after{position:absolute;top:6px;left:0;width:13px;height:3px;content:'';background-color:#00aeef}
-.view-tmobile-shopping-cart-block .list-plus.is-bluetheme li a{font-size:14px}
-.view-tmobile-shopping-cart-block .spacer{padding:3px 0}
-.view-tmobile-shopping-cart-block .total{color:#666;background-color:#efefef}
-.view-tmobile-shopping-cart-block .total td{font-size:16px;font-weight:700;padding:9px 5px}
-.view-tmobile-shopping-cart-block .total td:first-child{padding-right:0;border-top-left-radius:5px;border-bottom-left-radius:5px}
-.view-tmobile-shopping-cart-block .total .alignRight{padding-left:0;border-top-right-radius:5px;border-bottom-right-radius:5px}
-.view-tmobile-shopping-cart-block .footnote,.view-tmobile-shopping-cart-block .footnote td{font-size:12px!important;margin:0;padding:5px;padding-right:5px!important;padding-left:5px!important;color:#777!important}
-.view-tmobile-shopping-cart-block .button.basket-details{font-size:12px;font-weight:400;display:inline-block;width:100%;margin:15px 0 5px;padding:9px 5px;text-align:center;color:#777;border-radius:5px;background-image:none;background-color:#efefef}
-.view-tmobile-shopping-cart-block .button.basket-details:hover{text-decoration:none}
-.view-tmobile-shopping-cart-block .button.basket-details:after{display:none}
-.view-tmobile-shopping-cart-block .line-item-summary,.view-tmobile-shopping-cart-block .line-item-summary-checkout{width:100%;margin:0;padding:0}
-.view-tmobile-shopping-cart-block .line-item-summary a,.view-tmobile-shopping-cart-block .line-item-summary-checkout a{width:100%;margin:0;color:#fff;text-decoration:none}
-.view-tmobile-shopping-cart-block .line-item-summary a.disabled,.view-tmobile-shopping-cart-block .line-item-summary-checkout a.disabled{background-image:none;background-color:#efefef;color:#d8d8d8;cursor:default}
-.view-tmobile-shopping-cart-block .line-item-summary a:hover,.view-tmobile-shopping-cart-block .line-item-summary-checkout a:hover{background-color:#9fbd37}
-.view-tmobile-shopping-cart-block .line-item-summary a:hover.disabled,.view-tmobile-shopping-cart-block .line-item-summary-checkout a:hover.disabled{color:#d8d8d8;background-color:#efefef;background-image:none}
-.view-tmobile-shopping-cart-block .additions td{font-size:13px;padding:2px 10px}
-.checkout-cart-text,.pane-tmobile-blocks-return-policy{color:#777;font-weight:400;font-size:12px;line-height:20px;text-align:center;border:1px solid #d8d8d8;border-top:medium none!important;margin-top:-1px!important;padding:5px 10px 16px}
-.checkout-cart-text img,.pane-tmobile-blocks-return-policy img{margin:25px 0 0;background-color:#fff;border:1px solid #d8d8d8}
-.checkout-cart-text a:hover,.pane-tmobile-blocks-return-policy a:hover{text-decoration:none}
-.pane-tmobile-blocks-return-policy{padding-bottom:15px}
-.panel-pane.pane-tmobile-blocks-call-ben{padding:5px 10px 16px}
-.panel-pane.pane-tmobile-blocks-call-ben .title{background-color:#00aeef;color:#fff;font-size:1.125em;font-weight:700;line-height:1.25em;padding:9px 15px;margin:-5px -10px 20px}
-.checkout-cart-text a{padding-left:2px}
-.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane{padding:0 10px 15px}
-.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane .pane-title{margin:0 -10px 15px}
-.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane .view-tmobile-shopping-cart-block{padding:0}
-.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane .spacer td{padding-top:15px}
-.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane .line-item-summary-checkout{padding:0!important}
-.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane table thead:first-child td{font-weight:700;color:#00aeef}
-.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane thead th{padding-top:15px;padding-bottom:5px}
-.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane table tbody tr.toggle-highlight td:first-child{position:relative;padding-left:20px}
-.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane table tbody tr.toggle-highlight td:first-child:before{position:absolute;top:1px;left:5px;width:3px;height:13px;content:'';background-color:#00aeef}
-.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane table tbody tr.toggle-highlight td:first-child:after{position:absolute;top:6px;left:0;width:13px;height:3px;content:'';background-color:#00aeef}
-.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane table tbody tr.toggle-highlight td:first-child:after,.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane table tbody tr.toggle-highlight td:first-child:before{margin-top:3px}
-.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane tbody td{padding-right:10px;padding-left:10px}
-.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane .basket-monthly tfoot td:first-child{padding:8px 0 8px 10px}
-.pane-tmobile-package-update-update-package-custom-cart-block.panel-pane .basket-monthly tfoot td.alignRight{padding:8px 10px 8px 0}
-.view-display-id-sim_only_cart_block{padding-bottom:0}
-.view-display-id-sim_only_cart_block tfoot tr{color:#666;background-color:#efefef}
-.view-display-id-sim_only_cart_block tfoot tr td{font-size:16px;font-weight:700;padding:9px 5px}
-.view-display-id-sim_only_cart_block tfoot tr td:first-child{padding-right:0;border-top-left-radius:5px;border-bottom-left-radius:5px}
-.view-display-id-sim_only_cart_block tfoot tr .alignRight{padding-left:0;border-top-right-radius:5px;border-bottom-right-radius:5px}
-.block--tmobile-blocks-checkout-page-cart .block__title{background-color:#00aeef;background-image:url(../images/shoppingcart04.png);background-repeat:no-repeat;background-position:10px center;color:#fff;font-size:1.125em;font-weight:700;line-height:1.25em;padding:9px 15px 9px 45px}
-.block--tmobile-blocks-checkout-page-cart .cart-contents{padding:15px 0;border-right:1px solid #d8d8d8;border-left:1px solid #d8d8d8}
 .section-default{padding:25px 10px;max-width:960px;margin:0 auto;position:relative}
 .no-flexbox .section-default:after,.no-flexbox .section-default:before{content:'';display:table}
 .no-flexbox .section-default:after{clear:both}
@@ -577,7 +508,7 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .block-campaign-publications,.block-campaigninfo,.block-campaignmaterial,.block-campaigntopics{background-color:#fff;padding:20px;font-size:17px;font-weight:700;margin-bottom:30px;max-width:660px}
 .block-campaign-publications label,.block-campaigninfo label,.block-campaignmaterial label,.block-campaigntopics label{color:rgba(93,170,220,.9);font-size:14px;display:block}
 .campaignmaterial__buttons{margin-top:30px}
-.campaignmaterial__buttons .button{font-size:1em;padding:.5em 2em;margin-right:20px}
+.campaignmaterial__buttons .button{font-size:1em;padding:.5em 2em;margin-bottom:10px;width:100%}
 .campaigntopics__list{-webkit-column-count:3;-moz-column-count:3;column-count:3}
 .campaigntopics__item{margin-bottom:5px;line-height:1.5;display:block}
 .block-campaigninfo{font-weight:400}
@@ -590,6 +521,18 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .campaign-publications__button a:before{-webkit-transform:rotate(135deg);transform:rotate(135deg)}
 .campaign-publications__button a:after{-webkit-transform:rotate(-135deg);transform:rotate(-135deg);top:8px}
 .campaign-publications__button a:after,.campaign-publications__button a:before{width:3px;right:5px}
+.campagne-buttons{width:100%;padding:10px}
+.campagne-buttons .button{width:100%;margin-bottom:10px}
+.action-bar--campaign .share-page__label{display:block;-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;margin-bottom:10px;text-align:center;color:rgba(93,170,220,.9);font-size:14px;line-height:42px}
+.action-bar--campaign .share-page{padding:10px 10px 40px}
+.action-bar--buttons{padding:12px 10px;z-index:12;position:relative;background-color:#fff}
+.action-bar--buttons .button{min-width:42%;outline:0}
+.action-bar--buttons .button--white{text-align:right;line-height:1.5;font-weight:400;position:relative}
+.action-bar--buttons .button--white:after,.action-bar--buttons .button--white:before{position:absolute;display:inline-block;width:2px;height:8px;content:'';transition:.3s;background:#000}
+.action-bar--buttons .button--white:before{-webkit-transform:rotate(135deg);transform:rotate(135deg)}
+.action-bar--buttons .button--white:after{-webkit-transform:rotate(-135deg);transform:rotate(-135deg)}
+.action-bar--buttons .button--white:before{top:17px;right:5px}
+.action-bar--buttons .button--white:after{top:22px;right:5px}
 .flexbox .section-contact .block-contact{-webkit-flex-basis:48%;-ms-flex-preferred-size:48%;flex-basis:48%}
 .flexbox .section-contact .gmaps{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%}
 .block-contact{background-color:#fff;padding:20px;margin-bottom:30px;font-size:14px;line-height:1.5}
@@ -707,8 +650,10 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .newsletter__infobox{background-color:#f2f1ef;display:block;-webkit-flex:1 1 50%;-ms-flex:1 1 50%;flex:1 1 50%;padding:30px}
 .newsletter__form{padding:10px 0;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}
 .newsletter__socialmedia{-webkit-flex:1 1 50%;-ms-flex:1 1 50%;flex:1 1 50%;padding:30px;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
-.page-phone .attributes,.page-student .attributes,.pane-tmobile-selfcare-renew-phone-package li:first-child .attributes{width:78%;float:right}
-.page-phone .panels-generic-content-top-inside .product_image,.page-student .panels-generic-content-top-inside .product_image,.pane-tmobile-selfcare-renew-phone-package li:first-child .product_image{width:20%;float:left}
+.action-bar--content{position:relative;padding:0;display:inline-block;width:auto;height:auto;-webkit-transform:none;transform:none;opacity:1}
+.share-page__label{display:inline-block;color:rgba(93,170,220,.9);font-size:14px;-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto;line-height:42px}
+.share-page{-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}
+.icon-share{margin-left:10px}
 .commerce-add-to-cart .form-type-radios,.tmobile-selfcare-renew-subscription-form .form-type-radios{display:block}
 .commerce-add-to-cart .form-item-attributes-field-colour label,.commerce-add-to-cart .form-type-radios label,.tmobile-selfcare-renew-subscription-form .form-item-attributes-field-colour label,.tmobile-selfcare-renew-subscription-form .form-type-radios label{display:block;width:100%}
 .commerce-add-to-cart .form-type-radios .form-radios,.tmobile-selfcare-renew-subscription-form .form-type-radios .form-radios{display:block}
@@ -736,10 +681,20 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .flexbox .campaigndata__item{-webkit-flex:0 1 31%;-ms-flex:0 1 31%;flex:0 1 31%}
 .flexbox .campaigndata__item.campaigndata__item--full{-webkit-flex-basis:66%;-ms-flex-preferred-size:66%;flex-basis:66%}
 .block-campaign-publications,.block-campaigninfo,.block-campaignmaterial,.block-campaigntopics{padding-left:25px}
+.campaignmaterial__buttons .button{margin-right:20px;margin-bottom:0;width:auto}
 .block-campaigninfo{padding:50px}
 .campaign-publications{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center}
 .campaign-publications__button a:before{top:12px}
 .campaign-publications__button a:after{top:17px}
+.campagne-buttons{width:auto;display:inline-block}
+.campagne-buttons .button{width:auto;margin-bottom:0;min-width:auto}
+.action-bar--campaign .share-page__label{display:inline-block;vertical-align:top;margin-bottom:0;padding:4px 0;-webkit-flex-basis:auto;-ms-flex-preferred-size:auto;flex-basis:auto}
+.action-bar--campaign .share-page{display:inline-block;vertical-align:top;line-height:42px;padding-bottom:10px}
+.action-bar--campaign .share-page .icon-share{display:none}
+.action-bar--campaign .share-page .icon-print{display:inline-block}
+.action-bar--buttons{display:inline-block;vertical-align:top;float:right}
+.action-bar--buttons .button{width:auto}
+.action-bar--buttons .button.button-more{display:none}
 .flexbox .section-contact{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
 .no-flexbox .mycpnb--wrapper:after,.no-flexbox .mycpnb--wrapper:before{content:'';display:table}
 .no-flexbox .mycpnb--wrapper:after{clear:both}
@@ -817,12 +772,12 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .newsletter__infobox p{margin:10px 30px}
 .newsletter__form{padding:10px 30px}
 .newsletter__socialmedia{display:table-cell;vertical-align:middle;width:33%;padding:10px}
-.cookie-message .wrapper{margin:10px auto;max-width:960px}
 .section-default{padding-top:115px}
 .section-readmore{top:115px}
 .teaser-intro{display:block;-webkit-flex:1 1 300px;-ms-flex:1 1 300px;flex:1 1 300px;background:#fff;position:relative;max-height:300px}
 .teaser-intro--insight__image{display:block;-webkit-flex:1 1 300px;-ms-flex:1 1 300px;flex:1 1 300px;width:300px;height:300px;float:left;background-size:cover;background-position:50%}
 .campaigndata__item .icon-button{width:45px;height:45px;background-size:20px 20px;margin-right:4px}
+.action-bar--campaign .share-page .icon-share{display:inline-block;margin-left:5px}
 .flexbox .section-contact .block-contact{-webkit-flex-basis:23%;-ms-flex-preferred-size:23%;flex-basis:23%}
 .flexbox .mycpnb--wrapper{-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}
 .mycpnb-intro{display:block;-webkit-flex:1 1 300px;-ms-flex:1 1 300px;flex:1 1 300px;background:rgba(93,170,220,.9);position:relative;height:300px}

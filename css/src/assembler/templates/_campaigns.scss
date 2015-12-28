@@ -126,7 +126,14 @@
   .button {
     font-size: 1em;
     padding: 0.5em 2em;
-    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+
+    @include MQ($tab) {
+      margin-right: 20px;
+      margin-bottom: 0;
+      width: auto;
+    }
   }
 
 }
@@ -204,4 +211,125 @@
       }
     }
   }
+}
+
+// action bar in this template
+
+.campagne-buttons {
+  width: 100%;
+  padding: 10px;
+
+  @include MQ($tab) {
+    width: auto;
+    display: inline-block;
+  }
+
+  .button {
+    width: 100%;
+    margin-bottom: 10px;
+
+    @include MQ($tab) {
+      width: auto;
+      margin-bottom: 0;
+      min-width: auto;
+    }
+  }
+
+}
+
+.action-bar--campaign {
+
+  .share-page__label {
+    display: block;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    color: $bright-blue;
+    font-size: 14px;
+    line-height: 42px;
+
+    @include MQ($tab) {
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 0;
+      padding: 4px 0;
+      flex-basis: auto;
+    }
+
+  }
+
+  .share-page {
+    padding: 10px 10px 40px;
+
+    @include MQ($tab) {
+      display: inline-block;
+      vertical-align: top;
+      line-height: 42px;
+      padding-bottom: 10px;
+
+      .icon-share {
+        display: none;
+      }
+
+      .icon-print {
+        display: inline-block;
+      }
+    }
+
+    @include MQ($desk) {
+      .icon-share {
+        display: inline-block;
+        margin-left: 5px;
+      }
+    }
+
+  }
+
+}
+
+.action-bar--buttons {
+  padding: 12px 10px;
+  z-index: 12;
+  position: relative;
+  background-color: white;
+
+  @include MQ($tab) {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+  }
+
+  .button {
+    min-width: 42%;
+    outline: 0;
+
+    @include MQ($tab) {
+      width: auto;
+
+      &.button-more {
+        display: none;
+      }
+
+    }
+
+  }
+
+  .button--white {
+    text-align: right;
+    line-height: 1.5;
+    font-weight: normal;
+
+    @include icon-right($black);
+
+    &:before {
+      top: 17px;
+      right: 5px;
+    }
+
+    &:after {
+      top: 22px;
+      right: 5px;
+    }
+  }
+
 }

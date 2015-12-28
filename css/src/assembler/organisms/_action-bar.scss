@@ -1,0 +1,96 @@
+.action-bar {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+
+  &:before {
+    width: 100%;
+    height: 8px;
+    display: block;
+    content: '';
+    background: linear-gradient(to right, $deep-purple 0%, $deep-purple 5%,
+      $pink 6%,$pink 15%,
+      $bright-purple 15%, $bright-purple 35%,
+      $pink 35%, $pink 45%,
+      $orange1 45%, $orange1 54%,
+      $orange2 54%, $orange2 78%,
+      $orange1 78%, $orange1 88%,
+      $bright-blue 88%, $bright-blue 100%
+    );
+  }
+
+  .container {
+    padding: 0;
+  }
+
+}
+
+.action-bar--content {
+  overflow: auto;
+  backface-visibility: hidden;
+  background-color: white;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  padding: 80px 0;
+  opacity: 0.1;
+  z-index: 11;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease, opacity 0.2s ease;
+
+  &.open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  @include MQ($tab) {
+    position: relative;
+    padding: 0;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    transform: none;
+    opacity: 1;
+  }
+
+}
+
+
+.share-page__label {
+  display: none;
+
+  @include MQ($tab) {
+    display: inline-block;
+    color: $bright-blue;
+    font-size: 14px;
+    flex-basis: auto;
+    line-height: 42px;
+  }
+}
+
+.share-page {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  @include MQ($tab) {
+    justify-content: flex-start;
+  }
+
+}
+
+.icon-share {
+
+  @include MQ($tab) {
+    margin-left: 10px;
+  }
+
+}

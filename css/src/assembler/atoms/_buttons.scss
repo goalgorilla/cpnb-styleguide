@@ -7,7 +7,7 @@
   line-height: 42px;
   font-weight: bold;
   max-width: 100%;
-  padding: 4px 6px;
+  padding: 4px 20px;
   min-width: 180px;
   min-height: 42px;
   text-decoration: none;
@@ -15,6 +15,10 @@
   border: none;
   text-align: center;
   background-color: $black;
+  
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
   &:hover {
     cursor: pointer;
@@ -77,13 +81,13 @@
 
 }
 
-%button--grey,
-.button--grey {
-  background-color: $grey2;
+%button--white,
+.button--white {
+  background-color: $white;
   color: $black;
 
   &:hover {
-    background-color: $grey5;
+    background-color: $white;
     color: $black;
   }
 
