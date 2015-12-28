@@ -6,7 +6,7 @@
     <meta name="msapplication-tap-highlight" content="no">  
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 
-    <title>CPNB StyleGuide - Homepage Logged-in user</title>
+    <title>CPNB StyleGuide - Nieuws</title>
     <meta name="description" content="">
 
     <!--[if (gte IE 9)|(gt IEMobile 7)|(!IE)]><!-->
@@ -23,7 +23,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/cpnblogo.png">
   </head>
 
-  <body class="home-lu with-hero">
+  <body class="news">
     <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
     
     <div class="l-region--header">
@@ -168,144 +168,199 @@
       <main class="l-main" id="main-content">
         
                     
-        <section class="hero" style="background-image: url(/example/hero-example.jpg);">
-        
+        <div class="l-breadcrumbs">
           <div class="container">
-        
-            <div class="hero__content">
-              <h1 class="hero__title">
-                <span>Er zit een</span><br />
-                <span>lezer in</span><br />
-                <span>iedereen</span>
-              </h1>
-        
-              <p>we zorgen ervoor dat hun ogen ook jouw verhalen vinden en ontdekken wat een boek kan doen</p>
-        
-              <b class="hero__readmore"> <span> </span> ontdek hier hoe we u al 85 jaar helpen lezers te vinden en te activeren </b>
-        
-            </div>
-        
+            <ul>
+              <li class="first"><a href="/telefoons">Home</a></li>
+              <li><a href="#0">Campagnes</a></li>
+              <li class="last">Lorem ipsum dolor sit amet</li>
+            </ul>
           </div>
-        
-        </section>
-<section class="section-default">  
-  <h3 class="section--title">Onze campagnes</h3>
+        </div>
+<div class="block-filter block-filter--news">
+  <h3 class="block-title">CPNB Nieuws</h3>
   
-  <div class="teaser-home--wrapper">
-    <div class="teaser-intro teaser-intro--campaign">
-      <h2 class="teaser-intro__title">Doe ook mee met onze <span>succesvolle campagnes</span></h2>
-    </div>
-    <a href="#0" class="teaser--campaign">
-    
-      <div class="teaser--campaign__logo">
-        <img src="/example/campaign-teaser-logo1.png" alt="campaign title" /> 
-      </div>
-    
-      <div class="teaser--campaign__image" style="background-image: url(example/campaign-teaser1.jpg)">
-        <h2 class="teaser--campaign__title">De kinderboekenweek</h2>
-        <b class="teaser--campaign__readmore">Lees meer</b>
-      </div>
-    
-      <div class="teaser--campaign__content">
-        <div class="teaser--campaign__period">30 oktober t/m 1 december</div>
-    
-        <p class="teaser--campaign__summary">De Kinderboekenweek was nog nooit zo spannend. Ook klaar voor het avontuur?</p>
-    
-      </div>
-    
-    </a>    <a href="#0" class="teaser--campaign">
-    
-      <div class="teaser--campaign__logo">
-        <img src="/example/campaign-teaser-logo1.png" alt="campaign title" /> 
-      </div>
-    
-      <div class="teaser--campaign__image" style="background-image: url(example/campaign-teaser1.jpg)">
-        <h2 class="teaser--campaign__title">De kinderboekenweek</h2>
-        <b class="teaser--campaign__readmore">Lees meer</b>
-      </div>
-    
-      <div class="teaser--campaign__content">
-        <div class="teaser--campaign__period">30 oktober t/m 1 december</div>
-    
-        <p class="teaser--campaign__summary">De Kinderboekenweek was nog nooit zo spannend. Ook klaar voor het avontuur?</p>
-    
-      </div>
-    
-    </a>  </div>
+  <div class="content">
 
-  <a href="#0" class="section-readmore">Bekijk alle campagnes</a>
+    <form class="form-filter-news">
 
-</section>
+      <div class="form-wrapper">
 
-<div class="section-divider"> 
+        <div class="form-item">
+          <label class="form-label">Campagne</label>
+          <select class="form-select" name="select">
+            <option value="value1" selected>Alle</option> 
+            <option value="value2">Campaign name</option>
+            <option value="value3">Campaign name</option>
+            <option value="value3">Campaign name</option>
+            <option value="value3">Campaign name</option>
+          </select>
+        </div>
 
-  <div class="section-divider__tagline">
-    <span>Er zit een</span><br />
-    <span>lezer in</span><br />
-    <span>iedereen</span>
+        <div class="form-item">
+          <label class="form-label">Jaar</label>
+          <select class="form-select" name="select">
+            <option value="value1" selected>Alle</option> 
+            <option value="value2">2015</option>
+            <option value="value3">2014</option>
+            <option value="value3">2013</option>
+            <option value="value3">2012</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label class="form-label">Thema</label>
+          <select class="form-select" name="select">
+            <option value="value1" selected>Alle</option> 
+            <option value="value2">Theme name</option>
+            <option value="value3">Theme name</option>
+            <option value="value3">Theme name</option>
+            <option value="value3">Theme name</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="form-wrapper form-actions">
+        <input class="form-submit" type="submit" value="Filter">
+        <input class="form-submit form-reset" type="submit" value="reset filters"> 
+      </div>
+
+    </form>
+
   </div>
 
-  <b class="section-divider__readmore"> <span> </span> Volg ons op Social Media </b>
-
 </div>
-<section class="section-default">  
- <div class="teaser-social--wrapper"> 
-    <div class="teaser-block--social teaser-block--twitter">
-      
-        <div class="teaser-block--social__profile">
-          <div class="profile-username">@CPNB</div>
-        </div>
-    
-        <div class="teaser-block--social__post">
-          <div class="post-type"> Laatste tweet</div>
-    
-          <div class="post-author">Stichting CPNB</div>
-          <div class="post-username">@CPNB Oct 21</div>
-    
-          <p class="post-content">Genomineerde boeken NS Publieksprijs 2015 bekend! http://web.cpnb.nl/actueelbericht.vm?ab=687 … #NSPP2015</p>
-    
-          <a class="teaser--readmore" href="#0">Ga naar CPNB Twitterpagina</a>
-        </div>
-    
-      </div>    <div class="teaser-block--social teaser-block--facebook">
-      
-        <div class="teaser-block--social__profile">
-          <div class="profile-username">Stichting CPNB</div>
-        </div>
-    
-        <div class="teaser-block--social__post">
-          <div class="post-type"> Laatste post</div>
-    
-          <div class="post-author">Stichting CPNB</div>
-          <div class="post-username">6 Oktober om 11:33</div>
-    
-          <p class="post-content">Bette Westera ontving op het Kinderboekenbal de Gouden Griffel voor haar poëziebundel 'Doodgewoon'. http://www.kinderboekenweek.nl/...</p>
-    
-          <a class="teaser--readmore" href="#0">Ga naar CPNB facebookpagina</a>
-        </div>
-    
-      </div>  </div>
-</section>
 
-<div class="section-divider"> 
 
-  <div class="section-divider__tagline">
-    <span>Er zit een</span><br />
-    <span>lezer in</span><br />
-    <span>iedereen</span>
-  </div>
-
-  <b class="section-divider__readmore"> <span> </span> Ontdek nieuws </b>
-
-</div>
-<section class="section-default">  
-  <h3 class="section--title">Ons nieuws</h3>
+<section class="section-news">  
+  <h3 class="section--title">Gesorteerd op publicatiedatum - aflopend</h3>
   
-  <div class="teaser-home--wrapper">
-    <div class="teaser-intro teaser-intro--news">
-      <h2 class="teaser-intro__title">We houden u graag op de hoogte met het <span>laatste nieuws</span></h2>
-    </div>
+  <div class="teaser-news--wrapper">
     <a href="#0" class="teaser--news">
+    
+      <div class="teaser--news__image" style="background-image: url(example/news-teaser1.jpg)">
+        <b class="teaser--news__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--news__content">
+        <div class="teaser--news__date">10 jan 2016</div>
+        <h2 class="teaser--news__title">Lloyd Koopman (13) en Romy van Dongen (17) winnen schrijfwedstrijd Talent voor Taal 2015</h2>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--news">
+    
+      <div class="teaser--news__image" style="background-image: url(example/news-teaser1.jpg)">
+        <b class="teaser--news__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--news__content">
+        <div class="teaser--news__date">10 jan 2016</div>
+        <h2 class="teaser--news__title">Lloyd Koopman (13) en Romy van Dongen (17) winnen schrijfwedstrijd Talent voor Taal 2015</h2>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--news">
+    
+      <div class="teaser--news__image" style="background-image: url(example/news-teaser1.jpg)">
+        <b class="teaser--news__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--news__content">
+        <div class="teaser--news__date">10 jan 2016</div>
+        <h2 class="teaser--news__title">Lloyd Koopman (13) en Romy van Dongen (17) winnen schrijfwedstrijd Talent voor Taal 2015</h2>
+    
+      </div>
+    
+    </a>
+    <a href="#0" class="teaser--news">
+    
+      <div class="teaser--news__image" style="background-image: url(example/news-teaser1.jpg)">
+        <b class="teaser--news__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--news__content">
+        <div class="teaser--news__date">10 jan 2016</div>
+        <h2 class="teaser--news__title">Lloyd Koopman (13) en Romy van Dongen (17) winnen schrijfwedstrijd Talent voor Taal 2015</h2>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--news">
+    
+      <div class="teaser--news__image" style="background-image: url(example/news-teaser1.jpg)">
+        <b class="teaser--news__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--news__content">
+        <div class="teaser--news__date">10 jan 2016</div>
+        <h2 class="teaser--news__title">Lloyd Koopman (13) en Romy van Dongen (17) winnen schrijfwedstrijd Talent voor Taal 2015</h2>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--news">
+    
+      <div class="teaser--news__image" style="background-image: url(example/news-teaser1.jpg)">
+        <b class="teaser--news__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--news__content">
+        <div class="teaser--news__date">10 jan 2016</div>
+        <h2 class="teaser--news__title">Lloyd Koopman (13) en Romy van Dongen (17) winnen schrijfwedstrijd Talent voor Taal 2015</h2>
+    
+      </div>
+    
+    </a>    
+    <a href="#0" class="teaser--news">
+    
+      <div class="teaser--news__image" style="background-image: url(example/news-teaser1.jpg)">
+        <b class="teaser--news__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--news__content">
+        <div class="teaser--news__date">10 jan 2016</div>
+        <h2 class="teaser--news__title">Lloyd Koopman (13) en Romy van Dongen (17) winnen schrijfwedstrijd Talent voor Taal 2015</h2>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--news">
+    
+      <div class="teaser--news__image" style="background-image: url(example/news-teaser1.jpg)">
+        <b class="teaser--news__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--news__content">
+        <div class="teaser--news__date">10 jan 2016</div>
+        <h2 class="teaser--news__title">Lloyd Koopman (13) en Romy van Dongen (17) winnen schrijfwedstrijd Talent voor Taal 2015</h2>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--news">
+    
+      <div class="teaser--news__image" style="background-image: url(example/news-teaser1.jpg)">
+        <b class="teaser--news__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--news__content">
+        <div class="teaser--news__date">10 jan 2016</div>
+        <h2 class="teaser--news__title">Lloyd Koopman (13) en Romy van Dongen (17) winnen schrijfwedstrijd Talent voor Taal 2015</h2>
+    
+      </div>
+    
+    </a>    
+    <a href="#0" class="teaser--news">
+    
+      <div class="teaser--news__image" style="background-image: url(example/news-teaser1.jpg)">
+        <b class="teaser--news__readmore">Lees meer</b>
+      </div>
+    
+      <div class="teaser--news__content">
+        <div class="teaser--news__date">10 jan 2016</div>
+        <h2 class="teaser--news__title">Lloyd Koopman (13) en Romy van Dongen (17) winnen schrijfwedstrijd Talent voor Taal 2015</h2>
+    
+      </div>
+    
+    </a>    <a href="#0" class="teaser--news">
     
       <div class="teaser--news__image" style="background-image: url(example/news-teaser1.jpg)">
         <b class="teaser--news__readmore">Lees meer</b>
@@ -331,187 +386,22 @@
     
     </a>  </div>
 
-  <a href="#0" class="section-readmore">Bekijk al het nieuws</a>
-
-</section>
-
-<div class="section-divider"> 
-
-  <div class="section-divider__tagline">
-    <span>Er zit een</span><br />
-    <span>lezer in</span><br />
-    <span>iedereen</span>
+  <div class="pager pager-load-more">
+    <a href="#0" class="button button--loadmore">Toon meer nieuws</a>
   </div>
 
-  <b class="section-divider__readmore"> <span> </span> Ontdek onze evenementen </b>
-
-</div>
-
-<section class="section-default">  
-  <h3 class="section--title">Onze evenementen</h3>
+  <div class="block-action block-action--news">
   
-  <div class="teaser-home--wrapper">
-    <div class="teaser-intro teaser-intro--event">
-      <h2 class="teaser-intro__title">Bezoek een van deze <span>bijzondere evenementen</span></h2>
+    <h3 class="block-title">Wil jij ook iets doen?</h3>
+    
+    <div class="content">
+      <a href="#0" class="button button--large">Check onze campagnes!</a>
     </div>
-    <a href="#0" class="teaser--event">
     
-      <div class="teaser--event__image" style="background-image: url(example/event-teaser1.jpg)">
-        <b class="teaser--event__readmore">Lees meer</b>
-      </div>
-    
-      <div class="teaser--event__content">
-        <div class="teaser--event__date">28 Januari 2016  |  18:00 - 21:00 <br />
-    Herengracht 166, 1016 BP Amsterdam</div>
-        <h2 class="teaser--event__title">Vers voor de pers: Dé ontmoetingplek voor pers en professionals</h2>
-    
-      </div>
-    
-    </a>    <a href="#0" class="teaser--event">
-    
-      <div class="teaser--event__image" style="background-image: url(example/event-teaser1.jpg)">
-        <b class="teaser--event__readmore">Lees meer</b>
-      </div>
-    
-      <div class="teaser--event__content">
-        <div class="teaser--event__date">28 Januari 2016  |  18:00 - 21:00 <br />
-    Herengracht 166, 1016 BP Amsterdam</div>
-        <h2 class="teaser--event__title">Vers voor de pers: Dé ontmoetingplek voor pers en professionals</h2>
-    
-      </div>
-    
-    </a>  </div>
-
-  <a href="#0" class="section-readmore">Bekijk alle evenementen</a>
+  </div>
 
 </section>
-
-<div class="section-divider"> 
-
-  <div class="section-divider__tagline">
-    <span>Er zit een</span><br />
-    <span>lezer in</span><br />
-    <span>iedereen</span>
-  </div>
-
-  <b class="section-divider__readmore"> <span> </span> Ontdek praktische inzichten </b>
-
-</div>
-<section class="section-default">  
-  <h3 class="section--title">Praktische inzichten</h3>
-  
-  <div class="teaser-home--wrapper">
-    <div class="teaser-intro teaser-intro--insight">
-      <h2 class="teaser-intro__title">We helpen u verder met <span>praktische inzichten</span></h2>
-    </div>
-    <a href="#0" class="teaser--insight">
-      <div class="teaser--insight__content">
-        <div class="teaser--insight__date">28 Januari 2016</div>
-        <h2 class="teaser--insight__title">Waarom Amerikanen meer boeken lezen in de zomer</h2>
-        <b class="teaser--insight__readmore">Lees meer</b>
-      </div>
-    </a>    <a href="#0" class="teaser--insight">
-      <div class="teaser--insight__content">
-        <div class="teaser--insight__date">28 Januari 2016</div>
-        <h2 class="teaser--insight__title">Waarom Amerikanen meer boeken lezen in de zomer</h2>
-        <b class="teaser--insight__readmore">Lees meer</b>
-      </div>
-    </a>    <div class="teaser-intro--insight__image" style="background-image: url(example/insight-intro.jpg)"></div>
-    <a href="#0" class="teaser--insight">
-      <div class="teaser--insight__content">
-        <div class="teaser--insight__date">28 Januari 2016</div>
-        <h2 class="teaser--insight__title">Waarom Amerikanen meer boeken lezen in de zomer</h2>
-        <b class="teaser--insight__readmore">Lees meer</b>
-      </div>
-    </a>    <a href="#0" class="teaser--insight">
-      <div class="teaser--insight__content">
-        <div class="teaser--insight__date">28 Januari 2016</div>
-        <h2 class="teaser--insight__title">Waarom Amerikanen meer boeken lezen in de zomer</h2>
-        <b class="teaser--insight__readmore">Lees meer</b>
-      </div>
-    </a>  </div>
-
-  <a href="#0" class="section-readmore">Bekijk ze allemaal</a>
-
-</section>
-
-<div class="section-divider"> 
-
-  <div class="section-divider__tagline">
-    <span>Er zit een</span><br />
-    <span>lezer in</span><br />
-    <span>iedereen</span>
-  </div>
-
-  <b class="section-divider__readmore"> <span> </span> heb je een goed idee? </b>
-
-</div>
-<section class="section-default">  
-  <h3 class="section--title">CPNB Idee&euml;n</h3>
-  
-  <div class="teaser-ideas--wrapper">
-    <article class="idea media">
-      <div class="idea__avatar media__figure">
-        <img src="example/avatar.png">
-      </div>
-      <div class="media__body">
-        <div class="idea__like">
-          <div class="idea__like-counter">55</div>
-          <button class="idea__like-button">Like</button>
-        </div>
-        <div class="idea__head">
-          <div class="idea__author">Sean Connery</div>
-          <div class="idea__published">2 January 2015</div>
-        </div>
-        <div class="idea__body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci.
-        </div>
-      </div>
-    </article>
-    <article class="idea idea__comment media">
-      <div class="idea__avatar media__figure">
-        <a href="#0"><img src="example/avatar.png"></a>
-      </div>
-      <div class="media__body">
-        <div class="idea__head">
-          <a href="#0" class="idea__author">Tom Hanks</a>
-          <div class="idea__published">4 January 2015</div>
-        </div>
-        <div class="idea__body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci.
-        </div>
-      </div>
-    </article>
-  </div>
-
-  <div class="idea-submit__block">
-    <form class="idea-submit__form">
-      <div class="form-item">
-        <textarea class="idea-submit__input autogrow" cols="50" placeholder="Schrijf hier je reactie" rows='1'></textarea>
-      </div>
-      <div class="form-actions">
-        <input class="idea-submit__button" type="submit" value="Verzenden">
-      </div>
-    </form>
-  </div>
-
-  <div class="ideas__load-more">
-    <button class="load-more">Bekijk alle 25 reacties</button>
-  </div>
-
-  <a href="#0" class="section-readmore">Bekijk alle idee&euml;n</a>
-
-</section>
-
-<div class="section-divider section-divider-plain"> 
-
-  <div class="section-divider__tagline">
-    <span>Er zit een</span><br />
-    <span>lezer in</span><br />
-    <span>iedereen</span>
-  </div>
-
-</div>        
+        
 
       </main>
     

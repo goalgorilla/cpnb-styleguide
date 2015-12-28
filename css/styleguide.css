@@ -44,7 +44,7 @@ pre[class*=language-]{padding:1em;overflow:auto}
 @media screen and (min-width:768px){.media--mobile{float:left}
 .block--thema-menu .menu .menu{position:absolute;left:0;top:100%;width:12em;padding-left:0}
 .block--thema-menu .menu .menu .menu__item{display:block;border-right:0}
-.block--thema-menu .menu .menu .menu__link{line-height:44px;color:#fff;background:rgba(0,0,0,.7);text-align:left;padding-left:20px}
+.block--thema-menu .menu .menu .menu__link{line-height:44px;color:#fff;background:rgba(34,34,34,.7);text-align:left;padding-left:20px}
 .block--thema-menu .expanded>.menu__link:before{right:5px}
 .block--thema-menu .expanded>.menu__link:after{right:10px}
 .block--thema-menu .expanded:hover>.menu{display:block}}
