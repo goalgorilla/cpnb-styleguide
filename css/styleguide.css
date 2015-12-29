@@ -17,9 +17,7 @@ pre[class*=language-]{padding:1em;overflow:auto}
 .token.bold,.token.important{font-weight:700}
 .token.italic{font-style:italic}
 .token.entity{cursor:help}
-.sectiontitle{margin-top:40px;font-size:1.5em}
-.brandcard{padding:10px}
-.brandcard img{display:block}
+.sectiontitle{margin-top:40px;font-size:1.5em;margin-bottom:10px}
 .row,.row p{overflow:hidden}
 .media--mobile{overflow:hidden;display:block;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center;margin-bottom:10px;width:320px}
 .media--mobile .media__figure--mobile{float:left;margin-right:10px}

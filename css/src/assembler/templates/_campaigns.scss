@@ -149,18 +149,6 @@
   display: block;
 }
 
-.block-campaigninfo {
-  font-weight: normal;
-
-  @include MQ($tab) {
-    padding: 50px;
-  }
-
-  p {
-    font-size: 14px;
-  }
-}
-
 .campaign-publications {
   margin-top: 20px;
 

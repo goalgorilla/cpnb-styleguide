@@ -161,7 +161,7 @@
 
 }
 
-.section-news {
+.section-small {
   padding: 25px 10px;
   max-width: $desk;
   margin: 0 auto;
@@ -170,35 +170,24 @@
   @include MQ($plus){
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .button--loadmore {
-    background-color: $bright-blue;
-
-    &:hover {
-      background-color: $deep-blue;
-    }
   }
 
 }
 
-.section-campaigns {
-  padding: 25px 10px;
-  max-width: $desk;
-  margin: 0 auto;
-  position: relative;
+.section-news .button--loadmore {
+  background-color: $bright-blue;
 
-  @include MQ($plus){
-    padding-left: 0;
-    padding-right: 0;
+  &:hover {
+    background-color: $deep-blue;
   }
 
-  .button--loadmore {
-    background-color: $bright-purple;
+}
 
-    &:hover {
-      background-color: $deep-purple;
-    }
+.section-campaigns .button--loadmore {
+  background-color: $bright-purple;
+
+  &:hover {
+    background-color: $deep-purple;
   }
 
 }

@@ -1,17 +1,3 @@
-@mixin page-title {
-  color: $black;
-  font-size: 42px;
-  margin-top: 20px;
-  margin-bottom: 12px;
-  line-height: 1.5;
-  font-weight: 700;
-}
-
-%page-title {
-  @include page-title;
-}
-
-
 @mixin section-title {
   background-color: $grey2;
   line-height: 2;

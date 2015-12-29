@@ -204,17 +204,17 @@
   padding: 20px;
   margin: 60px 0;
   position: relative;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 15px 15px 0;
+  max-width: 320px;
 
   @include MQ($tab) {
-    width: 320px;
     display: inline-block;
     margin: 0 0 0 60px;
     padding-left: 40px;
     padding-right: 40px;
     order: 2;
     flex: 0 1 320px;
-    border-radius: 0 0 20px 0;
+    border-radius: 0 0 15px 0;
   }
 
   b {
