@@ -1,7 +1,7 @@
 .view-mode-full {
   
   @include MQ($tab) {
-    max-width: 660px;
+    max-width: $tab;
     padding: 50px;
   }
 }

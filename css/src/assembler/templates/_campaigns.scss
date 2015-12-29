@@ -106,7 +106,7 @@
   font-size: 17px;
   font-weight: bold;
   margin-bottom: 30px;
-  max-width: 660px;
+  max-width: $tab;
 
   @include MQ($tab) {
     padding: 30px 30px 40px;

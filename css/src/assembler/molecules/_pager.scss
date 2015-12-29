@@ -83,6 +83,8 @@
 }
 
 .button--loadmore {
+  padding-right: 40px; 
+  min-width: auto;
   @include icon-down($white);
   
   &:before{

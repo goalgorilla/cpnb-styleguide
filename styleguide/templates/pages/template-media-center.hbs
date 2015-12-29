@@ -1,0 +1,79 @@
+---
+basename: media-center 
+template: true
+title: Mediacentrum
+---
+{{> breadcrumbs}}
+
+<section class="section-default">
+
+  <h3 class="section--title">Mediacentrum</h3>
+
+   <div class="mediacentre--wrapper">
+    
+    <div class="mediacentre-intro">
+      <h2 class="mediacentre-intro__title">Welkom bij het CPNB <span>Media centrum </span></h2>
+    </div>
+
+    <div class="mediacentre-description">
+       
+      <h2 class="mediacentre__title">Mediacentrum</h2>
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+    </div>
+
+    <div class="mediacentre-contact">
+
+      <h2 class="mediacentre__title">Afdeling Persvoorlichting</h2>
+
+      <address>
+        <label>Telefoon</label>
+        <p>023 - 52 82 472</p>
+
+        <label>Maud Aarsen</label>
+        <p>m.aarsen@cpnb.nl</p>
+
+        <label>Peter Rosendaal</label>
+        <p>p.rosendaal@cpnb.nl</p>
+        
+      </address>
+
+   </div>
+
+  </div>
+
+</section>
+
+
+<section class="section-small">  
+  <h3 class="section--title">Algemene informatie</h3>
+  
+  <div class="teaser-document--wrapper">
+    {{> teaser-document}}
+    {{> teaser-document}}
+    {{> teaser-document}}
+  </div>
+
+</section>
+
+{{> section-divider-plain}}
+
+<section class="section-default section-campaigns">  
+  <h3 class="section--title">Campagneinformatie voor de media</h3>
+  
+  <div class="teaser-campaign--wrapper teaser-relevant-campaign--wrapper">
+    {{> teaser-campaign-media}}
+    {{> teaser-campaign-media}}
+    {{> teaser-campaign-media}}
+
+    {{> teaser-campaign-media}}
+    {{> teaser-campaign-media}}
+    {{> teaser-campaign-media}}
+    
+  </div>
+
+  <div class="pager pager-load-more">
+    <a href="#0" class="button button--loadmore">Toon meer campagnes</a>
+  </div>
+
+</section>

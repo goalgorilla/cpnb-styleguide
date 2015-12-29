@@ -1,0 +1,86 @@
+@include MQ($tab) {
+
+  .no-flexbox .mediacentre--wrapper {
+    @include clearfix;
+  }
+
+}
+
+.flexbox .mediacentre--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: $white;
+
+  @include MQ($desk) {
+    justify-content: flex-start;
+  }
+
+}
+
+.mediacentre-intro {
+  display: none;
+
+  @include MQ($desk) {
+    display: block;
+    flex: 1 1 300px;
+    background: $orange1;
+    position: relative;
+  }
+
+}
+
+.mediacentre-intro__title {
+  text-align: right;
+  font-weight: normal;
+  font-family: $serif-font;
+  line-height: 1.1;
+  font-size: 36px;
+  margin-top: 0;
+  @include center(xy);
+  position: absolute;
+  width: 72%;
+  color: $black;
+
+  span {
+    display: block;
+    color: $white;
+  }
+
+}
+
+.mediacentre-description,
+.mediacentre-contact {
+  display: block;
+  position: relative;
+  background: white;
+  width: 300px;
+  flex: 1 1 300px;
+  background: $orange1;
+  padding: 40px 30px 20px;
+}
+
+.mediacentre__title {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+.mediacentre-contact {
+
+  address {
+    margin: 10px 0;
+ 
+    label {
+      font-weight: bold;
+      display: block;
+      font-size: 14px;
+    }
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+
+}

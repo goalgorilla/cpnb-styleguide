@@ -4,11 +4,20 @@ title: Social media teaser
 description:
 ---
 
-<h2 class="sectiontitle">Social media teaser</h2>
-<p> The social media teasers contain the latest post from a specific channel. In this example we see two different channels. In the code you will see a single teaser source.</p>
-<section class="teaser-social--wrapper">  
-  {{> teaser-social--twitter}}
-  {{> teaser-social--facebook}}
+<section class="section-small">
+  <h2 class="section--title">Social media teaser</h2>
+  <div class="field--name-body">
+    <p> The social media teasers contain the latest post from a specific channel. In this example we see two different channels. In the code you will see a single teaser source.</p>
+  </div>
+
+</section>
+
+
+<section class="section-small">  
+  <div class="teaser-social--wrapper"> 
+    {{> teaser-social--twitter}}
+    {{> teaser-social--facebook}}
+  </div>
 </section>
 
 <pre class="language-html"><code>{{> teaser-social--twitter}}</code></pre>

@@ -2,56 +2,166 @@
   position: relative;
   background-size: cover;
   background-position: 50% 50%;
-  height: 470px;
+  min-height: 260px;
   @include section-break;
 
+  &:after {
+    margin-top: -10px;
+  }
+
   @include MQ($tab) {
-    height: 490px;
+    height: 470px;
   }
 
-  @include MQ($desk) {
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      position: relative;
-      height: 490px;
-    }
-
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
   }
 
-  .section-divider {
+  &:before {
+    content: '';
+    display: block;
     position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
     bottom: 0;
-    z-index: 1;
-
-    &:after {
-      display: none;
-    }
+    background: rgba($black, 0.8);
   }
   
 }
 
 .hero__content {
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  min-height: 240px;
+  max-width: 320px;
+  padding-bottom: 10px;
+
+  @include MQ($tab) {
+    height: 450px;
+    max-width: 600px;
+  }
 
   .hero__title {
+    margin: 30px 0;
+    z-index: 4;
     font-size: 28px;
     line-height: 1;
-    color: white;
-    text-align: right;
-    position: absolute;
-    bottom: 2.8em;
-    right: 0;
     font-family: $serif-font;
     font-weight: normal;
+    color: white;
+    flex: 0 1 100%;
 
     @include MQ($tab) {
       font-size: 42px;
+    }    
+
+    @include MQ($desk) {
+      font-size: 60px;
+    }
+
+  }
+
+  p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    flex: 0 1 100%;
+  }
+
+  .status {
+    min-width: 100px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 16px;
+
+    @include MQ($tab){
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+    }
+
+  }
+
+  .status-archived {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+  }
+
+  .status-live {
+    background-color: white;
+    color: $black;
+  }
+
+}
+
+.hero__buttons {
+  margin-top: 10px;
+
+  @include MQ($tab) {
+    margin-top: 30px;
+  }
+
+  .button {
+    width: 100%;
+    margin-bottom: 10px;
+
+    @include MQ($tab) {
+      width: auto;
+      margin-right: 20px;
+    }
+    
+  }
+
+}
+
+.hero--home {
+
+  overflow: hidden;
+
+  @include MQ($desk) {
+    height: 490px;
+  }
+
+  &:before {
+    background: rgba($black, 0.5);
+  }
+
+  .hero__content {
+    max-width: none;
+    height: 470px;
+
+    @include MQ($desk) {
+      height: 490px;
+    }
+  }
+
+  .hero__title {
+    position: relative;
+    right: -10px;
+    text-align: right;
+    margin-bottom: 10px;
+
+    @include MQ($tab) {
+      font-size: 32px;
+    }    
+
+    @include MQ($desk) {
+      font-size: 40px;
     }
 
     span {
       padding: 5px 30px 5px 10px; 
       margin-bottom: 7px;
       display: inline-block;
+      position: relative;
 
       @include MQ($tab) {
         padding: 7px 50px 7px 20px; 
@@ -59,38 +169,56 @@
 
       @include MQ($desk) {
         padding-right: 20px;
+
+        &:after {
+          display: block;
+          content: '';
+          background-color: rgba($bright-blue,.7);
+          width: 1000px;
+          position: absolute;
+          height: 100%;
+          top: 0;
+          left: 100%;
+        }
       }
 
     }
 
     span:nth-of-type(1){
       background-color: rgba($bright-blue,.7);
+      
+      &:after {
+        background-color: rgba($bright-blue,.7);
+      }
+
     }
 
     span:nth-of-type(2){
       background-color: rgba($pink,.7);
+
+      &:after {
+        background-color: rgba($pink,.7);
+      }
+      
     }
 
     span:nth-of-type(3){
       background-color: rgba($bright-purple,.7);
+
+      &:after {
+        background-color: rgba($bright-purple,.7);
+      }
+      
     }
+
   }
 
   p {
-    margin: 0;
-    padding: 10px 0;
-    font-size: 15px;
-    color: white;
     text-align: right;
-    max-width: 15em;
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
 
     @include MQ($tab) {
-      right: 20px; 
-      font-size: 18px;
-      bottom: 30px;
+      max-width: 500px;
+      margin: 0 0 0 auto;
     }
 
   }
@@ -99,28 +227,33 @@
 
 .hero__readmore {
   text-indent: -999em;
-  position: absolute;
-  bottom: 0;
+  flex: 0 1 100%;
+  bottom: 10px;
   margin-left: 2%;
+  margin-top: 30px;
 
   @include MQ($tab) {
     text-indent: 0;
-    padding-left: 40px;
+    padding-left: 30px;
     color: white;
     font-weight: normal;
     line-height: 32px;
-    font-size: 0.875em;
+    font-size: 16px;
   }
 
   span {
     @include icon-down($black);
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 10px;
+    left: 10px;
     background: white;
     width: 32px;
     height: 32px;
     border-radius: 3px 3px 0 0;
+
+    @include MQ($desk){
+      left: 0;
+    }
 
     &:before {
       width: 12px;
@@ -139,174 +272,40 @@
 }
 
 
-.hero--campaign {
-  padding-top: 60px;
 
-  @include MQ($tab) {
-    padding-top: 140px;  
-  }
-
-  @include MQ($desk) {
-    padding-top: 170px;  
-  }
-
-}
-
-.flexbox .hero--campaign {
-  .container {
-    z-index: 3;
-
-    @include MQ($tab) {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      height: 100%;
-    }
-    
-    @include MQ($desk) {
-      justify-content: center;
-    }
-
-    @include MQ($wide) {
-      justify-content: space-between;
-    }
-
-  }
-
-}
 
 .hero--campaign__logo {
-  position: absolute;
-  margin-top: -80px;
-  margin-left: -20px;
-  text-align: center;
-  width: 60px;
-  height: 60px;
-  padding: 5px;
-  background-color: white;
-  line-height: 50px;
-  border-radius: 0 10px 0 0;
+  display: none;
 
-  @include MQ($tab) {
-    margin: -20px 0 0 -100px;
-    border-radius:  0 0 0 10px;
-  }
-
-  img {
-    display: inline-block;
-    vertical-align: middle;
-  }
-}
-
-.hero--campaign__content {
-  background-color: $bright-blue;
-  color: white;
-  padding: 20px;
-  margin: 60px 0;
-  position: relative;
-  border-radius: 0 15px 15px 0;
-  max-width: 320px;
-
-  @include MQ($tab) {
-    display: inline-block;
-    margin: 0 0 0 60px;
-    padding-left: 40px;
-    padding-right: 40px;
-    order: 2;
-    flex: 0 1 320px;
-    border-radius: 0 0 15px 0;
-  }
-
-  b {
-    position: absolute;
-    bottom: -38px;
-    background-color: $bright-blue;
-    padding: 10px 30px;
-    left: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-  }
-}
-
-.hero__title--campaign {
-  margin-bottom: 0;
-  font-family: $serif-font;
-  font-weight: normal;
-  font-size: 32px;
-
-  @include MQ($tab) {
-    font-size: 42px;
-  }
-
-}
-
-.hero--campaign__buttons {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-
-  @include MQ($tab) {
-    display: block;
-    display: flex;
-    text-align: center;
-    flex: 0 1 320px;
-    align-self: flex-end;
-
-    .button {
-      flex: 0 1 auto;
-      min-width: 180px;
-      margin: 10px 0 0 20px;
-    }
-  }
-
-  @include MQ($desk) {
-    flex: 0 1 400px;
-  }
-
-  .button {
-    flex: 0 1 45%;
-    min-width: auto;
-  }
-}
-
-.hero--plain {
-
-  height: 240px;
-
-  &:before {
-    content: '';
+  @include MQ($tab){
     display: block;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
+    margin-top: 30px;
     right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba($black, 0.8);
-  }
+    width: 160px;
+    height: 160px;
+    background-color: $white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 8px rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.1);
+    transition: all 0.4s ease-in-out, transform 0.4s ease-in-out;
+    transform: scale(0.6);
+    -webkit-filter: grayscale(90%);
+    opacity: 0.8;
+    -webkit-backface-visibility: hidden;
+    transform-origin: top right;
 
-  .hero__content {
-    display: flex;
-    align-items: center;
-    height: 240px;
 
-    @include MQ($tab) {
-      height: 470px;
-    }
-    
-  }
-
-  .hero__title {
-    margin: 0 0 0 30px;
-    text-align: left;
-    position: static;
-    z-index: 4;
-    
-    @include MQ($desk) {
-      font-size: 60px;
+    &:hover {
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1);
+      -webkit-filter: grayscale(0);
+      transform: scale(1);
+      border-radius: 0%;
     }
 
   }
 
 }
+
