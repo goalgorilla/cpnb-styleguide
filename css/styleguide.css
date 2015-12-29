@@ -1,4 +1,3 @@
-.sectiontitle{background-color:#d8d5d0;line-height:2;padding:0 20px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-family:PT-Serif,sans-serif;font-weight:400}
 code[class*=language-],pre[class*=language-]{color:#000;text-shadow:0 1px #fff;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}
 code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}
 code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}
@@ -17,9 +16,7 @@ pre[class*=language-]{padding:1em;overflow:auto}
 .token.bold,.token.important{font-weight:700}
 .token.italic{font-style:italic}
 .token.entity{cursor:help}
-.sectiontitle{margin-top:40px;font-size:1.5em}
-.brandcard{padding:10px}
-.brandcard img{display:block}
+.sectiontitle{margin-top:40px;font-size:1.5em;margin-bottom:10px}
 .row,.row p{overflow:hidden}
 .media--mobile{overflow:hidden;display:block;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center;margin-bottom:10px;width:320px}
 .media--mobile .media__figure--mobile{float:left;margin-right:10px}
