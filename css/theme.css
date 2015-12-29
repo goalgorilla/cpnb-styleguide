@@ -57,14 +57,16 @@ address{font-style:normal;margin-bottom:.6em}
 .button--grey{background-color:#d8d5d0;color:#222}
 .button--grey:hover{background-color:#cac5c1}
 .button--orange{background-color:rgba(186,90,65,.9);color:#fff}
-.button--orange:hover{background-color:#c88c57}
+.button--orange:hover{background-color:rgba(148,72,52,.9)}
+.button--orange-2{background-color:#c88c57;color:#fff}
+.button--orange-2:hover{background-color:#b2723a}
 .button--white,.button--white:hover{background-color:#fff;color:#222}
-.button--add{padding:10px 70px 10px 40px;line-height:1.5em;min-height:0;background-color:#d8d5d0;width:100%}
-.button--add b{display:inline;position:absolute;padding:0;top:0;right:0;width:40px;height:40px;border-left:1px solid rgba(0,0,0,.2)}
+.button--add{padding:4px 80px 4px 40px;line-height:42px;min-height:42px;width:100%}
+.button--add b{display:inline;position:absolute;padding:0;top:0;right:0;width:50px;height:50px;border-left:1px solid rgba(0,0,0,.2)}
 .button--add b:before{position:absolute;width:3px;height:13px;content:'';background-color:#222}
 .button--add b:after{position:absolute;width:13px;height:3px;content:'';background-color:#222}
-.button--add b:before{left:auto;right:17px;top:14px;transition:-webkit-transform .5s;transition:transform .5s;transition:transform .5s,-webkit-transform .5s}
-.button--add b:after{left:auto;right:12px;top:19px;transition:-webkit-transform .5s;transition:transform .5s;transition:transform .5s,-webkit-transform .5s}
+.button--add b:before{left:auto;right:24px;top:20px;transition:-webkit-transform .5s;transition:transform .5s;transition:transform .5s,-webkit-transform .5s}
+.button--add b:after{left:auto;right:19px;top:25px;transition:-webkit-transform .5s;transition:transform .5s;transition:transform .5s,-webkit-transform .5s}
 .button--add:hover{background-color:#d8d5d0}
 .button--add:hover b:after,.button--add:hover b:before{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
 .button--view{padding-right:40px;position:relative}
@@ -79,6 +81,10 @@ address{font-style:normal;margin-bottom:.6em}
 .button--follow:before{left:auto;right:24px;top:20px;width:2px;height:12px}
 .button--follow:after{left:auto;right:19px;top:25px;height:2px;width:12px}
 .button--follow:hover:after,.button--follow:hover:before{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
+.button--followed{opacity:.8}
+.button--followed:after,.button--followed:before{-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+.button--followed:hover{opacity:1}
+.button--followed:hover:after,.button--followed:hover:before{-webkit-transform:rotate(45deg) scale(1.2);transform:rotate(45deg) scale(1.2);tranform-origin:center center}
 .button--large{font-size:20px;padding:20px 30px}
 button,input,optgroup,select,textarea{font:inherit;color:inherit}
 button{overflow:visible}
@@ -537,6 +543,7 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .field--name-body p,.view-mode-full p{margin:0 0 20px}
 .field--name-body .lead,.view-mode-full .lead{font-weight:700;font-style:italic;margin-bottom:30px;font-size:1em}
 .field--name-body a,.view-mode-full a{text-decoration:underline}
+.field--name-body a.button,.view-mode-full a.button{text-decoration:none}
 .field--name-body ul,.view-mode-full ul{list-style-type:disc}
 .field--name-body ol,.field--name-body ul,.view-mode-full ol,.view-mode-full ul{padding-left:30px;line-height:1.5;font-size:14px}
 .field--name-body h1,.field--name-body h2,.field--name-body h3,.field--name-body h4,.field--name-body h5,.field--name-body h6,.view-mode-full h1,.view-mode-full h2,.view-mode-full h3,.view-mode-full h4,.view-mode-full h5,.view-mode-full h6{margin-top:0;margin-bottom:5px}

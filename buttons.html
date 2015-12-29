@@ -93,10 +93,9 @@
               <a class="menu__link" href="/#0">Atoms</a>
               <ul class="menu">
                 <li class="menu__item"><a class="menu__link" href="/colors.html">Colors</a></li>
-                <!--<li class="menu__item"><a class="menu__link" href="/typografie.html">Typografie</a></li>
-                <li class="menu__item"><a class="menu__link" href="/iconen.html">Iconen</a></li>
+                <li class="menu__item"><a class="menu__link" href="/typography.html">Typography</a></li>
                 <li class="menu__item"><a class="menu__link" href="/buttons.html">Buttons</a></li>
-                <li class="menu__item"><a class="menu__link" href="/formelements.html">Form elementen</a></li>
+                <!--<li class="menu__item"><a class="menu__link" href="/formelements.html">Form elements</a></li>
                 <li class="menu__item"><a class="menu__link" href="/labels.html">Labels</a></li>
                 <li class="menu__item"><a class="menu__link" href="/meldingen.html">Meldingen</a></li>
                 <li class="menu__item"><a class="menu__link" href="/tabellen.html">Tabellen</a></li>-->
@@ -167,26 +166,51 @@
     <div class="l-page"> 
       <main class="l-main" id="main-content">
                           
-        <section class="row">
-  <header>
-    <h1 class="node__title">Buttons</h1>
-  </header>
+        <section class="section-small">
+  <h2 class="section--title">Buttons</h2>
+  
+  <div class="field--name-body">
 
-  <h2 class="sectiontitle">Standaard</h2>
-  <p>De standaard button ziet er als volgt uit. Deze button heeft altijd het witte driehoek icoon. De button wordt gebruikt als &#8216;lees meer&#8217; knop, als formulier submit knop en als vernieuw knop. </p>
-    <button type="button" role="button" class="button">Default button</button>  <pre class="language-html"><code><button type="button" role="button" class="button">Default button</button></code></pre>
+    <h3>Default</h3>
+    <br />
+    <button type="button" role="button" class="button">Default button</button>
 
-  <h2 class="sectiontitle">Call to action</h2>
-  <p>De call to action knop geeft extra aandacht aan een bepaalde actie. We zien deze bijvoorbeeld als bestelknop en voor speciale aanbiedingen. Het enige dat verandert is de achtergrondkleur.</p>
-    <button type="button" role="button" class="button button--green">Call to action button</button>  <pre class="language-html"><code><button type="button" role="button" class="button button--green">Call to action button</button></code></pre>
+    <pre class="language-html"><code><button type="button" role="button" class="button">Default button</button></code></pre>
 
-  <h2 class="sectiontitle">Blauw</h2>
-  <p> De blauwe button kan worden gebruik als de sectie een achtergrondafbeelding heeft. Vooralsnog zien we deze knop alleen nog maar op de homepage.</p>
-    <button type="button" role="button" class="button button--blue">Call to action button</button>  <pre class="language-html"><code><button type="button" role="button" class="button button--blue">Call to action button</button></code></pre>
+    <h3>Colors</h3>
+    <br />
+    <button type="button" role="button" class="button button--blue">Blue button</button>
+    <button type="button" role="button" class="button button--purple">Purple button</button>
+    <button type="button" role="button" class="button button--pink">Pink button</button>
+    <button type="button" role="button" class="button button--orange">Orange button</button>
+    <button type="button" role="button" class="button button--orange-2">Orange-2 button</button>
+    <button type="button" role="button" class="button button--grey">Grey button</button>
+    <button type="button" role="button" class="button button--white">White button</button>
 
-    <h2 class="sectiontitle">Button Large</h2>
-  <p> Op sommige plekken hebben we iets grotere buttons, zoals bij product teasers. We vergroten hier het font en het icoon.</p>
-    <button type="button" role="button" class="button button--large">Default button</button>  <pre class="language-html"><code><button type="button" role="button" class="button button--large">Default button</button></code></pre>
+    <pre class="language-html"><code><button type="button" class="button button--{color-name}">Default button</button></code></pre>
+
+    <h3>Size</h3>
+    <br />
+    <button type="button" role="button" class="button button--large">Large button</button>
+    <pre class="language-html"><code><button type="button" role="button" class="button button--large">Large button</button></code></pre>
+
+    <h3>Purpose</h3>
+    <br />
+    <p>The add button is used to invite the [member] to contribute something to the website. It is generally an anchor element.</p>
+    <a href="#0" class="button button--add button--grey">Add button<b></b></a>
+    <pre class="language-html"><code><a href="#0" class="button button--add button--grey">Add button<b></b></a></code></pre>
+
+    <p>The View button can be used on links.</p> 
+    <a href="#0" class="button button--view">View button</a>
+    <pre class="language-html"><code><a href="#0" class="button button--add button--grey">Add button<b></b></a></code></pre>
+
+    <p>The Follow button can be used follow items. The preferred interaction is ajax. When a user clicks here either they see a notification or if the page is refreshed the button gets another state.</p> 
+    <button type="button" role="button" class="button button--follow">Follow button</button>
+    <button type="button" role="button" class="button button--follow button--followed">You are subscribed</button>
+
+    <pre class="language-html"><code><a href="#0" class="button button--add button--grey">Add button<b></b></a></code></pre>
+
+  </div>
 
 </section>
 
