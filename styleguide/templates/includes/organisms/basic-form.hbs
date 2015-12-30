@@ -1,72 +1,71 @@
-<form class="commerce-checkout-form-checkout">
+<form class="form-name">
 
-  <div class="form-item form-type-checkboxes">
-    <div class="form-checkboxes"> 
-      <div class="form-item form-type-checkbox">
-        <input type="checkbox" id="checkbox-1" value="1" class="form-checkbox" />  
-        <label class="option" for="checkbox-1">Ik heb al een lopend abonnement bij Ben en wil verlengen </label>
-      </div>
-    </div>
-  </div>
+  <div class="form-wrapper">
 
-
-  <div class="form-item form-type-radios">
-    <label for="edit-commerce-fieldgroup-pane-group-personal-details-field-name-title-und">
-      Aanhef <span class="form-required" title="This field is required.">*</span>
-    </label>
-    <div class="form-radios">
-      <div class="form-item form-type-radio">
-        <input type="radio" id="radio1" name="manvrouw" value="Mr." class="form-radio" />  
-        <label class="option" for="radio1">Dhr. </label>
-      </div>
-      <div class="form-item form-type-radio">
-        <input type="radio" id="radio2" name="manvrouw" value="Ms." class="form-radio" />  
-        <label class="option" for="radio2">Mevrouw. </label>
-      </div>
-    </div>
-  </div>
-
-  <div class="form-item form-type-textfield">
-    <label for="voornaam">Voornaam <span class="form-required" title="This field is required.">*</span></label>
-    <input class="text-full form-text required" type="text" id="voornaam" value="" size="60" maxlength="40" />
-  </div>
-
-  <div class="form-item form-type-textfield">
-    <label for="voorletters">Voorletters <span class="form-required" title="This field is required.">*</span></label>
-    <input class="text-full form-text required" type="text" id="voorletters" value="" size="60" maxlength="40" />
-    <div class="description">Zoals vermeld in je legitimatie</div>
-  </div>
-
-  <div class="form-item form-type-textfield">
-    <label for="achternaam">Achternaam <span class="form-required" title="This field is required.">*</span></label>
-    <input class="text-full form-text required" type="text" id="achternaam" value="" size="60" maxlength="40" />
-  </div>
-
-  <div class="field-name-field-birthdate">
-    <fieldset class="form-wrapper">
-      <legend>
-        <span class="fieldset-legend">
-          Geboortedatum 
-          <span class="form-required" title="This field is required.">*</span>
-        </span>
-      </legend>
-      <div class="fieldset-wrapper">
-        <div class="date-no-float container-inline-date">
-          <div class="form-item form-type-date-text">
-            <div class="date-padding clearfix">
-              <div class="form-item form-type-textfield">
-                <input class="date-clear form-text" type="text" id="datum" name="datum" value="" size="60" maxlength="128" />
-              </div>
-            </div>
-            <div class="description">dd-mm-jjjj</div>
-          </div>
+    <div class="form-item form-type-checkboxes">
+      <div class="form-checkboxes"> 
+        <div class="form-item form-type-checkbox">
+          <input type="checkbox" id="checkbox-1" value="1" class="form-checkbox" />  
+          <label class="option" for="checkbox-1">Sed posuere consectetur est at lobortis.</label>
         </div>
       </div>
-    </fieldset>
+    </div>
+
+
+    <div class="form-item form-type-textfield">
+      <label for="voornaam">Voornaam <span class="form-required" title="This field is required.">*</span></label>
+      <input class="text-full form-text required" type="text" id="voornaam" value="" size="60" maxlength="40" />
+    </div>
+
+    <div class="form-item form-type-select">
+      <div class="form-item">
+          <label for="selectdemo" class="form-label">Status</label>
+          <select id="selectdemo" class="form-select" name="select">
+            <option value="value1" selected>Alle</option> 
+            <option value="value2">Live</option>
+            <option value="value3">Materiaal gereed</option>
+          </select>
+      </div>
+      <div class="description">Lorem Aenean Justo Mollis</div>
+    </div>
+
+    <div class="form-item form-type-textfield">
+      <label for="achternaam">Achternaam <span class="form-required" title="This field is required.">*</span></label>
+      <input class="text-full form-text required" type="text" id="achternaam" value="" size="60" maxlength="40" />
+    </div>
+
+    <div class="form-item form-type-textfield">
+      <label for="voorletters">Organisatie <span class="form-required" title="This field is required.">*</span></label>
+      <input type="text" class="form-text form-autocomplete" value="" />
+      <div class="description">Lorem Aenean Justo Mollis</div>
+    </div>
+
+    <div class="form-item form-type-radios">
+      <label for="edit-commerce-fieldgroup-pane-group-personal-details-field-name-title-und">
+        Ipsum Adipiscing <span class="form-required" title="This field is required.">*</span>
+      </label>
+      <div class="form-radios">
+        <div class="form-item form-type-radio">
+          <input type="radio" id="radio1" name="manvrouw" value="Mr." class="form-radio" />  
+          <label class="option" for="radio1">Commodo </label>
+        </div>
+        <div class="form-item form-type-radio">
+          <input type="radio" id="radio2" name="manvrouw" value="Ms." class="form-radio" />  
+          <label class="option" for="radio2">Vulputate </label>
+        </div>
+        <div class="form-item form-type-radio">
+          <input type="radio" id="radio3" name="manvrouw" value="Mrs." class="form-radio" />  
+          <label class="option" for="radio3">Risus Purus </label>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="form-wrapper checkout-buttons" id="edit-actions">
-    <input type="submit" id="edit-submit" name="op" value="Volgende stap" class="checkout-continue form-submit">
+  <div class="form-wrapper form-actions">
+    <div class="form-item">
+      <input type="submit" id="edit-submit" name="op" value="Sollicitudin Cursus" class="form-submit">
+    </div>
+    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
   </div>
 
 </form>

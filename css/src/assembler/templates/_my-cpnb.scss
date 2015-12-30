@@ -130,12 +130,23 @@
   padding: 20px;
   width: 100%;
 
-  @include MQ($tab) {
-    padding: 30px;
+  .selector,
+  .form-text {
+    background-color: $grey1;
+
+    &:focus {
+      animation: anim-shadow-grey 0.3s forwards;
+    }
+
   }
 
-  .form-text {
-    padding: 20px 24px;
+  .form-submit {
+    @extend %button--grey;
+    background-image: url('../images/arrow-simple-right.svg');
+  }
+
+  @include MQ($tab) {
+    padding: 30px;
   }
 
 }

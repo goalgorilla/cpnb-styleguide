@@ -21,6 +21,7 @@
 
   &:hover {
     cursor: pointer;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3);
   }
 
 }
@@ -74,7 +75,19 @@
   color: $white;
 
   &:hover {
-    background-color: $orange2;
+    background-color: darken($orange1, 10%);
+
+  }
+
+}
+
+%button--orange-2,
+.button--orange-2 {
+  background-color: $orange2;
+  color: $white;
+
+  &:hover {
+    background-color: darken($orange2, 10%);
 
   }
 
@@ -94,10 +107,9 @@
 
 %button--add,
 .button--add {
-  padding: 10px 70px 10px 40px;
-  line-height: 1.5em;
-  min-height: 0;
-  background-color: $grey2;
+  padding: 4px 80px 4px 40px;
+  line-height: 42px;
+  min-height: 42px;
   width: 100%;
 
   @include MQ($tab) {
@@ -111,22 +123,22 @@
     padding: 0;
     top: 0;
     right: 0;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-left: 1px solid rgba(0,0,0,.2);
   }
 
   b:before{
     left: auto;
-    right: 17px;
-    top: 14px;
+    right: 24px;
+    top: 20px;
     transition: transform .5s;
   }
 
   b:after {
     left: auto;
-    right: 12px;
-    top: 19px;
+    right: 19px;
+    top: 25px;
     transition: transform .5s;
   }
 
@@ -142,6 +154,7 @@
 
 }
 
+%button--view,
 .button--view {
   padding-right: 40px;
   @include icon-right($white);
@@ -201,9 +214,47 @@
 
 }
 
+.button--followed {
+  opacity: 0.8;
+
+  &:before{
+    transform: rotate(45deg);
+  }
+
+  &:after{
+    transform: rotate(45deg);
+  }
+
+  &:hover {
+    opacity: 1;
+    
+    &:after,
+    &:before {
+      transform: rotate(45deg) scale(1.2);
+      tranform-origin: center center;
+    }
+  }
+
+
+}
+
+%button--large,
 .button--large {
   font-size: 20px;
   padding: 20px 30px;
+}
+
+%button--submit {
+  background-image: url('../images/arrow-simple-right-white.svg');
+  background-position: 92% 50%;
+  background-size: auto 20px;
+  background-repeat: no-repeat;
+  padding: 10px 40px 10px 30px;
+
+  &:hover {
+    background-position: 96% 50%;
+    background-size: auto 24px;
+  }
 }
 
 

@@ -45,3 +45,34 @@
   font-weight: bold;
   display: block;
 }
+
+
+@keyframes anim-shadow {
+  0% {box-shadow: 0px 0px 100px 20px rgba($orange2, 0.1);}
+  50% {box-shadow: 0px 0px 0px 1px rgba($orange2, 0.5);}
+  100% {box-shadow: 0px 0px 0px 2px $orange2;}
+}
+
+@keyframes anim-shadow-grey {
+  0% {box-shadow: 0px 0px 100px 20px rgba($grey5, 0.1);}
+  50% {box-shadow: 0px 0px 0px 1px rgba($grey5, 0.5);}
+  100% {box-shadow: 0px 0px 0px 2px $grey5;}
+}
+
+@keyframes click-wave { 
+  0% {
+    width: 40px;
+    height: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  
+  100% {
+    width: 200px;
+    height: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+
+}

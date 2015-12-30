@@ -65,6 +65,8 @@
      padding: 2px 10px 2px 0;
      left: 10px;
      white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
      content: attr(data-title);
     }
     
