@@ -21,14 +21,27 @@
       &:before {
         transform: rotate(135deg) scale(1.5);
         top: 44px;
-        right: 20px;
+        right: 40px;
       }
 
       &:after {
         transform: rotate(-135deg) scale(1.5);
         top: 50px;
-        right: 20px;
+        right: 40px;
       }
+
+      &:hover {
+    
+        &:before {
+          transform: rotate(135deg) translateY(-7px) translateX(-7px) scale(1.5);
+        }
+
+        &:after {
+          transform: rotate(-135deg) translateY(7px) translateX(-7px) scale(1.5);
+        }
+
+      }
+
     }
 
   }

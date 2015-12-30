@@ -64,7 +64,7 @@ ul{list-style:none;padding-left:0}
 .list-horizontal li{display:inline-block}
 b,strong{font-weight:700}
 address{font-style:normal;margin-bottom:.6em}
-.button,.form-submit,.pager li a,.pager__item--current{position:relative;display:inline-block;vertical-align:middle;font-size:14px;line-height:42px;font-weight:700;max-width:100%;padding:4px 20px;min-height:42px;text-decoration:none;color:#fff;border:none;text-align:center;background-color:#222;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;transition:all .3s}
+.button,.form-submit,.pager li a,.pager__item--current{position:relative;display:inline-block;vertical-align:middle;font-size:14px;line-height:42px;font-weight:700;max-width:100%;padding:4px 20px;min-height:42px;text-decoration:none;color:#fff;border:none;text-align:center;background-color:#222;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;box-shadow:0 1px 3px 0 transparent;transition:all .3s}
 .button:hover,.form-submit:hover,.pager li a:hover,.pager__item--current:hover{cursor:pointer;box-shadow:0 1px 3px 0 rgba(0,0,0,.3)}
 .button--purple{background-color:rgba(128,38,136,.9)}
 .button--purple:hover{background-color:#623588}
@@ -87,13 +87,21 @@ address{font-style:normal;margin-bottom:.6em}
 .button--add b:after{left:auto;right:19px;top:25px;transition:-webkit-transform .5s;transition:transform .5s;transition:transform .5s,-webkit-transform .5s}
 .button--add:hover{background-color:#d8d5d0}
 .button--add:hover b:after,.button--add:hover b:before{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
-.button--view{padding-right:40px;position:relative}
+.button--view{padding-right:40px;position:relative;-webkit-transform-origin:50% 0;transform-origin:50% 0}
 .button--view:after,.button--view:before{position:absolute;display:inline-block;width:2px;height:8px;content:'';transition:.3s;background:#fff}
 .button--view:before{-webkit-transform:rotate(135deg);transform:rotate(135deg)}
 .button--view:after{-webkit-transform:rotate(-135deg);transform:rotate(-135deg)}
 .button--view:before{top:20px;right:24px}
 .button--view:after{top:25px;right:24px}
-.button--view:hover:after,.button--view:hover:before{margin-right:-4px}
+.button--view:hover:before{-webkit-transform:rotate(135deg) translateY(-5px) translateX(-5px) scale(1.25);transform:rotate(135deg) translateY(-5px) translateX(-5px) scale(1.25)}
+.button--view:hover:after{-webkit-transform:rotate(-135deg) translateY(5px) translateX(-5px) scale(1.25);transform:rotate(-135deg) translateY(5px) translateX(-5px) scale(1.25)}
+.button--loadmore{padding-right:40px;position:relative;-webkit-transform-origin:top center;transform-origin:top center}
+.button--loadmore:before{position:absolute;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(-45deg) translateY(-50%);transform:rotate(-45deg) translateY(-50%);background-color:#fff;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s,-webkit-transform .3s;top:50%}
+.button--loadmore:after{position:absolute;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(45deg) translateY(-50%);transform:rotate(45deg) translateY(-50%);transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s,-webkit-transform .3s;background-color:#fff;top:50%;bottom:auto}
+.button--loadmore:before{right:16px}
+.button--loadmore:after{right:22px}
+.button--loadmore:hover:before{-webkit-transform:rotate(-45deg) translateY(2px) translateX(-2px) scale(1.25);transform:rotate(-45deg) translateY(2px) translateX(-2px) scale(1.25)}
+.button--loadmore:hover:after{-webkit-transform:rotate(45deg) translateY(2px) translateX(2px) scale(1.25);transform:rotate(45deg) translateY(2px) translateX(2px) scale(1.25)}
 .button--follow{padding-right:40px;position:relative;padding-left:20px}
 .button--follow:after,.button--follow:before{position:absolute;content:'';transition:.3s;background-color:#fff}
 .button--follow:before{left:auto;right:24px;top:20px;width:2px;height:12px}
@@ -105,7 +113,7 @@ address{font-style:normal;margin-bottom:.6em}
 .button--followed:hover:after,.button--followed:hover:before{-webkit-transform:rotate(45deg) scale(1.2);transform:rotate(45deg) scale(1.2);tranform-origin:center center}
 .button--large{font-size:20px;padding:20px 30px}
 .form-submit{background-image:url(../images/arrow-simple-right-white.svg);background-position:92% 50%;background-size:auto 20px;background-repeat:no-repeat;padding:10px 40px 10px 30px}
-.form-submit:hover{background-position:96% 50%;background-size:auto 24px}
+.form-submit:hover{background-position:96% 50%}
 button,input,optgroup,select,textarea{font:inherit;color:inherit}
 button{overflow:visible}
 button,select{text-transform:none}
@@ -421,11 +429,6 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .pager__item--current{background-image:none;padding-right:12px;text-align:center;min-width:42px;height:42px;line-height:30px}
 .pager__item--current:hover{cursor:default;background-color:#00aeef}
 .pager__item--next,.pager__item--previous{display:inline-block}
-.button--loadmore{padding-right:40px;min-width:auto;position:relative}
-.button--loadmore:before{position:absolute;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(-45deg) translateY(-50%);transform:rotate(-45deg) translateY(-50%);background-color:#fff;transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s,-webkit-transform .3s;top:50%}
-.button--loadmore:after{position:absolute;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(45deg) translateY(-50%);transform:rotate(45deg) translateY(-50%);transition:-webkit-transform .3s;transition:transform .3s;transition:transform .3s,-webkit-transform .3s;background-color:#fff;top:50%;bottom:auto}
-.button--loadmore:before{right:10px}
-.button--loadmore:after{right:16px}
 .block--search .form-wrapper{margin:0}
 .block--search .form-item label{padding:0}
 .block--search .form-type-textfield{max-width:none}
@@ -566,6 +569,7 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .block-filter .form-wrapper{display:inline-block;width:69%;vertical-align:top}
 .block-filter .form-actions{-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;display:inline-block;width:30%;margin-top:0}
 .block-filter .form-reset{background-color:transparent;background-image:none;color:#fff;text-decoration:underline;line-height:1;margin-top:5px;padding-right:0;text-align:right;font-weight:400}
+.block-filter .form-reset:hover{box-shadow:none}
 .block-filter--news{background-color:rgba(93,170,220,.9)}
 .block-filter--news .block-title{color:rgba(93,170,220,.9)}
 .block-filter--campaigns{background-color:rgba(128,38,136,.9)}
@@ -574,8 +578,10 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .block-action .block-title{background-color:#fff;font-size:20px;padding:20px 30px;line-height:42px;text-align:center}
 .block-action .content .button{width:100%;position:relative;padding-top:30px;padding-bottom:30px}
 .block-action .content .button:after,.block-action .content .button:before{position:absolute;display:inline-block;width:2px;height:8px;content:'';transition:.3s;background:#fff}
-.block-action .content .button:before{-webkit-transform:rotate(135deg) scale(1.5);transform:rotate(135deg) scale(1.5);top:44px;right:20px}
-.block-action .content .button:after{-webkit-transform:rotate(-135deg) scale(1.5);transform:rotate(-135deg) scale(1.5);top:50px;right:20px}
+.block-action .content .button:before{-webkit-transform:rotate(135deg) scale(1.5);transform:rotate(135deg) scale(1.5);top:44px;right:40px}
+.block-action .content .button:after{-webkit-transform:rotate(-135deg) scale(1.5);transform:rotate(-135deg) scale(1.5);top:50px;right:40px}
+.block-action .content .button:hover:before{-webkit-transform:rotate(135deg) translateY(-7px) translateX(-7px) scale(1.5);transform:rotate(135deg) translateY(-7px) translateX(-7px) scale(1.5)}
+.block-action .content .button:hover:after{-webkit-transform:rotate(-135deg) translateY(7px) translateX(-7px) scale(1.5);transform:rotate(-135deg) translateY(7px) translateX(-7px) scale(1.5)}
 .no-flexbox .block-action{width:100%}
 .no-flexbox .block-action:after,.no-flexbox .block-action:before{content:'';display:table}
 .no-flexbox .block-action:after{clear:both}

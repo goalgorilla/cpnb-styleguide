@@ -132,6 +132,10 @@
     color: white;
     text-decoration: underline;
 
+    &:hover {
+      box-shadow: none;
+    }
+
     @include MQ($tab){
       line-height: 1;
       margin-top: 5px;
