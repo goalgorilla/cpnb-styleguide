@@ -6,6 +6,10 @@
 	position: fixed;
 	z-index: 99;
 
+  body.logged-in & {
+	top: 59px;
+  }
+
 	.container {
 
     @include MQ($desk) {
@@ -214,7 +218,7 @@
 
 
 .l-region--header {
-	position: fixed;
+  position: fixed;
   left: 0;
   top: 0;
   height: 100%;
@@ -230,9 +234,13 @@
   transition-property: transform;
   transition-duration: 0.4s;
 
-	.menu-is-open & {
-		transform: translateY(0);
-	}
+  body.logged-in & {
+	top: 29px;
+  }
+
+  .menu-is-open & {
+	  transform: translateY(0);
+  }
 
   @include MQ($tab) {
     padding: 80px 0;

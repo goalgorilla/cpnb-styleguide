@@ -77,9 +77,12 @@
   background-color: $grey1;
   display: flex;
   justify-content: center;
+  > div {
+    position: relative;
+  }
 
   @include MQ($tab) {
-    padding: 10px 0px;  
+    padding: 10px 0;
     justify-content: flex-start;
   }
 
@@ -154,6 +157,9 @@
     padding: 10px;
   }
 
+  li {
+    display: inline-block;
+  }
   .icon-button {
     margin: 0 5px;
   }
