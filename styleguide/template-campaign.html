@@ -66,8 +66,8 @@
           <h2 class="element-invisible">User menu</h2>
     
           <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#0">Mijn CPNB (3)</a></li>
-            <li class="menu__item"><a class="menu__link" href="#0">Campagnes (2)</a></li>
+            <li class="menu__item"><a class="menu__link" href="#0">Mijn CPNB <span>3</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="#0">Campagnes <span>2</span></a></li>
             <li class="menu__item"><a class="menu__link" href="#0">Uitloggen</a></li>
           </ul>
     
@@ -132,12 +132,14 @@
               <a class="menu__link" href="/#0">Templates</a>
               <ul class="menu">
                 <li class="menu__item"><a class="menu__link" href="/template-home-lu.html">Home LU</a></li>
-                <li class="menu__item"><a class="menu__link" href="/template-campaigns.html">Campagne overzicht</a></li>
-                <li class="menu__item"><a class="menu__link" href="/template-campaign.html">Campagne</a></li>
-                <li class="menu__item"><a class="menu__link" href="/template-news.html">Nieuws overzicht</a></li>
-                <li class="menu__item"><a class="menu__link" href="/template-about.html">Over CPNB</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-campaigns.html">Campains</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-campaign.html">Campaign</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-media-center.html">Media center</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-press-info.html">Press info</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-news.html">News</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-about.html">About</a></li>
                 <li class="menu__item"><a class="menu__link" href="/template-contact.html">Contact</a></li>
-                <li class="menu__item"><a class="menu__link" href="/template-mycpnb.html">Mijn CPNB</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-mycpnb.html">MyCPNB</a></li>
           
               </ul>
             </li>
@@ -164,8 +166,7 @@
     </header>    
     <div class="l-page"> 
       <main class="l-main" id="main-content">
-        
-                    
+                          
         <div class="l-breadcrumbs">
           <div class="container">
             <ul>
@@ -179,33 +180,27 @@
 
   <div class="container">
 
-    <div class="hero--campaign__content">
-      <div class="hero--campaign__logo">
-        <img src="/example/campaign-teaser-logo1.png" alt="campaign title" /> 
+    <div class="hero__content">
+      
+      <div class="hero--campaign__logo" style="background-image: url('/example/KBW2015.jpg')">
       </div>
+
+      <h1 class="hero__title"> Vivamus sagittis lacus vel dolor auctor</h1>
+      
       <p>Periode 1 t/m 30 november 2016</p>
-      <h1 class="hero__title--campaign">
-      De Kinder boekenweek 2016
-      </h1>
-      <b>Live</b>
-    </div>
+      
+      <span class="status status-archived">archive</span>
+      
+      <div class="hero__buttons">
+        <a href="#0" class="button button--purple button--view">View materials</a>
+        <button class="button button--pink button--follow">Follow campaign</button>
+      </div>
 
-    <div class="hero--campaign__buttons">
-      <a href="#0" class="button button--purple">View materials</a>
-      <button class="button button--pink">Follow campaign</button>
     </div>
 
   </div>
 
-  <div class="section-divider section-divider-plain"> 
-  
-    <div class="section-divider__tagline">
-      <span>Er zit een</span><br />
-      <span>lezer in</span><br />
-      <span>iedereen</span>
-    </div>
-  
-  </div>
+
 </section>
 
 <section class="section-default">
@@ -309,11 +304,11 @@
     </ul>
   </div>
 
-  <div class="block-campaigninfo">
+  <article class="view-mode-full node--campaign-body">
     
     <label>Over de campagne</label>
   
-    <p class="introtext">De Kinderboekenweek wordt elk jaar in oktober gehouden. Tijdens het tien dagen durende evenement zijn er in het hele land allerlei activiteiten rond het kinderboek. Op grote schaal haken bibliotheken, het onderwijs, boekhandels en culturele centra hierop in. Het jaarlijks wisselende thema van de Kinderboekenweek dient als leidraad bij de organisatie van de vele activiteiten.</p>
+    <p class="lead">De Kinderboekenweek wordt elk jaar in oktober gehouden. Tijdens het tien dagen durende evenement zijn er in het hele land allerlei activiteiten rond het kinderboek. Op grote schaal haken bibliotheken, het onderwijs, boekhandels en culturele centra hierop in. Het jaarlijks wisselende thema van de Kinderboekenweek dient als leidraad bij de organisatie van de vele activiteiten.</p>
 
     <p>In 1954 organiseerde de CPNB de eerste Kinderboekenweek.</p>
  
@@ -323,7 +318,7 @@
  
     <p>Cras dignissim nisl eget dignissim egestas. Morbi elementum vehicula erat, sit amet blandit sapien tristique semper. Curabitur semper, risus vitae facilisis sagittis, arcu neque interdum urna, nec venenatis odio risus in quam. Nullam aliquet iaculis nunc et scelerisque. Proin dapibus mi lacinia dictum faucibus. Fusce malesuada elit quis sem congue, quis tempus velit viverra.</p>
 
-  </div>
+  </article>
 
   <div class="block-campaign-publications">
     
@@ -442,8 +437,6 @@
       </div>
     
     </a>  </div>
-
-  <a href="#0" class="section-readmore">Bekijk alle documenten</a>
 
 </section>
 
@@ -743,7 +736,6 @@
   </div>
 
 </div>
-        
 
       </main>
     

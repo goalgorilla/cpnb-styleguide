@@ -8,7 +8,7 @@
     position: absolute;
     top: 100%;
     background: linear-gradient(to right, $deep-purple 0%, $deep-purple 5%,
-      $pink 6%,$pink 15%,
+      $pink 5%,$pink 15%,
       $bright-purple 15%, $bright-purple 35%,
       $pink 35%, $pink 45%,
       $orange1 45%, $orange1 54%,
@@ -18,4 +18,30 @@
     );
   }
 
+}
+
+@mixin section-title {
+  background-color: $grey2;
+  line-height: 2;
+  padding: 0 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+  font-family: $serif-font;
+  font-weight: normal;
+  font-size: 1em;
+}
+
+%section-title {
+  @include section-title;
+}
+
+%section-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  margin: 15px 0;
+  padding-right: 0;
+  font-weight: bold;
+  display: block;
 }

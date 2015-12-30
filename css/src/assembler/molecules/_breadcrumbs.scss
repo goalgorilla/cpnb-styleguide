@@ -7,18 +7,38 @@
     margin: 0 auto;
     z-index: 2;
     background-color: $grey4;
+
+    &:after {
+      width: 100%;
+      height: 10px;
+      display: block;
+      content: '';
+      position: relative;
+      top: 100%;
+      background: linear-gradient(to right, $deep-purple 0%, $deep-purple 5%,
+        $pink 5%, $pink 15%, $bright-purple 15%, $bright-purple 35%,
+        $pink 35%, $pink 45%, $orange1 45%, $orange1 54%,
+        $orange2 54%, $orange2 78%, $orange1 78%, $orange1 88%,
+        $bright-blue 88%, $bright-blue 100%
+      );
+    }
   }
 
   .with-hero & {
     @include MQ($tab){
       margin-top: 70px;
       position: absolute;
+
+      // don't display the border when there is a hero
+      &:after {
+        display: none;
+      }
     }
 
     @include MQ($desk) {
       margin-top: 100px;
     }
-
+  
   }
 
 }

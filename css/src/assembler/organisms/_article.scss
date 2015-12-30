@@ -1,12 +1,17 @@
 .view-mode-full {
-  background-color: white;
-  padding: 20px;
   
-  @include MQ($desk) {
+  @include MQ($tab) {
     max-width: $tab;
     padding: 50px;
   }
+}
 
+.view-mode-full,
+.field--name-body {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  
   label {
     display: block;
     margin-bottom: 10px;
@@ -16,13 +21,13 @@
   }
 
   p {
-    margin: 0 0 10px;
+    margin: 0 0 20px;
   }
 
   .lead {
     font-weight: bold;
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 1em;
   }
 

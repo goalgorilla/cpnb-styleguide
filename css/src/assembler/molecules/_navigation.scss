@@ -30,6 +30,19 @@
 
 }
 
+.block--system-user-menu .menu__link span {
+  border-radius: 10px;
+  background-color: white;
+  padding: 2px;
+  font-size: 12px;
+  min-width: 1.4em;
+  text-align: center;
+  display: inline-block;
+  vertical-align: text-top;
+  color: $black;
+  line-height: 1;
+}
+
 .block--thema-menu {
   @include MQ($tab) {
     padding-right: 180px;
@@ -102,6 +115,7 @@
         color: $bright-blue;
       }
     } 
+
   }
 
   .block--system-user-menu {

@@ -29,16 +29,9 @@
 .teaser-document--wrapper {
   
   .teaser--document {
-    flex-grow: 0;
-
     @include MQ($tab) {
-      margin: 0 10px 20px 10px;
-    }
-
-    @include MQ($desk) {
-      margin: 0 20px 20px 0;
-    }
-  
+      flex: 1 1 33%
+    } 
   }
 
 }
@@ -60,14 +53,6 @@
 
 .teaser--document:nth-of-type(4n+2) .teaser--document__image {
   background-color: $deep-blue;  
-}
-
-.teaser--document:nth-of-type(4n-1) .teaser--document__image {
-  background-color: darken($bright-blue, 10%);
-}
-
-.teaser--document:nth-of-type(4n+4) .teaser--document__image {
-  background: darken($deep-blue,10%);  
 }
 
 

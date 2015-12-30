@@ -106,7 +106,7 @@
   font-size: 17px;
   font-weight: bold;
   margin-bottom: 30px;
-  max-width: 660px;
+  max-width: $tab;
 
   @include MQ($tab) {
     padding: 30px 30px 40px;
@@ -147,18 +147,6 @@
   margin-bottom: 5px;
   line-height: 1.5;
   display: block;
-}
-
-.block-campaigninfo {
-  font-weight: normal;
-
-  @include MQ($tab) {
-    padding: 50px;
-  }
-
-  p {
-    font-size: 14px;
-  }
 }
 
 .campaign-publications {

@@ -66,8 +66,8 @@
           <h2 class="element-invisible">User menu</h2>
     
           <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#0">Mijn CPNB (3)</a></li>
-            <li class="menu__item"><a class="menu__link" href="#0">Campagnes (2)</a></li>
+            <li class="menu__item"><a class="menu__link" href="#0">Mijn CPNB <span>3</span></a></li>
+            <li class="menu__item"><a class="menu__link" href="#0">Campagnes <span>2</span></a></li>
             <li class="menu__item"><a class="menu__link" href="#0">Uitloggen</a></li>
           </ul>
     
@@ -132,12 +132,14 @@
               <a class="menu__link" href="/#0">Templates</a>
               <ul class="menu">
                 <li class="menu__item"><a class="menu__link" href="/template-home-lu.html">Home LU</a></li>
-                <li class="menu__item"><a class="menu__link" href="/template-campaigns.html">Campagne overzicht</a></li>
-                <li class="menu__item"><a class="menu__link" href="/template-campaign.html">Campagne</a></li>
-                <li class="menu__item"><a class="menu__link" href="/template-news.html">Nieuws overzicht</a></li>
-                <li class="menu__item"><a class="menu__link" href="/template-about.html">Over CPNB</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-campaigns.html">Campains</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-campaign.html">Campaign</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-media-center.html">Media center</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-press-info.html">Press info</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-news.html">News</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-about.html">About</a></li>
                 <li class="menu__item"><a class="menu__link" href="/template-contact.html">Contact</a></li>
-                <li class="menu__item"><a class="menu__link" href="/template-mycpnb.html">Mijn CPNB</a></li>
+                <li class="menu__item"><a class="menu__link" href="/template-mycpnb.html">MyCPNB</a></li>
           
               </ul>
             </li>
@@ -164,32 +166,37 @@
     </header>    
     <div class="l-page"> 
       <main class="l-main" id="main-content">
-        
-        
-          <div class="container clearfix"> 
-        
-                    
-        <h2 class="sectiontitle">Idea teaser</h2>
-<p> The idea teasers show an idea and do not link to deeper pages. Ideas are only shown for members. We show the author and submitted date with the node. Users can vote (like) on an idea, this increases the number shown with the idea.</p>
-<section class="teaser-ideas--wrapper">  
-  <article class="idea media">
-    <div class="idea__avatar media__figure">
-      <img src="example/avatar.png">
-    </div>
-    <div class="media__body">
-      <div class="idea__like">
-        <div class="idea__like-counter">55</div>
-        <button class="idea__like-button">Like</button>
+                          
+        <section class="section-small">
+  <h2 class="section--title">Idea teaser</h2>
+  <div class="field--name-body">
+    <p> he idea teasers show an idea and do not link to deeper pages. Ideas are only shown for members. We show the author and submitted date with the node. Users can vote (like) on an idea, this increases the number shown with the idea.</p>
+  </div>
+
+</section>
+
+
+<section class="section-small">  
+  <div class="teaser-ideas--wrapper"> 
+    <article class="idea media">
+      <div class="idea__avatar media__figure">
+        <img src="example/avatar.png">
       </div>
-      <div class="idea__head">
-        <div class="idea__author">Sean Connery</div>
-        <div class="idea__published">2 January 2015</div>
+      <div class="media__body">
+        <div class="idea__like">
+          <div class="idea__like-counter">55</div>
+          <button class="idea__like-button">Like</button>
+        </div>
+        <div class="idea__head">
+          <div class="idea__author">Sean Connery</div>
+          <div class="idea__published">2 January 2015</div>
+        </div>
+        <div class="idea__body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci.
+        </div>
       </div>
-      <div class="idea__body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci.
-      </div>
-    </div>
-  </article></section>
+    </article>  </div>
+</section>
 
 <pre class="language-html"><code><article class="idea media">
   <div class="idea__avatar media__figure">
@@ -210,56 +217,63 @@
   </div>
 </article></code></pre>
 
-<h2 class="sectiontitle">Idea teaser with comment</h2>
-<p> We show comments on ideas in the same style as the idea itself. We strip it of the like element and indent the comment. On small screens the comments are hidden by default.</p>
+<section class="section-small">
+  <h2 class="section--title">Idea teaser with comment</h2>
+  <div class="field--name-body">
+    <p> We show comments on ideas in the same style as the idea itself. We strip it of the like element and indent the comment. On small screens the comments are hidden by default.</p>
+  </div>
 
-<section class="teaser-ideas--wrapper">  
-  <article class="idea media">
-    <div class="idea__avatar media__figure">
-      <img src="example/avatar.png">
+</section>
+
+<section class="section-small"> 
+  <div class="teaser-ideas--wrapper">  
+    <article class="idea media">
+      <div class="idea__avatar media__figure">
+        <img src="example/avatar.png">
+      </div>
+      <div class="media__body">
+        <div class="idea__like">
+          <div class="idea__like-counter">55</div>
+          <button class="idea__like-button">Like</button>
+        </div>
+        <div class="idea__head">
+          <div class="idea__author">Sean Connery</div>
+          <div class="idea__published">2 January 2015</div>
+        </div>
+        <div class="idea__body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci.
+        </div>
+      </div>
+    </article>    <article class="idea idea__comment media">
+      <div class="idea__avatar media__figure">
+        <a href="#0"><img src="example/avatar.png"></a>
+      </div>
+      <div class="media__body">
+        <div class="idea__head">
+          <a href="#0" class="idea__author">Tom Hanks</a>
+          <div class="idea__published">4 January 2015</div>
+        </div>
+        <div class="idea__body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci.
+        </div>
+      </div>
+    </article>    <article class="idea idea__comment media">
+      <div class="idea__avatar media__figure">
+        <a href="#0"><img src="example/avatar.png"></a>
+      </div>
+      <div class="media__body">
+        <div class="idea__head">
+          <a href="#0" class="idea__author">Tom Hanks</a>
+          <div class="idea__published">4 January 2015</div>
+        </div>
+        <div class="idea__body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci.
+        </div>
+      </div>
+    </article>
+    <div class="ideas__load-more">
+      <button class="load-more">Bekijk alle 25 reacties</button>
     </div>
-    <div class="media__body">
-      <div class="idea__like">
-        <div class="idea__like-counter">55</div>
-        <button class="idea__like-button">Like</button>
-      </div>
-      <div class="idea__head">
-        <div class="idea__author">Sean Connery</div>
-        <div class="idea__published">2 January 2015</div>
-      </div>
-      <div class="idea__body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci.
-      </div>
-    </div>
-  </article>  <article class="idea idea__comment media">
-    <div class="idea__avatar media__figure">
-      <a href="#0"><img src="example/avatar.png"></a>
-    </div>
-    <div class="media__body">
-      <div class="idea__head">
-        <a href="#0" class="idea__author">Tom Hanks</a>
-        <div class="idea__published">4 January 2015</div>
-      </div>
-      <div class="idea__body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci.
-      </div>
-    </div>
-  </article>  <article class="idea idea__comment media">
-    <div class="idea__avatar media__figure">
-      <a href="#0"><img src="example/avatar.png"></a>
-    </div>
-    <div class="media__body">
-      <div class="idea__head">
-        <a href="#0" class="idea__author">Tom Hanks</a>
-        <div class="idea__published">4 January 2015</div>
-      </div>
-      <div class="idea__body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci.
-      </div>
-    </div>
-  </article>
-  <div class="ideas__load-more">
-    <button class="load-more">Bekijk alle 25 reacties</button>
   </div>
 </section>
 
@@ -277,10 +291,6 @@
     </div>
   </div>
 </article></code></pre>
-        
-        
-          </div> 
-        
 
       </main>
     

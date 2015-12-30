@@ -8,17 +8,16 @@
   font-weight: bold;
   max-width: 100%;
   padding: 4px 20px;
-  min-width: 180px;
   min-height: 42px;
   text-decoration: none;
   color: white;
   border: none;
   text-align: center;
   background-color: $black;
-  
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  transition: all 0.3s;
 
   &:hover {
     cursor: pointer;
@@ -136,6 +135,65 @@
     
     b:after,
     b:before {
+      transform: rotate(90deg);
+    }
+
+  }
+
+}
+
+.button--view {
+  padding-right: 40px;
+  @include icon-right($white);
+
+  &:before {
+    top: 20px;
+    right: 24px;
+  }
+
+  &:after {
+    top: 25px;
+    right: 24px;
+  }
+
+  &:hover {
+    
+    &:before {
+      margin-right: -4px;
+    }
+
+    &:after {
+      margin-right: -4px;
+    }
+
+  }
+
+}
+
+.button--follow {
+  padding-right: 40px;
+  @include icon-plus($white);
+
+  &:before{
+    left: auto;
+    right: 24px;
+    top: 20px;
+    width: 2px;
+    height: 12px;
+  }
+
+  &:after {
+    left: auto;
+    right: 19px;
+    top: 25px;
+    height: 2px;
+    width: 12px;
+  }
+
+  &:hover {
+    
+    &:after,
+    &:before {
       transform: rotate(90deg);
     }
 

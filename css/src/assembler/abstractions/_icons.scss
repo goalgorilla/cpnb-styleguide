@@ -9,6 +9,7 @@
 		width: 3px;
 		height: 13px;
 		content: '';
+		transition: .3s;
 		background-color: $color;
 	}
 
@@ -19,6 +20,7 @@
 		width: 13px;
 		height: 3px;
 		content: '';
+		transition: .3s;
 		background-color: $color;
 	}
 

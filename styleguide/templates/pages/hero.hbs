@@ -4,14 +4,54 @@ title: Hero
 description:
 ---
 
-<h2 class="sectiontitle">Hero homepage</h2>
+<section class="section-small">
+  <h2 class="section--title">Hero default</h2>
+  <div class="field--name-body">
+    <p>The hero is the first section on each detail page (so not present in overviews). </p>
+
+    <ul>
+      <li>It has a large background image. Images should be in greyscale.</li>
+      <li>It has a large title, which should always be the only H1 tag of the page</li>
+      <li>It can optionally have extra info, depending on the page type.</li>
+    </ul>
+  </div>
+
+</section>
     
   {{> hero}}
 
 <pre class="language-html"><code>{{> hero}}</code></pre>
 
-<h2 class="sectiontitle">Hero campaign</h2>
+<section class="section-small">
+  <h2 class="section--title">Hero campaign version</h2>
+  <div class="field--name-body">
+    <p>The campaign version of the hero has 3 more elements:</p>
+    <ul>
+      <li>The campaign logo, subtle in greyscale and has a hover effect. Hidden on mobile.</li>
+      <li>Buttons to let the user take action. We see here the LU version. The AN version has only one (.button-view) button.</li>
+      <li>The status of the project. Either Live or Archived.</li>
+    </ul>
+  </div>
+
+</section>
     
   {{> hero-campaign}}
 
 <pre class="language-html"><code>{{> hero-campaign}}</code></pre>
+
+<section class="section-small">
+  <h2 class="section--title">Hero home version</h2>
+  <div class="field--name-body">
+    <p>The home version of the hero has 3 more elements:</p>
+    <ul>
+      <li>The campaign logo, subtle in greyscale and has a hover effect. Hidden on mobile.</li>
+      <li>Buttons to let the user take action. We see here the LU version. The AN version has only one (.button-view) button.</li>
+      <li>The status of the project. Either Live or Archived.</li>
+    </ul>
+  </div>
+
+</section>
+    
+  {{> hero-home}}
+
+<pre class="language-html"><code>{{> hero-home}}</code></pre>

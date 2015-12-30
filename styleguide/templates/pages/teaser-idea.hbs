@@ -4,24 +4,40 @@ title: Idea teaser
 description:
 ---
 
-<h2 class="sectiontitle">Idea teaser</h2>
-<p> The idea teasers show an idea and do not link to deeper pages. Ideas are only shown for members. We show the author and submitted date with the node. Users can vote (like) on an idea, this increases the number shown with the idea.</p>
-<section class="teaser-ideas--wrapper">  
-  {{> teaser-idea}}
+<section class="section-small">
+  <h2 class="section--title">Idea teaser</h2>
+  <div class="field--name-body">
+    <p> he idea teasers show an idea and do not link to deeper pages. Ideas are only shown for members. We show the author and submitted date with the node. Users can vote (like) on an idea, this increases the number shown with the idea.</p>
+  </div>
+
+</section>
+
+
+<section class="section-small">  
+  <div class="teaser-ideas--wrapper"> 
+    {{> teaser-idea}}
+  </div>
 </section>
 
 <pre class="language-html"><code>{{> teaser-idea}}</code></pre>
 
-<h2 class="sectiontitle">Idea teaser with comment</h2>
-<p> We show comments on ideas in the same style as the idea itself. We strip it of the like element and indent the comment. On small screens the comments are hidden by default.</p>
+<section class="section-small">
+  <h2 class="section--title">Idea teaser with comment</h2>
+  <div class="field--name-body">
+    <p> We show comments on ideas in the same style as the idea itself. We strip it of the like element and indent the comment. On small screens the comments are hidden by default.</p>
+  </div>
 
-<section class="teaser-ideas--wrapper">  
-  {{> teaser-idea}}
-  {{> teaser-idea--comment}}
-  {{> teaser-idea--comment}}
+</section>
 
-  <div class="ideas__load-more">
-    <button class="load-more">Bekijk alle 25 reacties</button>
+<section class="section-small"> 
+  <div class="teaser-ideas--wrapper">  
+    {{> teaser-idea}}
+    {{> teaser-idea--comment}}
+    {{> teaser-idea--comment}}
+
+    <div class="ideas__load-more">
+      <button class="load-more">Bekijk alle 25 reacties</button>
+    </div>
   </div>
 </section>
 
