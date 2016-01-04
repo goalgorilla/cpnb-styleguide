@@ -216,6 +216,10 @@
     display: inline-block;
   }
 
+  @include MQ($desk) {
+    padding: 10px 0;
+  }
+
   .button {
     width: 100%;
     margin-bottom: 10px;
@@ -259,6 +263,7 @@
       line-height: 42px;
       padding-bottom: 10px;
 
+      .share-page__label,
       .icon-share {
         display: none;
       }
@@ -268,7 +273,12 @@
       }
     }
 
-    @include MQ($desk) {
+    @include MQ($plus) {
+      
+      .share-page__label {
+        display: inline-block;
+      }
+
       .icon-share {
         display: inline-block;
         margin-left: 5px;
@@ -291,6 +301,10 @@
     float: right;
   }
 
+  @include MQ($plus) {
+    padding-right: 0;
+  }
+
   .button {
     min-width: 42%;
     outline: 0;
@@ -310,18 +324,28 @@
     text-align: right;
     line-height: 1.5;
     font-weight: normal;
-
+    padding-right: 40px;
     @include icon-right($black);
 
     &:before {
-      top: 17px;
-      right: 5px;
+      top: 20px;
+      right: 24px;
     }
 
     &:after {
-      top: 22px;
-      right: 5px;
+      top: 25px;
+      right: 24px;
     }
+
+    &:hover {
+      
+      &:before,
+      &:after {
+        right: 20px;
+      }
+
+    }
+
   }
 
 }

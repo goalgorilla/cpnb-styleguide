@@ -172,16 +172,33 @@
 }
 
 .ideas__load-more {
-  background: white;
   width: 100%;
-  padding: 20px;
   text-align: center;
-  font-size: 14px;
+  background-color: white;
+  padding: 20px;
 
   .load-more {
-    border: 0;
-    background-color: white;
-    padding: 5px 20px;
+    @extend %button;
+    @extend %button--white;
+    padding-right: 40px; 
     @include icon-down($black);
+    
+    &:before {
+      right: 16px;
+    }
+
+    &:after {
+      right: 21px;
+    }
+
+    &:hover {
+      
+      &:before, 
+      &:after {
+        top: 27px;
+      }
+
+    }
   }
+
 }

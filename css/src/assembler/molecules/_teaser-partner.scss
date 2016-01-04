@@ -1,18 +1,18 @@
 @include MQ($tab) {
 
-  .no-flexbox .teaser-participant--wrapper {
+  .no-flexbox .teaser-partner--wrapper {
     @include clearfix;
   }
 
 }
 
-.flexbox .teaser-participant--wrapper {
+.flexbox .teaser-partner--wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
-.teaser--participant {
+.teaser--partner {
   display: inline-block;
   position: relative;
   background: white;
@@ -21,9 +21,9 @@
   flex: 1 1 300px;
 }
 
-.flexbox .teaser-participant--wrapper {
+.flexbox .teaser-partner--wrapper {
   
-  .teaser--participant {
+  .teaser--partner {
     @include MQ(640px) {
       flex: 0 1 50%;
     } 
@@ -36,7 +36,7 @@
 
 }
 
-.teaser--participant__image {
+.teaser--partner__image {
   width: 100%;
   height: 300px;
   position: relative;
@@ -47,24 +47,24 @@
   background-color: $orange1;
 }
 
-.teaser--participant:nth-of-type(4n+1) .teaser--participant__image {
+.teaser--partner:nth-of-type(4n+1) .teaser--partner__image {
   background-color: $orange1;
 }
 
-.teaser--participant:nth-of-type(4n+2) .teaser--participant__image {
+.teaser--partner:nth-of-type(4n+2) .teaser--partner__image {
   background-color: $orange2;  
 }
 
-.teaser--participant:nth-of-type(4n-1) .teaser--participant__image {
+.teaser--partner:nth-of-type(4n-1) .teaser--partner__image {
   background-color: darken($orange1, 10%);
 }
 
-.teaser--participant:nth-of-type(4n+4) .teaser--participant__image {
+.teaser--partner:nth-of-type(4n+4) .teaser--partner__image {
   background: darken($orange2,10%);  
 }
 
 
-.teaser--participant__readmore {
+.teaser--partner__readmore {
   @include icon-right(white);
   position: absolute;
   font-size: 0;
@@ -82,21 +82,21 @@
 
 }
 
-.teaser--participant__content {
+.teaser--partner__content {
   padding: 10px 30px 30px; 
 }
 
-.teaser--participant__type {
+.teaser--partner__type {
   font-size: 13px;
   line-height: 1.35;
   color: $black;
 }
 
-.teaser--participant__address {
+.teaser--partner__address {
   margin-top: 15px;
 }
 
-.teaser--participant__name {
+.teaser--partner__name {
   line-height: 1.35;
   font-size: 18px;
   margin-top: 0;

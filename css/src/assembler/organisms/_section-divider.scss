@@ -37,15 +37,17 @@
       border-radius: 3px 3px 0 0;
 
       &:before {
-        width: 10px;
+        width: 12px;
         height: 3px;
-        left: 13px;  
+        left: 13px; 
+        top: 18px; 
       }
 
       &:after {
-        width: 10px;
+        width: 12px;
         height: 3px;
-        left: 5px;
+        left: 6px;
+        top: 18px;
       }
 
     }
