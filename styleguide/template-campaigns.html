@@ -34,7 +34,7 @@
           <div class="block__content">
             <form class="search-block-form" action="/" method="post" accept-charset="UTF-8">
               <h2 class="element-invisible">Search form</h2>
-              <div class="form-item form-type-textfield form-item-search-block-form">
+              <div class="form-element form-type-textfield form-item-search-block-form">
                 <label class="element-invisible" for="edit-search-block-form--2">Zoeken </label>
                 <input title="Vul hier je zoekterm(en) in en klik rechts op de loep om te zoeken. " placeholder="Wat zoek je?" type="text" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
               </div>
@@ -181,35 +181,41 @@
 
       <div class="form-wrapper">
 
-        <div class="form-item">
+        <div class="form-element">
           <label class="form-label">Status</label>
-          <select class="form-select" name="select">
-            <option value="value1" selected>Alle</option> 
-            <option value="value2">Live</option>
-            <option value="value3">Materiaal gereed</option>
-          </select>
+          <div class="selector">
+            <select class="form-select" name="select">
+              <option value="value1" selected>Alle</option>
+              <option value="value2">Live</option>
+              <option value="value3">Materiaal gereed</option>
+            </select>
+          </div>
         </div>
 
-        <div class="form-item">
+        <div class="form-element">
           <label class="form-label">Start time</label>
-          <select class="form-select" name="select">
-            <option value="value1" selected>Alle</option> 
-            <option value="value2">2015 December</option>
-            <option value="value3">2015 November</option>
-            <option value="value3">2015 Oktober</option>
-            <option value="value3">2015 September</option>
-          </select>
+            <div class="selector">
+              <select class="form-select" name="select">
+                <option value="value1" selected>Alle</option>
+                <option value="value2">2015 December</option>
+                <option value="value3">2015 November</option>
+                <option value="value3">2015 Oktober</option>
+                <option value="value3">2015 September</option>
+              </select>
+            </div>
         </div>
 
-        <div class="form-item">
+        <div class="form-element">
           <label class="form-label">Thema</label>
-          <select class="form-select" name="select">
-            <option value="value1" selected>Alle</option> 
-            <option value="value2">Theme name</option>
-            <option value="value3">Theme name</option>
-            <option value="value3">Theme name</option>
-            <option value="value3">Theme name</option>
-          </select>
+            <div class="selector">
+              <select class="form-select" name="select">
+                <option value="value1" selected>Alle</option>
+                <option value="value2">Theme name</option>
+                <option value="value3">Theme name</option>
+                <option value="value3">Theme name</option>
+                <option value="value3">Theme name</option>
+              </select>
+            </div>
         </div>
 
       </div>
@@ -483,7 +489,7 @@
               
                 <div class="newsletter__form">
                   <form class="newsletter__signup">
-                    <div class="form-item form-type-textfield form-item-email">
+                    <div class="form-element form-type-textfield form-item-email">
                       <input type="text" placeholder="E-mail" id="edit-email" name="name" value="" size="60" maxlength="60" class="form-text required">
                     </div>
                      <div class="form-actions form-wrapper" id="edit-actions">

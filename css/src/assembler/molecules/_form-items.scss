@@ -1,4 +1,4 @@
-.form-item label {
+.form-element label {
   font-size: 1em;
   display: block;
   padding: .75em .15em .35em;
@@ -14,7 +14,7 @@
   margin-left: 5px;
 }
 
-.form-item {
+.form-element {
   margin-top: 10px;
   margin-bottom: 20px;
   position: relative;
@@ -35,6 +35,8 @@
 
   .form-item {
     margin-bottom: 0;
+    position: relative;
+    margin-top: 10px;
   }
 
   .error {
