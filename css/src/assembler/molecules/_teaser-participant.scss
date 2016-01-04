@@ -9,12 +9,7 @@
 .flexbox .teaser-participant--wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-
-  @include MQ($desk) {
-    justify-content: flex-start;
-  }
-
+  justify-content: flex-start;
 }
 
 .teaser--participant {
@@ -26,19 +21,17 @@
   flex: 1 1 300px;
 }
 
-.teaser-participant--wrapper {
+.flexbox .teaser-participant--wrapper {
   
   .teaser--participant {
-    flex-grow: 0;
+    @include MQ(640px) {
+      flex: 0 1 50%;
+    } 
 
     @include MQ($tab) {
-      margin: 0 10px 20px 10px;
-    }
+      flex: 0 1 (100%/3);
+    } 
 
-    @include MQ($desk) {
-      margin: 0 20px 20px 0;
-    }
-  
   }
 
 }
