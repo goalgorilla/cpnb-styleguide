@@ -93,13 +93,9 @@
               <a class="menu__link" href="/#0">Atoms</a>
               <ul class="menu">
                 <li class="menu__item"><a class="menu__link" href="/colors.html">Colors</a></li>
-                <!--<li class="menu__item"><a class="menu__link" href="/typografie.html">Typografie</a></li>
-                <li class="menu__item"><a class="menu__link" href="/iconen.html">Iconen</a></li>
+                <li class="menu__item"><a class="menu__link" href="/typography.html">Typography</a></li>
                 <li class="menu__item"><a class="menu__link" href="/buttons.html">Buttons</a></li>
-                <li class="menu__item"><a class="menu__link" href="/formelements.html">Form elementen</a></li>
-                <li class="menu__item"><a class="menu__link" href="/labels.html">Labels</a></li>
-                <li class="menu__item"><a class="menu__link" href="/meldingen.html">Meldingen</a></li>
-                <li class="menu__item"><a class="menu__link" href="/tabellen.html">Tabellen</a></li>-->
+                <li class="menu__item"><a class="menu__link" href="/formelements.html">Form elements</a></li>
               </ul>
             </li>
             <li class="menu__item expanded">
@@ -112,8 +108,7 @@
                   <li class="menu__item"><a class="menu__link" href="/teaser-social-media.html">Teaser social media</a></li>
                 <li class="menu__item"><a class="menu__link" href="/teaser-idea.html">Teaser idea</a></li>
                 <li class="menu__item"><a class="menu__link" href="/breadcrumbs.html">Breadcrumbs</a></li>
-                  <!--
-                <li class="menu__item"><a class="menu__link" href="/formitems.html">Form items</a></li>-->
+                <li class="menu__item"><a class="menu__link" href="/formitems.html">Form items</a></li>
               </ul>
             </li>
             <li class="menu__item expanded">
@@ -121,11 +116,12 @@
               <ul class="menu">
                 <li class="menu__item"><a class="menu__link" href="/header.html">Header</a></li>
                 <li class="menu__item"><a class="menu__link" href="/footer.html">Footer</a></li>
-                <!--<li class="menu__item"><a class="menu__link" href="/forms.html">Forms</a></li>-->
+                <li class="menu__item"><a class="menu__link" href="/forms.html">Forms</a></li>
                 <li class="menu__item"><a class="menu__link" href="/newsletter.html">Newsletter</a></li>
                 <li class="menu__item"><a class="menu__link" href="/hero.html">Hero</a></li>
                 <li class="menu__item"><a class="menu__link" href="/section-divider.html">Section divider</a></li>
                 <li class="menu__item"><a class="menu__link" href="/action-bar.html">Action bar</a></li>
+                <li class="menu__item"><a class="menu__link" href="/block-action.html">Action block</a></li>
               </ul>
             </li>
             <li class="menu__item expanded">
@@ -167,68 +163,107 @@
     <div class="l-page"> 
       <main class="l-main" id="main-content">
                           
-        <div class="container">
-  <section class="row">
-    <h2 class="sectiontitle">Labels</h2>
-    <label class="form__label" for="">Label</label>    <pre class="language-html"><code><label class="form__label" for="">Label</label></code></pre>
-  </section>
+        <section class="section-small">
+    <h2 class="section--title">Labels</h2>
+    <div class="form-item">
+      <label class="form__label" for="">Label</label>    </div>
+    <pre class="language-html"><code><label class="form__label" for="">Label</label></code></pre>
+</section>
 
-  <section class="row">
-    <h2 class="sectiontitle">Text input</h2>
-    <input type="text" name="" class="form-text" placeholder="placeholder text">    <pre class="language-html"><code><input type="text" name="" class="form-text" placeholder="placeholder text"></code></pre>
-  </section>
+<section class="section-small">
+    <h2 class="section--title">Text input</h2>
+     <div class="form-item">
+      <div class="description"> This is a description, give some hints to the user </div>
+    </div>
+    <pre class="language-html"><code><div class="description"> This is a description, give some hints to the user </div></code></pre>
+</section>
 
-  <section class="row">
-    <h2 class="sectiontitle">Text area</h2>
-    <textarea class="form-text" rows="8" name="" placeholder="placeholder text"> </textarea>    <pre class="language-html"><code><textarea class="form-text" rows="8" name="" placeholder="placeholder text"> </textarea></code></pre>
-  </section>
+<section class="section-small">
+    <h2 class="section--title">Text input</h2>
+     <div class="form-item">
+      <input type="text" name="" class="form-text" placeholder="placeholder text">    </div>
+    <pre class="language-html"><code><input type="text" name="" class="form-text" placeholder="placeholder text"></code></pre>
+</section>
 
-  <section class="row">
-    <h2 class="sectiontitle">Radio input</h2>
-    <div class="form-type-radio">
-      <input class="form-radio" id="radio" name="radio" type="radio" value="radio-value" >
-      <label class="option" for="radio">radio label </label>
+<section class="section-small">
+    <h2 class="section--title">E-mail input</h2>
+     <div class="form-item">
+      <input type="email" class="form-text" name="" placeholder="e.g. back@tothefuture.com">
+    </div>
+    <pre class="language-html"><code><input type="email" class="form-text" name="" placeholder="e.g. back@tothefuture.com">
+</code></pre>
+</section>
+
+<section class="section-small">
+    <h2 class="section--title">Password input</h2>
+     <div class="form-item">
+      <input class="form-text" type="password" id="" name="">
+    </div>
+    <pre class="language-html"><code><input class="form-text" type="password" id="" name="">
+</code></pre>
+</section>
+
+<section class="section-small">
+    <h2 class="section--title">Text area</h2>
+    <div class="form-item">
+      <textarea class="form-text" rows="8" name="" placeholder="placeholder text"> </textarea>    </div>
+    <pre class="language-html"><code><textarea class="form-text" rows="8" name="" placeholder="placeholder text"> </textarea></code></pre>
+</section>
+
+<section class="section-small">
+    <h2 class="section--title">Radio input</h2>
+    <div class="form-item">
+      <div class="form-type-radio">
+        <input class="form-radio" id="radio" name="radio" type="radio" value="radio-value" >
+        <label class="option" for="radio">radio label </label>
+      </div>
     </div>
     <pre class="language-html"><code><div class="form-type-radio">
   <input class="form-radio" id="radio" name="radio" type="radio" value="radio-value" >
   <label class="option" for="radio">radio label </label>
 </div>
 </code></pre>
-  </section>
+</section>
 
-  <section class="row">
-    <h2 class="sectiontitle">Checkbox input</h2>
-    <div class="form-type-checkbox">
-      <input class="form-checkbox" id="checkbox" type="checkbox" value="checkbox--value" >
-      <label class="option" for="checkbox">checkbox version </label>
-    </div>    <pre class="language-html"><code><div class="form-type-checkbox">
+<section class="section-small">
+    <h2 class="section--title">Checkbox input</h2>
+    <div class="form-item">
+      <div class="form-type-checkbox">
+        <input class="form-checkbox" id="checkbox" type="checkbox" value="checkbox--value" >
+        <label class="option" for="checkbox">checkbox version </label>
+      </div>    </div>
+    <pre class="language-html"><code><div class="form-type-checkbox">
   <input class="form-checkbox" id="checkbox" type="checkbox" value="checkbox--value" >
   <label class="option" for="checkbox">checkbox version </label>
 </div></code></pre>
-  </section>
+</section>
 
-  <section class="row">
-    <h2 class="sectiontitle">Select</h2>
-    <select class="form-select" name="select">
-      <option value="value1" selected>Good Fit</option> 
-      <option value="value2">Renewal</option>
-      <option value="value3">Slam dunk</option>
-      <option value="value3">Speculative</option>
-      <option value="value3">Strategic</option>
-    </select>    <pre class="language-html"><code><select class="form-select" name="select">
+<section class="section-small">
+    <h2 class="section--title">Select</h2>
+     <div class="form-item">
+      <select class="form-select" name="select">
+        <option value="value1" selected>Good Fit</option> 
+        <option value="value2">Renewal</option>
+        <option value="value3">Slam dunk</option>
+        <option value="value3">Speculative</option>
+        <option value="value3">Strategic</option>
+      </select>    </div>
+    <pre class="language-html"><code><select class="form-select" name="select">
   <option value="value1" selected>Good Fit</option> 
   <option value="value2">Renewal</option>
   <option value="value3">Slam dunk</option>
   <option value="value3">Speculative</option>
   <option value="value3">Strategic</option>
 </select></code></pre>
-  </section>
+</section>
 
-  <section class="row">
-    <h2 class="sectiontitle">Submit input</h2>
-    <input type="submit" value="submit" class="button form__submit">    <pre class="language-html"><code><input type="submit" value="submit" class="button form__submit"></code></pre>
-  </section>
-</div>
+<section class="section-small">
+    <h2 class="section--title">Submit input</h2>
+    <div class="form-item">
+      <input type="submit" value="submit" class="form-submit">    </div>
+    <pre class="language-html"><code><input type="submit" value="submit" class="form-submit"></code></pre>
+</section>
+
 
       </main>
     

@@ -1,18 +1,30 @@
 .form-item label {
-  font-size: 14px;
+  font-size: 1em;
   display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-  line-height: 1.5;
+  padding: .75em .15em .35em;
+  position: relative;
+}
+
+.form-required {
+  color: $orange1;
+  font-size: 2em;
+  position: absolute;
+  line-height: 16px;
+  top: 18px;
+  margin-left: 5px;
 }
 
 .form-item {
+  margin-top: 10px;
   margin-bottom: 20px;
+  position: relative;
 
   .description {
     line-height: 1.5;
-    font-size: 13px;
-    margin-top: 3px;
+    font-size: 14px;
+    margin: 0;
+    padding: 3px 10px;
+    background-color: $grey3;
   }
 
   .field-prefix {
@@ -31,6 +43,11 @@
 
 }
 
+.form-type-select,
+.form-type-textfield {
+  max-width: 560px;
+}
+
 .form-type-radio {
   display: inline-block;
   margin-right: 10px;
@@ -42,84 +59,4 @@
     display: inline-block;
   }
 
-}
-
-.form-item-pass {
-  display: inline-block;
-  position: relative;
-  
-  input {
-    padding-right: 65px;  
-  }
-  
-}
-
-.form-item .password-toggle {
-  position: absolute;
-  top: 29px;
-  right: 0;
-  border-left: 1px solid $lightergray;
-  font-size: 13px;
-  padding: 0 10px;
-  cursor: pointer;
-  
-  @include MQ($desk) {
-    top: 32px;
-  }
-
-  input[type='checkbox'] {
-    opacity: 1;
-    position: static;
-    margin-right: 4px;
-  }
-
-}
-
-
-// change password 
-.form-type-password div {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.password-suggestions {
-  display: none !important;
-}
-
-.password-strength {
-  @extend %clearfix;
-  margin: 10px 0;
-}
-
-.password-strength-text {
-  float: left;
-}
-
-.password-strength-title {
-  display: none;
-}
-
-.password-confirm-error .error {
-  border: 0;
-  font-weight: bold;
-  color: #ff203a;
-}
-
-.password-indicator {
-  background-color: $lightestgray;
-  float: left;
-  margin-top: 5px;
-  margin-left: 15px;
-  width: 120px;
-  height: 10px;
-
-  .indicator {
-    background-color: #ff203a;
-    height: 100%;
-  }
-
-}
-
-.password-confirm {
-  margin: 10px 0;
 }

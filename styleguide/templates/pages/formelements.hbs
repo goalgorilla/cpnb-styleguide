@@ -4,46 +4,82 @@ title: Form elementen
 description:
 ---
 
-<div class="container">
-  <section class="row">
-    <h2 class="sectiontitle">Labels</h2>
-    {{> form-label}}
+<section class="section-small">
+    <h2 class="section--title">Labels</h2>
+    <div class="form-item">
+      {{> form-label}}
+    </div>
     <pre class="language-html"><code>{{> form-label}}</code></pre>
-  </section>
+</section>
 
-  <section class="row">
-    <h2 class="sectiontitle">Text input</h2>
-    {{> text-input}}
+<section class="section-small">
+    <h2 class="section--title">Text input</h2>
+     <div class="form-item">
+      <div class="description"> This is a description, give some hints to the user </div>
+    </div>
+    <pre class="language-html"><code><div class="description"> This is a description, give some hints to the user </div></code></pre>
+</section>
+
+<section class="section-small">
+    <h2 class="section--title">Text input</h2>
+     <div class="form-item">
+      {{> text-input}}
+    </div>
     <pre class="language-html"><code>{{> text-input}}</code></pre>
-  </section>
+</section>
 
-  <section class="row">
-    <h2 class="sectiontitle">Text area</h2>
-    {{> textarea}}
+<section class="section-small">
+    <h2 class="section--title">E-mail input</h2>
+     <div class="form-item">
+      {{> email-input}}
+    </div>
+    <pre class="language-html"><code>{{> email-input}}</code></pre>
+</section>
+
+<section class="section-small">
+    <h2 class="section--title">Password input</h2>
+     <div class="form-item">
+      {{> password-input}}
+    </div>
+    <pre class="language-html"><code>{{> password-input}}</code></pre>
+</section>
+
+<section class="section-small">
+    <h2 class="section--title">Text area</h2>
+    <div class="form-item">
+      {{> textarea}}
+    </div>
     <pre class="language-html"><code>{{> textarea}}</code></pre>
-  </section>
+</section>
 
-  <section class="row">
-    <h2 class="sectiontitle">Radio input</h2>
-    {{> radio-input}}
+<section class="section-small">
+    <h2 class="section--title">Radio input</h2>
+    <div class="form-item">
+      {{> radio-input}}
+    </div>
     <pre class="language-html"><code>{{> radio-input}}</code></pre>
-  </section>
+</section>
 
-  <section class="row">
-    <h2 class="sectiontitle">Checkbox input</h2>
-    {{> checkbox-input}}
+<section class="section-small">
+    <h2 class="section--title">Checkbox input</h2>
+    <div class="form-item">
+      {{> checkbox-input}}
+    </div>
     <pre class="language-html"><code>{{> checkbox-input}}</code></pre>
-  </section>
+</section>
 
-  <section class="row">
-    <h2 class="sectiontitle">Select</h2>
-    {{> select-input}}
+<section class="section-small">
+    <h2 class="section--title">Select</h2>
+     <div class="form-item">
+      {{> select-input}}
+    </div>
     <pre class="language-html"><code>{{> select-input}}</code></pre>
-  </section>
+</section>
 
-  <section class="row">
-    <h2 class="sectiontitle">Submit input</h2>
-    {{> submit-button}}
+<section class="section-small">
+    <h2 class="section--title">Submit input</h2>
+    <div class="form-item">
+      {{> submit-button}}
+    </div>
     <pre class="language-html"><code>{{> submit-button}}</code></pre>
-  </section>
-</div>
+</section>

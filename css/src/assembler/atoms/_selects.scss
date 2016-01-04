@@ -17,12 +17,11 @@ select:-moz-focusring {
 
 .selector {
   width: 100%;
-  max-width: 560px;
   cursor: pointer;
   position: relative;
   line-height: 30px;
   background-clip: padding-box;
-  background-color: $grey4;
+  background-color: $white;
   display:inline-block;
   height: 40px;
   border-radius: 0;
@@ -38,7 +37,7 @@ select:-moz-focusring {
   } 
 
   &:hover {
-    background-color: $grey6;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
   }
 
   &:active {
@@ -59,11 +58,11 @@ select:-moz-focusring {
     cursor: pointer;
     z-index: 4;
     font-family: $serif-font;
-    font-size: 14px;
+    font-size: 16px;
     position: relative;
     display: block;
     border-radius: 3px;
-    padding: 5px 40px 5px 30px;
+    padding: 5px 40px 5px 16px;
     background: transparent;
     line-height: inherit;
     text-overflow: ellipsis;

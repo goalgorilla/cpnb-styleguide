@@ -63,7 +63,7 @@
   }
 
   .form-item {
-    margin-bottom: 10px;
+    margin:0px;
 
     @include MQ($tab){
       margin-bottom: 0;
@@ -80,22 +80,23 @@
 
   .form-label {
     color: white;
-    margin-bottom: 5px;
-    font-weight: normal;
   }
 
-  .selector {
-    background-color: white;
+  .selector:hover {
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
   }
+
 
   .form-submit {
     min-width: auto;
     padding: 4px 20px;
     flex: 0 1 49%;
     background-color: white;
+    color: $black;
+    background-image: url('../images/arrow-simple-right.svg');
   
     @include MQ($tab){
-      margin-top: 26px;
+      margin-top: 38px;
       line-height: 30px;
       min-height: 0;
       padding: 5px 30px;
@@ -127,8 +128,13 @@
 
   .form-reset {
     background-color: transparent;
+    background-image: none;
     color: white;
     text-decoration: underline;
+
+    &:hover {
+      box-shadow: none;
+    }
 
     @include MQ($tab){
       line-height: 1;

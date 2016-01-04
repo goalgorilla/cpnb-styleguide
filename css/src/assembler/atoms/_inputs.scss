@@ -53,18 +53,16 @@ textarea {
 .form-text {
   border-radius: 0; // override ios default
   font-family: $serif-font;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 16px;
   color: $black;
-  background-color: $grey1;
+  background-color: $white;
   display: inline-block;
-  padding: 4px 6px;
+  padding: 11px 16px;
+  box-shadow: 0px 0px 0px 2px transparent;
   vertical-align: middle;
   border: 0;
   -webkit-appearance: none;
   width: 100%;
-  max-width: 560px;
-  transition: box-shadow .3s, border-color .3s;
 
   &[disabled] {
     pointer-events: none;
@@ -73,7 +71,7 @@ textarea {
 
   &:focus {
     outline: 0;
-    background-color: $grey6;
+    animation: anim-shadow 0.3s forwards;
   }
 
 }
@@ -81,53 +79,72 @@ textarea {
 // submit
 
 .form-submit {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 14px;
-  line-height: 42px;
-  font-weight: bold;
-  max-width: 100%;
-  padding: 4px 20px;
-  min-width: 245px;
-  min-height: 42px;
-  text-decoration: none;
-  color: $black;
-  font-family: $serif-font;
-  border: none;
-  text-align: center;
-  background-color: $grey3;
-
-  &:hover {
-    background-color: $grey6;
-  }
+  @extend %button;
+  @extend %button--submit;
 }
 
 
 // checkbox
 
-input[type="checkbox"],
-input[type="radio"] {
-  margin:0;
-  border:0;
-  outline:0;
-  opacity:0;
-  position: absolute;
-  overflow: hidden;
+.form-radio,
+.form-checkbox {
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s;
+  background: $white;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  position: relative;
+  margin: 0 10px 0 0;
+  z-index: 1000;
 
-  @if $oldie {
-    display: inline;
+  &:hover {
+    background: $orange2;
+  }
+
+  &:checked {
+    background: $orange1;
+  }
+
+  &:checked::before {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    content: '\2713';
+    display: inline-block;
+    font-size: 26.66667px;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  &:checked::after {
+    animation: click-wave 0.65s;
+    background: $orange1;
+    content: '';
+    display: block;
     position: relative;
-    top: 2px;
+    z-index: 100;
   }
 
 }
 
+.form-radio {
+  border-radius: 50%;
 
-.form-radio,
-.form-checkbox {
-  margin: 0 .5em 0 0;
-  cursor: pointer;
+  &:checked::before {
+    content: '\25C9';
+  }
+
+  &::after {
+    border-radius: 50%;
+  }
+
 }
 
 
@@ -139,72 +156,14 @@ input[type="radio"] {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    padding-top: 8px;
-    line-height: 1.5em;
+    padding: 0.65em 0.1em;
     width: auto;
 
     a {
       text-decoration: underline;
-      color: $blue;
-    }
-
-    @if $oldie {
-      display: inline;
-      padding-left: .1em;
-    }
-
-    &:before {
-      content: "";
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      top: 4px;
-      margin-right: 10px;
-      position: relative;
-      background: url(../images/box-radio-blue.png) -109px 0 no-repeat;
-
-      @if $oldie {
-        display: none;
-      }
-
+      color: $black;
     }
 
   }
-
 }
 
-
-.form-checkbox + .option::before {
-  background-position: -22px 0;
-}
-
-.form-checkbox:checked + .option::before {
-  background-position: -44px 0;
-}
-
-input[type="radio"].extra_bundle + .option::before {
-  background: url(../images/box-radio-blue.png) -66px 0 no-repeat;
-}
-
-input[type="radio"].extra_bundle:checked + .option::before {
-  background: url(../images/box-radio-blue.png) -44px 0 no-repeat;
-}
-
-
-// Radio
-input[type="radio"] + .option::before {
-  background: url(../images/box-radio-blue.png) -109px 0 no-repeat;
-}
-
-input[type="radio"]:checked + .option::before {
-  background-position: -151px 0;
-}
-
-html.js .form-autocomplete {
-  background-position: 99% 7px;
-
-  &.throbbing {
-    background-position: 99% -13px;
-  }
-
-}

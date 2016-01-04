@@ -90,14 +90,22 @@
     padding: 10px 30px;  
   }
 
+  .newsletter__signup {
+    position: relative;
+  }
+
+  .form-wrapper,
   .form-item {
     margin: 0;
   }
 
   .form-text {
-    border: 0;
-    width: 100%;
-    background-color: $white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    &:focus {
+      animation: anim-shadow-grey .3s forwards;
+    }
   }
 
   .form-submit {
@@ -114,28 +122,9 @@
     line-height: 29px;
     padding: 0;
     min-height: 27px; 
+    background-image: url('../images/arrow-simple-right.svg'); 
   }
 
-}
-
-.newsletter__signup {
-  @include icon-right($black);
-
-  &:before {
-    right: 11px;
-    top: 6px;
-    z-index: 3;
-    width: 3px;
-    height: 10px;
-  }
-
-  &:after {
-    right: 11px;
-    top: 12px;
-    width: 3px;
-    height: 10px;
-  } 
-  
 }
 
 .newsletter__socialmedia {

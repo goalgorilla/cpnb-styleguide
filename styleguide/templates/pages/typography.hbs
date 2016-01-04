@@ -1,0 +1,66 @@
+---
+basename: Typography
+title: Typography
+---
+
+<!-- #Typography -->
+<section class="section-small">
+  <h2 class="section--title">Fonts</h2>
+  <div class="field--name-body">
+    <p>We use two fonts on the site:</p>
+    <h2>PT-Sans: is used for body text, navigation, article copy and buttons</h2></li>
+    <h2 style="font-family: 'PT-serif';">PT-Serif: is used in form elements and section headings</h2>
+    <p>{{> type}}</p>
+  </div>
+
+  <pre class="language-html"><code>{{> type}}</code></pre>
+</section>
+
+<section class="section-small">
+  <h2 class="section--title">Headings</h2>
+  <div class="field--name-body">
+  <p>Headings in body copy are fairly simple. No extra styling nor change of color.</p>
+    {{> headings}}
+  </div>
+
+  <pre class="language-html"><code>{{> headings}}</code></pre>
+</section>
+
+
+<section class="section-small">
+  
+  <h2 class="section--title">Paragraphs</h2>
+  <div class="field--name-body">
+    <p>Paragraphs have a standard margin bottom of 20px. You can use the .lead class for a summary text styling.</p>
+
+    {{> paragraphs-lead}}
+    {{> paragraphs}}
+    {{> paragraphs}}
+
+  </div>
+
+  <pre class="language-html"><code>{{> paragraphs-lead}}</code></pre>
+  <pre class="language-html"><code>{{> paragraphs}}</code></pre>
+</section>
+
+<section class="section-small">
+  
+  <h2 class="section--title">Anchors</h2>
+  <div class="field--name-body">
+    {{> anchors}}
+  </div>
+  
+  <pre class="language-html"><code>{{> anchors}}</code></pre>
+
+</section>
+
+<section class="section-small">
+  
+  <h2 class="section--title">Lists</h2>
+  <div class="field--name-body">
+    {{> unordered-list}}
+  </div>
+  
+  <pre class="language-html"><code>{{> unordered-list}}</code></pre>
+
+</section>

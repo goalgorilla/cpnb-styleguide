@@ -140,7 +140,10 @@
 }
 
 .campaigntopics__list {
-  column-count: 3;
+  @include MQ($tab){
+    column-count: 3;
+  }
+  
 }
 
 .campaigntopics__item {

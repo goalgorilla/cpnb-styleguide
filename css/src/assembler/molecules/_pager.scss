@@ -83,15 +83,5 @@
 }
 
 .button--loadmore {
-  padding-right: 40px; 
-  min-width: auto;
-  @include icon-down($white);
-  
-  &:before{
-    right: 10px;
-  }
-
-  &:after {
-    right: 16px;
-  }
+  @extend %button--loadmore;
 }
