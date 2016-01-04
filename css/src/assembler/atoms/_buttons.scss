@@ -159,7 +159,6 @@
 .button--view {
   padding-right: 40px;
   @include icon-right($white);
-  transform-origin: 50% 0;
 
   &:before {
     top: 20px;
@@ -173,12 +172,9 @@
 
   &:hover {
     
-    &:before {
-      transform: rotate(135deg) translateY(-5px) translateX(-5px) scale(1.25);
-    }
-
+    &:before,
     &:after {
-      transform: rotate(-135deg) translateY(5px) translateX(-5px) scale(1.25);
+      right: 20px;
     }
 
   }
@@ -189,24 +185,20 @@
 .button--loadmore {
   padding-right: 40px; 
   @include icon-down($white);
-  transform-origin: top center;
   
-  &:before{
+  &:before {
     right: 16px;
   }
 
   &:after {
-    right: 22px;
+    right: 21px;
   }
 
   &:hover {
     
-    &:before {
-      transform: rotate(-45deg) translateY(2px) translateX(-2px) scale(1.25);
-    }
-
+    &:before, 
     &:after {
-      transform: rotate(45deg) translateY(2px) translateX(2px) scale(1.25);
+      top: 27px;
     }
 
   }

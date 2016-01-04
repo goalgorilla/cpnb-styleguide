@@ -24,30 +24,26 @@ select:-moz-focusring {
   background-color: $white;
   display:inline-block;
   height: 40px;
-  border-radius: 0;
+  white-space: nowrap;
+  overflow: hidden;
 
   @include icon-down($black);
 
   &:before {
     right: 16px;
+    top: 20px; 
   }
 
   &:after {
-    right: 22px;
+    right: 21px;
+    top: 20px; 
   } 
 
   &:hover {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
   }
 
-  &:active {
-
-    &:before {
-      background-position: -75px -193px;
-    }
-  }
-
-// removes the default arrow in ie10 +11
+  // removes the default arrow in ie10 +11
   select::-ms-expand {
     display: none;
   }
@@ -61,12 +57,13 @@ select:-moz-focusring {
     font-size: 16px;
     position: relative;
     display: block;
-    border-radius: 3px;
     padding: 5px 40px 5px 16px;
     background: transparent;
     line-height: inherit;
     text-overflow: ellipsis;
     overflow: hidden;
+    white-space: nowrap;
+    height: 40px;
     -moz-appearance: window;
     -moz-padding-end: 19px;
     -webkit-appearance: none;
@@ -77,11 +74,13 @@ select:-moz-focusring {
 }
 
 .lt-ie10 {
-  .selector:before {
+  .selector:before,
+  .selector:after {
       display:none;
   }
 
   select {
     padding: .4em;
   }
+
 }

@@ -9,12 +9,7 @@
 .flexbox .teaser-vacancy--wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-
-  @include MQ($desk) {
-    justify-content: flex-start;
-  }
-
+  justify-content: flex-start;
 }
 
 .teaser--vacancy {
@@ -30,7 +25,6 @@
 .teaser-vacancy--wrapper {
   
   .teaser--vacancy {
-    flex-grow: 0;
 
     &:nth-of-type(4n+1):hover .teaser--vacancy__image:after {
       background-color: $orange2;
@@ -48,13 +42,25 @@
       background-color: $bright-blue;
     }
 
+  }
+
+}
+
+.flexbox .teaser-vacancy--wrapper {
+  
+  .teaser--vacancy {
+    @include MQ(640px) {
+      flex: 0 1 50%;
+    } 
+
     @include MQ($tab) {
-      flex: 1 1 33%;
-    }
+      flex: 0 1 (100%/3);
+    } 
 
   }
 
 }
+
 
 .teaser--vacancy__image {
   width: 100%;

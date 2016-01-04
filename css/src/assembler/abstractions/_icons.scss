@@ -55,23 +55,23 @@
 		width: 8px;
 		height: 2px;
 		content: '';
-		transform: rotate(-45deg) translateY(-50%);
+		transform: rotate(-45deg);
 		background-color: $color;
-		transition: transform .3s;
-		top: 50%;
+		transition: all .3s;
+		top: 25px;
 	}
 
 	&:after {
 		position: absolute;
-		right: 6px;
+		right: 5px;
 		display: block;
 		width: 8px;
 		height: 2px;
 		content: '';
-		transform: rotate(45deg) translateY(-50%);
-		transition: transform .3s;
+		transform: rotate(45deg);
+		transition: all .3s;
 		background-color: $color;
-		top: 50%;
+		top: 25px;
     bottom: auto;
 	}
 
