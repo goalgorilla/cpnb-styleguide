@@ -39,7 +39,7 @@
     attach: function (context, settings) {
 
       // Pass focused state to visible parent element.
-      $('.form-item .form-select')
+      $('.form-element .form-select')
         .wrap('<div class="selector"></div>')
         .focus(function(){
           $(this).parent('.selector').addClass('focused');

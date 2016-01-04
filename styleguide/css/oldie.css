@@ -565,6 +565,7 @@ body.logged-in .l-region--header{top:29px}
 .flexbox .block-filter .content{-webkit-flex:1 1 75%;-ms-flex:1 1 75%;flex:1 1 75%;padding:20px}
 .block-filter .form-element{margin:0 2% 0 0;display:inline-block;width:31%;vertical-align:top}
 .block-filter .form-element:last-of-type{margin-right:0}
+.block-filter .form-element .form-item{margin:0}
 .block-filter .form-label{color:#fff}
 .block-filter .selector:hover{box-shadow:0 1px 2px 0 rgba(0,0,0,.3)}
 .block-filter .form-submit{min-width:auto;-webkit-flex:0 1 49%;-ms-flex:0 1 49%;flex:0 1 49%;background-color:#fff;color:#222;background-image:url(../images/arrow-simple-right.svg);margin-top:38px;line-height:30px;min-height:0;padding:5px 30px;width:100%}
