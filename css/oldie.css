@@ -326,7 +326,7 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .idea__avatar{display:none;display:block;margin-right:20px}
 .idea__like{float:right;text-align:center;margin:0 0 20px 20px;width:140px}
 .idea__like-counter{letter-spacing:-2px;font-weight:700;font-family:PT-Serif,sans-serif;font-size:50px;line-height:56px;margin-bottom:20px}
-.idea__like-button{border:0;background-color:#e6e6e6;font-weight:700;width:100%;padding:10px;font-size:1.2em}
+.idea__like-button{width:100%;font-size:1.2em}
 .idea__author{font-weight:700;display:block;font-size:16px;margin-bottom:5px}
 .idea__published{color:#9e978a;margin-bottom:5px}
 .idea__body{clear:both;clear:none}
@@ -334,8 +334,9 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .idea-submit__form{position:relative}
 .idea-submit__form .form-element,.idea-submit__form .form-item{margin-bottom:0}
 .idea-submit__input{background-color:#f2f1ef;font-size:14px;padding-top:15px;padding-bottom:15px;padding-right:120px}
+.idea-submit__input:focus{-webkit-animation:anim-shadow-grey .3s forwards;animation:anim-shadow-grey .3s forwards}
 .idea-submit__button{transition:all .3s;position:absolute;right:0;bottom:0;min-width:100px;width:auto;line-height:40px;margin-top:0}
-.idea-submit__button:hover{background-color:#c88c57;color:#fff}
+.idea-submit__button:hover{background-color:#cac5c1}
 .ideas__load-more{width:100%;text-align:center;background-color:#fff;padding:20px}
 .ideas__load-more .load-more{padding-right:40px;position:relative}
 .ideas__load-more .load-more:before{position:absolute;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(-45deg);transform:rotate(-45deg);background-color:#222;transition:all .3s;top:25px}
@@ -563,6 +564,7 @@ body.logged-in .l-region--header{top:29px}
 .block-filter .content{padding:10px}
 .no-flexbox .block-filter .content{float:right;width:80%;padding:20px}
 .flexbox .block-filter .content{-webkit-flex:1 1 75%;-ms-flex:1 1 75%;flex:1 1 75%;padding:20px}
+.block-filter .form-wrapper{margin-bottom:0}
 .block-filter .form-element{margin:0 2% 0 0;display:inline-block;width:31%;vertical-align:top}
 .block-filter .form-element:last-of-type{margin-right:0}
 .block-filter .form-element .form-item{margin:0}
