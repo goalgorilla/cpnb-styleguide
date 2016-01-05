@@ -174,6 +174,18 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .table th{text-align:left;font-weight:700;font-size:16px;vertical-align:bottom;padding:20px}
 .table td{line-height:35px;position:relative;vertical-align:middle;width:auto;display:table-cell;padding:5px 20px}
 .table td:before{position:absolute;width:45%;font-weight:700;padding:2px 10px 2px 0;left:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;content:attr(data-title);display:none}
+ul.tabs.primary{max-width:960px;display:block;margin:0 auto}
+ul.tabs.primary:after{content:' ';display:table;clear:both}
+ul.tabs.primary li{float:left;list-style:none;margin:0;display:block}
+ul.tabs.primary li a{margin:0;padding:4px 16px;border:0;border-top:5px solid #623588;display:block;color:#222;text-decoration:none;font-size:14px;background:0 0;transition:all .25s;transition-timing-function:ease}
+ul.tabs.primary li:nth-child(odd) a{border-top:5px solid #623588}
+ul.tabs.primary li:nth-child(odd) a:active,ul.tabs.primary li:nth-child(odd) a:hover{background:#623588;color:#fff}
+ul.tabs.primary li:nth-child(even) a{border-top:5px solid #c88c57}
+ul.tabs.primary li:nth-child(even) a:active,ul.tabs.primary li:nth-child(even) a:hover{background:#c88c57;color:#fff}
+ul.tabs.primary li:nth-child(3n) a{border-top:5px solid rgba(93,170,220,.9)}
+ul.tabs.primary li:nth-child(3n) a:active,ul.tabs.primary li:nth-child(3n) a:hover{background:rgba(93,170,220,.9);color:#fff}
+ul.tabs.primary li:nth-child(4n) a{border-top:5px solid rgba(175,0,134,.9)}
+ul.tabs.primary li:nth-child(4n) a:active,ul.tabs.primary li:nth-child(4n) a:hover{background:rgba(175,0,134,.9);color:#fff}
 .menu{margin:0}
 .block--system-main-menu .menu__item,.block--system-user-menu .menu__item,.block--thema-menu .menu__item{list-style:none}
 .block--system-main-menu .menu__link,.block--system-user-menu .menu__link,.block--thema-menu .menu__link{line-height:44px;font-weight:700;display:block;padding:0 10px;color:#fff}
@@ -724,3 +736,4 @@ body.logged-in .l-region--header{top:29px}
 .form-campaign-feedback .form-text,.form-campaign-feedback .selector{background-color:#f2f1ef}
 .form-campaign-feedback .form-text:focus,.form-campaign-feedback .selector:focus{-webkit-animation:anim-shadow-grey .3s forwards;animation:anim-shadow-grey .3s forwards}
 .form-campaign-feedback .form-submit{background-image:url(../images/arrow-simple-right.svg)}
+@media (max-width:1023px){ul.tabs.primary{padding:0 20px}}
