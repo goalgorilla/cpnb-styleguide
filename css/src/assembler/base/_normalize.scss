@@ -23,6 +23,11 @@ template {
   display: none;
 }
 
+div.messages {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 // Correct overflow not hidden in IE 9/10/11.
 svg:not(:root) {
   overflow: hidden;
