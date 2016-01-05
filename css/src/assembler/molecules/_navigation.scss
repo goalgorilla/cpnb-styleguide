@@ -111,7 +111,7 @@
     .menu__link {
       color: $bright-blue;
 
-      &:hover {
+      &:hover, &.active {
         color: $bright-blue;
       }
     } 

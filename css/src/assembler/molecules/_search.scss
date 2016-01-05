@@ -6,8 +6,10 @@
     margin: 0;
   }
 
-  .form-item label {
-    padding: 0;
+  .form-element, .form-item {
+    label {
+      padding: 0;
+    }
   }
 
   .form-type-textfield {
@@ -95,7 +97,7 @@
       position: relative;
     } 
 
-    .form-item {
+    .form-item, .form-element {
       margin: 0;
     }
 
