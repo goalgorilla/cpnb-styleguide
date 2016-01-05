@@ -325,7 +325,10 @@ gulp.task('copy', ['usemin'], function() {
       .pipe(gulp.dest(path.dist + '/js')),
 
     gulp.src(['styleguide/example/**/*'])
-      .pipe(gulp.dest(path.dist + '/example'))  
+      .pipe(gulp.dest(path.dist + '/example')),
+
+    gulp.src(['styleguide/designs/**/*'])
+      .pipe(gulp.dest(path.dist + '/designs'))    
   );
 });
 

@@ -134,13 +134,10 @@
 }
 
 .idea-submit__input {
-  border: 0;
   background-color: $grey1;
   font-size: 14px;
-  padding: 15px;
-  display: block;
-  width: 100%;
-  font-family: $serif-font;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   @include MQ($tab) {
     padding-right: 120px;
@@ -148,26 +145,23 @@
 }
 
 .idea-submit__button {
-  border: 0;
-  display: block;
   width: 100%;
-  padding: 15px;
-  background-color: $grey5;
-  font-family: $serif-font;
-  font-weight: bold;
-  font-size: 14px;
+  margin-top: 2px;
   transition: all 0.3s;
 
   @include MQ($tab) {
     position: absolute;
     right: 0;
-    top: 0;
+    bottom: 0;
     min-width: 100px;
     width: auto;
+    line-height: 40px;
+    margin-top: 0;
   }
 
   &:hover {
-    background-color: $grey2;
+    background-color: $orange2;
+    color: white;
   }
 }
 

@@ -6,7 +6,7 @@
     <meta name="msapplication-tap-highlight" content="no">  
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 
-    <title>CPNB StyleGuide - Forms</title>
+    <title>CPNB StyleGuide - Article</title>
     <meta name="description" content="">
 
     <!--[if (gte IE 9)|(gt IEMobile 7)|(!IE)]><!-->
@@ -23,7 +23,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/cpnblogo.png">
   </head>
 
-  <body class="forms">
+  <body class="article with-actionbar">
     <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
     
     <div class="l-region--header">
@@ -168,155 +168,68 @@
       <main class="l-main" id="main-content">
                           
         <section class="section-small">
-  <h2 class="section--title">Default form</h2>
-  <div class="field--name-body"> 
-    <p>This is an example of a random form with example elements</p>
+  <h2 class="section--title">Article</h2>
+  <div class="field--name-body">
+    <p>Articles can be used in various templates where you want you be flexible in your copy. </p>
   </div>
 
-  <form class="form-name">
+  <article class="view-mode-full">
+        
+      <label>A label </label>
+      <h1>Heading 1</h1>
+      <p class="lead">Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
   
-    <div class="form-wrapper">
+      <p>Etiam porta sem malesuada magna mollis euismod. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum.</p>
   
-      <div class="form-element form-type-checkboxes">
-        <div class="form-checkboxes"> 
-          <div class="form-item form-type-checkbox">
-            <input type="checkbox" id="checkbox-1" value="1" class="form-checkbox" />  
-            <label class="option" for="checkbox-1">Sed posuere consectetur est at lobortis.</label>
-          </div>
+      <h2>Heading 2</h2>
+      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+  
+      <ul>
+        <li>Aenean eu leo quam. </li>
+        <li>Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus.</li>
+        <li> Curabitur blandit tempus porttitor.</li>
+        <li>Nullam quis risus eget urna mollis ornare vel eu leo.</li>
+      </ul>
+  
+      <h3>Heading 3</h3>
+      <p>Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis.</p>
+  
+      <h4>Heading 4</h4>
+      <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod.</p>
+  
+      <ol>
+        <li>Dapibus</li>
+        <li>Adipiscing</li>
+        <li>Venenatis</li>
+        <li>Dolor</li>
+      </ol>
+  
+      <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus auctor fringilla. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur.</p>
+  
+      <p><a href="#0" class="button button--blue"> Blue button</a><a href="#0" class="button button--pink button--view"> Pink view button</a>
+  
+    </article></section>
+    
+  <div class="action-bar">
+  
+    <div class="container">
+  
+        <div class="share-page">
+          <label class="share-page__label">Deel deze pagina</label>
+          <a href="#0" class="icon-button icon-share icon-mail">Twitter</a>
+          <a href="#0" class="icon-button icon-share icon-facebook">Facebook</a>
+          <a href="#0" class="icon-button icon-share icon-twitter">Twitter</a>
+          <a href="#0" class="icon-button icon-share icon-linkedin">Linkedin</a>
+          <a href="#0" class="icon-button icon-share icon-whatsapp">Whatsapp</a>
+          <a href="#0" class="icon-button icon-share icon-print">Print</a>
         </div>
-      </div>
   
   
-      <div class="form-element form-type-textfield">
-        <label for="voornaam">Voornaam <span class="form-required" title="This field is required.">*</span></label>
-        <input class="text-full form-text required" type="text" id="voornaam" value="" size="60" maxlength="40" />
-      </div>
   
-      <div class="form-element form-type-select">
-        <div class="form-item">
-            <label for="selectdemo" class="form-label">Status</label>
-            <select id="selectdemo" class="form-select" name="select">
-              <option value="value1" selected>Alle</option> 
-              <option value="value2">Live</option>
-              <option value="value3">Materiaal gereed</option>
-            </select>
-        </div>
-        <div class="description">Lorem Aenean Justo Mollis</div>
-      </div>
   
-      <div class="form-element form-type-textfield">
-        <label for="achternaam">Achternaam <span class="form-required" title="This field is required.">*</span></label>
-        <input class="text-full form-text required" type="text" id="achternaam" value="" size="60" maxlength="40" />
-      </div>
-  
-      <div class="form-element form-type-textfield">
-        <label for="voorletters">Organisatie <span class="form-required" title="This field is required.">*</span></label>
-        <input type="text" class="form-text form-autocomplete" value="" />
-        <div class="description">Lorem Aenean Justo Mollis</div>
-      </div>
-  
-      <div class="form-element form-type-radios">
-        <label for="edit-commerce-fieldgroup-pane-group-personal-details-field-name-title-und">
-          Ipsum Adipiscing <span class="form-required" title="This field is required.">*</span>
-        </label>
-        <div class="form-radios">
-          <div class="form-item form-type-radio">
-            <input type="radio" id="radio1" name="manvrouw" value="Mr." class="form-radio" />  
-            <label class="option" for="radio1">Commodo </label>
-          </div>
-          <div class="form-item form-type-radio">
-            <input type="radio" id="radio2" name="manvrouw" value="Ms." class="form-radio" />  
-            <label class="option" for="radio2">Vulputate </label>
-          </div>
-          <div class="form-item form-type-radio">
-            <input type="radio" id="radio3" name="manvrouw" value="Mrs." class="form-radio" />  
-            <label class="option" for="radio3">Risus Purus </label>
-          </div>
-        </div>
-      </div>
     </div>
   
-    <div class="form-wrapper form-actions">
-      <div class="form-item">
-        <input type="submit" id="edit-submit" name="op" value="Sollicitudin Cursus" class="form-submit">
-      </div>
-      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-    </div>
-  
-  </form>
-    <pre class="language-html"><code><form class="form-name">
-
-  <div class="form-wrapper">
-
-    <div class="form-element form-type-checkboxes">
-      <div class="form-checkboxes"> 
-        <div class="form-item form-type-checkbox">
-          <input type="checkbox" id="checkbox-1" value="1" class="form-checkbox" />  
-          <label class="option" for="checkbox-1">Sed posuere consectetur est at lobortis.</label>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="form-element form-type-textfield">
-      <label for="voornaam">Voornaam <span class="form-required" title="This field is required.">*</span></label>
-      <input class="text-full form-text required" type="text" id="voornaam" value="" size="60" maxlength="40" />
-    </div>
-
-    <div class="form-element form-type-select">
-      <div class="form-item">
-          <label for="selectdemo" class="form-label">Status</label>
-          <select id="selectdemo" class="form-select" name="select">
-            <option value="value1" selected>Alle</option> 
-            <option value="value2">Live</option>
-            <option value="value3">Materiaal gereed</option>
-          </select>
-      </div>
-      <div class="description">Lorem Aenean Justo Mollis</div>
-    </div>
-
-    <div class="form-element form-type-textfield">
-      <label for="achternaam">Achternaam <span class="form-required" title="This field is required.">*</span></label>
-      <input class="text-full form-text required" type="text" id="achternaam" value="" size="60" maxlength="40" />
-    </div>
-
-    <div class="form-element form-type-textfield">
-      <label for="voorletters">Organisatie <span class="form-required" title="This field is required.">*</span></label>
-      <input type="text" class="form-text form-autocomplete" value="" />
-      <div class="description">Lorem Aenean Justo Mollis</div>
-    </div>
-
-    <div class="form-element form-type-radios">
-      <label for="edit-commerce-fieldgroup-pane-group-personal-details-field-name-title-und">
-        Ipsum Adipiscing <span class="form-required" title="This field is required.">*</span>
-      </label>
-      <div class="form-radios">
-        <div class="form-item form-type-radio">
-          <input type="radio" id="radio1" name="manvrouw" value="Mr." class="form-radio" />  
-          <label class="option" for="radio1">Commodo </label>
-        </div>
-        <div class="form-item form-type-radio">
-          <input type="radio" id="radio2" name="manvrouw" value="Ms." class="form-radio" />  
-          <label class="option" for="radio2">Vulputate </label>
-        </div>
-        <div class="form-item form-type-radio">
-          <input type="radio" id="radio3" name="manvrouw" value="Mrs." class="form-radio" />  
-          <label class="option" for="radio3">Risus Purus </label>
-        </div>
-      </div>
-    </div>
   </div>
-
-  <div class="form-wrapper form-actions">
-    <div class="form-item">
-      <input type="submit" id="edit-submit" name="op" value="Sollicitudin Cursus" class="form-submit">
-    </div>
-    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-  </div>
-
-</form></code></pre>
-</section>
-
       </main>
     
         <footer class="l-footer" role="contentinfo">
