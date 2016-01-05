@@ -82,11 +82,7 @@
 }
 
 .idea__like-button {
-  border: 0;
-  background-color: $grey3;
-  font-weight: bold;
   width: 100%;
-  padding: 10px;
 
   @include MQ($desk){
     font-size: 1.2em;
@@ -139,6 +135,10 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
+  &:focus {
+    animation: anim-shadow-grey 0.3s forwards;
+  }
+
   @include MQ($tab) {
     padding-right: 120px;
   }
@@ -160,8 +160,7 @@
   }
 
   &:hover {
-    background-color: $orange2;
-    color: white;
+    background-color: $grey5;
   }
 }
 

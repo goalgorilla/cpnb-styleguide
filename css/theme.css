@@ -301,7 +301,7 @@ ul.tabs.primary li:nth-child(4n) a:active,ul.tabs.primary li:nth-child(4n) a:hov
 .idea__avatar,.idea__comment{display:none}
 .idea__like{float:right;width:100px;text-align:center;margin:0 0 20px 20px}
 .idea__like-counter{font-size:24px;letter-spacing:-2px;font-weight:700;font-family:PT-Serif,sans-serif}
-.idea__like-button{border:0;background-color:#e6e6e6;font-weight:700;width:100%;padding:10px}
+.idea__like-button{width:100%}
 .idea__author{font-weight:700;font-size:20px;margin-bottom:10px;display:block}
 .idea__published{color:#9e978a;margin-bottom:5px}
 .idea__body{clear:both}
@@ -309,8 +309,9 @@ ul.tabs.primary li:nth-child(4n) a:active,ul.tabs.primary li:nth-child(4n) a:hov
 .idea-submit__form{position:relative}
 .idea-submit__form .form-element,.idea-submit__form .form-item{margin-bottom:0}
 .idea-submit__input{background-color:#f2f1ef;font-size:14px;padding-top:15px;padding-bottom:15px}
+.idea-submit__input:focus{-webkit-animation:anim-shadow-grey .3s forwards;animation:anim-shadow-grey .3s forwards}
 .idea-submit__button{width:100%;margin-top:2px;transition:all .3s}
-.idea-submit__button:hover{background-color:#c88c57;color:#fff}
+.idea-submit__button:hover{background-color:#cac5c1}
 .ideas__load-more{width:100%;text-align:center;background-color:#fff;padding:20px}
 .ideas__load-more .load-more{padding-right:40px;position:relative}
 .ideas__load-more .load-more:before{position:absolute;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(-45deg);transform:rotate(-45deg);background-color:#222;transition:all .3s;top:25px}
@@ -487,6 +488,7 @@ body.logged-in .l-region--header{top:29px}
 .block-filter{max-width:960px;margin:25px auto 0;position:relative}
 .block-filter .block-title{background:#fff;font-size:2em;padding:20px}
 .block-filter .content{padding:10px}
+.block-filter .form-wrapper{margin-bottom:0}
 .block-filter .form-element,.block-filter .form-element .form-item{margin:0}
 .block-filter .form-label{color:#fff}
 .block-filter .selector:hover{box-shadow:0 1px 2px 0 rgba(0,0,0,.3)}
@@ -683,6 +685,7 @@ body.logged-in .l-region--header{top:29px}
 .site-name{width:235px;background-size:auto 70px;padding-left:80px}
 .site-name .logo{width:155px;height:70px;background-size:135px auto;background-position:10px 15px}
 .shoppingcart{border-right:1px solid rgba(255,255,255,.2);position:absolute;float:none;right:90px;top:0}
+.shoppingcart:hover .shoppingcart_no span{background-color:#8ea931}
 .shoppingcart_no{height:70px}
 .shoppingcart_no span{top:16px}
 .shoppingcart_amount{padding-top:16px}
@@ -818,6 +821,7 @@ body.logged-in .l-region--header{top:29px}
 .search-is-open .block--search{display:block;opacity:1}
 .search-is-open .block--system-main-menu,.search-is-open .block--system-user-menu,.search-is-open .l-header{display:none}
 .search-is-open .l-region--header{z-index:99}
+.search-is-open .l-page{display:none}
 .l-header .container{position:relative;margin:0 auto;max-width:960px}
 .l-header{top:30px}
 .menu-is-open .l-header{background:rgba(0,0,0,.3)}
