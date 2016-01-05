@@ -174,6 +174,18 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .table th{text-align:left;font-weight:700;font-size:16px;vertical-align:bottom;padding:20px}
 .table td{line-height:35px;position:relative;vertical-align:middle;width:auto;display:table-cell;padding:5px 20px}
 .table td:before{position:absolute;width:45%;font-weight:700;padding:2px 10px 2px 0;left:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;content:attr(data-title);display:none}
+ul.tabs.primary{max-width:960px;display:block;margin:0 auto}
+ul.tabs.primary:after{content:' ';display:table;clear:both}
+ul.tabs.primary li{float:left;list-style:none;margin:0;display:block}
+ul.tabs.primary li a{margin:0;padding:4px 16px;border:0;border-top:5px solid #623588;display:block;color:#222;text-decoration:none;font-size:14px;background:0 0;transition:all .25s;transition-timing-function:ease}
+ul.tabs.primary li:nth-child(odd) a{border-top:5px solid #623588}
+ul.tabs.primary li:nth-child(odd) a:active,ul.tabs.primary li:nth-child(odd) a:hover{background:#623588;color:#fff}
+ul.tabs.primary li:nth-child(even) a{border-top:5px solid #c88c57}
+ul.tabs.primary li:nth-child(even) a:active,ul.tabs.primary li:nth-child(even) a:hover{background:#c88c57;color:#fff}
+ul.tabs.primary li:nth-child(3n) a{border-top:5px solid rgba(93,170,220,.9)}
+ul.tabs.primary li:nth-child(3n) a:active,ul.tabs.primary li:nth-child(3n) a:hover{background:rgba(93,170,220,.9);color:#fff}
+ul.tabs.primary li:nth-child(4n) a{border-top:5px solid rgba(175,0,134,.9)}
+ul.tabs.primary li:nth-child(4n) a:active,ul.tabs.primary li:nth-child(4n) a:hover{background:rgba(175,0,134,.9);color:#fff}
 .menu{margin:0}
 .block--system-main-menu .menu__item,.block--system-user-menu .menu__item,.block--thema-menu .menu__item{list-style:none}
 .block--system-main-menu .menu__link,.block--system-user-menu .menu__link,.block--thema-menu .menu__link{line-height:44px;font-weight:700;display:block;padding:0 10px;color:#fff}
@@ -443,6 +455,7 @@ select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}
 .search-is-open .block--search{display:block;opacity:1}
 .search-is-open .block--system-main-menu,.search-is-open .block--system-user-menu,.search-is-open .l-header{display:none}
 .search-is-open .l-region--header{z-index:99}
+.search-is-open .l-page{display:none}
 .mask-modal{position:fixed;left:0;top:0;z-index:1;display:none;width:100%;height:100%;background-color:rgba(0,0,0,.75);opacity:0}
 .search-is-open .mask-modal{display:block;opacity:1}
 .search-is-open .mask-modal .close-modal{position:absolute;top:30px;left:90%;background-color:#000;width:56px;height:56px;border:0;text-indent:-999em;font-size:0;border-radius:4px}
@@ -455,6 +468,7 @@ body.logged-in .l-header{top:59px}
 .site-name{float:left;position:relative;z-index:1;background:url(../images/brandcolors.svg) 0 0/auto 42px no-repeat;overflow:hidden;width:235px;background-size:auto 70px;padding-left:80px}
 .site-name .logo{font-size:0;background:url(../images/cpnblogo.svg) 10px 15px/80px no-repeat #fff;display:block;width:155px;height:70px;background-size:135px auto}
 .shoppingcart{width:90px;font-size:11px;overflow:hidden;display:block;color:#fff;position:absolute;float:none;top:0;right:0;border-right:0}
+.shoppingcart:hover .shoppingcart_no span{background-color:#8ea931}
 .shoppingcart_no{float:left;position:relative;width:35px;font-size:10px;background:url(../images/icon-cart.svg) 5px/70% no-repeat;height:70px}
 .shoppingcart_no span{background-color:#9fbd37;border-radius:8px;display:inline-block;padding:1px 3px;position:absolute;right:0;font-weight:700;top:16px}
 .shoppingcart_amount{float:left;width:54px;height:42px;line-height:16px;padding:16px 0 4px 2px}
@@ -724,3 +738,4 @@ body.logged-in .l-region--header{top:29px}
 .form-campaign-feedback .form-text,.form-campaign-feedback .selector{background-color:#f2f1ef}
 .form-campaign-feedback .form-text:focus,.form-campaign-feedback .selector:focus{-webkit-animation:anim-shadow-grey .3s forwards;animation:anim-shadow-grey .3s forwards}
 .form-campaign-feedback .form-submit{background-image:url(../images/arrow-simple-right.svg)}
+@media (max-width:1023px){ul.tabs.primary{padding:0 20px}}

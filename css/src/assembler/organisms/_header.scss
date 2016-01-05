@@ -84,6 +84,10 @@
     float: none;
     right: 90px;
     top: 0;
+
+    &:hover .shoppingcart_no span {
+      background-color: darken($green, 5%);
+    }
   }
 
   @include MQ($desk) {
