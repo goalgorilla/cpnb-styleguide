@@ -28,7 +28,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba($black, 0.8);
+    background: rgba($black, 0.25);
   }
   
 }
@@ -116,7 +116,7 @@
 
     @include MQ($tab) {
       width: auto;
-      margin-right: 20px;
+      margin-right: 10px;
       margin-bottom: 0;
     }
     
@@ -130,10 +130,6 @@
 
   @include MQ($desk) {
     height: 490px;
-  }
-
-  &:before {
-    background: rgba($black, 0.5);
   }
 
   .hero__content {
@@ -286,23 +282,10 @@
     position: absolute;
     top: 30%;
     right: 10px;
-    width: 160px;
-    height: 160px;
-    background-color: $white;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    transition: all 0.4s ease-in-out, transform 0.4s ease-in-out;
-    transform: scale(0.6);
-    -webkit-filter: grayscale(90%);
-    opacity: 0.8;
-    -webkit-backface-visibility: hidden;
-    transform-origin: top right;
 
-
-    &:hover {
-      -webkit-filter: grayscale(0);
-      transform: scale(1);
+    img {
+      height: 120px;
+      width: auto;
     }
 
   }

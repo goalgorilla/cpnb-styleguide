@@ -52,7 +52,7 @@
 
   @include MQ($tab) {
     position: relative;
-    padding: 0;
+    padding: 0 0 0 30px;
     display: inline-block;
     width: auto;
     height: auto;
