@@ -183,7 +183,8 @@
 
     <div class="hero__content">
       
-      <div class="hero--campaign__logo" style="background-image: url('/example/KBW2015.jpg')">
+      <div class="hero--campaign__logo">
+        <img src="example/KBW2015.jpg" alt="">
       </div>
 
       <h1 class="hero__title"> Vivamus sagittis lacus vel dolor auctor</h1>
@@ -205,7 +206,6 @@
 </section>
 
 <section class="section-default">
-  <div class="container">
     <div class="block-campaigndata">
       <div class="campaigndata__item">
         <label>Thema</label>
@@ -247,20 +247,13 @@
 
     </div>
 
-    <div class="block-campaigndata">
-      <div class="campaigndata__item">
-        <label>3 redenen om mee te doen</label>
-        <div><span>1.</span>Al 61 jaar een groot succes in heel Nederland.</div>
-      </div> 
-
-      <div class="campaigndata__item">
-        <div><span>2.</span>Veel interactief POS materiaal beschikbaar.</div>
-      </div> 
-
-      <div class="campaigndata__item">
-        <div><span>3.</span>Vluchten. Een thema waar je wel wat mee moet doen.</div>
-      </div> 
-
+    <div class="block-campaignreasons">
+      <label>3 redenen om mee te doen</label>
+      <ol class="campaignreasons">
+        <li class="campaignreason">Al 61 jaar een groot succes in heel Nederland.</li> 
+        <li class="campaignreason">Veel interactief POS materiaal beschikbaar.</li> 
+        <li class="campaignreason">Vluchten. Een thema waar je wel wat mee moet doen.</li> 
+      </ol>
     </div>
 
     <div class="block-campaigndata">
@@ -296,12 +289,16 @@
   <div class="block-campaigntopics">
     <label>Vakinformatie</label>
     <ul class="campaigntopics__list">
-      <li><a href="#0" class="campaigntopics__item">Topic title</a></li>
-      <li><a href="#0" class="campaigntopics__item">Topic title</a></li>
-      <li><a href="#0" class="campaigntopics__item">Topic title</a></li>
-      <li><a href="#0" class="campaigntopics__item">Topic title</a></li>
-      <li><a href="#0" class="campaigntopics__item">Topic title</a></li>
-      <li><a href="#0" class="campaigntopics__item">Topic title</a></li>
+      <li><a href="#0" class="campaigntopics__item">Materialen bestellen</a></li>
+      <li><a href="#0" class="campaigntopics__item">Boekenweekgeschenk</a></li>
+      <li><a href="#0" class="campaigntopics__item">Boekenweekessay</a></li>
+      <li><a href="#0" class="campaigntopics__item">Boekenweekmagazine</a></li>
+      <li><a href="#0" class="campaigntopics__item">Gratis reizen met NS</a></li>
+      <li><a href="#0" class="campaigntopics__item">Tournee met Duitse auteurs</a></li>
+      <li><a href="#0" class="campaigntopics__item">Beeldmateriaal</a></li>
+      <li><a href="#0" class="campaigntopics__item">Nieuwsbrieven</a></li>
+      <li><a href="#0" class="campaigntopics__item">Boekenweek Vice Versa</a></li>
+      <li><a href="#0" class="campaigntopics__item">Boekenbal voor lezers</a></li>
     </ul>
   </div>
 
@@ -716,7 +713,6 @@
         <a href="#0" class="icon-button icon-share icon-twitter">Twitter</a>
         <a href="#0" class="icon-button icon-share icon-linkedin">Linkedin</a>
         <a href="#0" class="icon-button icon-share icon-whatsapp">Whatsapp</a>
-        <a href="#0" class="icon-button icon-share icon-print">Print</a>
       </div>
 
     </div>
