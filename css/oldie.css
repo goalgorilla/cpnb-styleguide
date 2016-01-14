@@ -260,7 +260,7 @@ ul.tabs.primary li:nth-child(4n) a:active,ul.tabs.primary li:nth-child(4n) a:hov
 .teaser-relevant-campaign--wrapper .teaser--campaign:nth-of-type(4n+4){border-bottom:7px solid #c88c57}
 .teaser-relevant-campaign--wrapper .teaser--campaign:nth-of-type(4n+4):hover .teaser--campaign__image:after{background-color:rgba(128,38,136,.9)}
 .flexbox .teaser-campaign--wrapper .teaser--campaign{-webkit-flex:0 1 33.33333%;-ms-flex:0 1 33.33333%;flex:0 1 33.33333%}
-.teaser--campaign__logo{position:absolute;top:0;right:0;background-color:#fff;border-radius:0 0 0 15px;width:75px;height:75px;line-height:55px;padding:10px;text-align:center;z-index:2}
+.teaser--campaign__logo{position:absolute;top:0;right:0;background-color:#fff;border-radius:0 0 0 10px;width:75px;height:75px;line-height:55px;padding:10px;text-align:center;z-index:2}
 .teaser--campaign__logo img{width:auto;height:auto;max-height:55px;max-width:55px;vertical-align:middle}
 .teaser--campaign__image{width:100%;height:300px;position:relative;overflow:hidden;background-size:cover;background-position:center center;background-color:rgba(175,0,134,.9)}
 .teaser--campaign__image:after{display:block;position:absolute;content:'';top:0;left:0;width:100%;height:100%;background:rgba(93,170,220,.7);z-index:1;transition:background-color .5s}
@@ -528,7 +528,7 @@ body.logged-in .l-region--header{top:29px}
 .hero__readmore span:after{position:absolute;right:5px;display:block;content:'';-webkit-transform:rotate(45deg);transform:rotate(45deg);transition:all .3s;background-color:#222;bottom:auto}
 .hero__readmore span:before{width:12px;height:3px;left:13px;top:18px}
 .hero__readmore span:after{width:12px;height:3px;left:6px;top:18px}
-.hero--campaign__logo{display:none;display:block;position:absolute;top:30%;right:10px;background-color:#fff;padding:10px;width:75px;height:75px;border-radius:0 0 0 20px;text-align:center;line-height:55px;margin-top:30px}
+.hero--campaign__logo{display:none;display:block;position:absolute;top:30%;right:10px;background-color:#fff;padding:10px;width:75px;height:75px;border-radius:0 0 0 10px;text-align:center;line-height:55px;margin-top:30px}
 .hero--campaign__logo img{width:auto;height:auto;max-height:55px;max-width:55px;vertical-align:middle}
 .section-divider{width:100%;min-height:10px;position:relative}
 .section-divider:after{width:100%;height:10px;display:block;content:'';position:absolute;top:100%;background:linear-gradient(to right,#623588 0,#623588 5%,rgba(175,0,134,.9) 5%,rgba(175,0,134,.9) 15%,rgba(128,38,136,.9) 15%,rgba(128,38,136,.9) 35%,rgba(175,0,134,.9) 35%,rgba(175,0,134,.9) 45%,rgba(186,90,65,.9) 45%,rgba(186,90,65,.9) 54%,#c88c57 54%,#c88c57 78%,rgba(186,90,65,.9) 78%,rgba(186,90,65,.9) 88%,rgba(93,170,220,.9) 88%,rgba(93,170,220,.9) 100%)}

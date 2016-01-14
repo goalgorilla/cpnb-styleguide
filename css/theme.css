@@ -233,7 +233,7 @@ ul.tabs.primary li:nth-child(4n) a:active,ul.tabs.primary li:nth-child(4n) a:hov
 .teaser-relevant-campaign--wrapper .teaser--campaign:nth-of-type(4n-1):hover .teaser--campaign__image:after{background-color:#c88c57}
 .teaser-relevant-campaign--wrapper .teaser--campaign:nth-of-type(4n+4){border-bottom:7px solid #c88c57}
 .teaser-relevant-campaign--wrapper .teaser--campaign:nth-of-type(4n+4):hover .teaser--campaign__image:after{background-color:rgba(128,38,136,.9)}
-.teaser--campaign__logo{position:absolute;top:0;right:0;background-color:#fff;border-radius:0 0 0 15px;width:75px;height:75px;line-height:55px;padding:10px;text-align:center;z-index:2}
+.teaser--campaign__logo{position:absolute;top:0;right:0;background-color:#fff;border-radius:0 0 0 10px;width:75px;height:75px;line-height:55px;padding:10px;text-align:center;z-index:2}
 .teaser--campaign__logo img{width:auto;height:auto;max-height:55px;max-width:55px;vertical-align:middle}
 .teaser--campaign__image{width:100%;height:300px;position:relative;overflow:hidden;background-size:cover;background-position:center center;background-color:rgba(175,0,134,.9)}
 .teaser--campaign__image:after{display:block;position:absolute;content:'';top:0;left:0;width:100%;height:100%;background:rgba(93,170,220,.7);z-index:1;transition:background-color .5s}
@@ -708,7 +708,7 @@ body.logged-in .l-region--header{top:29px}
 .hero--home .hero__title span{padding:7px 50px 7px 20px}
 .hero--home p{max-width:500px;margin:0 0 0 auto}
 .hero__readmore{text-indent:0;padding-left:30px;color:#fff;font-weight:400;line-height:32px;font-size:16px}
-.hero--campaign__logo{display:block;position:absolute;top:30%;right:10px;background-color:#fff;padding:10px;width:75px;height:75px;border-radius:0 0 0 20px;text-align:center;line-height:55px}
+.hero--campaign__logo{display:block;position:absolute;top:30%;right:10px;background-color:#fff;padding:10px;width:75px;height:75px;border-radius:0 0 0 10px;text-align:center;line-height:55px}
 .hero--campaign__logo img{width:auto;height:auto;max-height:55px;max-width:55px;vertical-align:middle}
 .section-divider__readmore{display:block;max-width:960px;position:relative;padding-left:60px;font-weight:400;line-height:32px;font-size:.875em;margin:auto}
 .section-divider__readmore span{position:relative;position:absolute;bottom:0;left:10px;background:#fff;width:32px;height:32px;border-radius:3px 3px 0 0}
