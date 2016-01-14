@@ -174,20 +174,24 @@
 
 }
 
-.section-news .button--loadmore {
-  background-color: $bright-blue;
+.section-news {
+  .button--loadmore, .pager.pager-load-more li a {
+    background-color: $bright-blue;
 
-  &:hover {
-    background-color: $deep-blue;
+    &:hover {
+      background-color: $deep-blue;
+    }
+
   }
-
 }
 
-.section-campaigns .button--loadmore {
-  background-color: $bright-purple;
+.section-campaigns {
+  .button--loadmore, .pager.pager-load-more li a {
+    background-color: $bright-purple;
 
-  &:hover {
-    background-color: $deep-purple;
+    &:hover {
+      background-color: $deep-purple;
+    }
+
   }
-
 }
