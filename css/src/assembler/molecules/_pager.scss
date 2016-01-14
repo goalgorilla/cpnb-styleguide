@@ -84,4 +84,10 @@
 
 .button--loadmore {
   @extend %button--loadmore;
+  background-color: $bright-blue;
+
+  &:hover {
+    background-color: $deep-blue;
+  }
+
 }

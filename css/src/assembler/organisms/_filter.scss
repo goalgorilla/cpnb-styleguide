@@ -2,6 +2,7 @@
   max-width: $desk;
   margin: 25px auto 0;
   position: relative;
+  background-color: $grey2;
 
   @include MQ($tab) {
 
@@ -24,6 +25,7 @@
     background: white;
     font-size: 2em;
     padding: 20px;
+    color: $grey2;
 
     @include MQ($tab){
 
@@ -87,10 +89,6 @@
     }
   }
 
-  .form-label {
-    color: white;
-  }
-
   .selector:hover {
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
   }
@@ -138,7 +136,6 @@
   .form-reset {
     background-color: transparent;
     background-image: none;
-    color: white;
     text-decoration: underline;
 
     &:hover {
@@ -157,23 +154,3 @@
 
 }
 
-
-
-// styles
-.block-filter--news {
-  background-color: $bright-blue;
-  
-  .block-title {
-    color: $bright-blue;
-  }
-
-}
-
-.block-filter--campaigns {
-  background-color: $bright-purple;
-  
-  .block-title {
-    color: $bright-purple;
-  }
-
-}
