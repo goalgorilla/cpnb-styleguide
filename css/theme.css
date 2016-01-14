@@ -62,8 +62,9 @@ ul{list-style:none;padding-left:0}
 .list-horizontal li{display:inline-block}
 b,strong{font-weight:700}
 address{font-style:normal;margin-bottom:.6em}
-.button,.form-submit,.ideas__load-more .load-more,.pager li a,.pager__item--current{position:relative;display:inline-block;vertical-align:middle;font-size:14px;line-height:42px;font-weight:700;max-width:100%;padding:4px 20px;min-height:42px;text-decoration:none;color:#fff;border:none;text-align:center;background-color:#222;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;box-shadow:0 1px 3px 0 transparent;transition:all .3s}
-.button:hover,.form-submit:hover,.ideas__load-more .load-more:hover,.pager li a:hover,.pager__item--current:hover{cursor:pointer;box-shadow:0 1px 3px 0 rgba(0,0,0,.3)}
+.button,.form-submit,.ideas__load-more .load-more,.pager li a,.pager.pager-load-more li a,.pager__item--current{position:relative;display:inline-block;vertical-align:middle;font-size:14px;line-height:42px;font-weight:700;max-width:100%;padding:4px 20px;min-height:42px;text-decoration:none;color:#fff;border:none;text-align:center;background-color:#222;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;box-shadow:0 1px 3px 0 transparent;transition:all .3s}
+.button:hover,.form-submit:hover,.ideas__load-more .load-more:hover,.pager li a:hover,.pager.pager-load-more li a:hover,.pager__item--current:hover{cursor:pointer;box-shadow:0 1px 3px 0 rgba(0,0,0,.3)}
+.pager.pager-load-more li a{height:auto}
 .button--purple{background-color:rgba(128,38,136,.9)}
 .button--purple:hover{background-color:#623588}
 .button--pink{background-color:rgba(175,0,134,.9)}
@@ -92,12 +93,12 @@ address{font-style:normal;margin-bottom:.6em}
 .button--view:before{top:20px;right:24px}
 .button--view:after{top:25px;right:24px}
 .button--view:hover:after,.button--view:hover:before{right:20px}
-.button--loadmore{padding-right:40px;position:relative}
-.button--loadmore:before{position:absolute;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(-45deg);transform:rotate(-45deg);background-color:#fff;transition:all .3s;top:25px}
-.button--loadmore:after{position:absolute;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(45deg);transform:rotate(45deg);transition:all .3s;background-color:#fff;top:25px;bottom:auto}
-.button--loadmore:before{right:16px}
-.button--loadmore:after{right:21px}
-.button--loadmore:hover:after,.button--loadmore:hover:before{top:27px}
+.button--loadmore,.pager.pager-load-more li a{padding-right:40px;position:relative}
+.button--loadmore:before,.pager.pager-load-more li a:before{position:absolute;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(-45deg);transform:rotate(-45deg);background-color:#fff;transition:all .3s;top:25px}
+.button--loadmore:after,.pager.pager-load-more li a:after{position:absolute;display:block;width:8px;height:2px;content:'';-webkit-transform:rotate(45deg);transform:rotate(45deg);transition:all .3s;background-color:#fff;top:25px;bottom:auto}
+.button--loadmore:before,.pager.pager-load-more li a:before{right:16px}
+.button--loadmore:after,.pager.pager-load-more li a:after{right:21px}
+.button--loadmore:hover:after,.button--loadmore:hover:before,.pager.pager-load-more li a:hover:after,.pager.pager-load-more li a:hover:before{top:27px}
 .button--follow{padding-right:40px;position:relative;padding-left:20px}
 .button--follow:after,.button--follow:before{position:absolute;content:'';transition:.3s;background-color:#fff}
 .button--follow:before{left:auto;right:24px;top:20px;width:2px;height:12px}
@@ -558,10 +559,10 @@ body.logged-in .l-region--header{top:29px}
 .teaser-intro--participant .teaser-intro__title span,.teaser-intro--relevant-campaign .teaser-intro__title span{color:rgba(186,90,65,.9)}
 .teaser-intro--insight__image{display:none}
 .section-small{padding:25px 10px;max-width:960px;margin:0 auto;position:relative}
-.section-news .button--loadmore{background-color:rgba(93,170,220,.9)}
-.section-news .button--loadmore:hover{background-color:#639cbf}
-.section-campaigns .button--loadmore{background-color:rgba(128,38,136,.9)}
-.section-campaigns .button--loadmore:hover{background-color:#623588}
+.section-news .button--loadmore,.section-news .pager.pager-load-more li a{background-color:rgba(93,170,220,.9)}
+.section-news .button--loadmore:hover,.section-news .pager.pager-load-more li a:hover{background-color:#639cbf}
+.section-campaigns .button--loadmore,.section-campaigns .pager.pager-load-more li a{background-color:rgba(128,38,136,.9)}
+.section-campaigns .button--loadmore:hover,.section-campaigns .pager.pager-load-more li a:hover{background-color:#623588}
 .block-campaigndata{background-color:#fff;padding:20px;font-size:17px;font-weight:700;margin-bottom:30px}
 .block-campaigndata label{color:rgba(93,170,220,.9);font-size:14px;display:block}
 .block-campaigndata h4{font-size:26px;line-height:1.35;margin:0}
