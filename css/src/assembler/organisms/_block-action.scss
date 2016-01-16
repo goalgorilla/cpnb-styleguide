@@ -1,6 +1,15 @@
+.pane-bundle-start-action {
+  max-width: $desk;
+  margin: 0 auto;
+}
 .block-action {
   margin-top: 50px;
   background-color: white; //need for transparency in button
+
+  .pane-bundle-start-action & {
+    margin-top: -5px;
+    margin-bottom: 25px;
+  }
 
   .block-title {
     background-color: white;
