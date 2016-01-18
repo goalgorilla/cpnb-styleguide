@@ -1,5 +1,5 @@
 %button,
-.pager.pager-load-more li a,
+.pager .load-more-wrapper a,
 .button {
   position: relative;
   display: inline-block;
@@ -27,7 +27,7 @@
   }
 
 }
-.pager.pager-load-more li a {
+.pager .load-more-wrapper a {
   height: auto;
 }
 
@@ -186,7 +186,7 @@
 }
 
 %button--loadmore,
-.pager.pager-load-more li a,
+.pager .load-more-wrapper a,
 .button--loadmore {
   padding-right: 40px; 
   @include icon-down($white);
