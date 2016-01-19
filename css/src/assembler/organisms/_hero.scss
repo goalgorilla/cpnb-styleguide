@@ -47,6 +47,10 @@
     max-width: 580px;
   }
 
+  @include MQ($tab) {
+    max-width: 800px;
+  }
+
   .hero__title {
     margin: 10px 0;
     z-index: 4;
@@ -265,17 +269,17 @@
     right: 10px;
     background-color: white;
     padding: 10px;
-    width: 75px;
-    height: 75px;
+    width: 95px;
+    height: 95px;
     border-radius: 0 0 0 10px;
     text-align: center;
-    line-height: 55px;
+    line-height: 75px;
 
     img {
       width: auto;
       height: auto;
-      max-height: 55px;
-      max-width: 55px;
+      max-height: 75px;
+      max-width: 75px;
       vertical-align: middle;
     }
 
@@ -283,6 +287,14 @@
 
   @include MQ($desk) {
     margin-top: 30px;
+    width: 145px;
+    height: 145px;
+    line-height: 125px;
+
+    img {
+      max-height: 125px;
+      max-width: 125px;
+    }
   }
 
 }

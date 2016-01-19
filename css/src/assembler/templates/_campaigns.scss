@@ -9,6 +9,7 @@
     color: $bright-blue;
     font-size: 14px;
     display: block;
+    margin-bottom: 5px;
   }
 
   h4 {
@@ -38,8 +39,8 @@
   @include MQ($tab) {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
   }
+
 }
 
 .campaigndata__item {

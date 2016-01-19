@@ -28,7 +28,7 @@
     border-bottom: 7px solid $bright-purple;
 
     &:hover .teaser--campaign__image:after {
-      background-color: $bright-blue;
+      background-color: $bright-purple;
     }
   }
 
@@ -36,7 +36,7 @@
     border-bottom: 7px solid $bright-blue;
 
     &:hover .teaser--campaign__image:after {
-      background-color: $bright-purple;
+      background-color: $bright-blue;
     }
   }
 
@@ -44,7 +44,7 @@
     border-bottom: 7px solid $deep-purple;
 
     &:hover .teaser--campaign__image:after {
-      background-color: $pink;
+      background-color: $deep-purple;
     }
   }
 
@@ -52,53 +52,11 @@
     border-bottom: 7px solid $pink;
 
     &:hover .teaser--campaign__image:after {
-      background-color: $deep-purple;
+      background-color: $pink;
     }
   }
 
 }
-
-.teaser-relevant-campaign--wrapper {
-
-  .teaser--campaign {
-
-    &:nth-of-type(4n+1) {
-      border-bottom: 7px solid $bright-purple;
-
-      &:hover .teaser--campaign__image:after {
-        background-color: $orange1;
-      }
-    }
-
-    &:nth-of-type(4n+2) {
-      border-bottom: 7px solid $orange1;
-
-      &:hover .teaser--campaign__image:after {
-        background-color: $deep-purple;
-      }
-    }
-
-    &:nth-of-type(4n-1) {
-      border-bottom: 7px solid $deep-purple;
-
-      &:hover .teaser--campaign__image:after {
-        background-color: $orange2;
-      }
-    }
-
-    &:nth-of-type(4n+4) {
-      border-bottom: 7px solid $orange2;
-
-      &:hover .teaser--campaign__image:after {
-        background-color: $bright-purple;
-      }
-    }
-
-
-  }
-
-}
-
 
 .flexbox .teaser-campaign--wrapper {
   
@@ -145,7 +103,6 @@
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  background-color: $pink;
 
   &:after {
     display: block;
@@ -155,45 +112,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba($bright-blue,0.7);
+    background: rgba($black,0.3);
     z-index: 1;
     transition: background-color 0.5s;
-  }
-
-}
-
-.teaser--campaign:nth-of-type(4n+1) .teaser--campaign__image:after {
-  background: rgba($bright-blue,0.7);
-}
-
-.teaser--campaign:nth-of-type(4n+2) .teaser--campaign__image:after {
-  background: rgba($bright-purple,0.7);  
-}
-
-.teaser--campaign:nth-of-type(4n-1) .teaser--campaign__image:after {
-  background: rgba($pink,0.7);
-}
-
-.teaser--campaign:nth-of-type(4n+4) .teaser--campaign__image:after {
-  background: rgba($deep-purple,0.7);  
-}
-
-.teaser-relevant-campaign--wrapper {
-
-  .teaser--campaign:nth-of-type(4n+1) .teaser--campaign__image:after {
-    background: rgba($orange1,0.7);
-  }
-
-  .teaser--campaign:nth-of-type(4n+2) .teaser--campaign__image:after {
-    background: rgba($deep-purple,0.7);  
-  }
-
-  .teaser--campaign:nth-of-type(4n-1) .teaser--campaign__image:after {
-    background: rgba($orange2,0.7);
-  }
-
-  .teaser--campaign:nth-of-type(4n+4) .teaser--campaign__image:after {
-    background: rgba($bright-purple,0.7);  
   }
 
 }

@@ -22,30 +22,6 @@
 }
 
 
-.teaser-vacancy--wrapper {
-  
-  .teaser--vacancy {
-
-    &:nth-of-type(4n+1):hover .teaser--vacancy__image:after {
-      background-color: $orange2;
-    }
-
-    &:nth-of-type(4n+2):hover .teaser--vacancy__image:after {
-      background-color: $orange1;
-    }
-
-    &:nth-of-type(4n-1):hover .teaser--vacancy__image:after {
-      background-color: $bright-purple;
-    }
-
-    &:nth-of-type(4n+4):hover .teaser--vacancy__image:after {
-      background-color: $bright-blue;
-    }
-
-  }
-
-}
-
 .flexbox .teaser-vacancy--wrapper {
   
   .teaser--vacancy {
@@ -80,29 +56,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba($orange2, 0.7);
     z-index: 1;
     transition: background-color 0.5s;
   }
 
 }
-
-.teaser--vacancy:nth-of-type(4n+1) .teaser--vacancy__image:after {
-  background-color: rgba($orange2, 0.7);
-}
-
-.teaser--vacancy:nth-of-type(4n+2) .teaser--vacancy__image:after {
-  background-color: rgba($orange1, 0.7);  
-}
-
-.teaser--vacancy:nth-of-type(4n-1) .teaser--vacancy__image:after {
-  background-color: rgba($bright-purple, 0.7);
-}
-
-.teaser--vacancy:nth-of-type(4n+4) .teaser--vacancy__image:after {
-  background-color: rgba($bright-blue, 0.7);  
-}
-
 
 .teaser--vacancy__readmore {
   @include icon-right(white);
