@@ -82,6 +82,7 @@
   display: inline-block;
 }
 
+.pager .load-more-wrapper a,
 .button--loadmore {
   @extend %button--loadmore;
   background-color: $bright-blue;
