@@ -248,7 +248,7 @@ ul.tabs.primary li:nth-child(4n) a:active,ul.tabs.primary li:nth-child(4n) a:hov
 .teaser--campaign:nth-of-type(4n+2){border-bottom:7px solid rgba(93,170,220,.9)}
 .teaser--campaign:nth-of-type(4n+2):hover .teaser--campaign__image:after{background-color:rgba(93,170,220,.9)}
 .teaser--campaign:nth-of-type(4n-1){border-bottom:7px solid #623588}
-.teaser--campaign:nth-of-type(4n-1):hover .teaser--campaign__image:after{background-color:#623588}
+.teaser--campaign:nth-of-type(4n-1):hover .teaser--campaign__image:after{background-color:rgba(98,53,136,.9)}
 .teaser--campaign:nth-of-type(4n+4){border-bottom:7px solid rgba(175,0,134,.9)}
 .teaser--campaign:nth-of-type(4n+4):hover .teaser--campaign__image:after{background-color:rgba(175,0,134,.9)}
 .flexbox .teaser-campaign--wrapper .teaser--campaign{-webkit-flex:0 1 33.33333%;-ms-flex:0 1 33.33333%;flex:0 1 33.33333%}
