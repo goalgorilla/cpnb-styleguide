@@ -306,7 +306,7 @@ gulp.task('usemin', ['cssmin'], function() {
 // ===================================================
 // Duplicatin' for style guide and buildin' for deploy
 // ===================================================
-gulp.task('copy', ['cssmin'], function() {
+gulp.task('copy', ['usemin'], function() {
   return merge(
     gulp.src(['fonts/**/*'])
       .pipe(gulp.dest(path.site + '/fonts'))
