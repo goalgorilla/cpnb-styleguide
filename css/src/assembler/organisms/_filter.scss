@@ -25,7 +25,6 @@
     background: white;
     font-size: 2em;
     padding: 20px;
-    color: $grey2;
 
     @include MQ($tab){
 
@@ -101,7 +100,7 @@
     background-color: white;
     color: $black;
     background-image: url('../images/arrow-simple-right.svg');
-  
+
     @include MQ($tab){
       margin-top: 38px;
       line-height: 30px;
@@ -153,4 +152,3 @@
   }
 
 }
-

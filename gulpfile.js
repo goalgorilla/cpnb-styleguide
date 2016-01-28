@@ -289,7 +289,7 @@ gulp.task('script', function() {
  * multiple files as an array.
  */
 
-gulp.task('usemin', ['assemble', 'cssmin'], function() {
+gulp.task('usemin', ['cssmin'], function() {
   return gulp.src(glob.html)
     .pipe($.foreach(function(stream, file) {
       return stream
@@ -306,7 +306,7 @@ gulp.task('usemin', ['assemble', 'cssmin'], function() {
 // ===================================================
 // Duplicatin' for style guide and buildin' for deploy
 // ===================================================
-gulp.task('copy', ['usemin'], function() {
+gulp.task('copy', ['cssmin'], function() {
   return merge(
     gulp.src(['fonts/**/*'])
       .pipe(gulp.dest(path.site + '/fonts'))
@@ -328,7 +328,7 @@ gulp.task('copy', ['usemin'], function() {
       .pipe(gulp.dest(path.dist + '/example')),
 
     gulp.src(['styleguide/designs/**/*'])
-      .pipe(gulp.dest(path.dist + '/designs'))    
+      .pipe(gulp.dest(path.dist + '/designs'))
   );
 });
 
@@ -368,9 +368,12 @@ gulp.task('watch', function() {
   gulp.watch([
     glob.includes,
     glob.pages,
-    glob.js,
     glob.layouts
-  ], ['script', 'copy', 'assemble']);
+  ], ['assemble']);
+
+  gulp.watch([
+    glob.js
+  ], ['script', 'copy']);
 });
 
 
@@ -379,4 +382,4 @@ gulp.task('watch', function() {
 // ===================================================
 
 gulp.task('build', [ 'script', 'copy' ]);
-gulp.task('default', [ 'usemin', 'script', 'copy', 'serve', 'watch' ]);
+gulp.task('default', [ 'script', 'copy', 'serve', 'watch' ]);
