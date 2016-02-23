@@ -29,15 +29,15 @@
 }
 
 .flexbox .teaser-news--wrapper {
-  
+
   .teaser--news {
     @include MQ(640px) {
       flex: 0 1 50%;
-    } 
+    }
 
     @include MQ($tab) {
       flex: 0 1 (100%/3);
-    } 
+    }
 
   }
 
@@ -72,7 +72,7 @@
 }
 
 .teaser--news__content {
-  padding: 10px 30px 30px 30px; 
+  padding: 10px 30px 30px 30px;
 }
 
 .teaser--news__date {
@@ -86,4 +86,8 @@
   font-size: 16px;
   line-height: 1.35;
   margin-top: 0;
+}
+
+.teaser--event__intro {
+  margin: 0;
 }
